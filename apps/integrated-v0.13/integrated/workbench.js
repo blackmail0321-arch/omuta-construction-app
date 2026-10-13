@@ -73,13 +73,21 @@
  const project=()=>data.projects.find(p=>p.id===data.selected)||data.projects[0];
  function save(){try{localStorage.setItem(key,JSON.stringify(data));savingError=false;}catch{savingError=true;}}
  function log(action,detail){const p=project();p.history.push({at:new Date().toISOString(),action,detail});p.approval=null;save();}
+ function publicationAddition(i){
+  const book=i.priceReference?.type;
+  if(i.mode!=='compose'||!['建設物価','建築コスト情報'].includes(book))return null;
+  const price=i.publicationPrices?.[book]?.price;
+  return Number.isFinite(price)?{book,price,digits:i.unitRounding==='source'?0:i.unitRounding}:null;
+ }
  function calc(i){
   if(i.mode==='direct')return {unit:i.unitPrice!==null&&i.directRoundingApplied&&i.unitRounding!=='source'?trunc(i.unitPrice/i.unitRounding)*i.unitRounding:i.unitPrice,material:null,labor:null,raw:i.unitPrice};
   const materialBase=floor(i.quote*i.reduction/100),material=materialBase+floor(materialBase*i.materialRate/100);
   const electricAmount=trunc(i.electrician*i.electricCoeff),ordinaryAmount=trunc(i.ordinary*i.ordinaryCoeff),laborBase=electricAmount+ordinaryAmount;
   const labor=laborBase+floor(laborBase*i.laborRate/100),raw=Math.trunc(material+labor);
   const r=i.unitRounding==='source'?(raw>=1000?10**(Math.floor(Math.log10(raw))-2):1):i.unitRounding;
-  return {unit:trunc(raw/r)*r,material,labor,raw,materialBase,laborBase,electricAmount,ordinaryAmount};
+  const addition=publicationAddition(i),intermediate=trunc(raw/(raw>=1000?10**(Math.floor(Math.log10(raw))-2):1))*(raw>=1000?10**(Math.floor(Math.log10(raw))-2):1);
+  const unit=addition?(addition.digits>15?intermediate+addition.price:Math.trunc((intermediate+addition.price)*10**addition.digits)/10**addition.digits):trunc(raw/r)*r;
+  return {unit,intermediate,material,labor,raw,materialBase,laborBase,electricAmount,ordinaryAmount};
  }
  function adopted(p=project()){return p.items.filter(i=>i.state==='adopted');}
  function totals(p=project()){
@@ -246,7 +254,7 @@
  $('wb-backup-file').onchange=e=>{if(e.target.files[0])restore(e.target.files[0]);e.target.value='';};
  $('wb-files').onchange=e=>addFiles([...e.target.files]);$('wb-dialog-close').onclick=()=>$('wb-dialog').close();
  $('wb-dialog').addEventListener('click',e=>{if(e.target===$('wb-dialog'))$('wb-dialog').close();});
- window.WB={publicCode,laborDefault,isAsbestosSurvey,validProject:p=>validData({version:559,projects:[p],selected:p.id,customSources:[]}),restoreProject:p=>{if(!validData({version:559,projects:[p],selected:p.id,customSources:[]}))throw Error('工事データが不正です');const k=data.projects.findIndex(x=>x.id===p.id);if(k<0)data.projects.push(p);else data.projects[k]=p;data.selected=p.id;migrate();save();render();},openNewItem,openSettings,record:(action,detail)=>{project().history.push({at:new Date().toISOString(),action,detail});save();render();},amount:i=>trunc(i.quantity*calc(i).unit),calc,totals,issues,project,adopted,ready,backup,parseWorkbook,exportExcel,
+ window.WB={publicationAddition,publicCode,laborDefault,isAsbestosSurvey,validProject:p=>validData({version:559,projects:[p],selected:p.id,customSources:[]}),restoreProject:p=>{if(!validData({version:559,projects:[p],selected:p.id,customSources:[]}))throw Error('工事データが不正です');const k=data.projects.findIndex(x=>x.id===p.id);if(k<0)data.projects.push(p);else data.projects[k]=p;data.selected=p.id;migrate();save();render();},openNewItem,openSettings,record:(action,detail)=>{project().history.push({at:new Date().toISOString(),action,detail});save();render();},amount:i=>trunc(i.quantity*calc(i).unit),calc,totals,issues,project,adopted,ready,backup,parseWorkbook,exportExcel,
   projects:()=>data.projects,render,openItem,persist:()=>{save();render();},
   select:id=>{if(data.projects.some(p=>p.id===id)){data.selected=id;save();render();}},
   addCandidate:(fields,target=project())=>{const item={...candidatesBlank(),...fields,id:uid(),state:'candidate',quantityChecked:false,priceChecked:false,reason:''};if(!validItem(item))throw Error('候補の数量・単価・形式を確認してください。');target.items.push(item);target.approval=null;target.history.push({at:new Date().toISOString(),action:'資料から候補を追加',detail:item.name+'｜'+item.source.file});save();render();return item;},

@@ -83,6 +83,13 @@ async function exportTemplate(){
    write(price,[['F'+pr,rawCol==='F'?i.quote:null],['I'+pr,i.reduction],['L'+ur,i.materialRate],['N'+ur,i.electricCoeff],['O'+ur,i.ordinaryCoeff],['P'+ur,i.laborRate],['T'+ur,i.unitRounding==='source'?'有効3桁':i.unitRounding],['U'+ur,i.electrician],['V'+ur,i.ordinary],
     ['J'+pr,c.materialBase,`INT(${rawCol}${pr}*I${pr}/100)`],['L'+pr,c.material-c.materialBase,unitFormula('L',ur,pr,sharedElectric,sharedOrdinary)],['M'+pr,c.material,unitFormula('M',ur,pr,sharedElectric,sharedOrdinary)],['N'+pr,c.electricAmount,unitFormula('N',ur,pr,sharedElectric,sharedOrdinary)],['O'+pr,c.ordinaryAmount,unitFormula('O',ur,pr,sharedElectric,sharedOrdinary)],['P'+pr,c.labor-c.laborBase,unitFormula('P',ur,pr,sharedElectric,sharedOrdinary)],['Q'+pr,c.labor,unitFormula('Q',ur,pr,sharedElectric,sharedOrdinary)],['R'+pr,c.raw,unitFormula('R',ur,pr,sharedElectric,sharedOrdinary)],['S'+pr,c.unit,i.unitRounding==='source'?unitFormula('S',ur,pr,sharedElectric,sharedOrdinary):`ROUNDDOWN(R${pr}/T${ur},0)*T${ur}`]]);
   }else write(price,[['F'+pr,rawCol==='F'?i.unitPrice:null],['R'+pr,i.unitPrice,rawCol+pr],['S'+pr,c.unit,i.directRoundingApplied&&i.unitRounding!=='source'?`TRUNC(R${pr}/${i.unitRounding})*${i.unitRounding}`:'R'+pr]]);
+  const addition=WB.publicationAddition(i);
+  if(addition){
+   // Upper S is the three-significant-digit intermediate; lower S is the adopted sum.
+   put(price,'S'+ur,c.intermediate,unitFormula('S',ur,pr,sharedElectric,sharedOrdinary));
+   put(price,'T'+ur,addition.digits);
+   put(price,'S'+pr,c.unit,`ROUNDDOWN((${addition.book==='建設物価'?'D':'E'}${pr}+S${ur}),T${ur})`);
+  }
   write(detail,[['B'+dr,i.name.replace(/\r?\n/g,' ')],['C'+dr,i.spec.replace(/\r?\n/g,' ')],['D'+dr,i.quantity],['E'+dr,i.unit],['F'+dr,c.unit,`'${priceName}'!S${pr}`],['G'+dr,WB.amount(i),`TRUNC(D${dr}*F${dr})`],['H'+dr,'代価表 No.'+(k+1)],['I'+dr,i.excludeCommon?WB.amount(i):null,i.excludeCommon?'G'+dr:null],['J'+dr,i.source.file],['K'+dr,i.source.sheet],['L'+dr,i.source.priceCell],['M'+dr,WB.isAsbestosSurvey(i)?Math.max(0,WB.amount(i)):0,`IF(AND(OR(ISNUMBER(SEARCH("石綿",B${dr})),ISNUMBER(SEARCH("アスベスト",B${dr}))),ISNUMBER(SEARCH("調査",B${dr})),G${dr}>0),G${dr},0)`]]);
   const row=elements(detail,'row').find(r=>r.getAttribute('r')===String(dr));row.setAttribute('ht','22.5');row.setAttribute('customHeight','1');
  });

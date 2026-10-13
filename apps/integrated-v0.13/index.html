@@ -215,13 +215,21 @@ window.SourceCalculation={calculate,round,basis:'予算設計書・電気設備�
  const project=()=>data.projects.find(p=>p.id===data.selected)||data.projects[0];
  function save(){try{localStorage.setItem(key,JSON.stringify(data));savingError=false;}catch{savingError=true;}}
  function log(action,detail){const p=project();p.history.push({at:new Date().toISOString(),action,detail});p.approval=null;save();}
+ function publicationAddition(i){
+  const book=i.priceReference?.type;
+  if(i.mode!=='compose'||!['建設物価','建築コスト情報'].includes(book))return null;
+  const price=i.publicationPrices?.[book]?.price;
+  return Number.isFinite(price)?{book,price,digits:i.unitRounding==='source'?0:i.unitRounding}:null;
+ }
  function calc(i){
   if(i.mode==='direct')return {unit:i.unitPrice!==null&&i.directRoundingApplied&&i.unitRounding!=='source'?trunc(i.unitPrice/i.unitRounding)*i.unitRounding:i.unitPrice,material:null,labor:null,raw:i.unitPrice};
   const materialBase=floor(i.quote*i.reduction/100),material=materialBase+floor(materialBase*i.materialRate/100);
   const electricAmount=trunc(i.electrician*i.electricCoeff),ordinaryAmount=trunc(i.ordinary*i.ordinaryCoeff),laborBase=electricAmount+ordinaryAmount;
   const labor=laborBase+floor(laborBase*i.laborRate/100),raw=Math.trunc(material+labor);
   const r=i.unitRounding==='source'?(raw>=1000?10**(Math.floor(Math.log10(raw))-2):1):i.unitRounding;
-  return {unit:trunc(raw/r)*r,material,labor,raw,materialBase,laborBase,electricAmount,ordinaryAmount};
+  const addition=publicationAddition(i),intermediate=trunc(raw/(raw>=1000?10**(Math.floor(Math.log10(raw))-2):1))*(raw>=1000?10**(Math.floor(Math.log10(raw))-2):1);
+  const unit=addition?(addition.digits>15?intermediate+addition.price:Math.trunc((intermediate+addition.price)*10**addition.digits)/10**addition.digits):trunc(raw/r)*r;
+  return {unit,intermediate,material,labor,raw,materialBase,laborBase,electricAmount,ordinaryAmount};
  }
  function adopted(p=project()){return p.items.filter(i=>i.state==='adopted');}
  function totals(p=project()){
@@ -388,7 +396,7 @@ window.SourceCalculation={calculate,round,basis:'予算設計書・電気設備�
  $('wb-backup-file').onchange=e=>{if(e.target.files[0])restore(e.target.files[0]);e.target.value='';};
  $('wb-files').onchange=e=>addFiles([...e.target.files]);$('wb-dialog-close').onclick=()=>$('wb-dialog').close();
  $('wb-dialog').addEventListener('click',e=>{if(e.target===$('wb-dialog'))$('wb-dialog').close();});
- window.WB={publicCode,laborDefault,isAsbestosSurvey,validProject:p=>validData({version:559,projects:[p],selected:p.id,customSources:[]}),restoreProject:p=>{if(!validData({version:559,projects:[p],selected:p.id,customSources:[]}))throw Error('工事データが不正です');const k=data.projects.findIndex(x=>x.id===p.id);if(k<0)data.projects.push(p);else data.projects[k]=p;data.selected=p.id;migrate();save();render();},openNewItem,openSettings,record:(action,detail)=>{project().history.push({at:new Date().toISOString(),action,detail});save();render();},amount:i=>trunc(i.quantity*calc(i).unit),calc,totals,issues,project,adopted,ready,backup,parseWorkbook,exportExcel,
+ window.WB={publicationAddition,publicCode,laborDefault,isAsbestosSurvey,validProject:p=>validData({version:559,projects:[p],selected:p.id,customSources:[]}),restoreProject:p=>{if(!validData({version:559,projects:[p],selected:p.id,customSources:[]}))throw Error('工事データが不正です');const k=data.projects.findIndex(x=>x.id===p.id);if(k<0)data.projects.push(p);else data.projects[k]=p;data.selected=p.id;migrate();save();render();},openNewItem,openSettings,record:(action,detail)=>{project().history.push({at:new Date().toISOString(),action,detail});save();render();},amount:i=>trunc(i.quantity*calc(i).unit),calc,totals,issues,project,adopted,ready,backup,parseWorkbook,exportExcel,
   projects:()=>data.projects,render,openItem,persist:()=>{save();render();},
   select:id=>{if(data.projects.some(p=>p.id===id)){data.selected=id;save();render();}},
   addCandidate:(fields,target=project())=>{const item={...candidatesBlank(),...fields,id:uid(),state:'candidate',quantityChecked:false,priceChecked:false,reason:''};if(!validItem(item))throw Error('候補の数量・単価・形式を確認してください。');target.items.push(item);target.approval=null;target.history.push({at:new Date().toISOString(),action:'資料から候補を追加',detail:item.name+'｜'+item.source.file});save();render();return item;},
@@ -482,6 +490,13 @@ async function exportTemplate(){
    write(price,[['F'+pr,rawCol==='F'?i.quote:null],['I'+pr,i.reduction],['L'+ur,i.materialRate],['N'+ur,i.electricCoeff],['O'+ur,i.ordinaryCoeff],['P'+ur,i.laborRate],['T'+ur,i.unitRounding==='source'?'有効3桁':i.unitRounding],['U'+ur,i.electrician],['V'+ur,i.ordinary],
     ['J'+pr,c.materialBase,`INT(${rawCol}${pr}*I${pr}/100)`],['L'+pr,c.material-c.materialBase,unitFormula('L',ur,pr,sharedElectric,sharedOrdinary)],['M'+pr,c.material,unitFormula('M',ur,pr,sharedElectric,sharedOrdinary)],['N'+pr,c.electricAmount,unitFormula('N',ur,pr,sharedElectric,sharedOrdinary)],['O'+pr,c.ordinaryAmount,unitFormula('O',ur,pr,sharedElectric,sharedOrdinary)],['P'+pr,c.labor-c.laborBase,unitFormula('P',ur,pr,sharedElectric,sharedOrdinary)],['Q'+pr,c.labor,unitFormula('Q',ur,pr,sharedElectric,sharedOrdinary)],['R'+pr,c.raw,unitFormula('R',ur,pr,sharedElectric,sharedOrdinary)],['S'+pr,c.unit,i.unitRounding==='source'?unitFormula('S',ur,pr,sharedElectric,sharedOrdinary):`ROUNDDOWN(R${pr}/T${ur},0)*T${ur}`]]);
   }else write(price,[['F'+pr,rawCol==='F'?i.unitPrice:null],['R'+pr,i.unitPrice,rawCol+pr],['S'+pr,c.unit,i.directRoundingApplied&&i.unitRounding!=='source'?`TRUNC(R${pr}/${i.unitRounding})*${i.unitRounding}`:'R'+pr]]);
+  const addition=WB.publicationAddition(i);
+  if(addition){
+   // Upper S is the three-significant-digit intermediate; lower S is the adopted sum.
+   put(price,'S'+ur,c.intermediate,unitFormula('S',ur,pr,sharedElectric,sharedOrdinary));
+   put(price,'T'+ur,addition.digits);
+   put(price,'S'+pr,c.unit,`ROUNDDOWN((${addition.book==='建設物価'?'D':'E'}${pr}+S${ur}),T${ur})`);
+  }
   write(detail,[['B'+dr,i.name.replace(/\r?\n/g,' ')],['C'+dr,i.spec.replace(/\r?\n/g,' ')],['D'+dr,i.quantity],['E'+dr,i.unit],['F'+dr,c.unit,`'${priceName}'!S${pr}`],['G'+dr,WB.amount(i),`TRUNC(D${dr}*F${dr})`],['H'+dr,'代価表 No.'+(k+1)],['I'+dr,i.excludeCommon?WB.amount(i):null,i.excludeCommon?'G'+dr:null],['J'+dr,i.source.file],['K'+dr,i.source.sheet],['L'+dr,i.source.priceCell],['M'+dr,WB.isAsbestosSurvey(i)?Math.max(0,WB.amount(i)):0,`IF(AND(OR(ISNUMBER(SEARCH("石綿",B${dr})),ISNUMBER(SEARCH("アスベスト",B${dr}))),ISNUMBER(SEARCH("調査",B${dr})),G${dr}>0),G${dr},0)`]]);
   const row=elements(detail,'row').find(r=>r.getAttribute('r')===String(dr));row.setAttribute('ht','22.5');row.setAttribute('customHeight','1');
  });
@@ -727,6 +742,7 @@ window.addEventListener('wb-edit',e=>{const i=e.detail.item,ld=WB.laborDefault()
  const labor=document.createElement('section');labor.className='wb-notice';labor.innerHTML='<b>'+h(ld.year)+'の労務単価（初期入力済み・変更可）</b><div class="wb-form" id="labor09-fields"></div><p class="wb-muted">'+h(ld.source)+'<br>直接単価を使う場合も表示します。計算に使用するのは材料＋施工の組立明細です。</p><button type="button" id="labor09-reset">この年度の単価を反映</button>';
  for(const [id,key] of [['wi-electrician','electrician'],['wi-ordinary','ordinary']]){const x=$(id);if(Number(x.value)===0&&ld[key]>0){x.value=ld[key];if(i.mode==='compose')$('wi-price-check').checked=false;}labor.querySelector('#labor09-fields').append(x.closest('label'));}
  labor.querySelector('button').onclick=()=>{for(const [id,key] of [['wi-electrician','electrician'],['wi-ordinary','ordinary']])$(id).value=ld[key];$('wi-price-check').checked=false;$('wi-electrician').dispatchEvent(new Event('input',{bubbles:true}));};
+ const formulaNote=document.createElement('p');formulaNote.className='wb-notice';formulaNote.textContent='材料価格として刊行物を仮反映した場合、S上段は有効3桁切捨て、S下段は刊行物価格＋S上段です。この合算式では端数処理欄の数値をROUNDDOWNの桁数（10なら小数点以下10桁）として使用します。';body.prepend(formulaNote);
  const publications=document.createElement('section');publications.className='wb-notice';publications.innerHTML='<b>建設物価・建築コスト情報の単価</b><p class="wb-muted">登録資料に型番・仕様が一致する価格があれば仮入力します。未登録は空欄です。入力だけでは計算に反映されません。価格の内容を選び、オレンジのボタンを押してください。掲載箇所は任意入力です。</p>'+books.map((book,k)=>{let r=i.publicationPrices?.[book];if(!r){const found=(WB.project().priceRecords||[]).find(s=>s.sourceType===book&&s.unit===i.unit&&(s.spec===i.spec||(i.publicType||WB.publicCode(i.spec))&&WB.publicCode(s.spec)===(i.publicType||WB.publicCode(i.spec))));r=found?{price:found.unitPrice,reference:[found.edition,found.location||found.source.priceCell].filter(Boolean).join('／'),priceKind:found.priceKind}:{};}return '<div class="wb-form"><label>'+book+' 単価（円/'+h(i.unit||'単位')+'）<input id="pub-price-'+k+'" type="number" min="0" step="any" value="'+h(r.price??'')+'" placeholder="未登録"></label><label>版・年月・ページ／表・行（任意）<input id="pub-ref-'+k+'" value="'+h(r.reference||'')+'" placeholder="例：令和8年10月 p123 表2 行3"></label><label>価格の内容<select id="pub-kind-'+k+'"><option '+(r.priceKind==='材料価格'?'selected':'')+'>材料価格</option><option '+(r.priceKind==='設計単価'?'selected':'')+'>設計単価</option></select></label><button type="button" class="pub-apply" data-pub-apply="'+k+'">'+book+'：押して仮反映</button></div>';}).join('');
  publications.querySelectorAll('input,select').forEach(x=>x.addEventListener('input',()=>{$('wi-price-check').checked=false;const k=x.id.match(/(\d+)$/)?.[1],b=publications.querySelector('[data-pub-apply="'+k+'"]');if(b){b.classList.remove('is-applied');b.textContent=books[k]+'：押して仮反映';}}));publications.querySelectorAll('[data-pub-apply]').forEach(b=>b.onclick=()=>{try{const k=+b.dataset.pubApply,book=books[k],r=readPublications()[book];if(r.price===null)throw Error(book+'の単価を入力してください。');const compose=r.priceKind==='材料価格';$('wi-mode').value=compose?'compose':'direct';$(compose?'wi-quote':'wi-price').value=r.price;$('wi-ref-type').value=book;$('wi-ref-name').value=book;$('wi-ref-edition').value=r.reference;$('wi-ref-location').value=r.reference;$('wi-evidence').value+='\n'+book+'／'+(r.reference||'版・掲載箇所は未入力')+'／'+r.priceKind+'／'+r.price+'円';$('wi-price-check').checked=false;$('wi-mode').dispatchEvent(new Event('input',{bubbles:true}));b.classList.add('is-applied');b.textContent='✓ 仮反映済み（単価条件を確認）';}catch(err){alert(err.message);}});
  const rounding=document.createElement('div');rounding.className='wb-form';rounding.append($('wi-rounding').closest('label'));body.insertBefore(rounding,$('wi-direct'));body.prepend(publications);body.prepend(labor);
