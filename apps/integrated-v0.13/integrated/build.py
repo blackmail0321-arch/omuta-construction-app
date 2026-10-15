@@ -33,11 +33,11 @@ dialog='<dialog class="wb-dialog" id="wb-dialog"><div class="wb-dialog-heading">
 zipcode=Path('integrated/zip-utils.js').read_text()
 pdf=Path('integrated/vendor/pdf.min.js').read_text()
 worker=Path('integrated/vendor/pdf.worker.min.js').read_text()
-cmaps={p.stem:base64.b64encode(p.read_bytes()).decode() for p in Path('integrated/vendor/cmaps').glob('*.bcmap')}
+cmaps={p.stem:base64.b64encode(p.read_bytes()).decode() for p in sorted(Path('integrated/vendor/cmaps').glob('*.bcmap'))}
 script=zipcode+'\nconst WB_CMAPS='+json.dumps(cmaps)+';\nconst WB_SOURCES='+json.dumps(json.loads(Path('integrated/sources.json').read_text()),ensure_ascii=False)+';\nconst WB_REFERENCES='+json.dumps(values['refs'],ensure_ascii=False)+';\nconst WB_CALC_MODEL='+Path('integrated/calculation-model.json').read_text()+';\n'+Path('integrated/calculation.js').read_text()+'\n'+Path('integrated/workbench.js').read_text()
 script+='\nconst WB_EXPORT_TEMPLATES='+json.dumps({k:Path('integrated/'+k+'-template.b64').read_text() for k in ['budget','design']})+';\n'+Path('integrated/template-export.js').read_text()
 script+='\nconst WB_STANDARD_PRICES='+Path('integrated/standard-prices.json').read_text()+';\nconst WB_STANDARD_PAGES='+Path('integrated/standard-pages.json').read_text()+';';
-scripts='<script>'+pdf.replace('</script','<\\/script')+'</script><script>pdfjsLib.GlobalWorkerOptions.workerSrc=URL.createObjectURL(new Blob(['+json.dumps(worker)+'],{type:"text/javascript"}));</script><script>'+script.replace('</script','<\\/script')+'</script><script>'+Path('integrated/assist.js').read_text().replace('</script','<\\/script')+'</script><script>const WB_SUBMISSIONS='+Path('integrated/submissions-master.json').read_text()+';\nconst WB_SUBMISSION_PDFS='+json.dumps({p.name:base64.b64encode(p.read_bytes()).decode() for p in Path('integrated/reference05').glob('2026*担当会議*.pdf')})+';\n'+Path('integrated/submissions.js').read_text().replace('</script','<\\/script')+'</script>'
+scripts='<script>'+pdf.replace('</script','<\\/script')+'</script><script>pdfjsLib.GlobalWorkerOptions.workerSrc=URL.createObjectURL(new Blob(['+json.dumps(worker)+'],{type:"text/javascript"}));</script><script>'+script.replace('</script','<\\/script')+'</script><script>'+Path('integrated/assist.js').read_text().replace('</script','<\\/script')+'</script><script>const WB_SUBMISSIONS='+Path('integrated/submissions-master.json').read_text()+';\nconst WB_SUBMISSION_PDFS='+json.dumps({p.name:base64.b64encode(p.read_bytes()).decode() for p in sorted(Path('integrated/reference05').glob('2026*担当会議*.pdf'))})+';\n'+Path('integrated/submissions.js').read_text().replace('</script','<\\/script')+'</script>'
 scripts+='<script>'+Path('integrated/catalog.js').read_text().replace('</script','<\\/script')+'</script>';
 scripts+='<script>'+Path('integrated/edit09.js').read_text().replace('</script','<\\/script')+'</script>';
 scripts+='<script>'+Path('integrated/form-feedback.js').read_text()+'</script>'
@@ -47,8 +47,10 @@ shared_root=Path(__file__).resolve().parents[3]/'shared'/'web'
 if shared_root.is_dir():
  for target in [Path('shared'),Path('integrated/shared')]:
   shutil.copytree(shared_root,target,dirs_exist_ok=True)
- base=base.replace('</head>','<script src="shared/shared-config.js"></script><script>if(window.OMUTA_SHARED_CONFIG?.url)document.documentElement.classList.add("shared-login-required");</script><style>.shared-login-required .app,.shared-login-required #wb-dialog{visibility:hidden}</style></head>')
- scripts+='<script src="shared/shared-client.js"></script><script src="shared/shared-editor.js"></script>'
+elif not all((Path('integrated/shared')/name).is_file() for name in ['shared-config.js','shared-client.js','shared-editor.js']):
+ raise FileNotFoundError('Shared assets are missing. Copy the complete application folder before building.')
+base=base.replace('</head>','<script src="shared/shared-config.js"></script><script>if(window.OMUTA_SHARED_CONFIG?.url)document.documentElement.classList.add("shared-login-required");</script><style>.shared-login-required .app,.shared-login-required #wb-dialog{visibility:hidden}</style></head>')
+scripts+='<script src="shared/shared-client.js"></script><script src="shared/shared-editor.js"></script>'
 base=base.replace('</body>',dialog+scripts+'</body>')
 Path('integrated/index.html').write_text(base)
 print('built',len(base.encode()))

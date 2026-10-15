@@ -5,6 +5,7 @@ from pathlib import Path
 import sys
 import tempfile
 import base64
+import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
@@ -19,6 +20,8 @@ with tempfile.TemporaryDirectory(prefix='omuta-package-') as temporary:
     assert all(secret not in (viewer / 'index.html').read_text() for secret in ['WB_SOURCES', 'WB_EXPORT_TEMPLATES', 'workbench.js'])
     public_key = 'sb_publishable_test-only'
     configure(output / 'editor', 'https://test.supabase.co', public_key)
+    subprocess.run([sys.executable, 'integrated/build.py'], cwd=output / 'editor', check=True, capture_output=True)
+    assert (output / 'editor/index.html').read_bytes() == (output / 'editor/integrated/index.html').read_bytes()
     for directory in ['shared', 'integrated/shared']:
         assert public_key in (output / 'editor' / directory / 'shared-config.js').read_text()
     payload = base64.urlsafe_b64encode(json.dumps({'role': 'service_role'}).encode()).decode().rstrip('=')
