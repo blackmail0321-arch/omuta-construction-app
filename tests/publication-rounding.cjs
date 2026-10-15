@@ -39,6 +39,7 @@ const os=require('node:os');
   await p.evaluate(purpose=>{
    const original=WB.project(),item=WB.adopted()[0];
    const dummy=Array.from({length:13},(_,k)=>({...structuredClone(item),id:'test-'+k,mode:'direct',unitPrice:100,unitRounding:1,directRoundingApplied:true,priceReference:{type:'メーカー資料'},publicationPrices:{}}));
+   for(let k=0;k<3;k++)dummy[k]={...structuredClone(item),id:'test-'+k,priceReference:{...item.priceReference,manufacturerPrice:[6800,12400,0][k]},electrician:[28900,30000,31000][k],electricCoeff:[0,0.1,0.2][k]};
    WB.restoreProject({...structuredClone(original),items:[...dummy,item],settings:{...original.settings,purpose,durationMonths:3,budget:purpose==='予算用'?20:0},approval:null});
   },purpose);
   await p.locator('[data-view="estimate"]').first().click();await p.click('[data-wb-tab="output"]');

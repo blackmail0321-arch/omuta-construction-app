@@ -14,6 +14,15 @@ for book in (0, 1):
             cells = {c.attrib['r']: c for c in tree.findall('.//m:c', N)}
             def formula(ref): return cells[ref].find('m:f', N).text
             def value(ref): return float(cells[ref].find('m:v', N).text)
+            for row, base, labor, adopted in [(6,2448,0,31300),(8,4464,3000,36400),(10,0,6200,35000)]:
+                upper = row - 1
+                col = 'D' if book == 0 else 'E'
+                assert formula(f'J{row}') == f'INT(MIN(F{row}:H{row})*I{row}/100)+D{upper}'
+                assert formula(f'S{row}') == f'ROUNDDOWN(({col}{row}+S{upper})/T{upper},0)*T{upper}'
+                assert formula(f'N{row}') == f'TRUNC(SUM(N{upper}*U{upper}))'
+                assert value(f'J{row}') == base
+                assert value(f'N{row}') == labor
+                assert value(f'S{row}') == adopted
             assert formula('J32') == 'INT(MIN(F32:H32)*I32/100)+D31'
             assert formula('S31') == 'IF(R32>=1000,(ROUNDDOWN(R32,-INT(LOG10(R32))+2)),ROUNDDOWN(R32,0))'
             col = 'D' if book == 0 else 'E'

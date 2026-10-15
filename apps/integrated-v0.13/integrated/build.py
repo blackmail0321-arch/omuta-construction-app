@@ -40,6 +40,7 @@ script+='\nconst WB_STANDARD_PRICES='+Path('integrated/standard-prices.json').re
 scripts='<script>'+pdf.replace('</script','<\\/script')+'</script><script>pdfjsLib.GlobalWorkerOptions.workerSrc=URL.createObjectURL(new Blob(['+json.dumps(worker)+'],{type:"text/javascript"}));</script><script>'+script.replace('</script','<\\/script')+'</script><script>'+Path('integrated/assist.js').read_text().replace('</script','<\\/script')+'</script><script>const WB_SUBMISSIONS='+Path('integrated/submissions-master.json').read_text()+';\nconst WB_SUBMISSION_PDFS='+json.dumps({p.name:base64.b64encode(p.read_bytes()).decode() for p in Path('integrated/reference05').glob('2026*担当会議*.pdf')})+';\n'+Path('integrated/submissions.js').read_text().replace('</script','<\\/script')+'</script>'
 scripts+='<script>'+Path('integrated/catalog.js').read_text().replace('</script','<\\/script')+'</script>';
 scripts+='<script>'+Path('integrated/edit09.js').read_text().replace('</script','<\\/script')+'</script>';
+scripts+='<script>'+Path('integrated/form-feedback.js').read_text()+'</script>'
 base=base.replace('</body>',dialog+scripts+'</body>')
 Path('integrated/index.html').write_text(base)
 print('built',len(base.encode()))

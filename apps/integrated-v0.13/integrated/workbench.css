@@ -15,3 +15,11 @@
 .wb-dialog .price-match-panel>summary:focus-visible{outline:3px solid #1d4ed8;outline-offset:-4px}
 .wb-dialog .price-match-panel[open]>summary{background:#166534}
 .price-match-hint{display:inline-block;margin-left:12px;font-size:13px;font-weight:400}
+
+/* Selection and decision feedback: color plus a written message. */
+.wb-dialog select,#assist select,#docs select{background-color:#eff6ff;border:2px solid #2563eb;cursor:pointer}
+.wb-dialog select:focus-visible,#assist select:focus-visible,#docs select:focus-visible{outline:3px solid #93c5fd;outline-offset:2px}
+.field-error{background:#fff1f2!important;border-radius:8px;padding:6px}
+[aria-invalid="true"]{border:2px solid #b91c1c!important;background:#fff1f2!important;outline-color:#b91c1c;accent-color:#b91c1c}
+.field-error-message{display:block;color:#b91c1c;font-size:13px;font-weight:700;margin-top:4px}
+.form-error-summary{background:#fef2f2;color:#991b1b;border:2px solid #b91c1c;border-radius:8px;padding:12px;font-weight:700}
