@@ -732,7 +732,18 @@ function openDocument(no){const p=WB.project(),d=master.find(d=>d.no===Number(no
 }
 let dbPromise;
 function database(){return dbPromise||=(new Promise((resolve,reject)=>{const request=indexedDB.open('equipment-workflow-files-05',1);request.onupgradeneeded=()=>request.result.createObjectStore('files');request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(Error('ファイル保存を利用できません'));}));}
-async function blobAction(mode,id,blob){const db=await database();return new Promise((resolve,reject)=>{const tx=db.transaction('files',mode==='get'?'readonly':'readwrite'),store=tx.objectStore('files'),req=mode==='get'?store.get(id):mode==='delete'?store.delete(id):store.put(blob,id);let value;req.onsuccess=()=>value=req.result;tx.oncomplete=()=>resolve(value);tx.onerror=()=>reject(Error('ファイル保存に失敗しました'));});}
+async function blobAction(mode,id,blob){
+ // Store bytes rather than File/Blob objects: some Safari private sessions reject Blob writes.
+ const stored=mode==='put'?{format:'omuta-file-bytes-v1',type:blob.type||'',bytes:await blob.arrayBuffer()}:null;
+ const db=await database();return new Promise((resolve,reject)=>{
+  const tx=db.transaction('files',mode==='get'?'readonly':'readwrite'),store=tx.objectStore('files');
+  const req=mode==='get'?store.get(id):mode==='delete'?store.delete(id):store.put(stored,id);let value;
+  req.onsuccess=()=>value=req.result;
+  tx.oncomplete=()=>resolve(mode==='get'&&value?.format==='omuta-file-bytes-v1'?new Blob([value.bytes],{type:value.type}):value);
+  const failed=()=>{const kind=tx.error?.name||req.error?.name||'UnknownError';reject(Error('ファイル保存に失敗しました（'+kind+'）。元のファイルは残っています。通常タブで再試行するか、端末の空き容量・ブラウザの保存制限を確認してください。'));};
+  tx.onerror=failed;tx.onabort=failed;
+ });
+}
 const download=(name,blob)=>{const a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);};
 async function upload(list,p,d,recordKey){const output=$('sd-file-status')||$('sub-file-status');if(output)output.textContent='保存しています…';let count=0;try{for(const f of list){if(f.size>30e6)throw Error(f.name+' は30MBを超えています');const id=p.id+'/'+uid();await blobAction('put',id,f);p.submissionFiles||=[];p.submissionFiles.push({id,name:f.name,size:f.size,at:today(),docNo:d?.no||null,recordKey:recordKey||'',folder:d?record(p,d).folder||d.folder:$('sub-folder-select').value});count++;}commit(p,'書類ファイルを保存',count+'件');if(output)output.textContent=count+'件を保存しました。';}catch(e){if(count)commit(p,'書類ファイルを一部保存',count+'件');if(output)output.textContent=e.message;else alert(e.message);}}
 async function storeDesignFile(blob,p,name=blob.name,folder='①設計'){if(p.role!=='current')return;const id=p.id+'/'+uid();await blobAction('put',id,blob);p.submissionFiles||=[];p.submissionFiles.push({id,name,size:blob.size,at:today(),docNo:null,recordKey:'',folder});commit(p,'工事資料を分類保存',folder+'／'+name);}
