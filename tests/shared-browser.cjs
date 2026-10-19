@@ -6,7 +6,7 @@ const {start}=require('./shared-test-gateway.cjs');
  const gateway=await start();gateway.sql('truncate public.shared_projects cascade;');
  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});
  const contexts=[];const errors=[];
- async function page(viewport={width:1280,height:900}){const context=await browser.newContext({acceptDownloads:true,viewport});contexts.push(context);const p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));p.on('dialog',d=>d.accept('端末共有の検証用工事'));return p;}
+ async function page(viewport={width:1280,height:900}){const context=await browser.newContext({acceptDownloads:true,hasTouch:true,viewport});contexts.push(context);const p=await context.newPage();p.on('pageerror',e=>errors.push(e.message));p.on('dialog',d=>d.accept('端末共有の検証用工事'));return p;}
  async function loginEditor(p){await p.goto(gateway.url+'/index.html');await p.fill('#shared-email','owner@example.test');await p.fill('#shared-password','local-test-only');await p.locator('#shared-login button').click();await expect(p.locator('#shared-controls')).toBeVisible();}
  async function api(user,name,body={}){const response=await fetch(gateway.url+'/rest/v1/rpc/'+name,{method:'POST',headers:{Authorization:'Bearer '+gateway.jwt(gateway.users[user+'@example.test']),'Content-Type':'application/json'},body:JSON.stringify(body)});return {status:response.status,data:await response.json()};}
  try{
@@ -16,7 +16,7 @@ const {start}=require('./shared-test-gateway.cjs');
   await pc.evaluate(()=>{WB.project().settings.privateMarker='FINANCE-SECRET';WB.mutate('検証','共有の確認');});
   await pc.getByRole('button',{name:'端末間共有',exact:true}).click();await pc.click('#shared-publish');await expect(pc.locator('#shared-message')).toContainText('共有しました');
   const list=await api('owner','shared_list_projects');assert.equal(list.status,200);assert.equal(list.data.length,1);const id=list.data[0].id;
-  await pc.fill('#shared-member-email','viewer@example.test');await pc.locator('#shared-members button[type="submit"]').click();await expect(pc.locator('#shared-message')).toContainText('権限を設定');await pc.click('#shared-close');
+  assert.equal(await pc.locator('.shared-project button:visible').count(),0);let unexpectedImport=false;const watchDialog=()=>{unexpectedImport=true;};pc.on('dialog',watchDialog);await pc.fill('#shared-member-email','viewer@example.test');await pc.locator('#shared-grant').tap();assert.equal(unexpectedImport,false);pc.off('dialog',watchDialog);await expect(pc.locator('#shared-message')).toContainText('権限を設定');await pc.click('#shared-close');
   const mobile=await page({width:390,height:844});await mobile.goto(gateway.url+'/shared/status.html');await mobile.fill('#email','viewer@example.test');await mobile.fill('#password','local-test-only');await mobile.locator('#login button').click();await expect(mobile.locator('#rows')).toContainText('原本の記載を確認');
   if(process.env.OMUTA_SCREENSHOT_DIR){fs.mkdirSync(process.env.OMUTA_SCREENSHOT_DIR,{recursive:true});await mobile.screenshot({path:path.join(process.env.OMUTA_SCREENSHOT_DIR,'mobile-status.png')});}
   assert.equal(await mobile.evaluate(()=>typeof window.WB),'undefined');assert.equal(await mobile.locator('#rows button,#rows input').count(),0);assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
@@ -25,7 +25,7 @@ const {start}=require('./shared-test-gateway.cjs');
   assert.equal((await api('outsider','shared_get_status',{p_id:id,p_month:'2026-10'})).status,403);
   console.log('PASS PC publication -> mobile read-only status; viewer/outsider forbidden APIs; financial redaction');
   const ipad=await page({width:820,height:1180});await loginEditor(ipad);
-  let download=ipad.waitForEvent('download');await ipad.getByRole('button',{name:'共有版を取り込んで編集'}).click();await(await download).path();
+  let download=ipad.waitForEvent('download');await ipad.locator('.shared-project summary').click();await ipad.getByRole('button',{name:'共有版を取り込んで編集'}).click();await(await download).path();
   await expect(ipad.locator('#shared-dialog')).not.toBeVisible();assert.equal(await ipad.evaluate(()=>WB.project().submissionRecords['3'].note),'原本の記載を確認');
   await pc.click('[data-sub-edit="3"]');await pc.fill('#sd-note','PCで更新した提出状況');await pc.click('#sd-save');
   await expect.poll(async()=>(await api('owner','shared_get_project',{p_id:id})).data.revision,{timeout:10000}).toBe(2);
@@ -35,7 +35,7 @@ const {start}=require('./shared-test-gateway.cjs');
   assert.equal((await api('owner','shared_get_project',{p_id:id})).data.project.submissionRecords['3'].note,'PCで更新した提出状況');
   assert.equal(await ipad.evaluate(()=>WB.project().submissionRecords['3'].note),'iPadの未送信変更');
   await ipad.getByRole('button',{name:'端末間共有',exact:true}).click();await ipad.click('#shared-list-refresh');
-  download=ipad.waitForEvent('download');await ipad.getByRole('button',{name:'共有版を取り込んで編集'}).click();const backup=await download;const backupData=JSON.parse(fs.readFileSync(await backup.path(),'utf8'));assert(backupData.projects.some(p=>p.submissionRecords?.['3']?.note==='iPadの未送信変更'));
+  download=ipad.waitForEvent('download');await ipad.locator('.shared-project summary').click();await ipad.getByRole('button',{name:'共有版を取り込んで編集'}).click();const backup=await download;const backupData=JSON.parse(fs.readFileSync(await backup.path(),'utf8'));assert(backupData.projects.some(p=>p.submissionRecords?.['3']?.note==='iPadの未送信変更'));
   await expect(ipad.locator('#shared-dialog')).not.toBeVisible();assert.equal(await ipad.evaluate(()=>WB.project().submissionRecords['3'].note),'PCで更新した提出状況');
   await ipad.getByRole('button',{name:'端末間共有',exact:true}).click();download=ipad.waitForEvent('download');await ipad.click('#shared-recovery');await(await download).path();assert.equal(await ipad.evaluate(()=>WB.project().submissionRecords['3'].note),'iPadの未送信変更');assert.equal((await api('owner','shared_get_project',{p_id:id})).data.project.submissionRecords['3'].note,'PCで更新した提出状況');await ipad.click('#shared-close');
   console.log('PASS iPad imports with backup; auto sync; stale revision rejected; unsent data retained and backed up');
