@@ -109,7 +109,15 @@ window.ASSIST={parseLines,parseDocument,suggestions,readPdf,applySuggestion};
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm=s=>String(s||'').normalize('NFKC').replace(/\s/g,'').toUpperCase();
 let batch=null,reading=false;
-const same=(a,b)=>norm(a.name)===norm(b.name)&&norm(a.unit)===norm(b.unit)&&(norm(a.spec)===norm(b.spec)||(WB.publicCode(a.spec)&&WB.publicCode(a.spec)===WB.publicCode(b.spec)));
+function same(a,b){
+ if(norm(a.name)!==norm(b.name)||norm(a.unit)!==norm(b.unit))return false;
+ const x=norm(a.spec),y=norm(b.spec);if(x===y)return true;
+ // Explicitly edited item codes can identify an enriched specification. Added
+ // accessories remain distinct rows even when their base fixture code matches.
+ if(/[+＋]/.test(x+y))return false;
+ const enriched=(item,other)=>{const code=norm(item.publicType);return code&&code===norm(other.spec)&&norm(item.spec).startsWith(code+'/');};
+ return Boolean(enriched(a,b)||enriched(b,a));
+}
 function duplicate(row,items){return items.some(i=>same(row,i));}
 function render(){const p=WB.project();$('batch-preview').innerHTML='<table><thead><tr><th>追加</th><th>品名・規格</th><th>数量</th><th>単価候補</th><th>出典・確認事項</th></tr></thead><tbody>'+batch.rows.map((r,k)=>{const dup=duplicate(r,p.items)||batch.rows.slice(0,k).some(i=>same(i,r));r.duplicate=dup;return `<tr><td><input type="checkbox" data-batch-row="${k}" aria-label="${esc(r.name+' '+r.spec)}を追加" ${dup?'disabled':'checked'}></td><td>${esc(r.name)}<br>${esc(r.spec)}</td><td>${esc(r.quantity)} ${esc(r.unit)}</td><td>${r.unitPrice===null?'未登録':esc(r.unitPrice.toLocaleString('ja-JP')+'円')}</td><td>${esc(r.source.sheet+'／'+r.source.quantityCell)}<br>${dup?'重複候補：追加せず既存項目を保持':'数量・仕様・単価の適用条件は未確認'}</td></tr>`;}).join('')+'</tbody></table>';$('batch-add').hidden=!batch.rows.some(r=>!r.duplicate);}
 $('batch-excel').onchange=async e=>{if(reading)return;const file=e.target.files[0];if(!file)return;reading=true;batch=null;$('batch-add').hidden=true;$('batch-preview').textContent='';const target=WB.project().id;
