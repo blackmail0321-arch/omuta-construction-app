@@ -8,7 +8,7 @@
  const num=v=>typeof v==='number'&&Number.isFinite(v)?v:null;
  const uid=()=>globalThis.crypto?.randomUUID?.()||'id'+Date.now()+Math.random().toString(36).slice(2);
  const defaultSettings=()=>({year:'令和8年度',tax:10,calculationBasis:4,referenceRevision:8,workType:'改修',budget:20,purpose:'設計用',rounding:1,directRounding:1000,commonStack:0,location:'',contractPeriod:'',overview:'',person:'',durationMonths:0,common:0,management:0,general:0,commonSource:SourceCalculation.basis,commonChecked:false});
- function candidates(source){
+ function candidates(source,includeUnpriced=false){
   const list=[];
   for(const sheet of source.sheets){
    if(!/(内訳書|^設計書\(電気\)$)/.test(sheet.name.trim()))continue;
@@ -19,7 +19,7 @@
     if(typeof v('B')!=='string'||num(v('D'))===null||typeof v('E')!=='string'||!v('E').trim())continue;
     if(/^(直接工事費|共通仮設費|現場管理費|一般管理費|工事価格|消費税|工事費|合計|計|小計|純工事費|工事原価)/.test(v('B').trim()))continue;
     const amountOnly=num(v('F'))===null&&!c.F?.formula&&num(v('G'))!==null&&v('D')>0;
-    if(num(v('F'))===null && !c.F?.formula&&!amountOnly)continue;
+    if(!includeUnpriced&&num(v('F'))===null && !c.F?.formula&&!amountOnly)continue;
     if(amountOnly&&/^\+?\s*\$?G\$?\d+\s*$/.test(c.G?.formula||''))continue;
     const id=source.id+'-'+sheet.name+'-'+row.row;
     const quantity=num(v('D')),amount=num(v('G')),unit=amountOnly?amount/quantity:num(v('F'));
@@ -276,7 +276,7 @@
  $('wb-backup-file').onchange=e=>{if(e.target.files[0])restore(e.target.files[0]);e.target.value='';};
  $('wb-files').onchange=e=>addFiles([...e.target.files]);$('wb-dialog-close').onclick=()=>$('wb-dialog').close();
  $('wb-dialog').addEventListener('click',e=>{if(e.target===$('wb-dialog'))$('wb-dialog').close();});
- window.WB={localSaved:()=>!savingError,priceInputs,publicationAddition,publicCode,laborDefault,isAsbestosSurvey,validProject:p=>validData({version:559,projects:[p],selected:p.id,customSources:[]}),restoreProject:p=>{if(!validData({version:559,projects:[p],selected:p.id,customSources:[]}))throw Error('工事データが不正です');const k=data.projects.findIndex(x=>x.id===p.id);if(k<0)data.projects.push(p);else data.projects[k]=p;data.selected=p.id;migrate();save();render();},openNewItem,openSettings,record:(action,detail)=>{project().history.push({at:new Date().toISOString(),action,detail});save();render();},amount:i=>trunc(i.quantity*calc(i).unit),calc,totals,issues,project,adopted,ready,backup,parseWorkbook,exportExcel,
+ window.WB={localSaved:()=>!savingError,priceInputs,publicationAddition,publicCode,laborDefault,isAsbestosSurvey,validProject:p=>validData({version:559,projects:[p],selected:p.id,customSources:[]}),restoreProject:p=>{if(!validData({version:559,projects:[p],selected:p.id,customSources:[]}))throw Error('工事データが不正です');const k=data.projects.findIndex(x=>x.id===p.id);if(k<0)data.projects.push(p);else data.projects[k]=p;data.selected=p.id;migrate();save();render();},openNewItem,openSettings,record:(action,detail)=>{project().history.push({at:new Date().toISOString(),action,detail});save();render();},amount:i=>trunc(i.quantity*calc(i).unit),calc,totals,issues,project,adopted,ready,backup,parseWorkbook,workbookCandidates:source=>candidates(source,true),exportExcel,
   projects:()=>data.projects,render,openItem,persist:()=>{save();render();},
   select:id=>{if(data.projects.some(p=>p.id===id)){data.selected=id;save();render();}},
   addCandidate:(fields,target=project())=>{const item={...candidatesBlank(),...fields,id:uid(),state:'candidate',quantityChecked:false,priceChecked:false,reason:''};if(!validItem(item))throw Error('候補の数量・単価・形式を確認してください。');target.items.push(item);target.approval=null;target.history.push({at:new Date().toISOString(),action:'資料から候補を追加',detail:item.name+'｜'+item.source.file});save();render();return item;},

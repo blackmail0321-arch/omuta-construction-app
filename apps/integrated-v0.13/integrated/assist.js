@@ -103,3 +103,22 @@ function sync(){
 $('shell-project').onchange=e=>WB.select(e.target.value);window.addEventListener('wb-render',sync);sync();
 window.ASSIST={parseLines,parseDocument,suggestions,readPdf,applySuggestion};
 })();
+
+/* Excel batch preview: preserve existing records, never adopt automatically. */
+(()=>{'use strict';
+const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm=s=>String(s||'').normalize('NFKC').replace(/\s/g,'').toUpperCase();
+let batch=null,reading=false;
+const same=(a,b)=>norm(a.name)===norm(b.name)&&norm(a.unit)===norm(b.unit)&&(norm(a.spec)===norm(b.spec)||(WB.publicCode(a.spec)&&WB.publicCode(a.spec)===WB.publicCode(b.spec)));
+function duplicate(row,items){return items.some(i=>same(row,i));}
+function render(){const p=WB.project();$('batch-preview').innerHTML='<table><thead><tr><th>追加</th><th>品名・規格</th><th>数量</th><th>単価候補</th><th>出典・確認事項</th></tr></thead><tbody>'+batch.rows.map((r,k)=>{const dup=duplicate(r,p.items)||batch.rows.slice(0,k).some(i=>same(i,r));r.duplicate=dup;return `<tr><td><input type="checkbox" data-batch-row="${k}" aria-label="${esc(r.name+' '+r.spec)}を追加" ${dup?'disabled':'checked'}></td><td>${esc(r.name)}<br>${esc(r.spec)}</td><td>${esc(r.quantity)} ${esc(r.unit)}</td><td>${r.unitPrice===null?'未登録':esc(r.unitPrice.toLocaleString('ja-JP')+'円')}</td><td>${esc(r.source.sheet+'／'+r.source.quantityCell)}<br>${dup?'重複候補：追加せず既存項目を保持':'数量・仕様・単価の適用条件は未確認'}</td></tr>`;}).join('')+'</tbody></table>';$('batch-add').hidden=!batch.rows.some(r=>!r.duplicate);}
+$('batch-excel').onchange=async e=>{if(reading)return;const file=e.target.files[0];if(!file)return;reading=true;batch=null;$('batch-add').hidden=true;$('batch-preview').textContent='';const target=WB.project().id;
+try{if(WB.project().role!=='current')throw Error('今回の工事を選んでください。');$('batch-status').textContent='Excelを読み取り中です。';const source=await WB.parseWorkbook(file);if(WB.project().id!==target)throw Error('工事が切り替わりました。読み直してください。');const rows=WB.workbookCandidates(source);if(!rows.length)throw Error('対応する内訳明細がありません。B列名称・C列規格・D列数量・E列単位の内訳書が対象です。');
+for(const r of rows){r.publicType=WB.publicCode(r.spec);r.priceReference=r.unitPrice===null?{}:{type:'過去Excel',name:source.filename,location:r.source.sheet+'／'+r.source.priceCell};r.evidence='数量出典：'+source.filename+'／'+r.source.sheet+'／'+r.source.quantityCell+'。'+(r.unitPrice===null?'単価未登録。':'単価出典：'+r.source.priceCell+'（保存済みの値）。')+'数量・仕様・単価の適用条件は未確認。';r.reason='Excelから一括読取。数量・仕様と単価の適用条件は確認待ち。';}
+batch={target,rows,filename:file.name};render();$('batch-status').textContent=rows.length+'件を読み取りました。工事と明細を確認し、追加する行を選んでください。単価空欄は0円にしません。';
+}catch(err){$('batch-status').textContent='読取できませんでした：'+err.message;}finally{reading=false;e.target.value='';}};
+$('batch-add').onclick=()=>{try{if(!batch||WB.project().id!==batch.target)throw Error('工事が変わりました。Excelを読み直してください。');const p=JSON.parse(JSON.stringify(WB.project())),selected=[...$('batch-preview').querySelectorAll('[data-batch-row]:checked')].map(x=>batch.rows[Number(x.dataset.batchRow)]);let count=0;
+for(const r of selected){if(duplicate(r,p.items))continue;p.items.push({...JSON.parse(JSON.stringify(r)),id:crypto.randomUUID(),state:'candidate',quantityChecked:false,priceChecked:false});count++;}
+if(!count)throw Error('追加する明細がありません。');p.approval=null;p.history.push({at:new Date().toISOString(),action:'Excel明細を一括追加',detail:batch.filename+'／'+count+'件'});WB.restoreProject(p);render();$('batch-status').textContent=count+'件を確認候補へ追加しました。既存項目は保持しました。「候補の確認へ」で確認してください。';if(!WB.localSaved())throw Error('端末保存に失敗しました。再追加せず、作業バックアップを保存してください。');
+}catch(err){$('batch-status').textContent=err.message;}};
+})();
