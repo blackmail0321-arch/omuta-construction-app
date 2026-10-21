@@ -1,10 +1,15 @@
 import assert from 'node:assert/strict';
 import {handle,discover,default as worker} from '../shared/standards/worker.mjs';
 const html='<a href="/gobuild/content/123.pdf">公共建築工事標準単価積算基準（令和８年）</a><a href="https://evil.test/a.pdf">公共建築工事参考歩掛り</a><a href="/gobuild/content/124.pdf">公共建築工事積算研究会参考歩掛り</a>';
-assert.equal(discover(html).length,2);const env={ASSETS:{fetch:()=>new Response('static')}};
+assert.equal(discover(html).length,2);assert.equal(discover('<tr><td>公共建築工事標準単価積算基準</td><td><a href="/gobuild/content/125.pdf">令和8年改定 PDF</a></td></tr>').length,1);const env={ASSETS:{fetch:()=>new Response('static')}};
 const list=await handle(new Request('https://app.test/api/public-standards'),env,async()=>new Response(html));assert.equal((await list.json()).documents.length,2);
 let fetched=false;const bad=await handle(new Request('https://app.test/api/public-standards?pdf='+encodeURIComponent('https://evil.test/a.pdf')),env,async()=>{fetched=true;});assert.equal(bad.status,400);assert.equal(fetched,false);
 const pdf=await handle(new Request('https://app.test/api/public-standards?pdf='+encodeURIComponent('https://www.mlit.go.jp/gobuild/content/123.pdf')),env,async()=>new Response('%PDF-1.7\ntest'));assert.equal(pdf.status,200);assert.match(pdf.headers.get('content-type'),/pdf/);
 const failure=await handle(new Request('https://app.test/api/public-standards'),env,async()=>{throw Error('network')});assert.equal(failure.status,502);assert.match((await failure.json()).error,/保持/);
 const invalid=await handle(new Request('https://app.test/api/public-standards?pdf='+encodeURIComponent('https://www.mlit.go.jp/gobuild/content/123.pdf')),env,async()=>new Response('<html>login</html>'));assert.equal(invalid.status,502);
 assert.equal(await (await worker.fetch(new Request('https://app.test/'),env,{})).text(),'static');console.log('PASS official-only discovery and download, blocked arbitrary host, PDF signature, offline fallback and static routing');
+
+let redirects=0;const redirected=await handle(new Request('https://app.test/api/public-standards'),env,async()=>++redirects===1?new Response(null,{status:302,headers:{location:'/gobuild/updated.html'}}):new Response(html));assert.equal(redirected.status,200);assert.equal(redirects,2);
+const blocked=await handle(new Request('https://app.test/api/public-standards'),env,async()=>new Response('blocked',{status:403}));assert.equal((await blocked.json()).code,'UPSTREAM_HTTP_403');
+const absent=await handle(new Request('https://app.test/api/public-standards'),env,async()=>new Response('<html>no documents</html>'));assert.equal((await absent.json()).code,'DOCUMENT_LINKS_NOT_FOUND');
+console.log('PASS same-origin redirects, contextual document titles, distinct403 and missing-link diagnosis');
