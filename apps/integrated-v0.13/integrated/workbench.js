@@ -99,7 +99,7 @@
   const unit=trunc(sum/step)*step;
   return {unit,intermediate,material,labor,raw,materialBase,laborBase,electricAmount,ordinaryAmount};
  }
- function adopted(p=project()){return p.items.filter(i=>i.state==='adopted');}
+ function adopted(p=project()){return p.items.filter(i=>!i.archived&&i.state==='adopted');}
  function totals(p=project()){
   const rows=adopted(p),s=p.settings,rawDirect=rows.reduce((n,i)=>n+trunc(i.quantity*calc(i).unit),0),dr=s.directRounding||1000;
   const direct=trunc(rawDirect*(s.purpose==='予算用'?1+s.budget/100:1)/dr)*dr;
@@ -115,7 +115,7 @@
   const result=[];
   if(p.role==='reference')result.push('参考工事です。「今回の工事として作成」してから正式確認してください。');
   if(!adopted(p).length)result.push('採用された項目がありません。');
-  const pending=p.items.filter(i=>!['adopted','excluded'].includes(i.state));if(pending.length)result.push('候補・保留が'+pending.length+'件あります。採用または今回は対象外にしてください。');
+  const pending=p.items.filter(i=>!i.archived&&!['adopted','excluded'].includes(i.state));if(pending.length)result.push('候補・保留が'+pending.length+'件あります。採用または今回は対象外にしてください。');
   if(adopted(p).some(i=>!i.priceChecked||!i.quantityChecked||!i.reason.trim()||calc(i).unit===null))result.push('採用項目の確認が不足しています。');
   if(!p.settings.commonChecked||!p.settings.commonSource.trim())result.push('共通費・税・端数処理の適用根拠が未確認です。');
   if(totals(p).formulaError)result.push(totals(p).formulaError);
@@ -126,28 +126,30 @@
  function ready(){return issues().length===0&&project().approval?.snapshot===stamp();}
  function status(i){return ({candidate:'確認候補',hold:'保留',adopted:'採用済み',excluded:'今回対象外'})[i.state];}
  function render(){
-  const p=project(),t=totals(),pending=p.items.filter(i=>i.state==='candidate').length;
+  const p=project(),t=totals(),pending=p.items.filter(i=>!i.archived&&i.state==='candidate').length;
   $('wb-project').innerHTML=data.projects.map(x=>`<option value="${h(x.id)}" ${p.id===x.id?'selected':''}>${x.role==='reference'?'参考｜':'今回｜'}${h(x.title)}</option>`).join('');
   $('wb-title').textContent=p.title;$('wb-role').textContent=p.role==='reference'?'参考資料からの候補':'今回工事';
   $('wb-copy').hidden=p.role!=='reference';
-  $('wb-kpis').innerHTML=[['確認候補',pending],['保留',p.items.filter(i=>i.state==='hold').length],['採用',t.count],['採用明細計',money(t.direct)]].map(([label,value])=>`<div class="wb-kpi"><span>${h(label)}</span><strong>${h(value)}</strong></div>`).join('');
+  $('wb-kpis').innerHTML=[['確認候補',pending],['保留',p.items.filter(i=>!i.archived&&i.state==='hold').length],['採用',t.count],['採用明細計',money(t.direct)]].map(([label,value])=>`<div class="wb-kpi"><span>${h(label)}</span><strong>${h(value)}</strong></div>`).join('');
   $('wb-save-warning').hidden=!savingError;
   $('wb-next').textContent=ready()?'最終確認済みです。Excelを出力できます。':!t.count?'候補の数量・単価・根拠を確認し、採用してください。':issues()[0]||'明細の確認が揃いました。「最終確認する」で確定してください。';
   document.querySelectorAll('[data-wb-tab]').forEach(b=>{b.classList.toggle('active',b.dataset.wbTab===activeTab);b.setAttribute('aria-selected',b.dataset.wbTab===activeTab?'true':'false');});
   $('wb-search-wrap').hidden=!['candidates','adopted'].includes(activeTab);
   let html='';
   if(activeTab==='candidates'||activeTab==='adopted'){
-   const rows=p.items.filter(i=>(activeTab==='adopted'?i.state==='adopted':true)&&(!search||[i.name,i.spec,i.source.file,i.source.sheet,status(i)].join(' ').toLowerCase().includes(search.toLowerCase())));
-   html=rows.length?`<div class="wb-items">${rows.map(i=>{const c=calc(i);return `<article class="wb-item"><div class="wb-item-top"><span class="wb-state ${i.state}">${status(i)}</span><span class="wb-muted">${h(i.category)}</span></div><h3>${h(i.name)}</h3><div class="wb-spec">${h(i.spec)||'規格の確認が必要'}</div><div class="wb-figures"><span>数量 <b>${h(i.quantity)} ${h(i.unit)}</b></span><span>単価 <b>${c.unit===null?'未取得':money(c.unit)}</b></span><span>金額 <b>${c.unit===null?'未計算':money(Math.trunc(i.quantity*c.unit))}</b></span></div><div class="wb-muted wb-source">${h(i.source.file)}<br>${h(i.source.sheet)}・${h(i.source.priceCell)}${i.mismatch?' ｜ 原本の金額と数量×単価に差あり':''}</div><div class="wb-item-bottom"><span class="wb-muted">${h(i.reason||'今回条件の確認待ち')}</span><button data-wb-edit="${h(i.id)}">${i.state==='adopted'?'採用内容・根拠を見る':'確認する'}</button></div></article>`;}).join('')}</div>`:'<div class="wb-empty">'+(activeTab==='adopted'?'採用はまだ0件です。候補の「確認する」から採用できます。':'該当する項目がありません。')+'</div>';
+   const rows=p.items.filter(i=>!i.archived&&(activeTab==='adopted'?i.state==='adopted':['candidate','hold'].includes(i.state))&&(!search||[i.name,i.spec,i.source.file,i.source.sheet,status(i)].join(' ').toLowerCase().includes(search.toLowerCase())));
+   html=rows.length?`<div class="wb-items">${rows.map(i=>{const c=calc(i);return `<article class="wb-item"><div class="wb-item-top"><span class="wb-state ${i.state}">${status(i)}</span><span class="wb-muted">${h(i.category)}</span></div><h3>${h(i.name)}</h3><div class="wb-spec">${h(i.spec)||'規格の確認が必要'}</div><div class="wb-figures"><span>数量 <b>${h(i.quantity)} ${h(i.unit)}</b></span><span>単価 <b>${c.unit===null?'未取得':money(c.unit)}</b></span><span>金額 <b>${c.unit===null?'未計算':money(Math.trunc(i.quantity*c.unit))}</b></span></div><div class="wb-muted wb-source">${h(i.source.file)}<br>${h(i.source.sheet)}・${h(i.source.priceCell)}${i.mismatch?' ｜ 原本の金額と数量×単価に差あり':''}</div><div class="wb-item-bottom"><span class="wb-muted">${h(i.reason||'今回条件の確認待ち')}</span><button data-wb-edit="${h(i.id)}">${i.state==='adopted'?'採用内容・根拠を見る':'確認する'}</button>${i.state!=='adopted'?`<button type="button" data-wb-archive="${h(i.id)}">履歴へ退避</button>`:''}</div></article>`;}).join('')}</div>`:'<div class="wb-empty">'+(activeTab==='adopted'?'採用はまだ0件です。候補の「確認する」から採用できます。':'該当する項目がありません。')+'</div>';
   }else if(activeTab==='output'){
    const s=p.settings;
    html=`<div class="wb-output"><h3>採用した明細から作成</h3><p class="wb-muted">採用 ${t.count}件だけが、内訳書・代価表・採用一覧へ連動します。未採用項目は確認待ち一覧へ出力します。</p><div class="wb-total-rows">${[['採用明細計（加算前）',t.rawDirect],['直接工事費',t.direct],['共通費対象外',t.special],['積上げ分（石綿事前調査費のみ）',t.stack],['共通仮設費',t.common],['現場管理費',t.management],['一般管理費等',t.general],['工事価格（端数処理後）',t.price],['消費税等',t.tax],['工事費合計',t.total],...(s.purpose==='予算用'?[['予算見積額（1万円単位切上げ）',t.budget]]:[])].map(([n,v])=>`<div><span>${h(n)}</span><b>${t.formulaError&&!['採用明細計（加算前）','直接工事費','共通費対象外'].includes(n)?'未算定':money(v)}</b></div>`).join('')}</div><div class="wb-notice ${ready()?'':'warn'}">${ready()?'最終確認済み':issues().map(h).join('<br>')||'人による最終確認待ち'}</div><div class="wb-actions"><button id="wb-settings-open">共通費・出力設定</button><button id="wb-approve">最終確認する</button><button class="primary" id="wb-export">${ready()?'確認済み':'途中確認'}Excelを作成</button></div><p class="wb-muted">予算用：みなと小学校様式／設計用：勝立地区公民館様式。共通費は予算Excelの電気設備数式で算定します。採用区分：${h(t.method||'条件入力待ち')}。予算用は直接工事費に物価上昇率を加えてから共通費を計算します。</p></div>`;
   }else if(activeTab==='sources'){
    html=`<h3>この工事の資料</h3><div class="wb-actions"><button id="wb-upload">Excel・PDFなどを追加</button><button id="wb-manual">項目を手入力</button></div><div class="wb-docs">${p.documents.map((d,i)=>`<article><div><b>${h(d.name)}</b><p class="wb-muted">${h(d.type)} ｜ ${h(d.status)}</p></div><button data-wb-remove-doc="${i}">登録解除</button></article>`).join('')}</div><details><summary>公開基準資料（版・出典）</summary><div class="wb-docs">${WB_REFERENCES.map(r=>`<article><div><b>${h(r.title)}</b><p class="wb-muted">${h(r.version)} ｜ ${h(r.note)}</p><a href="${h(r.url)}" target="_blank" rel="noopener">公式資料を開く</a></div></article>`).join('')}</div><p class="wb-muted">公開原本を参照できる状態です。全表の単価マスタ化・PDF図面のAI読取は未実装。県単価表・画像見積は今回条件を確認して項目の根拠に登録してください。</p></details>`;
   }else{
-   html=`<h3>変更と採用の記録</h3>${[...p.history].reverse().map(x=>`<article class="wb-history"><time>${h(new Date(x.at).toLocaleString('ja-JP'))}</time><b>${h(x.action)}</b><p>${h(x.detail)}</p></article>`).join('')||'<div class="wb-empty">操作履歴はまだありません。</div>'}`;
+   html=`<h3>対象外・退避した項目</h3><p class="wb-muted">出典・数量・理由を保持しています。「候補へ戻す」で再検討できます。</p>${p.items.filter(i=>i.archived||i.state==='excluded').map(i=>`<article class="wb-history"><b>${h(i.name)} ${h(i.spec)}</b><p>${i.archived?'履歴へ退避':status(i)}／数量 ${h(i.quantity)} ${h(i.unit)}<br>${h(i.reason)}${i.archiveReason?'<br>退避理由：'+h(i.archiveReason):''}<br>${h(i.source.file)}／${h(i.source.sheet)}</p><button type="button" data-wb-restore="${h(i.id)}">候補へ戻す</button></article>`).join('')||'<p>対象外・退避した項目はありません。</p>'}<h3>変更と採用の記録</h3>${[...p.history].reverse().map(x=>`<article class="wb-history"><time>${h(new Date(x.at).toLocaleString('ja-JP'))}</time><b>${h(x.action)}</b><p>${h(x.detail)}</p></article>`).join('')||'<div class="wb-empty">操作履歴はまだありません。</div>'}`;
   }
   $('wb-content').innerHTML=html;
+  $('wb-content').querySelectorAll('[data-wb-archive]').forEach(b=>b.onclick=()=>{const i=p.items.find(x=>x.id===b.dataset.wbArchive);if(!i||i.state==='adopted')return;const reason=prompt('履歴へ退避する理由を入力してください。',i.reason||'重複または誤取込のため');if(!reason?.trim())return;i.archived=true;i.archiveReason=reason.trim();i.archivedAt=new Date().toISOString();log('項目を履歴へ退避',i.name+' '+i.spec+'／'+i.archiveReason);render();});
+  $('wb-content').querySelectorAll('[data-wb-restore]').forEach(b=>b.onclick=()=>{const i=p.items.find(x=>x.id===b.dataset.wbRestore);if(!i)return;i.archived=false;i.state='candidate';i.quantityChecked=false;i.priceChecked=false;log('項目を候補へ復元',i.name+' '+i.spec);render();});
   $('wb-content').querySelectorAll('[data-wb-edit]').forEach(b=>b.onclick=()=>openItem(b.dataset.wbEdit));
   $('wb-content').querySelectorAll('[data-wb-remove-doc]').forEach(b=>b.onclick=()=>{
    const index=Number(b.dataset.wbRemoveDoc),d=p.documents[index];
