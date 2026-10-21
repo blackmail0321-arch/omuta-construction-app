@@ -287,7 +287,14 @@ window.SourceCalculation={calculate,round,basis:'予算設計書・電気設備�
  function compareItems(a,b){
   const text=i=>String(i.spec||i.publicType||i.name||'').normalize('NFKC').trim();
   const x=text(a),y=text(b),gx=/^[A-Za-z]/.test(x)?0:/^\d/.test(x)?1:2,gy=/^[A-Za-z]/.test(y)?0:/^\d/.test(y)?1:2;
-  return gx-gy||itemOrder.compare(x,y)||itemOrder.compare(a.name,b.name);
+  const group=i=>{const name=String(i.name||'').normalize('NFKC'),spec=String(i.spec||'').normalize('NFKC');
+   if(/産廃処理費/.test(name)){if(/スクラップ/.test(spec))return 54;if(/運搬/.test(spec))return 53;if(/ガラス/.test(spec))return 51;if(/廃プラ|金属.*混合/.test(spec))return 52;return 55;}
+   if(/撤去工事/.test(name))return 50;
+   if(/自動点滅器/.test(name))return 20;
+   if(/照明器具/.test(name))return 10;
+   return 30;
+  };
+  return group(a)-group(b)||gx-gy||itemOrder.compare(x,y)||itemOrder.compare(a.name,b.name);
  }
  function render(){
   const p=project(),t=totals(),pending=p.items.filter(i=>!i.archived&&i.state==='candidate').length;
