@@ -15,6 +15,7 @@ def package(output: Path) -> None:
     output.mkdir(parents=True)
     editor = output / 'editor'
     shutil.copytree(ROOT / 'apps/integrated-v0.13', editor)
+    shutil.copyfile(ROOT / 'shared/standards/worker.mjs', editor / '_worker.js')
     url = os.environ.get('SUPABASE_URL', '').strip()
     key = os.environ.get('SUPABASE_PUBLISHABLE_KEY', '').strip()
     if url or key:

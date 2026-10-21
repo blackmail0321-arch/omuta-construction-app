@@ -51,6 +51,7 @@ if shared_root.is_dir():
 elif not all((Path('integrated/shared')/name).is_file() for name in ['shared-config.js','shared-client.js','shared-editor.js']):
  raise FileNotFoundError('Shared assets are missing. Copy the complete application folder before building.')
 base=base.replace('</head>','<script src="shared/shared-config.js"></script><script>if(window.OMUTA_SHARED_CONFIG?.url)document.documentElement.classList.add("shared-login-required");</script><style>.shared-login-required .app,.shared-login-required #wb-dialog{visibility:hidden}</style></head>')
+scripts+='<script>'+Path('integrated/standards-update.js').read_text().replace('</script','<\\/script')+'</script>'
 scripts+='<script src="shared/shared-client.js"></script><script src="shared/shared-editor.js"></script>'
 base=base.replace('</body>',dialog+scripts+'</body>')
 Path('integrated/index.html').write_text(base)
