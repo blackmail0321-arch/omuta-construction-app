@@ -302,7 +302,7 @@ window.SourceCalculation={calculate,round,basis:'予算設計書・電気設備�
   $('wb-project').innerHTML=data.projects.map(x=>`<option value="${h(x.id)}" ${p.id===x.id?'selected':''}>${x.role==='reference'?'参考｜':'今回｜'}${h(x.title)}</option>`).join('');
   $('wb-title').textContent=p.title;$('wb-role').textContent=p.role==='reference'?'参考資料からの候補':'今回工事';
   $('wb-copy').hidden=p.role!=='reference';
-  $('wb-kpis').innerHTML=[['確認候補',pending],['保留',p.items.filter(i=>!i.archived&&i.state==='hold').length],['採用',t.count],['採用明細計',money(t.direct)]].map(([label,value])=>`<div class="wb-kpi"><span>${h(label)}</span><strong>${h(value)}</strong></div>`).join('');
+  $('wb-kpis').innerHTML=[['確認候補',pending],['保留',p.items.filter(i=>!i.archived&&i.state==='hold').length],['採用',t.count],['採用明細計',money(t.rawDirect)]].map(([label,value])=>`<div class="wb-kpi"><span>${h(label)}</span><strong>${h(value)}</strong></div>`).join('');
   $('wb-save-warning').hidden=!savingError;
   $('wb-next').textContent=ready()?'最終確認済みです。Excelを出力できます。':!t.count?'候補の数量・単価・根拠を確認し、採用してください。':issues()[0]||'明細の確認が揃いました。「最終確認する」で確定してください。';
   document.querySelectorAll('[data-wb-tab]').forEach(b=>{b.classList.toggle('active',b.dataset.wbTab===activeTab);b.setAttribute('aria-selected',b.dataset.wbTab===activeTab?'true':'false');});
