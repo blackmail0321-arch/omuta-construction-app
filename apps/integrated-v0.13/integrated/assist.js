@@ -34,7 +34,7 @@ function suggestions(item){
 }
 function applySuggestion(item,s){
  item.priceReference=s.priceReference||{type:s.sourceType||'過去Excel',name:s.source.file,edition:s.edition||'',location:s.location||s.source.sheet+'・'+s.source.priceCell,manufacturer:s.manufacturer||'',model:s.model||''};item.unitPrice=s.unitPrice;item.mode=s.priceKind==='材料価格'?'compose':'direct';
- if(item.mode==='compose'){item.quote=s.unitPrice;item.reduction=100;const ld=WB.laborDefault();item.electrician=item.electrician||ld.electrician;item.ordinary=item.ordinary||ld.ordinary;item.electricCoeff=0;item.ordinaryCoeff=0;}
+ if(item.mode==='compose'){item.quote=s.unitPrice;if(item.reductionOrigin!=='manual'&&item.reduction===100){item.reduction=WB.suggestedReduction(item)??100;item.reductionOrigin='operation-default';}const ld=WB.laborDefault();item.electrician=item.electrician||ld.electrician;item.ordinary=item.ordinary||ld.ordinary;item.electricCoeff=0;item.ordinaryCoeff=0;}
  item.priceProposal={source:JSON.parse(JSON.stringify(s.source)),name:s.name,spec:s.spec,price:s.unitPrice,kind:s.priceKind||'設計単価',match:s.match,conditions:s.conditions||'',at:new Date().toISOString()};
  item.evidence+='\n単価候補（仮反映）：'+s.source.file+'｜'+s.source.sheet+'｜'+s.source.priceCell+'｜'+s.match+'｜'+(s.conditions||'今回条件は未確認');
  item.priceChecked=false;item.quantityChecked=false;
