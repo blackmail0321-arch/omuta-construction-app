@@ -125,6 +125,12 @@
  function stamp(p=project()){return JSON.stringify({items:p.items,settings:p.settings,title:p.title,role:p.role});}
  function ready(){return issues().length===0&&project().approval?.snapshot===stamp();}
  function status(i){return ({candidate:'確認候補',hold:'保留',adopted:'採用済み',excluded:'今回対象外'})[i.state];}
+ const itemOrder=new Intl.Collator('ja',{numeric:true,sensitivity:'base'});
+ function compareItems(a,b){
+  const text=i=>String(i.spec||i.publicType||i.name||'').normalize('NFKC').trim();
+  const x=text(a),y=text(b),gx=/^[A-Za-z]/.test(x)?0:/^\d/.test(x)?1:2,gy=/^[A-Za-z]/.test(y)?0:/^\d/.test(y)?1:2;
+  return gx-gy||itemOrder.compare(x,y)||itemOrder.compare(a.name,b.name);
+ }
  function render(){
   const p=project(),t=totals(),pending=p.items.filter(i=>!i.archived&&i.state==='candidate').length;
   $('wb-project').innerHTML=data.projects.map(x=>`<option value="${h(x.id)}" ${p.id===x.id?'selected':''}>${x.role==='reference'?'参考｜':'今回｜'}${h(x.title)}</option>`).join('');
@@ -137,7 +143,7 @@
   $('wb-search-wrap').hidden=!['candidates','adopted'].includes(activeTab);
   let html='';
   if(activeTab==='candidates'||activeTab==='adopted'){
-   const rows=p.items.filter(i=>!i.archived&&(activeTab==='adopted'?i.state==='adopted':['candidate','hold'].includes(i.state))&&(!search||[i.name,i.spec,i.source.file,i.source.sheet,status(i)].join(' ').toLowerCase().includes(search.toLowerCase())));
+   const rows=p.items.filter(i=>!i.archived&&(activeTab==='adopted'?i.state==='adopted':['candidate','hold'].includes(i.state))&&(!search||[i.name,i.spec,i.source.file,i.source.sheet,status(i)].join(' ').toLowerCase().includes(search.toLowerCase()))).sort(compareItems);
    html=rows.length?`<div class="wb-items">${rows.map(i=>{const c=calc(i);return `<article class="wb-item"><div class="wb-item-top"><span class="wb-state ${i.state}">${status(i)}</span><span class="wb-muted">${h(i.category)}</span></div><h3>${h(i.name)}</h3><div class="wb-spec">${h(i.spec)||'規格の確認が必要'}</div><div class="wb-figures"><span>数量 <b>${h(i.quantity)} ${h(i.unit)}</b></span><span>単価 <b>${c.unit===null?'未取得':money(c.unit)}</b></span><span>金額 <b>${c.unit===null?'未計算':money(Math.trunc(i.quantity*c.unit))}</b></span></div><div class="wb-muted wb-source">${h(i.source.file)}<br>${h(i.source.sheet)}・${h(i.source.priceCell)}${i.mismatch?' ｜ 原本の金額と数量×単価に差あり':''}</div><div class="wb-item-bottom"><span class="wb-muted">${h(i.reason||'今回条件の確認待ち')}</span><button data-wb-edit="${h(i.id)}">${i.state==='adopted'?'採用内容・根拠を見る':'確認する'}</button>${i.state!=='adopted'?`<button type="button" data-wb-archive="${h(i.id)}">履歴へ退避</button>`:''}</div></article>`;}).join('')}</div>`:'<div class="wb-empty">'+(activeTab==='adopted'?'採用はまだ0件です。候補の「確認する」から採用できます。':'該当する項目がありません。')+'</div>';
   }else if(activeTab==='output'){
    const s=p.settings;
