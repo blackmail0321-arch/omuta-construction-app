@@ -139,7 +139,7 @@
   return group(a)-group(b)||gx-gy||itemOrder.compare(x,y)||itemOrder.compare(a.name,b.name);
  }
  function render(){
-  const p=project(),t=totals(),pending=p.items.filter(i=>!i.archived&&i.state==='candidate').length;
+  const p=project();repairAdoptedDrafts(p);const t=totals(),pending=p.items.filter(i=>!i.archived&&i.state==='candidate').length;
   $('wb-project').innerHTML=data.projects.map(x=>`<option value="${h(x.id)}" ${p.id===x.id?'selected':''}>${x.role==='reference'?'参考｜':'今回｜'}${h(x.title)}</option>`).join('');
   $('wb-title').textContent=p.title;$('wb-role').textContent=p.role==='reference'?'参考資料からの候補':'今回工事';
   $('wb-copy').hidden=p.role!=='reference';
@@ -203,6 +203,15 @@
  function candidatesBlank(){const ld=laborDefault();return {excludeCommon:false,name:'新しい項目',spec:'',quantity:1,unit:'個',unitPrice:null,source:{file:'手入力',sheet:'',row:0,quantityCell:'',priceCell:'',quantityFormula:'',priceFormula:'',sourceAmount:null},mode:'direct',material:0,quote:0,reduction:100,materialRate:0,electrician:ld.electrician,ordinary:ld.ordinary,electricCoeff:0,ordinaryCoeff:0,laborRate:0,unitRounding:'source',evidence:'',priceChecked:false,quantityChecked:false,state:'candidate',reason:'',category:'新設',mismatch:false};}
  function field(id,label,value,type='text',extra=''){const required=['wi-name','wi-quantity','wi-unit','wi-price','wi-evidence','ws-months'].includes(id);return `<label class="${required?'input-required':''}">${h(label)}${required?' <small>入力</small>':''}<input id="${id}" type="${type}" value="${h(value)}" ${extra}></label>`;}
  function reasonField(value){const options=['図面数量・仕様と単価根拠を確認した','県単価の適用条件を確認して採用した','見積比較結果に基づき採用した','公共型番・寸法・取付条件が一致した','代用歩掛りの妥当性を確認した','追加・訂正項目として採用した','根拠資料不足のため保留した','今回工事の対象外と判断した'];return `<label>採用・保留等の理由（選択または入力）<select id="wi-reason-preset" aria-label="採用理由の候補"><option value="">候補から選ぶ／自由入力</option>${options.map(x=>`<option value="${h(x)}" ${value===x?'selected':''}>${h(x)}</option>`).join('')}</select><input id="wi-reason" type="text" value="${h(value)}" placeholder="選んだ理由を編集・追記できます" aria-label="採用理由の自由入力"></label>`;}
+ function generatedPendingReason(reason){
+  return ['数量・仕様は未確認。単価の版・地域・単位・適用条件は未確認。確認完了まで保留。','数量・仕様は未確認。確認完了まで保留。','単価の版・地域・単位・適用条件は未確認。確認完了まで保留。'].includes(reason);
+ }
+ function repairAdoptedDrafts(p){
+  if(p.role!=='current')return;
+  const changes=p.items.filter(i=>i.state==='adopted'&&i.quantityChecked&&i.priceChecked&&generatedPendingReason(i.reason));
+  if(!changes.length)return;
+  changes.forEach(i=>{const previous=i.reason;i.reason=documentDraft(i).reason;p.history.push({at:new Date().toISOString(),action:'採用理由の自動文章を更新',detail:i.name+' '+i.spec+'／変更前：'+previous+'／変更後：'+i.reason});});save();
+ }
  function documentDraft(i){
   const source=i.source||{},ref=i.priceReference||{};
   const quantitySource=[source.file,source.sheet,source.quantityCell].filter(Boolean).join('／');
@@ -244,6 +253,7 @@
    if(state==='adopted'&&(c.unit===null||i.quantity<=0||!i.quantityChecked||!i.priceChecked||!i.evidence))throw Error('採用には正の数量・単価・根拠資料と2つの確認チェックが必要です。');
    if(state==='adopted'&&i.mode==='compose'&&(i.electricCoeff>0&&i.electrician<=0||i.ordinaryCoeff>0&&i.ordinary<=0))throw Error('使用する職種の年度別労務単価を入力してください。');
    if(c.unit!==null&&c.unit<0&&i.category!=='控除')throw Error('負の単価は「控除」に分類してください。');
+   if(state==='adopted'&&generatedPendingReason(i.reason))i.reason=documentDraft(i).reason;
    i.state=state;i.confirmedAt=new Date().toISOString();const p=project();const index=p.items.findIndex(x=>x.id===i.id);if(index<0)p.items.push(i);else p.items[index]=i;newDraft=null;
    log(status(i),i.name+'｜数量 '+i.quantity+' '+i.unit+'｜単価 '+money(c.unit)+'｜'+i.reason);$('wb-dialog').close();render();
   }catch(e){alert(e.message);}
