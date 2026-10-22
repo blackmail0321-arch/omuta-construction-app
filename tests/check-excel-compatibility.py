@@ -25,6 +25,15 @@ for path in sys.argv[1:]:
       if key not in RANK:continue
       assert RANK[key]>=rank,(name,'worksheet child order',key)
       rank=RANK[key]
+    if E.QName(root).localname=='worksheet':
+     ns={'s':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
+     for pane in root.findall('.//s:pane',ns):
+      if pane.get('state')!='frozen':continue
+      ref=pane.get('topLeftCell','A1');m=re.fullmatch(r'([A-Z]+)([1-9][0-9]*)',ref);assert m,(name,'pane ref',ref)
+      column=0
+      for char in m.group(1):column=column*26+ord(char)-64
+      assert column>int(float(pane.get('xSplit','0'))),(name,'frozen columns overlap scroll pane',dict(pane.attrib))
+      assert int(m.group(2))>int(float(pane.get('ySplit','0'))),(name,'frozen rows overlap scroll pane',dict(pane.attrib))
     if name=='xl/workbook.xml' and root.find('{http://schemas.openxmlformats.org/spreadsheetml/2006/main}externalReferences') is None:
      for defined in root.findall('.//{http://schemas.openxmlformats.org/spreadsheetml/2006/main}definedName'):
       assert not re.search(r'\[\d+\]',defined.text or ''),(name,'orphan external name',defined.get('name'))
