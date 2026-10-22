@@ -20,9 +20,11 @@ function syntax(formula){
 }
 const pos=r=>{let c=0;for(const v of r.match(/[A-Z]+/)[0])c=c*26+v.charCodeAt(0)-64;return [c,Number(r.match(/\d+/)[0])];};
 const col=n=>{let s='';while(n){n--;s=String.fromCharCode(65+n%26)+s;n=Math.floor(n/26);}return s;};
-function calculate(inputs){
- const cache={...inputs},busy=new Set();
- const get=ref=>{if(Object.hasOwn(cache,ref))return cache[ref];if(busy.has(ref))throw Error('循環参照：'+ref);const c=WB_CALC_MODEL[ref];if(!c)return undefined;busy.add(ref);const value=c.f?visit(syntax(c.f)):c.v;busy.delete(ref);cache[ref]=value;return value;};
+function calculate(inputs,basis='budget-latest'){
+ const original=basis==='design-original',model=original?WB_DESIGN_CALC_MODEL:WB_CALC_MODEL;
+ if(original&&inputs.G20>0)throw Error('既存設計書の原本数式は積上げ分に対応していません。計算基準を確認してください。');
+ const cache=original?{G7:inputs.G7,G9:inputs.G9,G11:inputs.G11,G13:inputs.G15}:{...inputs},busy=new Set();
+ const get=ref=>{if(Object.hasOwn(cache,ref))return cache[ref];if(busy.has(ref))throw Error('循環参照：'+ref);const c=model[ref];if(!c)return undefined;busy.add(ref);const value=c.f?visit(syntax(c.f)):c.v;busy.delete(ref);cache[ref]=value;return value;};
  const number=v=>Number(v||0);
  function visit(x){
   if(Object.hasOwn(x,'value'))return x.value;if(x.ref)return get(x.ref);
@@ -39,5 +41,5 @@ function calculate(inputs){
  const common=get('BC9'),management=get('BC10'),general=get('BC11');if(![common,management,general].every(Number.isFinite))throw Error('共通費の計算条件を確認してください');
  return {common,management,general,method:get('BC8'),rates:[get('AU9'),get('AU10'),get('AU11')],get,cache};
 }
-window.SourceCalculation={calculate,round,basis:'予算設計書・電気設備（令和8年9月変更）'};
+window.SourceCalculation={calculate,round,modelFor:s=>s.purpose==='設計用'&&s.commonModel==='design-original'?WB_DESIGN_CALC_MODEL:WB_CALC_MODEL,keyFor:s=>s.purpose==='設計用'&&s.commonModel==='design-original'?'design-original':'budget-latest',basisFor:s=>s.purpose==='設計用'&&s.commonModel==='design-original'?'勝立地区公民館の既存設計書・電気設備（原本数式）':'予算設計書・電気設備（令和8年9月変更）',basis:'予算設計書・電気設備（令和8年9月変更）'};
 })();
