@@ -1,5 +1,5 @@
 """Validate XML, relationship targets and markup-compatibility namespace bindings."""
-import sys,zipfile,posixpath
+import sys,zipfile,posixpath,re,datetime,struct
 from lxml import etree as E
 MC='{http://schemas.openxmlformats.org/markup-compatibility/2006}'
 ORDER='sheetPr dimension sheetViews sheetFormatPr cols sheetData sheetCalcPr sheetProtection protectedRanges scenarios autoFilter sortState dataConsolidate customSheetViews mergeCells phoneticPr conditionalFormatting dataValidations hyperlinks printOptions pageMargins pageSetup headerFooter rowBreaks colBreaks customProperties cellWatches ignoredErrors smartTags drawing legacyDrawing legacyDrawingHF picture oleObjects controls webPublishItems tableParts extLst'.split()
@@ -8,6 +8,11 @@ for path in sys.argv[1:]:
  with zipfile.ZipFile(path) as z:
   assert z.testzip() is None
   names=set(z.namelist())
+  for info in z.infolist():
+   datetime.datetime(*info.date_time)
+   with open(path,'rb') as f:
+    f.seek(info.header_offset+12);date=struct.unpack('<H',f.read(2))[0]
+    assert date!=0,(info.filename,'invalid local ZIP date')
   for name in names:
    if name.endswith(('.xml','.rels')):
     root=E.fromstring(z.read(name))
@@ -20,6 +25,9 @@ for path in sys.argv[1:]:
       if key not in RANK:continue
       assert RANK[key]>=rank,(name,'worksheet child order',key)
       rank=RANK[key]
+    if name=='xl/workbook.xml' and root.find('{http://schemas.openxmlformats.org/spreadsheetml/2006/main}externalReferences') is None:
+     for defined in root.findall('.//{http://schemas.openxmlformats.org/spreadsheetml/2006/main}definedName'):
+      assert not re.search(r'\[\d+\]',defined.text or ''),(name,'orphan external name',defined.get('name'))
     if name.endswith('.rels'):
      for rel in root:
       if rel.get('TargetMode')=='External':continue

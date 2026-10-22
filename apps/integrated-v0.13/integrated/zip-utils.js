@@ -8,9 +8,9 @@ let enc=new TextEncoder(),locals=[],centrals=[],offset=0;
 for(let [name,data] of Object.entries(files)){
  if(!(data instanceof Uint8Array))data=new Uint8Array(data);
  let nb=enc.encode(name),crc=crc32(data);
- let h=[];push32(h,0x04034b50);push16(h,20);push16(h,0x800);push16(h,0);push16(h,0);push16(h,0);push32(h,crc);push32(h,data.length);push32(h,data.length);push16(h,nb.length);push16(h,0);
+ let h=[];push32(h,0x04034b50);push16(h,20);push16(h,0x800);push16(h,0);push16(h,0);push16(h,33);push32(h,crc);push32(h,data.length);push32(h,data.length);push16(h,nb.length);push16(h,0);
  let hb=new Uint8Array(h),local=new Uint8Array(hb.length+nb.length+data.length);local.set(hb,0);local.set(nb,hb.length);local.set(data,hb.length+nb.length);locals.push(local);
- let c=[];push32(c,0x02014b50);push16(c,20);push16(c,20);push16(c,0x800);push16(c,0);push16(c,0);push16(c,0);push32(c,crc);push32(c,data.length);push32(c,data.length);push16(c,nb.length);push16(c,0);push16(c,0);push16(c,0);push16(c,0);push32(c,0);push32(c,offset);
+ let c=[];push32(c,0x02014b50);push16(c,20);push16(c,20);push16(c,0x800);push16(c,0);push16(c,0);push16(c,33);push32(c,crc);push32(c,data.length);push32(c,data.length);push16(c,nb.length);push16(c,0);push16(c,0);push16(c,0);push16(c,0);push32(c,name.endsWith('/')?16:0);push32(c,offset);
  let cb=new Uint8Array(c),central=new Uint8Array(cb.length+nb.length);central.set(cb,0);central.set(nb,cb.length);centrals.push(central);offset+=local.length;
 }
 let cdSize=centrals.reduce((n,a)=>n+a.length,0),totalLocal=locals.reduce((n,a)=>n+a.length,0);
