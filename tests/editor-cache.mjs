@@ -1,0 +1,4 @@
+import assert from 'node:assert/strict';import {handle} from '../shared/standards/worker.mjs';
+const request=new Request('https://example.test/?v=20261022');
+const html=await handle(request,{ASSETS:{fetch:async()=>new Response('<html>editor</html>',{headers:{'Content-Type':'text/html; charset=utf-8','Cache-Control':'public, max-age=14400','X-Test':'keep'}})}});assert.equal(html.headers.get('Cache-Control'),'private, no-store');assert.equal(html.headers.get('X-Test'),'keep');assert.equal(await html.text(),'<html>editor</html>');
+const css=await handle(request,{ASSETS:{fetch:async()=>new Response('body{}',{headers:{'Content-Type':'text/css','Cache-Control':'public, max-age=100'}})}});assert.equal(css.headers.get('Cache-Control'),'public, max-age=100');console.log('PASS editor HTML disables stale caching, non-HTML assets preserved');

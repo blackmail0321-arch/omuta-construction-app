@@ -7,7 +7,7 @@ markup=markup.replace('Stage5.59 · 実資料から積算','統合版 Ver0.13 ·
 markup=markup.replace('候補を確認して、設計書へつなげる。','確認・訂正した候補を、設計書へ。')
 markup=markup.replace('<div class="wb-kpis"', '<div class="wb-actions"><button class="primary" id="wb-add-material">＋ 材料を追加</button><button id="wb-setup-top">工期・計算条件を入力</button></div><p id="wb-workflow-next" class="input-guide"></p><div class="wb-kpis"')
 markup=markup.replace('工事を選ぶ<select id="wb-project">','工事を選ぶ<select id="wb-project">')
-base=base.replace('試作案 Ver.0.1','候補支援版 Ver0.13')
+base=base.replace('試作案 Ver.0.1','候補支援版 Ver0.13（10/22更新）')
 base=base.replace('この画面は統合後の操作を確認するための試作案です。実データとは接続していません。','積算・提出書類は工事ごとに連動します。端末間共有は「端末間共有」で接続後に利用できます。未接続時はこの端末内に保存します。')
 base=base.replace('市職員・管理者（画面案）','端末保存・候補確認版')
 base=re.sub(r'<select aria-label="工事選択">.*?</select>','<select id="shell-project" aria-label="工事選択"></select>',base)

@@ -48,7 +48,7 @@
 .wb-dialog input:not([type=checkbox]):not([type=file]):not([readonly]):not([disabled]),.wb-dialog textarea:not([readonly]):not([disabled]),.wb-dialog select:not([disabled]){background-color:#fff8d6}.wb-dialog input[readonly],.wb-dialog textarea[readonly],.wb-dialog .wb-notice{background-color:#edf5ff}.wb-dialog [aria-invalid=true]{background-color:#fff0f0!important}.input-color-legend{padding:12px;border-left:4px solid #c69412;background:#fff8d6;color:#263b50}</style>
 <script src="shared/shared-config.js"></script><script>if(window.OMUTA_SHARED_CONFIG?.url)document.documentElement.classList.add("shared-login-required");</script><style>.shared-login-required .app,.shared-login-required #wb-dialog{visibility:hidden}</style></head>
 <body><div class="app">
-  <aside><div class="brand"><div class="mark">工</div><div><b>設備工事 統合管理</b><small>候補支援版 Ver0.13</small></div></div><nav>
+  <aside><div class="brand"><div class="mark">工</div><div><b>設備工事 統合管理</b><small>候補支援版 Ver0.13（10/22更新）</small></div></div><nav>
     <button class="navbtn active" data-view="home"><span>▦</span>工事ダッシュボード</button>
     <button class="navbtn desktop-only" data-view="ledger"><span>▣</span>工事台帳</button>
     <button class="navbtn" data-view="assist"><span>⌕</span>資料読取・単価候補</button><button class="navbtn" data-view="estimate"><span>∑</span>予算・積算・設計</button>
@@ -736,7 +736,7 @@ function sync(){
  const p=WB.project(),t=WB.totals(),pending=p.items.filter(i=>!i.archived&&i.state!=='adopted'&&i.state!=='excluded');
  $('shell-project').innerHTML=WB.projects().map(p=>`<option value="${esc(p.id)}" ${p.id===WB.project().id?'selected':''}>${p.role==='reference'?'参考｜':'今回｜'}${esc(p.title)}</option>`).join('');
  $('home-cards').innerHTML=[['数量・仕様の未確認',pending.filter(i=>!i.quantityChecked).length],['単価根拠の未確認',pending.filter(i=>!i.priceChecked).length],['保留',p.items.filter(i=>!i.archived&&i.state==='hold').length],['採用',t.count]].map(([n,v])=>`<div class="card"><small>${n}</small><div class="n">${v}</div><small>選択中工事の実データ</small></div>`).join('');
- $('home-stage').textContent=p.role==='reference'?'参考工事です。今回の工事を作成して資料を読み込んでください。':WB.ready()?'設計書の最終確認済みです。Excel出力へ進めます。':'設計確認中：候補 '+pending.length+'件／採用 '+t.count+'件／採用明細計 '+yen(t.direct);
+ $('home-stage').textContent=p.role==='reference'?'参考工事です。今回の工事を作成して資料を読み込んでください。':WB.ready()?'設計書の最終確認済みです。Excel出力へ進めます。':'設計確認中：候補 '+pending.length+'件／採用 '+t.count+'件／採用明細計 '+yen(t.rawDirect);
  $('home-next').innerHTML=pending.slice(0,4).map(i=>`<div class="task"><b>${esc(i.name)} ${esc(i.spec)}</b><small>${!i.quantityChecked?'数量・仕様を確認':'数量確認済み'}／${!i.priceChecked?'単価根拠を確認':'単価確認済み'}${i.state==='hold'?'／保留理由：'+esc(i.reason):''}</small><button class="ghost" data-home-item="${esc(i.id)}">確認する</button></div>`).join('')||'<p>明細の確認待ちはありません。共通費・最終確認へ進んでください。</p>';
  $('home-next').querySelectorAll('[data-home-item]').forEach(b=>b.onclick=()=>{show('estimate');WB.openItem(b.dataset.homeItem);});
  $('ledger-rows').innerHTML=WB.projects().map(p=>`<tr><td>${p.role==='reference'?'参考':'今回'}</td><td>${esc(p.title)}</td><td>電気</td><td>${p.items.length}候補／${WB.adopted(p).length}採用</td><td><button class="ghost" data-select-project="${esc(p.id)}">開く</button></td></tr>`).join('');
