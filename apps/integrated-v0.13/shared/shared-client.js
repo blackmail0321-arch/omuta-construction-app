@@ -31,7 +31,7 @@
      throw new SharedError(path.startsWith('/auth/')?'ログイン情報を確認してください。':'共有処理に失敗しました。接続設定とデータベース設定を確認してください。','server');
     }
     return data;
-   }catch(error){if(error instanceof SharedError)throw error;throw new SharedError('共有先に接続できません。端末内のデータは保持しています。');}finally{clearTimeout(timer);}
+   }catch(error){if(error instanceof SharedError)throw error;if(controller.signal.aborted)throw new SharedError('共有先の応答が20秒以内に完了しませんでした。保存の成否は再接続後に確認してください。端末内のデータは保持しています。','timeout');throw new SharedError('共有先との通信が途中で失敗しました。端末内のデータは保持しています。','network');}finally{clearTimeout(timer);}
   }
   async signIn(email,password){const data=await this.raw('/auth/v1/token?grant_type=password',{body:{email,password}});if(!data?.access_token||!data?.user?.id)throw new SharedError('ログインに失敗しました。','auth');this.store({...data,expires_at:data.expires_at||Date.now()/1000+(data.expires_in||3600)});return data.user;}
   async refresh(){if(this.refreshing)return this.refreshing;if(!this.session?.refresh_token)throw new SharedError('ログインしてください。','auth');
