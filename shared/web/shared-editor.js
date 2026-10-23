@@ -108,10 +108,10 @@
    if(!sameUser(actor)||JSON.stringify(current(id))!==JSON.stringify(local))throw Error('確認中に端末データが変わりました。もう一度比較してください。');
    stage='両版の退避';message('両版を端末内へ退避しています…');await recovery('put',JSON.parse(JSON.stringify(remote.project)));await recovery('put',local);if(!sameUser(actor))return;
    stage='比較バックアップの作成';const data={version:1,at:new Date().toISOString(),local,shared:remote.project,sharedRevision:remote.revision,differences};
-   const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'})),a=node('a');a.href=url;a.download='端末共有_比較バックアップ_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),60000);
+   const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'})),a=node('a');a.href=url;a.download='端末共有_比較バックアップ_'+new Date().toISOString().slice(0,10)+'.json';setTimeout(()=>URL.revokeObjectURL(url),60000);
    const checksum=await hash(local);if(!sameUser(actor))return;saving=true;
    stage='共有先への保存';message('端末内の版を共有先へ保存しています…');const row=await client.save(link.id,id,local,remote.revision);saved=true;if(!sameUser(actor))return;
-   links[id]={id:row.id,revision:row.revision,hash:checksum,blocked:false};remember();sync('端末内・共有先とも保存済み');message('端末内の版を共有しました。両版は比較バックアップへ保管しています。');stage='保存後の一覧更新';await list();
+   links[id]={id:row.id,revision:row.revision,hash:checksum,blocked:false};remember();sync('端末内・共有先とも保存済み');message('端末内の版を共有しました。両版は端末内の復元用データへ退避済みです。比較バックアップを保存してください。');stage='保存後の一覧更新';try{await list();}finally{a.click();}
   }catch(error){if(error.kind==='auth'){failed(error);}else{const text=(saved?'共有先への保存は完了しました。':'')+stage+'で停止しました。'+error.message;message(text,true);sync(text,true);}}finally{saving=false;preparing=false;$('shared-resolve').disabled=false;}
  }
  $('shared-resolve').onclick=()=>resolveLocal().catch(failed);
