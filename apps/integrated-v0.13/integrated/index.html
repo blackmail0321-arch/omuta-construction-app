@@ -262,7 +262,7 @@ window.SourceCalculation={calculate,round,modelFor:s=>s.purpose==='設計用'&&s
   const unit=trunc(sum/step)*step;
   return {unit,intermediate,material,labor,raw,materialBase,laborBase,electricAmount,ordinaryAmount};
  }
- function adopted(p=project()){return p.items.filter(i=>!i.archived&&i.state==='adopted');}
+ function adopted(p=project()){return p.items.filter(i=>!i.archived&&i.state==='adopted').sort(compareItems);}
  function totals(p=project()){
   const rows=adopted(p),s=p.settings,rawDirect=rows.reduce((n,i)=>n+trunc(i.quantity*calc(i).unit),0),dr=s.directRounding||1000;
   const direct=trunc(rawDirect*(s.purpose==='予算用'?1+s.budget/100:1)/dr)*dr;
