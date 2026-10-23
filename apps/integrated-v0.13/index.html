@@ -169,7 +169,7 @@ window.SourceCalculation={calculate,round,modelFor:s=>s.purpose==='設計用'&&s
  const money=n=>Number(n||0).toLocaleString('ja-JP',{maximumFractionDigits:2})+'円';
  const num=v=>typeof v==='number'&&Number.isFinite(v)?v:null;
  const uid=()=>globalThis.crypto?.randomUUID?.()||'id'+Date.now()+Math.random().toString(36).slice(2);
- function contractPeriod(s){const manual=String(s.contractPeriod||'').trim(),months=Number(s.durationMonths);return manual||(Number.isFinite(months)&&months>0?'契約翌日から'+Number((months*30).toFixed(6))+'日間':'');}
+ function contractPeriod(s){const manual=String(s.contractPeriod||'').trim(),months=Number(s.durationMonths);return manual||(Number.isFinite(months)&&months>0?'契約締結の日の翌日から'+Number((months*30).toFixed(6))+'日間':'');}
  const defaultSettings=()=>({year:'令和8年度',tax:10,calculationBasis:4,referenceRevision:8,workType:'改修',budget:20,purpose:'設計用',rounding:1,directRounding:1000,commonStack:0,location:'',contractPeriod:'',overview:'',person:'',durationMonths:0,common:0,management:0,general:0,commonSource:SourceCalculation.basis,commonChecked:false});
  function candidates(source,includeUnpriced=false){
   const list=[];
@@ -566,14 +566,16 @@ async function exportTemplate(){
   });
  }
  const commonName=names[commonIndex],priceName=names[priceIndex],year=String(s.year).match(/令和\s*(\d+)/)?.[1]||'',title=p.title.replace(/^大牟田市\s*/,'').replace(/工事$/,'');
+ const periodText=WB.contractPeriod(s),periodMatch=periodText.match(/^(.*?)([0-9０-９]+(?:[.．][0-9０-９]+)?)\s*日間\s*$/);
+ const periodPrefix=periodMatch?periodMatch[1].trim():periodText,periodDays=periodMatch?Number(periodMatch[2].normalize('NFKC')):null;
  // Preserve source auxiliary formulas and names. They are reference material, not adopted calculations.
  elements(wb,'sheet').forEach((sh,k)=>{if(![0,...(budget?[1]:[]),commonIndex,detailIndex,priceIndex].includes(k))sh.setAttribute('state','hidden');});
  function write(d,rows){rows.forEach(([r,v,f])=>put(d,r,v,f===undefined?null:f));}
  if(budget){for(const k of [0,1]){const d=docs[k];write(d,[['C15',year?Number(year):null],['D19',title],['D22',s.location||''],['G22',null],['U22',WB.contractPeriod(s)],['AC22',null],['F24',null],['D24',null],['G24',null],['E26',s.overview||''],['J26',''],['D30',label],['Y38',t.direct,"'内訳書'!G4"],['Y39',t.common,"'内訳書'!G6"],['Y40',t.management,"'内訳書'!G8"],['Y41',t.general,"'内訳書'!G10"],['Y42',null],['Y43',t.price,"'内訳書'!G12"],['Y47',t.tax,"'内訳書'!G14"],['AC47','消費税'+s.tax+'%'],['Y49',t.total,'SUM(Y43,Y47)'],['Y51',t.budget,'ROUNDUP(Y49,-4)']]);}}
- else {const d=docs[0];write(d,[['C16',year?Number(year):null],['D20',title],['U20',s.person||''],['M22',s.location||''],['U23',WB.contractPeriod(s)],['AD23',null],['E25',s.overview||''],['J25',''],['X18',null],['X17',null],['Z17',null],['AB17',null],['E10',null]]);
+ else {const d=docs[0];write(d,[['C16',year?Number(year):null],['D20',title],['U20',s.person||''],['M22',s.location||''],['U23',periodPrefix],['AD23',periodDays],['AF23',periodDays===null?'':'　日間'],['E25',s.overview||''],['J25',''],['X18',null],['X17',null],['Z17',null],['AB17',null],['E10',null]]);
   for(const [n,previous] of [[48,16],[80,48],[112,80]])put(d,'C'+n,year?Number(year):null,`IF(ISBLANK(C${previous}),"",C${previous})`);
   for(const [row,prev] of [[52,20],[84,52],[116,84]])put(d,'D'+row,title,`IF(ISBLANK(D${prev}),"",D${prev})`);
-  for(const [loc,period,overview] of [[54,55,57],[86,87,89],[118,119,121]]){write(d,[['M'+loc,s.location||'','M22'],['U'+period,WB.contractPeriod(s),'U23'],['AD'+period,null],['E'+overview,s.overview||'','E25'],['J'+overview,'']]);}
+  for(const [loc,period,overview] of [[54,55,57],[86,87,89],[118,119,121]]){write(d,[['M'+loc,s.location||'','M22'],['U'+period,periodPrefix,'U23'],['AD'+period,periodDays,periodDays===null?undefined:'AD23'],['AF'+period,periodDays===null?'':'　日間'],['E'+overview,s.overview||'','E25'],['J'+overview,'']]);}
  }
  const start=budget?78:39,minSum=budget?134:72,sumRow=Math.max(minSum,start+items.length),lastDetail=start+items.length-1,finalSum=budget?sumRow+1:sumRow;
  const oldRow=elements(detail,'row').find(r=>Number(r.getAttribute('r'))===start).cloneNode(true),sumTemplate=elements(detail,'row').find(r=>Number(r.getAttribute('r'))===minSum).cloneNode(true);

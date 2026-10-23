@@ -7,7 +7,7 @@
  const money=n=>Number(n||0).toLocaleString('ja-JP',{maximumFractionDigits:2})+'円';
  const num=v=>typeof v==='number'&&Number.isFinite(v)?v:null;
  const uid=()=>globalThis.crypto?.randomUUID?.()||'id'+Date.now()+Math.random().toString(36).slice(2);
- function contractPeriod(s){const manual=String(s.contractPeriod||'').trim(),months=Number(s.durationMonths);return manual||(Number.isFinite(months)&&months>0?'契約翌日から'+Number((months*30).toFixed(6))+'日間':'');}
+ function contractPeriod(s){const manual=String(s.contractPeriod||'').trim(),months=Number(s.durationMonths);return manual||(Number.isFinite(months)&&months>0?'契約締結の日の翌日から'+Number((months*30).toFixed(6))+'日間':'');}
  const defaultSettings=()=>({year:'令和8年度',tax:10,calculationBasis:4,referenceRevision:8,workType:'改修',budget:20,purpose:'設計用',rounding:1,directRounding:1000,commonStack:0,location:'',contractPeriod:'',overview:'',person:'',durationMonths:0,common:0,management:0,general:0,commonSource:SourceCalculation.basis,commonChecked:false});
  function candidates(source,includeUnpriced=false){
   const list=[];
