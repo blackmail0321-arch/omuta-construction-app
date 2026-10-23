@@ -125,7 +125,7 @@ async function exportTemplate(){
  if(budget)for(const k of [0,1])elements(docs[k],'pageSetup')[0].setAttribute('fitToHeight','1');
  // Match the supplied municipal print examples; printer duplex/scaling remains device-specific.
  if(!budget){
-  const coverSetup=elements(docs[0],'pageSetup')[0];coverSetup.setAttribute('paperSize','9');coverSetup.setAttribute('orientation','landscape');coverSetup.setAttribute('fitToWidth','1');coverSetup.setAttribute('fitToHeight','1');
+  const coverSetup=elements(docs[0],'pageSetup')[0];coverSetup.setAttribute('paperSize','9');coverSetup.setAttribute('orientation','landscape');coverSetup.setAttribute('scale','100');coverSetup.setAttribute('fitToWidth','0');coverSetup.setAttribute('fitToHeight','0');elements(docs[0],'pageSetUpPr')[0].setAttribute('fitToPage','0');
   elements(docs[0],'printOptions')[0]?.setAttribute('verticalCentered','1');
  }
  const commonSetup=elements(common,'pageSetup')[0];commonSetup.setAttribute('paperSize','9');commonSetup.setAttribute('orientation','landscape');commonSetup.setAttribute('fitToWidth','1');commonSetup.setAttribute('fitToHeight','1');commonSetup.setAttribute('pageOrder','overThenDown');
@@ -161,7 +161,7 @@ async function exportTemplate(){
  for(const path of Object.keys(files))if(/(^|\/)(comments[^/]*\.xml|threadedComments|persons)(\/|$)/i.test(path))delete files[path];
  const contentTypes=parse(files['[Content_Types].xml']);for(const e of [...contentTypes.documentElement.children]){const part=e.getAttribute('PartName');if(part&&!files[part.replace(/^\//,'')])e.remove();}files['[Content_Types].xml']=encoder.encode(xml.serializeToString(contentTypes));
  for(const [path,bytes] of Object.entries(files)){if(!path.endsWith('.xml'))continue;const doc=parse(bytes);restoreCompatibilityNamespaces(doc);files[path]=encoder.encode(xml.serializeToString(doc));}
- const bytes=zipStore(files),blob=new Blob([bytes],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}),a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download=`【${label}】${budget?'予算':'設計'}書_${p.title.replace(/[\\/:*?"<>|]/g,'_')}_Ver0.13_印刷設定更新1.xlsx`;if(window.SUBMISSIONS)try{await SUBMISSIONS.storeDesignFile(blob,p,a.download,WB.ready()?'②起工':'①設計');}catch(e){alert('Excelはダウンロードできますが、工事フォルダへの保存に失敗しました：'+e.message);}document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+ const bytes=zipStore(files),blob=new Blob([bytes],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'}),a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download=`【${label}】${budget?'予算':'設計'}書_${p.title.replace(/[\\/:*?"<>|]/g,'_')}_Ver0.13_印刷設定更新2.xlsx`;if(window.SUBMISSIONS)try{await SUBMISSIONS.storeDesignFile(blob,p,a.download,WB.ready()?'②起工':'①設計');}catch(e){alert('Excelはダウンロードできますが、工事フォルダへの保存に失敗しました：'+e.message);}document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
  p.history.push({at:new Date().toISOString(),action:'原本数式Excel出力',detail:label+'／'+s.purpose+'／採用'+items.length+'件'});WB.persist();
 }
 window.TemplateExport={export:exportTemplate};

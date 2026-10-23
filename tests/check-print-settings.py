@@ -6,8 +6,10 @@ cover, common, detail = [w[n] for n in ['起工伺', '電気設備', '内訳書'
 for s in [cover, common]:
     assert str(s.page_setup.paperSize) == '9'
     assert s.page_setup.orientation == 'landscape'
-    assert s.page_setup.fitToWidth == s.page_setup.fitToHeight == 1
-    assert s.sheet_properties.pageSetUpPr.fitToPage
+assert cover.page_setup.scale == 100
+assert not cover.sheet_properties.pageSetUpPr.fitToPage
+assert common.page_setup.fitToWidth == common.page_setup.fitToHeight == 1
+assert common.sheet_properties.pageSetUpPr.fitToPage
 assert str(common.print_area) == "'電気設備'!$A$1:$AY$30"
 assert common.print_options.horizontalCentered and common.print_options.verticalCentered
 assert abs(common.page_margins.left * 2.54 - 1.5) < .001
