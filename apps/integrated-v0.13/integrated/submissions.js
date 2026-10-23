@@ -11,8 +11,9 @@ const key=(d,month=period)=>String(d.no)+(['monthly','monthlyReport'].includes(d
 const record=(p,d)=>records(p)[key(d)]||{};
 const stamp=i=>JSON.stringify([i.name,i.spec,i.quantity,i.unit,i.state]);
 const materialDocs=new Set([9,20,21]);
-const materials=p=>WB.adopted(p).filter(i=>i.category==='新設');
-function materialChanges(p,d,r){return materialDocs.has(d.no)&&r.status==='確認済み'&&JSON.stringify(r.materialSnapshots||{})!==JSON.stringify(Object.fromEntries(materials(p).map(i=>[i.id,stamp(i)])));}
+const nonMaterial=i=>/産廃処理費|撤去工事|撤去費/.test(String(i.name||'').normalize('NFKC'));
+const materials=p=>WB.adopted(p).filter(i=>i.category==='新設'&&!nonMaterial(i));
+function materialChanges(p,d,r){return materialDocs.has(d.no)&&r.status==='確認済み'&&JSON.stringify(Object.fromEntries(Object.entries(r.materialSnapshots||{}).filter(([id])=>!p.items.some(i=>i.id===id&&nonMaterial(i)))))!==JSON.stringify(Object.fromEntries(materials(p).map(i=>[i.id,stamp(i)])));}
 function state(p,d){const r=record(p,d);return materialChanges(p,d,r)?'要再確認':r.status||'未提出';}
 function datePlus(date,days){if(!/^\d{4}-\d{2}-\d{2}$/.test(date||''))return '';const x=new Date(date+'T00:00:00Z');x.setUTCDate(x.getUTCDate()+days);return x.toISOString().slice(0,10);}
 function monthPlus(date){if(!date)return '';const x=new Date(date+'T00:00:00Z'),day=x.getUTCDate();x.setUTCDate(1);x.setUTCMonth(x.getUTCMonth()+1);const last=new Date(Date.UTC(x.getUTCFullYear(),x.getUTCMonth()+1,0)).getUTCDate();x.setUTCDate(Math.min(day,last));return x.toISOString().slice(0,10);}
