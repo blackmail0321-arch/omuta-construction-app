@@ -28,6 +28,9 @@ def package(output):
         '作業JSONと書類・分類ZIPを別途保存してください。\n'
         '共有先設定は空欄です。別の場所で開いても既存サイトのデータは自動移行されません。\n'
         '開発用分割コードは integrated/ に収録しています。\n').encode()
+    manual = ROOT / 'manuals/Volume1_ダウンロードと初めての操作手順書.pdf'
+    if manual.is_file():
+        files[manual.name] = manual.read_bytes()
     files['manifest.json'] = json.dumps({'release': 'Volume 1', 'version': '1.0.0',
         'date': '2026-10-28', 'sha256': {k: hashlib.sha256(v).hexdigest()
         for k, v in sorted(files.items())}}, ensure_ascii=False, indent=2).encode()
