@@ -56,7 +56,7 @@
   if(link?.blocked){sync('共有側の更新を取り込むまで自動送信を停止しています。',true);message('他端末の更新または権限変更があります。一覧を更新し、共有版を確認してください。',true);return;}
   if(WB.localSaved&&!WB.localSaved()){message('端末内の保存に失敗しています。バックアップを保存してから再試行してください。',true);sync('端末内の保存に失敗・共有停止',true);return;}
   const project=JSON.parse(JSON.stringify(local));let checksum;preparing=true;try{checksum=await hash(project);}finally{preparing=false;}if(!sameUser(actor))return;
-  if(link?.hash===checksum){sync('端末内・共有先とも保存済み');return;}
+  if(link?.hash===checksum){sync('端末内・共有先とも保存済み');message('送信待ちの変更はありません。共有側の最新内容も確認する場合は「端末内の版と比較して共有」を押してください。');return;}
   saving=true;sync('共有先へ保存中…');$('shared-publish').disabled=true;
   try{
    const row=await client.save(link?.id,id,project,link?.revision);if(!sameUser(actor))return;
@@ -105,10 +105,11 @@
  }
  $('shared-compare-download').onclick=()=>downloadComparison().catch(failed);
  async function resolveLocal(){
-  if(saving||preparing||!identity)return;
+  if(!identity){message('先にログインしてください。',true);return;}
+  if(saving||preparing){message('別の共有処理が進行中です。完了後にもう一度比較してください。');return;}
   const actor=identity,id=WB.project().id,link=links[id];
-  if(!link?.blocked){await push(id);return;}
-  preparing=true;$('shared-resolve').disabled=true;let stage='共有版の読み取り',saved=false;
+  if(!link){message('この工事は共有先との関連付けがありません。「選択中の工事を共有・更新」から共有してください。',true);return;}
+  message('端末内の版と共有版を比較しています…');preparing=true;$('shared-resolve').disabled=true;let stage='共有版の読み取り',saved=false;
   try{
    const remote=await client.get(link.id);if(!sameUser(actor))return;
    const local=JSON.parse(JSON.stringify(current(id)));if(!WB.validProject(remote.project))throw Error('共有版の形式を確認できません。変更していません。');
@@ -116,6 +117,7 @@
    const left=value(local),right=value(remote.project),lines=Object.keys(left).map(k=>k+'：端末内 '+left[k]+' ／ 共有側 '+right[k]);
    const differences=[];function diff(a,b,path=''){if(JSON.stringify(a)===JSON.stringify(b))return;if(a&&b&&typeof a==='object'&&typeof b==='object'){for(const k of new Set([...Object.keys(a),...Object.keys(b)]))diff(a[k],b[k],path?path+'.'+k:k);}else differences.push(path);}
    diff(local,remote.project);
+   if(!differences.length){links[id]={id:link.id,revision:remote.revision,hash:await hash(local),blocked:false};remember();sync('端末内・共有先とも保存済み');message('比較が完了しました。端末内と共有側は同じ内容です。更新は不要です。');return;}
    if(!confirm('端末内の版で共有側を更新します。共有版は端末へ取り込みません。\n'+lines.join('\n')+'\n全データの差分箇所：'+differences.length+'件。両版を復元用に保存し、比較バックアップをダウンロードします。端末内の版を共有してよいですか？'))return;
    if(!sameUser(actor)||JSON.stringify(current(id))!==JSON.stringify(local))throw Error('確認中に端末データが変わりました。もう一度比較してください。');
    stage='両版の退避';message('両版を端末内へ退避しています…');await recovery('put',JSON.parse(JSON.stringify(remote.project)));await recovery('put',local);if(!sameUser(actor))return;
