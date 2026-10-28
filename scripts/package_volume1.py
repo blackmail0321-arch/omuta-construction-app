@@ -14,7 +14,7 @@ def package(output):
         raise ValueError('Use a new archive path; existing files are not overwritten')
     files = {}
     for path in APP.rglob('*'):
-        if not path.is_file() or '__pycache__' in path.parts:
+        if not path.is_file() or '__pycache__' in path.parts or 'downloads' in path.relative_to(APP).parts:
             continue
         relative = path.relative_to(APP).as_posix()
         files[relative] = (b"window.OMUTA_SHARED_CONFIG={url:'',publishableKey:''};\n"

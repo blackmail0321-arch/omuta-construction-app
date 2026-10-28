@@ -202,3 +202,5 @@ No.3建退共：着工後30日／電子40日。No.23：実完成日＋10日。No
 Volume 1検証：Chromiumで版表示、上部ガイド別タブ、工事マニュアル導線、390/1024幅のガイド、ガイド開閉後の工事データ不変を確認。submission-request.cjs、shared-comparison.cjs、shared-stability.cjs通過。配布ZIPのCRC・全ファイルSHA256・版表示・空の共有先設定を確認。Safari実機の未検証事項は残す。配布再生成は scripts/package_volume1.py --output <新規ZIPパス>。
 
 Volume 1の新規利用者向け7ページPDFをmanuals/へ追加。原稿HTMLを保存し、PDFのA4・7ページ・文字抽出、6/7ページの画像表示で欠けがないこと、同梱ZIPのCRCと全SHA256を確認。
+
+チャットのアーティファクト取得失敗に対応し、公開アプリのdownloads/にPDFと手順書付ZIPを配置。volume1.htmlから直接保存できる。保管ZIP再作成時にdownloads/を除外し、配布物の再帰収録を防止する。
