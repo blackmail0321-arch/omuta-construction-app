@@ -29,3 +29,9 @@
 - [x] 端末内の版の共有は既存の版番号検査・両版退避を維持する。
 - [x] 狭幅では縦並びにし、値はHTMLとして実行しない。
 - [ ] iPad Safari実機で比較画面・取り込み・比較バックアップ保存を確認する。
+
+## Volume 1 / 1.0.0（2026-10-28）
+
+アプリ版表示・タイトルをVolume 1へ更新し、操作ガイドvolume1.htmlを上部と工事マニュアルに追加。無動作の手順ボタンはガイドに置換。入力データの保存形式・計算式・Excelファイル名を変更しない。対応範囲と未解決事項は[VOLUME1.md](VOLUME1.md)に記録。
+
+Volume 1検証：Chromiumで版表示、上部ガイド別タブ、工事マニュアル導線、390/1024幅のガイド、ガイド開閉後の工事データ不変を確認。submission-request.cjs、shared-comparison.cjs、shared-stability.cjs通過。配布ZIPのCRC・全ファイルSHA256・版表示・空の共有先設定を確認。Safari実機の未検証事項は残す。配布再生成は scripts/package_volume1.py --output <新規ZIPパス>。

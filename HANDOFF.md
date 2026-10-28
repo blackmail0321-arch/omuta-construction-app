@@ -194,3 +194,9 @@ No.3建退共：着工後30日／電子40日。No.23：実完成日＋10日。No
 検証：tests/shared-comparison.cjs（取り込み成功、比較中の共有変更・端末変更の停止、書類名・対象月、HTML文字列の安全表示、狭幅レイアウト）、shared-resolve.cjs、shared-stability.cjs。Chromiumでの検証であり、iPad Safari実機は未確認。
 
 追加検証：tests/run-shared-integration.py の隔離DB・API・ブラウザ統合テストも通過（公開、閲覧権限、取り込み、自動同期、競合拒否、通信断、セッション更新、権限取消）。本番データは変更していない。
+
+## Volume 1 / 1.0.0（2026-10-28）
+
+アプリ版表示・タイトルをVolume 1へ更新し、操作ガイドvolume1.htmlを上部と工事マニュアルに追加。無動作の手順ボタンはガイドに置換。入力データの保存形式・計算式・Excelファイル名を変更しない。対応範囲と未解決事項は[VOLUME1.md](VOLUME1.md)に記録。
+
+Volume 1検証：Chromiumで版表示、上部ガイド別タブ、工事マニュアル導線、390/1024幅のガイド、ガイド開閉後の工事データ不変を確認。submission-request.cjs、shared-comparison.cjs、shared-stability.cjs通過。配布ZIPのCRC・全ファイルSHA256・版表示・空の共有先設定を確認。Safari実機の未検証事項は残す。配布再生成は scripts/package_volume1.py --output <新規ZIPパス>。
