@@ -2,7 +2,7 @@
 (()=>{'use strict';
  if(!window.WB||!window.OmutaShared)return;
  const client=new OmutaShared.SharedClient(window.OMUTA_SHARED_CONFIG||{}),$=id=>document.getElementById(id);
- const app=document.querySelector('.app');let links={},projects=[],saving=false,preparing=false,suspended=false,identity=null;const timers=new Map();
+ const app=document.querySelector('.app');let links={},projects=[],saving=false,preparing=false,suspended=false,identity=null;const timers=new Map();let listSequence=0;
  const node=(tag,text,cls)=>{const el=document.createElement(tag);if(text)el.textContent=text;if(cls)el.className=cls;return el;};
  const css=node('style');css.textContent=`.shared-login-required .app,.shared-login-required #wb-dialog{visibility:hidden}.shared-launch{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.shared-launch button{min-height:44px}.shared-sync{font-size:13px;color:#234d7a}.shared-sync.error{color:#b91c1c}.shared-dialog{width:min(720px,95vw);max-height:90vh;border:1px solid #8fa8c6;border-radius:12px;padding:20px;color:#163254;overflow:auto}.shared-dialog::backdrop{background:#10284999}.shared-dialog label{display:block;margin:12px 0;font-weight:600}.shared-dialog input,.shared-dialog select,.shared-dialog button{font:inherit;min-height:46px;border-radius:7px;padding:10px;border:1px solid #91acca;max-width:100%}.shared-dialog input,.shared-dialog select{width:100%}.shared-dialog button{cursor:pointer;background:#1658b5;color:#fff;margin:5px}.shared-dialog button:disabled{opacity:.55;cursor:wait}.shared-message{background:#eaf2ff;padding:12px;line-height:1.7}.shared-message.error{background:#fef2f2;color:#991b1b;border:2px solid #b91c1c}.shared-project{border:1px solid #b5c9e3;padding:12px;margin:12px 0;overflow-wrap:anywhere}.shared-project strong{display:block}.shared-dialog input:user-invalid{border:2px solid #b91c1c;background:#fff1f2}.shared-dialog [hidden]{display:none!important}`;document.head.append(css);
  const launcher=node('div','','shared-launch'),launch=node('button','端末間共有'),pill=node('span','共有：未接続','shared-sync');launch.type='button';launcher.append(launch,pill);(document.querySelector('.top')||document.body).append(launcher);
@@ -22,7 +22,9 @@
 
  const namespace=()=>`omuta-shared-links:${client.url}:${identity}`;
  function remember(){try{localStorage.setItem(namespace(),JSON.stringify(links));}catch{sync('同期設定を端末に保存できません。バックアップを保存してください。',true);}}
- async function hash(project){return [...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(project))))].map(n=>n.toString(16).padStart(2,'0')).join('');}
+ function stable(value){if(Array.isArray(value))return value.map(stable);if(value&&typeof value==='object')return Object.fromEntries(Object.keys(value).sort().map(k=>[k,stable(value[k])]));return value;}
+ const sameContent=(a,b)=>JSON.stringify(stable(a))===JSON.stringify(stable(b));
+ async function hash(project){return [...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(stable(project)))))].map(n=>n.toString(16).padStart(2,'0')).join('');}
  function current(id=WB.project().id){return WB.projects().find(p=>p.id===id);}
  function sameUser(actor){return actor===identity&&client.session?.user?.id===actor;}
  function renderList(){
@@ -35,8 +37,24 @@
   if(!projects.length)$('shared-projects').append(node('p','共有工事はまだありません。選択中の工事から共有を開始してください。'));
   $('shared-members').hidden=!projects.some(p=>p.can_manage);
  }
- async function list(){const actor=identity,data=await client.list();if(!sameUser(actor))return;projects=data;renderList();
-  for(const link of Object.values(links)){const row=data.find(p=>p.id===link.id);if(!row||!row.can_edit){link.blocked=true;if(links[WB.project().id]===link)sync('共有の編集権限を確認できません。自動送信を停止しています。',true);continue;}if(row.revision!==link.revision){link.blocked=true;if(links[WB.project().id]===link)sync('共有側に更新があります。一覧から確認して取り込んでください。',true);}}
+ async function list(){
+  const sequence=++listSequence,actor=identity,before=Object.fromEntries(Object.entries(links).map(([id,l])=>[id,{...l}])),data=await client.list();
+  if(!sameUser(actor)||sequence!==listSequence)return;projects=data;renderList();
+  for(const [id,snapshot] of Object.entries(before)){
+   const link=links[id];if(!link||link.id!==snapshot.id||link.revision!==snapshot.revision||saving||preparing)continue;
+   const row=data.find(p=>p.id===link.id),selected=WB.project().id===id;
+   if(!row||!row.can_edit){link.blocked=true;if(selected)sync('共有の編集権限を確認できません。端末内のデータは保持しています。',true);continue;}
+   if(row.revision!==link.revision||link.blocked){
+    const remote=await client.get(link.id);if(!sameUser(actor)||sequence!==listSequence)return;
+    if(links[id]!==link||link.revision!==snapshot.revision||saving||preparing)continue;
+    const local=current(id);if(!local)continue;
+    if(WB.validProject(remote.project)&&sameContent(local,remote.project)){
+     const checksum=await hash(local);if(!sameUser(actor)||sequence!==listSequence||links[id]!==link||link.revision!==snapshot.revision||saving||preparing||!sameContent(current(id),remote.project))continue;
+     links[id]={id:link.id,revision:remote.revision,hash:checksum,blocked:false};
+     if(selected){sync('端末内・共有先とも保存済み');message('端末内と共有側は同じ内容です。取り込みや更新は不要です。');}
+    }else{link.blocked=true;if(selected){sync('共有側と内容が異なります。比較して確認してください。',true);message('端末内と共有側に異なる内容があります。「端末内の版と比較して共有」または「比較データを保存」で確認してください。端末内のデータは保持しています。',true);}}
+   }else if(selected){const checksum=await hash(current(id));if(!sameUser(actor)||sequence!==listSequence||links[id]!==link||saving||preparing)continue;if(link.hash===checksum){sync('端末内・共有先とも保存済み');message('共有内容を確認しました。端末内・共有先とも保存済みです。');}else{sync('端末内に保存済み・共有待ち');message('端末内の変更は保存されています。共有先への反映を確認するには「端末内の版と比較して共有」を押してください。');}}
+  }
   remember();
  }
  async function signedIn(){
@@ -115,7 +133,7 @@
    const local=JSON.parse(JSON.stringify(current(id)));if(!WB.validProject(remote.project))throw Error('共有版の形式を確認できません。変更していません。');
    const value=p=>({採用件数:WB.adopted(p).length,明細計:WB.totals(p).rawDirect,工事場所:p.settings.location||'（空欄）',工事概要:p.settings.overview||'（空欄）',担当者:p.settings.person||'（空欄）',計算用工期:p.settings.durationMonths});
    const left=value(local),right=value(remote.project),lines=Object.keys(left).map(k=>k+'：端末内 '+left[k]+' ／ 共有側 '+right[k]);
-   const differences=[];function diff(a,b,path=''){if(JSON.stringify(a)===JSON.stringify(b))return;if(a&&b&&typeof a==='object'&&typeof b==='object'){for(const k of new Set([...Object.keys(a),...Object.keys(b)]))diff(a[k],b[k],path?path+'.'+k:k);}else differences.push(path);}
+   const differences=[];function diff(a,b,path=''){if(sameContent(a,b))return;if(a&&b&&typeof a==='object'&&typeof b==='object'){for(const k of new Set([...Object.keys(a),...Object.keys(b)]))diff(a[k],b[k],path?path+'.'+k:k);}else differences.push(path);}
    diff(local,remote.project);
    if(!differences.length){links[id]={id:link.id,revision:remote.revision,hash:await hash(local),blocked:false};remember();sync('端末内・共有先とも保存済み');message('比較が完了しました。端末内と共有側は同じ内容です。更新は不要です。');return;}
    if(!confirm('端末内の版で共有側を更新します。共有版は端末へ取り込みません。\n'+lines.join('\n')+'\n全データの差分箇所：'+differences.length+'件。両版を復元用に保存し、比較バックアップをダウンロードします。端末内の版を共有してよいですか？'))return;
