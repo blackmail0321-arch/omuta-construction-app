@@ -182,5 +182,5 @@ $('csv-export').onclick=()=>{const csvCell=v=>'"'+String(v).replace(/"/g,'""')+'
 window.addEventListener('storage',e=>{if(e.key===KEY)warning('別のタブで記録が更新されました。このタブでの上書きを防止しています。編集内容を控えてから再読み込みしてください。');});
 window.addEventListener('beforeunload',e=>{if(dirty){e.preventDefault();e.returnValue='';}});
 // Exposed read-only helpers for offline validation; never used to bypass input checks.
-window.Planner={xlsx,getRecords:()=>JSON.parse(JSON.stringify(records))};
+window.Planner={xlsx,hasUnsavedChanges:()=>dirty||document.querySelector('dialog[open]')!==null,getRecords:()=>JSON.parse(JSON.stringify(records))};
 })();

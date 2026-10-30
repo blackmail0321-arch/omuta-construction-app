@@ -1,11 +1,13 @@
 const {chromium}=require('playwright');
-const assert=require('node:assert/strict');
+const assert=require('node:assert/strict'),path=require('node:path');
+const {startTestServer}=require('./test-server.cjs');
 (async()=>{
  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});
+ const server=process.env.OMUTA_PLANNER_URL?null:await startTestServer(path.resolve(__dirname,'..'));
  try{
   const context=await browser.newContext({viewport:{width:390,height:844},hasTouch:true,isMobile:true,acceptDownloads:true});
   const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('dialog',d=>d.accept());
-  await page.goto(process.env.OMUTA_PLANNER_URL||'http://127.0.0.1:8027');
+  await page.goto(process.env.OMUTA_PLANNER_URL||server.url);
   assert.deepEqual(await page.evaluate(()=>window.PLANNER_INITIAL.records),{});
   assert.equal(await page.evaluate(()=>window.PLANNER_INITIAL.importedDays),0);
   assert.deepEqual(await page.evaluate(()=>Planner.getRecords()),{});
@@ -26,5 +28,5 @@ const assert=require('node:assert/strict');
   await page.click('[data-view="calendar"]');assert.equal(await page.locator('#leave-status').isVisible(),false);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
   assert.deepEqual(errors,[]);
   console.log('PASS empty distribution, April fiscal order, leap day, plan/actual save/reload, yearly allowances, JSON backup, old import preservation and mobile navigation');
- }finally{await browser.close();}
+ }finally{await browser.close();if(server)await server.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});
