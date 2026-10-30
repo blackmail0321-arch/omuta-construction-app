@@ -14,7 +14,7 @@
  function failed(error){
   message(error.message,true);sync(error.message,true);
   if(error.kind==='auth'){
-   identity=null;links={};for(const timer of timers.values())clearTimeout(timer);timers.clear();
+   identity=null;links={};if(WB.lockWorkspace)WB.lockWorkspace();window.dispatchEvent(new Event('omuta-session-ended'));for(const timer of timers.values())clearTimeout(timer);timers.clear();
    $('shared-controls').hidden=true;$('shared-login').hidden=false;$('shared-close').disabled=true;
    document.documentElement.classList.add('shared-login-required');if(!dialog.open)dialog.showModal();
   }
@@ -61,7 +61,7 @@
   const actor=client.session?.user?.id,access=await client.access();if(client.session?.user?.id!==actor)return;
   if(access==='viewer'){location.replace(new URL('shared/status.html',location.href));return;}
   if(access!=='editor')throw new OmutaShared.SharedError('利用者の権限が未登録です。管理者に登録を依頼してください。','permission');
-  identity=actor;try{links=JSON.parse(localStorage.getItem(namespace())||'{}')||{};}catch{links={};}
+  identity=actor;links={};if(WB.activateWorkspace)WB.activateWorkspace(client.url+':'+actor,client.session.user.email||'編集利用者');window.dispatchEvent(new CustomEvent('omuta-session',{detail:{client,actor}}));try{links=JSON.parse(localStorage.getItem(namespace())||'{}')||{};}catch{links={};}
   $('shared-login').hidden=true;$('shared-controls').hidden=false;$('shared-account').textContent='ログイン中：'+(client.session.user.email||'編集用アカウント');
   document.documentElement.classList.remove('shared-login-required');$('shared-close').disabled=false;
   message('接続しました。最初は選択中の工事を共有するか、共有工事を取り込んでください。');sync('共有先に接続中');await list();
@@ -193,7 +193,7 @@
  }
  $('shared-resolve').onclick=()=>resolveLocal().catch(failed);
  $('shared-publish').onclick=()=>push().catch(failed);$('shared-list-refresh').onclick=()=>list().catch(failed);
- $('shared-signout').onclick=async()=>{identity=null;links={};projects=[];for(const timer of timers.values())clearTimeout(timer);timers.clear();$('shared-projects').replaceChildren();$('shared-member-project').replaceChildren();$('shared-controls').hidden=true;$('shared-login').hidden=false;document.documentElement.classList.add('shared-login-required');$('shared-close').disabled=true;await client.signOut();sync('共有：ログアウト');message('ログアウトしました。端末内の工事データは保持しています。');};
+ $('shared-signout').onclick=async()=>{identity=null;links={};projects=[];if(WB.lockWorkspace)WB.lockWorkspace();window.dispatchEvent(new Event('omuta-session-ended'));for(const timer of timers.values())clearTimeout(timer);timers.clear();$('shared-projects').replaceChildren();$('shared-member-project').replaceChildren();$('shared-controls').hidden=true;$('shared-login').hidden=false;document.documentElement.classList.add('shared-login-required');$('shared-close').disabled=true;await client.signOut();sync('共有：ログアウト');message('ログアウトしました。端末内の工事データは保持しています。');};
  $('shared-recovery').onclick=async()=>{
   if(saving){message('保存が終わってから操作してください。',true);return;}
   try{const actor=identity,id=WB.project().id,backups=(await recovery('get')).filter(row=>row.user===actor&&row.localId===id).sort((a,b)=>b.at.localeCompare(a.at));
@@ -206,6 +206,7 @@
  };
  $('shared-members').onsubmit=async event=>{event.preventDefault();event.stopPropagation();const button=$('shared-grant');button.disabled=true;try{await client.grant($('shared-member-project').value,$('shared-member-email').value,$('shared-member-access').value);message('共有相手の権限を設定しました。');}catch(error){failed(error);}finally{button.disabled=false;}};
  $('shared-revoke').onclick=async()=>{if(!$('shared-member-email').reportValidity())return;if(!confirm('この相手の工事へのアクセスを解除しますか？'))return;try{await client.revoke($('shared-member-project').value,$('shared-member-email').value);message('この工事への共有を解除しました。');}catch(error){failed(error);}};
+ window.addEventListener('omuta-auth-failed',e=>failed(e.detail));
  window.addEventListener('wb-render',()=>schedule());
  setInterval(()=>{if(identity&&!document.hidden)list().catch(failed);},30000);
  if(!client.configured()){document.documentElement.classList.remove('shared-login-required');message('共有機能の初期設定が必要です。管理者に接続設定を依頼してください。現在の端末内データはそのまま使えます。',true);$('shared-login').querySelector('button').disabled=true;}

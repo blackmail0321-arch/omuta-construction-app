@@ -1,7 +1,9 @@
 /* Stage5.59: real-workbook candidate workflow. No network calls. */
 (() => {
  'use strict';
- const $=id=>document.getElementById(id), key='design_workbench_559';
+ const $=id=>document.getElementById(id), legacyKey='design_workbench_559';
+ const accountMode=!!window.OMUTA_SHARED_CONFIG?.url;let key=accountMode?null:legacyKey,actorLabel='端末内利用者';
+ const emptyData=()=>({version:559,projects:[],selected:null,customSources:[],referenceArchive:[]});
  const h=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const trunc=v=>Math.trunc(Number(v.toPrecision(15))),floor=v=>Math.floor(Number(v.toPrecision(15)));
  const money=n=>Number(n||0).toLocaleString('ja-JP',{maximumFractionDigits:2})+'円';
@@ -52,13 +54,15 @@
   return {id:'reference-'+source.id,title:title||source.filename.replace(/\.xlsx$/,''),role:'reference',sourceId:source.id,
    settings:defaultSettings(),items:candidates(source),documents:[{name:source.filename,type:'Excel',status:'候補抽出済み',sourceId:source.id}],history:[],approval:null};
  }
- let data;
- try{data=JSON.parse(localStorage.getItem(key)||'null');}catch{data=null;}
- if(!validData(data))data={version:559,projects:WB_SOURCES.map(makeProject),selected:'reference-'+WB_SOURCES[0].id,customSources:[]};
+ let data,loadFailure=false;
+ try{const raw=key?localStorage.getItem(key):null;data=raw?JSON.parse(raw):null;if(raw&&!validData(data))loadFailure=true;}catch{data=null;loadFailure=true;}
+ if(loadFailure)key=null;
+ if(!validData(data))data=emptyData();
  function isAsbestosSurvey(i){return /(石綿|アスベスト)/.test(i.name)&&/調査/.test(i.name);}
- function migrate(){data.projects.forEach(p=>{const s=p.settings;if(s.calculationBasis!==4){s.previousCalculation={common:s.common,management:s.management,general:s.general,budget:s.budget};s.calculationBasis=4;s.workType='改修';s.budget=Number.isFinite(s.budget)?s.budget:20;s.directRounding=1000;s.rounding=1;s.commonChecked=false;p.approval=null;}if(s.commonStack===undefined)s.commonStack=0;if(s.referenceRevision!==8){s.referenceRevision=8;s.commonChecked=false;p.approval=null;}if(!s.commonSource)s.commonSource=SourceCalculation.basis;});WB_SOURCES.forEach(source=>{if(!data.projects.some(p=>p.sourceId===source.id))data.projects.push(makeProject(source));});}migrate();
+ function migrate(){data.projects.forEach(p=>{const s=p.settings;if(s.calculationBasis!==4){s.previousCalculation={common:s.common,management:s.management,general:s.general,budget:s.budget};s.calculationBasis=4;s.workType='改修';s.budget=Number.isFinite(s.budget)?s.budget:20;s.directRounding=1000;s.rounding=1;s.commonChecked=false;p.approval=null;}if(s.commonStack===undefined)s.commonStack=0;if(s.referenceRevision!==8){s.referenceRevision=8;s.commonChecked=false;p.approval=null;}if(!s.commonSource)s.commonSource=SourceCalculation.basis;});if(!Array.isArray(data.referenceArchive))data.referenceArchive=[];
+ const refs=data.projects.filter(p=>p.role==='reference');if(refs.length){if(key&&!localStorage.getItem(key+':before-private-library'))localStorage.setItem(key+':before-private-library',JSON.stringify(data));for(const ref of refs)if(!data.referenceArchive.some(x=>x.id===ref.id))data.referenceArchive.push(ref);data.projects=data.projects.filter(p=>p.role!=='reference');}if(!data.projects.some(p=>p.id===data.selected))data.selected=data.projects[0]?.id||null;}migrate();
  let newDraft=null;
- let activeTab='candidates',search='',editing=null,savingError=false;
+ let activeTab='candidates',search='',editing=null,savingError=loadFailure;
  function validItem(i){return i&&(i.directRoundingApplied===undefined||typeof i.directRoundingApplied==='boolean')&&(i.excludeCommon===undefined||typeof i.excludeCommon==='boolean')&&typeof i.id==='string'&&typeof i.name==='string'&&Number.isFinite(i.quantity)&&i.quantity>=0&&
   (i.unitPrice===null||Number.isFinite(i.unitPrice))&&typeof i.unit==='string'&&['candidate','hold','adopted','excluded'].includes(i.state)&&
   ['direct','compose'].includes(i.mode)&&['quantityChecked','priceChecked'].every(k=>typeof i[k]==='boolean')&&typeof i.reason==='string'&&i.source&&typeof i.source.file==='string'&&
@@ -69,11 +73,12 @@
   return p.submissionFiles===undefined||Array.isArray(p.submissionFiles)&&p.submissionFiles.every(f=>f&&typeof f.id==='string'&&typeof f.name==='string'&&Number.isFinite(f.size)&&f.size>=0&&typeof f.folder==='string');
  }
  function validDate(v){return typeof v==='string'&&(v===''||/^\d{4}-\d{2}-\d{2}$/.test(v)&&Number.isFinite(Date.parse(v+'T00:00:00Z'))&&new Date(v+'T00:00:00Z').toISOString().slice(0,10)===v);}
- function validData(d){return d&&d.version===559&&Array.isArray(d.projects)&&d.projects.length>0&&d.projects.length<200&&d.projects.every(p=>p&&typeof p.id==='string'&&typeof p.title==='string'&&['reference','current'].includes(p.role)&&Array.isArray(p.items)&&p.items.every(validItem)&&Array.isArray(p.documents)&&Array.isArray(p.history)&&p.settings&&Number.isFinite(p.settings.tax)&&p.settings.tax>=0&&p.settings.tax<=100&&[1,100,1000].includes(p.settings.rounding)&&['設計用','予算用'].includes(p.settings.purpose)&&['budget','common','management','general'].every(k=>Number.isFinite(p.settings[k])&&p.settings[k]>=0)&&validPriceRecords(p)&&validWorkflow(p))&&Array.isArray(d.customSources);}
+ function validData(d){return d&&d.version===559&&Array.isArray(d.projects)&&d.projects.length>=0&&d.projects.length<200&&d.projects.every(p=>p&&typeof p.id==='string'&&typeof p.title==='string'&&['reference','current'].includes(p.role)&&Array.isArray(p.items)&&p.items.every(validItem)&&Array.isArray(p.documents)&&Array.isArray(p.history)&&p.settings&&Number.isFinite(p.settings.tax)&&p.settings.tax>=0&&p.settings.tax<=100&&[1,100,1000].includes(p.settings.rounding)&&['設計用','予算用'].includes(p.settings.purpose)&&['budget','common','management','general'].every(k=>Number.isFinite(p.settings[k])&&p.settings[k]>=0)&&validPriceRecords(p)&&validWorkflow(p))&&Array.isArray(d.customSources)&&(d.referenceArchive===undefined||Array.isArray(d.referenceArchive)&&d.referenceArchive.every(p=>validData({version:559,projects:[p],selected:p?.id,customSources:[]})));}
  function validPriceRecords(p){if(p.settings.laborRates&&(typeof p.settings.laborRates!=='object'||Object.values(p.settings.laborRates).some(x=>!x||!Number.isFinite(x.electrician)||x.electrician<0||!Number.isFinite(x.ordinary)||x.ordinary<0||typeof x.source!=='string')))return false;if(p.settings.workType!==undefined&&!['新築','改修'].includes(p.settings.workType))return false;if(p.settings.durationMonths!==undefined&&(!Number.isFinite(p.settings.durationMonths)||p.settings.durationMonths<0))return false;if(![undefined,1,100,1000].includes(p.settings.directRounding)||(p.settings.commonStack!==undefined&&(!Number.isFinite(p.settings.commonStack)||p.settings.commonStack<0)))return false;return p.priceRecords===undefined||(Array.isArray(p.priceRecords)&&p.priceRecords.every(r=>r&&typeof r.name==='string'&&typeof r.spec==='string'&&typeof r.unit==='string'&&Number.isFinite(r.unitPrice)&&r.unitPrice>=0&&['設計単価','材料価格'].includes(r.priceKind)&&typeof r.conditions==='string'&&r.source&&typeof r.source.file==='string'));}
- const project=()=>data.projects.find(p=>p.id===data.selected)||data.projects[0];
- function save(){try{localStorage.setItem(key,JSON.stringify(data));savingError=false;}catch{savingError=true;}}
- function log(action,detail){const p=project();p.history.push({at:new Date().toISOString(),action,detail});p.approval=null;save();}
+ const emptyProject={id:'',title:'工事を作成してください',role:'reference',settings:defaultSettings(),items:[],documents:[],history:[],approval:null};
+ const project=()=>data.projects.find(p=>p.id===data.selected)||data.projects[0]||emptyProject;
+ function save(){if(!key)return;try{localStorage.setItem(key,JSON.stringify(data));savingError=false;}catch{savingError=true;}}
+ function log(action,detail){const p=project();p.history.push({actor:actorLabel,at:new Date().toISOString(),action,detail});p.approval=null;save();}
  function publicationAddition(i){
   const book=i.priceReference?.type;
   if(i.mode!=='compose'||!['建設物価','建築コスト情報'].includes(book))return null;
@@ -140,12 +145,13 @@
   return group(a)-group(b)||gx-gy||itemOrder.compare(x,y)||itemOrder.compare(a.name,b.name);
  }
  function render(){
+  document.documentElement.classList.toggle('workspace-empty',!data.projects.length);
   const p=project();repairAdoptedDrafts(p);const t=totals(),pending=p.items.filter(i=>!i.archived&&i.state==='candidate').length;
   $('wb-project').innerHTML=data.projects.map(x=>`<option value="${h(x.id)}" ${p.id===x.id?'selected':''}>${x.role==='reference'?'参考｜':'今回｜'}${h(x.title)}</option>`).join('');
   $('wb-title').textContent=p.title;$('wb-role').textContent=p.role==='reference'?'参考資料からの候補':'今回工事';
-  $('wb-copy').hidden=p.role!=='reference';
+  $('wb-copy').hidden=true;
   $('wb-kpis').innerHTML=[['確認候補',pending],['保留',p.items.filter(i=>!i.archived&&i.state==='hold').length],['採用',t.count],['採用明細計',money(t.rawDirect)]].map(([label,value])=>`<div class="wb-kpi"><span>${h(label)}</span><strong>${h(value)}</strong></div>`).join('');
-  $('wb-save-warning').hidden=!savingError;
+  $('wb-save-warning').hidden=!savingError;if(loadFailure)$('wb-save-warning').textContent='以前の保存データを読み取れません。元データは削除せず保持しています。管理者へ復元方法を確認してください。';
   $('wb-next').textContent=ready()?'最終確認済みです。Excelを出力できます。':!t.count?'候補の数量・単価・根拠を確認し、採用してください。':issues()[0]||'明細の確認が揃いました。「最終確認する」で確定してください。';
   document.querySelectorAll('[data-wb-tab]').forEach(b=>{b.classList.toggle('active',b.dataset.wbTab===activeTab);b.setAttribute('aria-selected',b.dataset.wbTab===activeTab?'true':'false');});
   $('wb-search-wrap').hidden=!['candidates','adopted'].includes(activeTab);
@@ -159,7 +165,7 @@
   }else if(activeTab==='sources'){
    html=`<h3>この工事の資料</h3><div class="wb-actions"><button id="wb-upload">Excel・PDFなどを追加</button><button id="wb-manual">項目を手入力</button></div><div class="wb-docs">${p.documents.map((d,i)=>`<article><div><b>${h(d.name)}</b><p class="wb-muted">${h(d.type)} ｜ ${h(d.status)}</p></div>${/\.pdf$/i.test(d.name)?`<button type="button" data-wb-open-pdf="${i}">PDFを開く</button>`:''}<button data-wb-remove-doc="${i}">登録解除</button></article>`).join('')}</div><details><summary>公開基準資料（版・出典）</summary><div class="wb-docs">${WB_REFERENCES.map(r=>`<article><div><b>${h(r.title)}</b><p class="wb-muted">${h(r.version)} ｜ ${h(r.note)}</p><a href="${h(r.url)}" target="_blank" rel="noopener">公式資料を開く</a></div></article>`).join('')}</div><p class="wb-muted">公開原本を参照できる状態です。全表の単価マスタ化・PDF図面のAI読取は未実装。県単価表・画像見積は今回条件を確認して項目の根拠に登録してください。</p></details>`;
   }else{
-   html=`<h3>対象外・退避した項目</h3><p class="wb-muted">出典・数量・理由を保持しています。「候補へ戻す」で再検討できます。</p>${p.items.filter(i=>i.archived||i.state==='excluded').map(i=>`<article class="wb-history"><b>${h(i.name)} ${h(i.spec)}</b><p>${i.archived?'履歴へ退避':status(i)}／数量 ${h(i.quantity)} ${h(i.unit)}<br>${h(i.reason)}${i.archiveReason?'<br>退避理由：'+h(i.archiveReason):''}<br>${h(i.source.file)}／${h(i.source.sheet)}</p><button type="button" data-wb-restore="${h(i.id)}">候補へ戻す</button></article>`).join('')||'<p>対象外・退避した項目はありません。</p>'}<h3>変更と採用の記録</h3>${[...p.history].reverse().map(x=>`<article class="wb-history"><time>${h(new Date(x.at).toLocaleString('ja-JP'))}</time><b>${h(x.action)}</b><p>${h(x.detail)}</p></article>`).join('')||'<div class="wb-empty">操作履歴はまだありません。</div>'}`;
+   html=`<h3>対象外・退避した項目</h3><p class="wb-muted">出典・数量・理由を保持しています。「候補へ戻す」で再検討できます。</p>${p.items.filter(i=>i.archived||i.state==='excluded').map(i=>`<article class="wb-history"><b>${h(i.name)} ${h(i.spec)}</b><p>${i.archived?'履歴へ退避':status(i)}／数量 ${h(i.quantity)} ${h(i.unit)}<br>${h(i.reason)}${i.archiveReason?'<br>退避理由：'+h(i.archiveReason):''}<br>${h(i.source.file)}／${h(i.source.sheet)}</p><button type="button" data-wb-restore="${h(i.id)}">候補へ戻す</button></article>`).join('')||'<p>対象外・退避した項目はありません。</p>'}<h3>変更と採用の記録</h3>${[...p.history].reverse().map(x=>`<article class="wb-history"><time>${h(new Date(x.at).toLocaleString('ja-JP'))}</time><b>${h(x.action)}</b><p>記録者：${h(x.actor||'以前の記録（未登録）')}</p><p>${h(x.detail)}</p></article>`).join('')||'<div class="wb-empty">操作履歴はまだありません。</div>'}`;
   }
   $('wb-content').innerHTML=html;
   $('wb-content').querySelectorAll('[data-wb-archive]').forEach(b=>b.onclick=()=>{const i=p.items.find(x=>x.id===b.dataset.wbArchive);if(!i||i.state==='adopted')return;const reason=prompt('履歴へ退避する理由を入力してください。',i.reason||'重複または誤取込のため');if(!reason?.trim())return;i.archived=true;i.archiveReason=reason.trim();i.archivedAt=new Date().toISOString();log('項目を履歴へ退避',i.name+' '+i.spec+'／'+i.archiveReason);render();});
@@ -182,7 +188,7 @@
    p.documents.splice(index,1);log('資料登録解除',d.name);render();});
   if($('wb-settings-open'))$('wb-settings-open').onclick=openSettings;
   if($('wb-approve'))$('wb-approve').onclick=()=>{const problems=issues();if(problems.length){alert(problems.join('\n'));return;}if(!confirm('今回の数量・仕様・単価根拠と共通費を確認しましたか？'))return;
-   p.history.push({at:new Date().toISOString(),action:'最終確認',detail:'採用'+t.count+'件・工事費'+money(t.total)});p.approval={at:new Date().toISOString(),snapshot:stamp()};save();render();};
+   p.history.push({actor:actorLabel,at:new Date().toISOString(),action:'最終確認',detail:'採用'+t.count+'件・工事費'+money(t.total)});p.approval={at:new Date().toISOString(),snapshot:stamp()};save();render();};
   if($('wb-export-simple'))$('wb-export-simple').onclick=()=>window.exportSimpleWorkbook();
   if($('wb-export'))$('wb-export').onclick=()=>{if(!t.count){alert('先に項目を採用してください。');return;}exportExcel();};
   if($('wb-upload'))$('wb-upload').onclick=()=>$('wb-files').click();
@@ -212,7 +218,7 @@
   if(p.role!=='current')return;
   const changes=p.items.filter(i=>i.state==='adopted'&&i.quantityChecked&&i.priceChecked&&generatedPendingReason(i.reason));
   if(!changes.length)return;
-  changes.forEach(i=>{const previous=i.reason;i.reason=documentDraft(i).reason;p.history.push({at:new Date().toISOString(),action:'採用理由の自動文章を更新',detail:i.name+' '+i.spec+'／変更前：'+previous+'／変更後：'+i.reason});});save();
+  changes.forEach(i=>{const previous=i.reason;i.reason=documentDraft(i).reason;p.history.push({actor:actorLabel,at:new Date().toISOString(),action:'採用理由の自動文章を更新',detail:i.name+' '+i.spec+'／変更前：'+previous+'／変更後：'+i.reason});});save();
  }
  function documentDraft(i){
   const source=i.source||{},ref=i.priceReference||{};
@@ -273,7 +279,7 @@
  }
  function download(name,blob){const a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}
  function backup(){download('設計書アプリ_作業バックアップ_'+new Date().toISOString().slice(0,10)+'.json',new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));}
- async function restore(file){try{if(file.size>30e6)throw Error('バックアップが大きすぎます。');const d=JSON.parse(await file.text());if(!validData(d))throw Error('この版の作業バックアップではないか、内容が不正です。');if(!confirm('現在の作業データをバックアップの内容へ置き換えますか？必要な作業は先にバックアップしてください。'))return;data=d;migrate();save();render();}catch(e){alert('復元できません：'+e.message);}}
+ async function restore(file){const scope=key;try{if(file.size>30e6)throw Error('バックアップが大きすぎます。');const d=JSON.parse(await file.text());if(scope!==key)throw Error('利用者が変わりました。復元をやり直してください。');if(!validData(d))throw Error('この版の作業バックアップではないか、内容が不正です。');if(!confirm('現在の作業データをバックアップの内容へ置き換えますか？必要な作業は先にバックアップしてください。'))return;if(!key)throw Error('先にログインしてください。');data=d;migrate();save();render();}catch(e){alert('復元できません：'+e.message);}}
  const xml=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
  function column(n){let s='';while(n){n--;s=String.fromCharCode(65+n%26)+s;n=Math.floor(n/26);}return s;}
  function exportExcel(){
@@ -303,16 +309,16 @@
   }return source;
  }
  async function addFiles(files){
-  const targetProject=project();$('wb-import-status').textContent='資料を読み込んでいます…';
+  const targetProject=project(),targetScope=key;if(!targetProject.id)throw Error('先に新規工事を作成してください。');$('wb-import-status').textContent='資料を読み込んでいます…';
   for(const file of files){
    try{
     if(/\.xlsx$/i.test(file.name)){
-     const source=await parseWorkbook(file),rows=candidates(source);data.customSources.push(source);
+     const source=await parseWorkbook(file),rows=candidates(source);if(key!==targetScope||!data.projects.includes(targetProject))throw Error('利用者または工事が変わりました。資料を読み直してください。');data.customSources.push(source);
      targetProject.items.push(...rows);targetProject.documents.push({name:file.name,type:'Excel',status:rows.length?rows.length+'件の候補を抽出。今回条件は未確認':'シート構成を取得。対応する内訳明細は未検出',sourceId:source.id});
-     targetProject.history.push({at:new Date().toISOString(),action:'Excel読込',detail:file.name+'｜候補'+rows.length+'件'});
+     targetProject.history.push({actor:actorLabel,at:new Date().toISOString(),action:'Excel読込',detail:file.name+'｜候補'+rows.length+'件'});
     }else{
      targetProject.documents.push({name:file.name,type:/\.pdf$/i.test(file.name)?'PDF':'その他',status:'資料名を登録。内容は資料読取画面または直接入力で確認'});
-     targetProject.history.push({at:new Date().toISOString(),action:'資料名を登録',detail:file.name});
+     targetProject.history.push({actor:actorLabel,at:new Date().toISOString(),action:'資料名を登録',detail:file.name});
     }
     if(window.SUBMISSIONS&&targetProject.role==='current')try{await SUBMISSIONS.storeDesignFile(file,targetProject);}catch(e){alert('読込内容は保存しましたが、原本ファイルの保管に失敗しました：'+e.message);}
     targetProject.approval=null;save();
@@ -323,17 +329,54 @@
  $('wb-project').onchange=e=>{data.selected=e.target.value;save();search='';$('wb-search').value='';render();};
  $('wb-copy').onclick=()=>{const p=project(),title=prompt('今回の工事件名を入力してください。',p.title);if(!title?.trim())return;const copy=JSON.parse(JSON.stringify(p));copy.id=uid();copy.title=title.trim();copy.role='current';copy.approval=null;copy.history=[];copy.settings.commonChecked=false;delete copy.contract;delete copy.submissionRecords;delete copy.submissionFiles;
   copy.items.forEach(i=>{i.id=uid();i.state='candidate';i.quantityChecked=false;i.priceChecked=false;i.reason='';});data.projects.push(copy);data.selected=copy.id;log('今回工事を作成','参考工事 '+p.title+' から候補をコピー。今回の確認は未実施');render();};
- $('wb-new').onclick=()=>{const title=prompt('新しい工事件名を入力してください。');if(!title?.trim())return;const p={id:uid(),title:title.trim(),role:'current',sourceId:null,settings:defaultSettings(),items:[],documents:[],history:[],approval:null};data.projects.push(p);data.selected=p.id;log('新規工事',title.trim());render();};
+ $('wb-new').onclick=()=>{if(!key){alert('先にアプリへログインしてください。');return;}const title=prompt('新しい工事件名を入力してください。');if(!title?.trim())return;const p={id:uid(),title:title.trim(),role:'current',sourceId:null,settings:defaultSettings(),items:[],documents:[],history:[],approval:null};data.projects.push(p);data.selected=p.id;log('新規工事',title.trim());render();};
  document.querySelectorAll('[data-wb-tab]').forEach(b=>b.onclick=()=>{activeTab=b.dataset.wbTab;render();});
  $('wb-search').oninput=e=>{search=e.target.value;render();};
  $('wb-backup').onclick=backup;$('wb-restore').onclick=()=>$('wb-backup-file').click();
  $('wb-backup-file').onchange=e=>{if(e.target.files[0])restore(e.target.files[0]);e.target.value='';};
  $('wb-files').onchange=e=>addFiles([...e.target.files]);$('wb-dialog-close').onclick=()=>$('wb-dialog').close();
  $('wb-dialog').addEventListener('click',e=>{if(e.target===$('wb-dialog'))$('wb-dialog').close();});
- window.WB={contractPeriod,suggestedReduction,localSaved:()=>!savingError,priceInputs,publicationAddition,publicCode,laborDefault,isAsbestosSurvey,validProject:p=>validData({version:559,projects:[p],selected:p.id,customSources:[]}),restoreProject:p=>{if(!validData({version:559,projects:[p],selected:p.id,customSources:[]}))throw Error('工事データが不正です');const k=data.projects.findIndex(x=>x.id===p.id);if(k<0)data.projects.push(p);else data.projects[k]=p;data.selected=p.id;migrate();save();render();},openNewItem,openSettings,record:(action,detail)=>{project().history.push({at:new Date().toISOString(),action,detail});save();render();},amount:i=>trunc(i.quantity*calc(i).unit),calc,totals,issues,project,adopted,ready,backup,parseWorkbook,workbookCandidates:source=>candidates(source,true),exportExcel,
+ function activateWorkspace(scope,label){
+  if(typeof scope!=='string'||!scope)throw Error('利用者を確認してください。');
+  actorLabel=label||'ログイン利用者';const nextKey=legacyKey+':account:'+scope;if(key===nextKey)return;
+  let next;try{next=JSON.parse(localStorage.getItem(nextKey)||'null');}catch{throw Error('端末内データを確認できません。既存データは保持しています。');}
+  if(next&&!validData(next))throw Error('端末内データの形式を確認してください。既存データは保持しています。');
+  window.dispatchEvent(new Event('omuta-session-ended'));key=nextKey;loadFailure=false;data=next||emptyData();migrate();save();$('wb-dialog').close();$('wb-dialog-body').replaceChildren();render();window.dispatchEvent(new Event('wb-workspace-changed'));
+ }
+ function lockWorkspace(){if(!accountMode)return;key=null;data=emptyData();$('wb-dialog').close();$('wb-dialog-body').replaceChildren();render();window.dispatchEvent(new Event('wb-workspace-changed'));}
+ function legacySnapshot(){const raw=localStorage.getItem(legacyKey);if(!raw)return null;const d=JSON.parse(raw);if(!validData(d))throw Error('以前の保存データの形式を確認してください。');return JSON.parse(JSON.stringify(d));}
+ function importLegacyWorkspace(snapshot){
+  if(!key||!validData(snapshot))throw Error('引き継ぐデータを確認してください。');
+  const draft=JSON.parse(JSON.stringify(data));
+  for(const p of [...snapshot.projects,...snapshot.referenceArchive||[]]){
+   const target=p.role==='reference'?(draft.referenceArchive||(draft.referenceArchive=[])):draft.projects;
+   const existing=target.find(x=>x.id===p.id);if(existing&&JSON.stringify(existing)!==JSON.stringify(p))throw Error('同じ工事に異なる記録があります。先にバックアップと内容を確認してください。');
+   if(!existing)target.push(JSON.parse(JSON.stringify(p)));
+  }
+  draft.customSources=[...draft.customSources,...snapshot.customSources.filter(x=>!draft.customSources.some(y=>y.id===x.id))];
+  draft.selected=draft.projects.some(p=>p.id===snapshot.selected)?snapshot.selected:draft.selected||draft.projects[0]?.id||null;
+  const previous=data;data=draft;save();if(savingError){data=previous;throw Error('端末内の保存に失敗しました。元データは保持しています。');}render();
+ }
+ function archiveProject(id){
+  const p=data.projects.find(p=>p.id===id);if(!p)throw Error('工事を確認してください。');
+  const draft=JSON.parse(JSON.stringify(data));draft.referenceArchive=draft.referenceArchive||[];
+  const previous=draft.referenceArchive.find(x=>x.id===id);if(previous&&JSON.stringify(previous)!==JSON.stringify(p))throw Error('保管済み資料と内容が異なります。先に内容を確認してください。');
+  if(!previous)draft.referenceArchive.push(JSON.parse(JSON.stringify(p)));
+  draft.projects=draft.projects.filter(x=>x.id!==id);draft.selected=draft.projects[0]?.id||null;
+  const old=data;data=draft;save();if(savingError){data=old;throw Error('保存できませんでした。元データを保持しています。');}render();
+ }
+ function importReferenceCandidates(fields,detail){
+  if(!key||!project().id||!Array.isArray(fields)||!fields.length)throw Error('工事と取り込む明細を確認してください。');
+  const previous=data,draft=JSON.parse(JSON.stringify(data)),p=draft.projects.find(p=>p.id===data.selected);
+  const items=fields.map(f=>({...candidatesBlank(),...f,id:uid(),state:'candidate',quantityChecked:false,priceChecked:false,reason:''}));
+  if(!items.every(validItem))throw Error('参考資料の明細を確認してください。');
+  p.items.push(...items);p.approval=null;p.history.push({actor:actorLabel,at:new Date().toISOString(),action:'参考資料を候補へ取り込み',detail});
+  data=draft;save();if(savingError){data=previous;throw Error('保存に失敗したため、取り込み前の内容を保持しています。');}render();return items;
+ }
+ window.WB={importReferenceCandidates,actor:()=>actorLabel,archiveProject,activateWorkspace,lockWorkspace,legacySnapshot,importLegacyWorkspace,workspaceScope:()=>key,referenceArchive:()=>JSON.parse(JSON.stringify(data.referenceArchive||[])),contractPeriod,suggestedReduction,localSaved:()=>!savingError,priceInputs,publicationAddition,publicCode,laborDefault,isAsbestosSurvey,validProject:p=>validData({version:559,projects:[p],selected:p.id,customSources:[]}),restoreProject:p=>{if(!key)throw Error('先にログインしてください。');if(!validData({version:559,projects:[p],selected:p.id,customSources:[]}))throw Error('工事データが不正です');const k=data.projects.findIndex(x=>x.id===p.id);if(k<0)data.projects.push(p);else data.projects[k]=p;data.selected=p.id;migrate();save();render();},openNewItem,openSettings,record:(action,detail)=>{project().history.push({actor:actorLabel,at:new Date().toISOString(),action,detail});save();render();},amount:i=>trunc(i.quantity*calc(i).unit),calc,totals,issues,project,adopted,ready,backup,parseWorkbook,workbookCandidates:source=>candidates(source,true),exportExcel,
   projects:()=>data.projects,render,openItem,persist:()=>{save();render();},
   select:id=>{if(data.projects.some(p=>p.id===id)){data.selected=id;save();render();}},
-  addCandidate:(fields,target=project())=>{const item={...candidatesBlank(),...fields,id:uid(),state:'candidate',quantityChecked:false,priceChecked:false,reason:''};if(!validItem(item))throw Error('候補の数量・単価・形式を確認してください。');target.items.push(item);target.approval=null;target.history.push({at:new Date().toISOString(),action:'資料から候補を追加',detail:item.name+'｜'+item.source.file});save();render();return item;},
+  addCandidate:(fields,target=project())=>{if(!key||!data.projects.some(p=>p===target))throw Error('新規工事を作成してください。');const item={...candidatesBlank(),...fields,id:uid(),state:'candidate',quantityChecked:false,priceChecked:false,reason:''};if(!validItem(item))throw Error('候補の数量・単価・形式を確認してください。');target.items.push(item);target.approval=null;target.history.push({actor:actorLabel,at:new Date().toISOString(),action:'資料から候補を追加',detail:item.name+'｜'+item.source.file});save();render();return item;},
   mutate:(action,detail)=>{log(action,detail);render();}};
  save();render();
 })();

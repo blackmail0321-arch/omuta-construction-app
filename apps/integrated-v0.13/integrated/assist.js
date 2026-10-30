@@ -18,7 +18,7 @@ function parseLines(text,file,page=1){return text.split(/\n/).map((raw,index)=>{
 }).filter(Boolean);}
 function parseDocument(text,file,page=1){const parts=text.split(/【p(\d+)】/);if(parts.length===1)return parseLines(text,file,page);const result=parseLines(parts[0],file,page);for(let i=1;i<parts.length;i+=2)result.push(...parseLines(parts[i+1]||'',file,Number(parts[i])));return result;}
 function suggestions(item){
- const pool=WB.projects().filter(p=>p.role==='reference').flatMap(p=>p.items.map(i=>({...i,referenceTitle:p.title,sourceType:'過去Excel',priceKind:'設計単価'})));
+ const pool=[];
  pool.push(...WB_STANDARD_PRICES);const registered=WB.project().priceRecords; if(Array.isArray(registered))pool.push(...registered.filter(i=>i&&typeof i.name==='string'&&Number.isFinite(i.unitPrice)&&i.source));
  const ic=normalize(item.publicType||code(item.spec)),id=dimension(item.spec),n=normalize(item.name),category=item.category;
  return pool.map(i=>{
@@ -96,11 +96,13 @@ function sync(){
  $('home-cards').innerHTML=[['数量・仕様の未確認',pending.filter(i=>!i.quantityChecked).length],['単価根拠の未確認',pending.filter(i=>!i.priceChecked).length],['保留',p.items.filter(i=>!i.archived&&i.state==='hold').length],['採用',t.count]].map(([n,v])=>`<div class="card"><small>${n}</small><div class="n">${v}</div><small>選択中工事の実データ</small></div>`).join('');
  $('home-stage').textContent=p.role==='reference'?'参考工事です。今回の工事を作成して資料を読み込んでください。':WB.ready()?'設計書の最終確認済みです。Excel出力へ進めます。':'設計確認中：候補 '+pending.length+'件／採用 '+t.count+'件／採用明細計 '+yen(t.rawDirect);
  $('home-next').innerHTML=pending.slice(0,4).map(i=>`<div class="task"><b>${esc(i.name)} ${esc(i.spec)}</b><small>${!i.quantityChecked?'数量・仕様を確認':'数量確認済み'}／${!i.priceChecked?'単価根拠を確認':'単価確認済み'}${i.state==='hold'?'／保留理由：'+esc(i.reason):''}</small><button class="ghost" data-home-item="${esc(i.id)}">確認する</button></div>`).join('')||'<p>明細の確認待ちはありません。共通費・最終確認へ進んでください。</p>';
+ if(!p.id){$('home-stage').textContent='新規工事を作成すると、確認する項目が表示されます。';$('home-next').textContent='工事はまだありません。新規工事を作成するか、利用を許可された共有工事を取り込んでください。';}
  $('home-next').querySelectorAll('[data-home-item]').forEach(b=>b.onclick=()=>{show('estimate');WB.openItem(b.dataset.homeItem);});
- $('ledger-rows').innerHTML=WB.projects().map(p=>`<tr><td>${p.role==='reference'?'参考':'今回'}</td><td>${esc(p.title)}</td><td>電気</td><td>${p.items.length}候補／${WB.adopted(p).length}採用</td><td><button class="ghost" data-select-project="${esc(p.id)}">開く</button></td></tr>`).join('');
+ $('ledger-rows').innerHTML=WB.projects().length?WB.projects().map(p=>`<tr><td>${p.role==='reference'?'参考':'今回'}</td><td>${esc(p.title)}</td><td>電気</td><td>${p.items.length}候補／${WB.adopted(p).length}採用</td><td><button class="ghost" data-select-project="${esc(p.id)}">開く</button></td></tr>`).join(''):'<tr><td colspan="5">工事はまだありません。「新規工事を作成」から始めてください。</td></tr>';
  $('ledger-rows').querySelectorAll('[data-select-project]').forEach(b=>b.onclick=()=>{WB.select(b.dataset.selectProject);show('estimate');});renderPrices();
 }
 $('shell-project').onchange=e=>WB.select(e.target.value);window.addEventListener('wb-render',sync);sync();
+window.addEventListener('wb-workspace-changed',()=>{draft=[];loadedTarget=null;loadedDocument='';for(const n of document.querySelectorAll('#assist input,#assist textarea'))if(n.type!=='button')n.value='';for(const id of ['drawing-result','drawing-status','price-list','price-status','batch-preview','batch-status'])document.getElementById(id)?.replaceChildren();});
 window.ASSIST={parseLines,parseDocument,suggestions,readPdf,applySuggestion};
 })();
 

@@ -4,6 +4,7 @@ from pathlib import Path
 import shutil
 import os
 from configure_shared import configure
+from runtime_assets import assets
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -14,7 +15,11 @@ def package(output: Path) -> None:
         raise ValueError('Use a new output directory; existing files are never overwritten')
     output.mkdir(parents=True)
     editor = output / 'editor'
-    shutil.copytree(ROOT / 'apps/integrated-v0.13', editor)
+    editor.mkdir()
+    for name, data in assets().items():
+        target = editor / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(data)
     shutil.copyfile(ROOT / 'shared/standards/worker.mjs', editor / '_worker.js')
     url = os.environ.get('SUPABASE_URL', '').strip()
     key = os.environ.get('SUPABASE_PUBLISHABLE_KEY', '').strip()

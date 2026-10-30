@@ -48,6 +48,31 @@
   get(id){return this.rpc('shared_get_project',{p_id:id});}
   status(id,month){return this.rpc('shared_get_status',{p_id:id,p_month:month});}
   save(id,localId,project,revision){return this.rpc('shared_save_project',{p_id:id||null,p_local_id:localId,p_project:project,p_expected_revision:revision??null});}
+  async referenceFile(id,hash,{blob,actor}={}){
+   if(!/^[a-f0-9-]+$/.test(id)||!/^[a-f0-9]{64}$/.test(hash))throw new SharedError('原本の指定を確認してください。','validation');
+   if(!this.session)throw new SharedError('ログインしてください。','auth');
+   if(this.session.expires_at<Date.now()/1000+30)await this.refresh();
+   if(actor&&this.session.user?.id!==actor)throw new SharedError('利用者が変わりました。','auth');
+   this.requireConfig();const user=this.session.user.id,url=this.url+'/storage/v1/object/'+(blob?'':'authenticated/')+'omuta-reference-originals/'+user+'/'+id+'/'+hash;
+   const response=await root.fetch(url,{method:blob?'POST':'GET',headers:{apikey:this.key,Authorization:'Bearer '+this.session.access_token,...(blob?{'Content-Type':blob.type||'application/octet-stream','x-upsert':'false'}:{})},...(blob?{body:blob}:{}),cache:'no-store',signal:AbortSignal.timeout(30000)});
+   if(blob&&(response.status===409||response.status===400&&await response.clone().json().then(x=>x.statusCode==='409'||x.statusCode===409||x.error==='Duplicate'||x.code==='Duplicate').catch(()=>false)))return; // Caller always reads bytes back and verifies the hash.
+   if(!response.ok)throw new SharedError('原本ファイルの保存・読取権限と接続を確認してください。',response.status===401?'auth':'permission');
+   return blob?undefined:await response.blob();
+  }
+  referenceCheckArchive(id){return this.rpc('reference_check_archive',{p_local_id:id});}
+  referenceFiles(id){return this.rpc('reference_list_files',{p_id:id});}
+  referenceRecordFile(id,fileId,name,size,hash){return this.rpc('reference_record_file',{p_id:id,p_file_id:fileId,p_name:name,p_size:size,p_sha256:hash});}
+  referenceAdmin(){return this.rpc('reference_is_admin');}
+  referenceList(){return this.rpc('reference_list_private');}
+  referenceGet(id){return this.rpc('reference_get_private',{p_id:id});}
+  referenceSave(project,edition='',revision=null){return this.rpc('reference_save_private',{p_local_id:project.id,p_project:project,p_edition:edition,p_expected_revision:revision});}
+  referencePublish(id,revision,summary,ids){return this.rpc('reference_publish',{p_id:id,p_revision:revision,p_summary:summary,p_material_ids:ids});}
+  referenceRecipient(id,email,enabled){return this.rpc('reference_set_recipient',{p_id:id,p_email:email,p_enabled:enabled});}
+  referenceDisable(id){return this.rpc('reference_disable_release',{p_id:id});}
+  referenceReleases(){return this.rpc('reference_list_releases');}
+  referenceSearch(query=''){return this.rpc('reference_search',{p_query:query});}
+  referenceSuggestion(id){return this.rpc('reference_get_suggestion',{p_id:id});}
+  referenceUsage(event,id,projectId){return this.rpc('reference_record_usage',{p_event_id:event,p_id:id,p_local_project_id:projectId});}
   grant(id,email,access){return this.rpc('shared_grant_member',{p_id:id,p_email:email,p_access:access});}
   revoke(id,email){return this.rpc('shared_revoke_member',{p_id:id,p_email:email});}
  }

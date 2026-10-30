@@ -204,3 +204,17 @@ Volume 1検証：Chromiumで版表示、上部ガイド別タブ、工事マニ�
 Volume 1の新規利用者向け7ページPDFをmanuals/へ追加。原稿HTMLを保存し、PDFのA4・7ページ・文字抽出、6/7ページの画像表示で欠けがないこと、同梱ZIPのCRCと全SHA256を確認。
 
 チャットのアーティファクト取得失敗に対応し、公開アプリのdownloads/にPDFと手順書付ZIPを配置。volume1.htmlから直接保存できる。保管ZIP再作成時にdownloads/を除外し、配布物の再帰収録を防止する。
+
+## 2026-10-30 非公開資料庫と新規利用者0件（公開前の移行準備）
+
+方針は PRIVATE_DATA_MIGRATION.md、適用手順は PRIVATE_LIBRARY_SETUP.md。新規0件・参考工事の自動生成/再追加停止・アカウント別ブラウザ保存・旧保存領域の保持。既存の実工事は本人が引き継ぎ、参考/保管資料は別配列/非公開DBへ保存する。破損した旧データを空で上書きしない。旧版のブラウザ保存領域は削除せず残す。
+
+shared/db/002 は所有者専用の資料、承認時点の明細スナップショット、編集利用者への個別許可、本人の利用イベント。003 は所有者専用Storage、既存の広いStorage許可も制限するrestrictiveポリシー、原本メタデータ。004 は管理者が所有者の既存editorアカウントを一意確認して登録するサンプル。CloudflareのGoogle入口認証とSupabaseの資料管理者は別。
+
+shared/web/reference-library.js は検索/選択/未確認候補への取り込み、出典・年度・版・記録者の履歴、管理用JSON取込、端末データ引継ぎ、明細ごとの提案許可、許可解除、原本の非公開保管とSHA256読戻し照合。組立単価は参考値として誤配布せず再計算を要求。利用者切替で画面/ダイアログ/資料入力を消去。資料庫の原本を一般利用者へ直接配布しない。バックグラウンドAI送信は実装しない。
+
+配信はscripts/package_shared.pyの出力のみ。開発フォルダ全体をコピーしない。ランタイムと保管用ZIPには私有sources、旧ZIP、分割ソースを含めない。Excelテンプレートは数式・スタイル・印刷条件を保ち、元案件の文字/数値/キャッシュ、画像・コメント・外部リンク・補助シートデータを除去する。ソース原本はリポジトリ内で保全する。
+
+検証：reference-db-test.py（実PostgreSQLの認可/原本Storageポリシー/共有中の保管停止）、private-workspace.cjs（新規0件/アカウント分離/非破壊引継ぎ/不正データ非上書き）、reference-library.cjs（提案/未確認取込/出典履歴/原本バイト照合）、private-release-test.py/shared-config-test.py（配布物の私有データ除去）、private-export.cjs（利用者提供バックアップを環境変数OMUTA_PRIVATE_BACKUPでローカル検証、32採用・7,209,400円保持、設計/予算Excel）、check-print-settings.py（印刷設定）、shared-comparison/resolution/stabilityとrun-shared-integration.py（既存共有回帰）。
+
+本番DBを操作できる接続がないため、SQL適用・所有者設定・実端末での引継ぎは未実施。iPad Safari新画面・実Supabase Storage HTTP疎通も未確認。既存公開版を先に更新すると所有者に引継ぎ前の空一覧が出るため、DB準備とバックアップを確認後に切り替える。

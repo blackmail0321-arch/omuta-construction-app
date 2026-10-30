@@ -21,10 +21,11 @@ def configure(app: Path, url: str, key: str) -> None:
     if not public:
         raise ValueError('Only a public publishable or anon key is allowed; never service_role/sb_secret')
     script = 'window.OMUTA_SHARED_CONFIG=' + json.dumps({'url': url.rstrip('/'), 'publishableKey': key}) + ';\n'
+    if not (app / 'index.html').is_file() or not (app / 'shared').is_dir():
+        raise ValueError('Build the app before configuring sharing')
     for directory in (app / 'shared', app / 'integrated' / 'shared'):
-        if not directory.is_dir():
-            raise ValueError('Build the app before configuring sharing')
-        (directory / 'shared-config.js').write_text(script)
+        if directory.is_dir():
+            (directory / 'shared-config.js').write_text(script)
 
 
 if __name__ == '__main__':

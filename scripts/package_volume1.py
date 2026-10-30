@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import zipfile
+from runtime_assets import assets
 
 ROOT = Path(__file__).resolve().parents[1]
 APP = ROOT / 'apps/integrated-v0.13'
@@ -12,13 +13,8 @@ APP = ROOT / 'apps/integrated-v0.13'
 def package(output):
     if output.exists():
         raise ValueError('Use a new archive path; existing files are not overwritten')
-    files = {}
-    for path in APP.rglob('*'):
-        if not path.is_file() or '__pycache__' in path.parts or 'downloads' in path.relative_to(APP).parts:
-            continue
-        relative = path.relative_to(APP).as_posix()
-        files[relative] = (b"window.OMUTA_SHARED_CONFIG={url:'',publishableKey:''};\n"
-                           if path.name == 'shared-config.js' else path.read_bytes())
+    files = assets(include_archive=False)
+    files['shared/shared-config.js'] = b"window.OMUTA_SHARED_CONFIG={url:'',publishableKey:''};\n"
     for name in ['VOLUME1.md', 'REFERENCE_UPDATE_POLICY.md']:
         files[name] = (ROOT / name).read_bytes()
     files['はじめに.txt'] = ('設備工事 統合管理 Volume 1 / 1.0.0\n'
@@ -27,7 +23,7 @@ def package(output):
         'このZIPはアプリの保管用で、最新入力・添付・認証情報は含みません。\n'
         '作業JSONと書類・分類ZIPを別途保存してください。\n'
         '共有先設定は空欄です。別の場所で開いても既存サイトのデータは自動移行されません。\n'
-        '開発用分割コードは integrated/ に収録しています。\n').encode()
+        '開発用分割コードや過去案件データは配布物に含めません。\n').encode()
     manual = ROOT / 'manuals/Volume1_ダウンロードと初めての操作手順書.pdf'
     if manual.is_file():
         files[manual.name] = manual.read_bytes()
