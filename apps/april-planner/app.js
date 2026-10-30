@@ -54,7 +54,7 @@ function render(){
  if(view==='calendar')renderCalendar();if(view==='annual')renderAnnual();if(view==='summary')renderSummary();if(view==='search'&&searchDates.length)renderSearch();
 }
 function renderCalendar(){
- const cy=year+(month<4?1:0),n=C.days(cy,month),offset=(C.date(cy,month,1).getUTCDay()+6)%7;
+ const cy=year+(month<4?1:0),n=C.days(cy,month),offset=C.date(cy,month,1).getUTCDay();
  $('month-title').textContent=`${cy}年 ${month}月`;
  const index=C.months(year).findIndex(a=>a.month===month);
  $('prev-month').disabled=year===2000&&index===0;$('next-month').disabled=year===2098&&index===11;
