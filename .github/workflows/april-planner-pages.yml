@@ -1,0 +1,48 @@
+name: Publish April planner (manual)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Build only the empty-data planner
+        run: |
+          python3 apps/april-planner/build.py
+          python3 -m zipfile -e apps/april-planner/offline-site.zip "$RUNNER_TEMP/april-planner-site"
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          source = Path('apps/april-planner/initial-data.js').read_text()
+          data = json.loads(source.removeprefix('window.PLANNER_INITIAL=').strip().removesuffix(';'))
+          assert data['records'] == {} and data['importedDays'] == 0
+          PY
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/april-planner-site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the planner shell
+        id: deployment
+        uses: actions/deploy-pages@v4
