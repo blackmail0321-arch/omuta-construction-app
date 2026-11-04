@@ -15,7 +15,7 @@ sha=lambda text: "'sha256-"+base64.b64encode(hashlib.sha256(text.encode()).diges
 policy="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; form-action 'none'; script-src 'self' "+' '.join(map(sha,scripts))+"; style-src 'self' "+' '.join(map(sha,styles))+"; worker-src 'self' blob:; connect-src 'self' blob: data:; img-src 'self' blob: data:; font-src 'self' blob: data:; manifest-src 'self'"
 html=html.replace('<head>','<head><meta http-equiv="Content-Security-Policy" content="'+policy+'">',1)
 (R/'index.html').write_text(html)
-assets=['index.html','manifest.webmanifest',*[str(f.relative_to(R)) for f in sorted((R/'icons').glob('*.png'))]]
+assets=['index.html','manifest.webmanifest','mascot/momo.png',*[str(f.relative_to(R)) for f in sorted((R/'icons').glob('*.png'))]]
 h=hashlib.sha256()
 for name in assets+['sw.js']:h.update(name.encode());h.update((R/name).read_bytes())
 version=h.hexdigest()[:20]
