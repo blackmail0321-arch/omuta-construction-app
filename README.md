@@ -1,3 +1,7 @@
+# 体重管理アプリ「もちログ」
+
+Excelの体重記録取り込み、手入力の身長・年齢によるBMIと肥満度、グラフ、変化する相棒を備えた暗号化保存PWA。[使い方](apps/weight-buddy/README.md)・[セキュリティ仕様](apps/weight-buddy/SECURITY.md)。配信プログラムに個人の健康記録は含みません。
+
 # 給与と財形の記録「つみかさね」
 
 給与明細PDF・画像PDFの読取候補の確認、貯蓄Excelの取り込み、財形の引き出しと残高管理を行う個人用アプリを追加しました。[使い方](apps/savings-ledger/README.md)・[セキュリティ仕様](apps/savings-ledger/SECURITY.md) を参照してください。公開物に個人の給与・貯蓄データは含みません。

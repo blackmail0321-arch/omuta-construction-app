@@ -22,12 +22,14 @@ jobs:
         with:
           persist-credentials: false
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
-      - name: Build empty-data planner and savings app
+      - name: Build empty-data planner, savings and weight apps
         run: |
           python3 apps/april-planner/build.py
           python3 apps/savings-ledger/build.py
+          python3 apps/weight-buddy/build.py
           python3 -m zipfile -e apps/april-planner/offline-site.zip "$RUNNER_TEMP/april-planner-site"
           python3 -m zipfile -e apps/savings-ledger/offline-site.zip "$RUNNER_TEMP/april-planner-site/savings"
+          python3 -m zipfile -e apps/weight-buddy/offline-site.zip "$RUNNER_TEMP/april-planner-site/weight"
           python3 - <<'PY'
           from pathlib import Path
           import json
