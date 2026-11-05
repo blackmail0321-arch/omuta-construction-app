@@ -236,3 +236,9 @@ Web版を公開allowlistへ追加（app-manual.html/specification.html/construct
 利用者は職場i-FILTERのためiPad miniで継続。業者には工事提出書類ページだけを外部共有し、確認状況を閲覧、専用QRが理想との要望。既存viewer＋工事別閲覧権限で状態/期限/提出日/確認日/備考の読取は可能。全工事データ取得はshared_get_projectで編集権限を要求。viewer画面に添付の読取/アップロード/提出操作はない。
 操作マニュアル14章に管理者/業者双方の手順とQRの認証方針を追加。QRはURLのみ、認証/工事別許可は残す。外部用の既存候補omuta-construction-app.pages.devのBuild output=dist/shared/viewer、Cloudflare Accessの対象・入口条件、実アカウント接続を確認後に正式QRを生成する。現時点で外部公開設定・共有権限・業者アカウントは変更していない。
 備考は工事内の全提出書類分がviewerに表示される。内部メモを分離する機能と書類単位の業者権限は未実装。配布前に備考を確認する必要がある。業者間でも工事単位の分離を使い、他者向け記録を自動で限定できると誤認させない。
+
+## 2026-11-05 No.9 確認済みが閲覧側で要再確認になる不一致
+利用者：iPadで確認済み保存、共有先とも保存済み、携帯は未確認のまま、書類No.9。過去の提供PDFではNo9要再確認。editorは産廃処理費/撤去工事/撤去費(NFKC)を材料照合から除外するがshared_get_statusは新設採用全件を含み、旧materialSnapshotsの費用キーも除外しない。提供済み10/28バックアップに新設採用28件中1件の費用を確認。
+shared/db/005_status_material_alignment.sql：既存の関数定義から想定した2箇所だけを検証付きで置換。材料集合と旧snapshot双方から費用を除外。既存内容が違えば無変更で停止、再実行可。工事JSON/状態/日付/履歴/版番号/ACLを変更しない。本番適用はまだ。
+shared-db-test.pyに実PostgreSQLで修正前の不一致再現→修正後9/20/21確認済み、旧費用stamp無視、名称NFKC、実際の数量/仕様/品名/採用状態/削除/追加の再確認維持、migration再実行、project行/SECURITY DEFINER/search_path/ACL不変、viewer秘匿/第三者拒否の確認を追加。通過。
+本番での005適用後、閲覧画面の最新更新でNo9表示を再確認する。改善しなければ本番保存内容・対象工事/対象月・更新時刻を読み取り照合し、無理な確認済み書換えや共有上書きはしない。

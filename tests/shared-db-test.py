@@ -81,6 +81,43 @@ try:
     sql(f"select public.shared_revoke_member('{pid}','editor@example.test');", 'owner')
     sql(f"select public.shared_get_project('{pid}');", 'editor', '42501')
     sql(f"select public.shared_get_status('{pid}','bad-month');", 'owner', '22023')
+    # Reproduce the editor/status discrepancy: a non-material fee in category 新設.
+    sql(f"select public.shared_grant_member('{pid}','viewer@example.test','viewer');", 'owner')
+    material={'id':'material-a','name':'照明器具','spec':'A','quantity':2,'unit':'台','state':'adopted','category':'新設','unitPrice':123456}
+    fee={'id':'fee-a','name':'産廃処理費','spec':'混合','quantity':1,'unit':'式','state':'adopted','category':'新設','unitPrice':30000}
+    stamp=lambda item:json.dumps([item['name'],item['spec'],item['quantity'],item['unit'],item['state']],ensure_ascii=False,separators=(',',':'))
+    base={**project,'items':[material,fee],'submissionRecords':{str(no):{'status':'確認済み','confirmedAt':'2026-11-05','materialSnapshots':{material['id']:stamp(material)}} for no in (9,20,21)}}
+    revision=json.loads(sql(f"select public.shared_get_project('{pid}');",'owner'))['revision']
+    def savecase(value):
+        global revision
+        row=json.loads(sql(f"select public.shared_save_project('{pid}','local-a',{literal(value)},{revision});",'owner'));revision=row['revision']
+    def states():
+        return {r['no']:r['state'] for r in json.loads(sql(f"select public.shared_get_status('{pid}','2026-11');",'viewer'))['rows'] if r['no'] in (9,20,21)}
+    savecase(base)
+    assert set(states().values())=={'要再確認'}  # actual defect before migration
+    attrs=sql("select json_build_array(prosecdef,proconfig,proacl)::text from pg_proc where oid='public.shared_get_status(uuid,text)'::regprocedure;")
+    before=sql(f"select row_to_json(p)::text from public.shared_projects p where id='{pid}';")
+    migration=(ROOT/'shared/db/005_status_material_alignment.sql').read_text()
+    sql(migration)
+    assert set(states().values())=={'確認済み'}
+    assert attrs==sql("select json_build_array(prosecdef,proconfig,proacl)::text from pg_proc where oid='public.shared_get_status(uuid,text)'::regprocedure;")
+    assert before==sql(f"select row_to_json(p)::text from public.shared_projects p where id='{pid}';")
+    sql(migration)  # repeat is safe and does not change project revision
+    assert before==sql(f"select row_to_json(p)::text from public.shared_projects p where id='{pid}';")
+    for value in base['submissionRecords'].values():value['materialSnapshots'][fee['id']]=stamp(fee)
+    savecase(base);assert set(states().values())=={'確認済み'}  # old fee stamps also ignored
+    fee['name']='産廃処理費Ａ'  # same NFKC handling as editor
+    savecase(base);assert set(states().values())=={'確認済み'}
+    for field,value in [('quantity',3),('spec','B'),('name','別の器具'),('state','excluded')]:
+        changed=json.loads(json.dumps(base));changed['items'][0][field]=value;savecase(changed);assert set(states().values())=={'要再確認'},field
+    changed=json.loads(json.dumps(base));changed['items']=changed['items'][1:];savecase(changed);assert set(states().values())=={'要再確認'}
+    changed=json.loads(json.dumps(base));changed['items'].append({**material,'id':'new-material'});savecase(changed);assert set(states().values())=={'要再確認'}
+    savecase(base)
+    result=json.loads(sql(f"select public.shared_get_status('{pid}','2026-11');",'viewer'))
+    assert all(s not in json.dumps(result,ensure_ascii=False) for s in ['123456','FINANCE-SECRET','materialSnapshots'])
+    sql(f"select public.shared_get_project('{pid}');",'viewer','42501')
+    sql(f"select public.shared_get_status('{pid}','2026-11');",'outsider','42501')
+    print('PASS No9/20/21 fee mismatch reproduced and fixed; real material changes detected; migration idempotent; rows, dates, revisions and security attributes preserved')
     print('PASS real PostgreSQL: viewer redaction/read-only, outsider/anonymous denial, membership controls, CAS/no-overwrite, revocation, deadlines/material changes')
 finally:
     command(['docker', 'rm', '-f', name])
