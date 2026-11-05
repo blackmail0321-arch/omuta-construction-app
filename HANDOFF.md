@@ -231,3 +231,8 @@ manuals/final-2026-11-05のMarkdownからscripts/build_final_manuals.pyでPDF/Wo
 利用者のiPad PDF画面で小さく密な本文が読みにくいと報告。旧本文10pt/行送り17ptから印刷用14pt/行高1.85へ変更し、長段落を句点で分離、章ごと改ページ・目次・日本語フォントの字形埋込へ変更。操作冊子18ページ。Wordも本文13pt/行間1.65。
 Web版を公開allowlistへ追加（app-manual.html/specification.html/construction-guide.html）。iPadでは20px、狭幅18pxから文字±で16〜30pxに変更可能、目次・章内アンカー・画面幅折り返し。QRはHTMLへdata URLとして内包。使い方の先頭導線をWeb版とし、PDFとZIPにはキャッシュ更新用クエリを付与。アプリデータ・認証・計算処理は変更しない。
 検証：manual-readability.cjsで390/768/1024pxの折返し・拡大・13章リンク・QR・PDFリンク、final-manuals.cjsで46項目保存を回帰確認。PDFは日本語表示を画像で確認し、元文全文の保持と空ページなしをテキスト照合。private-release-test/shared-config-test通過。
+
+## 2026-11-05 業者用提出状況だけの共有とQRの要望
+利用者は職場i-FILTERのためiPad miniで継続。業者には工事提出書類ページだけを外部共有し、確認状況を閲覧、専用QRが理想との要望。既存viewer＋工事別閲覧権限で状態/期限/提出日/確認日/備考の読取は可能。全工事データ取得はshared_get_projectで編集権限を要求。viewer画面に添付の読取/アップロード/提出操作はない。
+操作マニュアル14章に管理者/業者双方の手順とQRの認証方針を追加。QRはURLのみ、認証/工事別許可は残す。外部用の既存候補omuta-construction-app.pages.devのBuild output=dist/shared/viewer、Cloudflare Accessの対象・入口条件、実アカウント接続を確認後に正式QRを生成する。現時点で外部公開設定・共有権限・業者アカウントは変更していない。
+備考は工事内の全提出書類分がviewerに表示される。内部メモを分離する機能と書類単位の業者権限は未実装。配布前に備考を確認する必要がある。業者間でも工事単位の分離を使い、他者向け記録を自動で限定できると誤認させない。
