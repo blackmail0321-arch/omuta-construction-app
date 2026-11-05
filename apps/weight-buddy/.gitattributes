@@ -1,0 +1,2 @@
+vendor/** -text -whitespace
+*.zip binary
