@@ -17,6 +17,10 @@ widget=qr.QrCodeWidget(URL,barLevel='M');x,y,x1,y1=widget.getBounds();d=Drawing(
 renderSVG.drawToFile(d,str(OUT/'アプリ起動QR.svg'))
 import fitz
 svg=fitz.open(OUT/'アプリ起動QR.svg');svg[0].get_pixmap(matrix=fitz.Matrix(3,3)).save(OUT/'アプリ起動QR.png')
+CONTRACTOR_URL='https://omuta-construction-app.pages.dev/'
+vendor_widget=qr.QrCodeWidget(CONTRACTOR_URL,barLevel='M');vx,vy,vx1,vy1=vendor_widget.getBounds();vendor_d=Drawing(180,180,transform=[150/(vx1-vx),0,0,150/(vy1-vy),15,15]);vendor_d.add(vendor_widget)
+renderSVG.drawToFile(vendor_d,str(OUT/'業者用閲覧QR.svg'))
+vendor_svg=fitz.open(OUT/'業者用閲覧QR.svg');vendor_svg[0].get_pixmap(matrix=fitz.Matrix(3,3)).save(OUT/'業者用閲覧QR.png')
 css='''*{box-sizing:border-box}html{font-size:20px;scroll-behavior:auto}body{font-family:"Noto Sans CJK JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:#20354b;background:#f2f5f9;margin:0;line-height:1.95}main{max-width:780px;margin:auto;padding:24px 20px 64px}h1{font-size:1.7rem;line-height:1.55;letter-spacing:.02em;margin:12px 0 24px}h2{font-size:1.35rem;line-height:1.6;color:#173e69;border-bottom:3px solid #c5daef;padding-bottom:14px;margin:0 0 24px}h3{font-size:1.1rem;line-height:1.65}p,li{overflow-wrap:anywhere}p{margin:0 0 1.15em}a{color:#1655a1;text-underline-offset:4px}a:focus-visible,button:focus-visible{outline:3px solid #1865bb;outline-offset:4px}.cover,.chapter,.contents{background:white;border:1px solid #d9e3ed;border-radius:14px;padding:30px;margin-bottom:28px}.chapter{scroll-margin-top:180px}.contents ul{list-style:none;padding:0}.contents li{margin:12px 0}.toolbar{display:flex;flex-wrap:wrap;gap:10px;max-width:780px;margin:auto;padding:12px 20px;position:sticky;top:0;background:#ffffff;align-items:center;z-index:2;border-bottom:1px solid #d9e3ed}button,input,select,textarea{font:inherit;padding:10px;border:1px solid #b4c7da;border-radius:8px;max-width:100%}button{cursor:pointer;background:white;color:#173e69;min-height:46px}.eyebrow{font-size:.8rem;color:#566d85}.notice{padding:18px;background:#edf5ff;border-left:4px solid #2566a9;border-radius:6px}img{max-width:100%;height:auto}.qr{width:180px;display:block;margin:16px 0}.back{font-size:.85rem}.contents a{display:block;padding:4px 0}.print-only{display:none}@media(max-width:600px){html{font-size:18px}main{padding:16px 12px 48px}.cover,.chapter,.contents{padding:22px 18px}h1{font-size:1.55rem}.toolbar{padding:10px 12px;gap:7px}.toolbar button{font-size:16px;padding:8px}}@media print{@page{size:A4;margin:20mm 19mm}html{font-size:14pt}body{background:white;color:#172b42;line-height:1.85}main{max-width:none;padding:0}.toolbar,.back,.screen-only{display:none!important}.cover,.chapter,.contents{border:0;border-radius:0;padding:0;margin:0}.cover,.contents{break-after:page}.chapter{break-before:page}.chapter h2{break-after:avoid}h1{font-size:26pt}h2{font-size:20pt}p{orphans:3;widows:3}a{color:inherit;text-decoration:none}.print-only{display:block}.qr{width:155px}.notice{border:1px solid #a9c8e3;padding:14px}li{margin-bottom:8px}}'''
 for path in sorted(SRC.glob('*.md')):
  raw=path.read_text();(OUT/path.name).write_text(raw)
@@ -34,6 +38,8 @@ for path in sorted(SRC.glob('*.md')):
    current={'title':line[3:],'lines':[]};chapters.append(current)
   elif current is None:preface.append(line)
   else:current['lines'].append(line)
+ if path.name.startswith('05_'):
+  doc.add_picture(str(OUT/'業者用閲覧QR.png'),width=Inches(1.7));doc.add_paragraph(CONTRACTOR_URL)
  if path.name.startswith('01_'):
   doc.add_picture(str(OUT/'アプリ起動QR.png'),width=Inches(1.7));doc.add_paragraph(URL)
  for line in preface:doc.add_paragraph(line)
@@ -41,6 +47,7 @@ for path in sorted(SRC.glob('*.md')):
  for c in chapters:doc.add_paragraph(c['title'])
  parts=['<header class="cover"><p class="eyebrow">設備工事 統合管理 · 読みやすさ改訂版 · 2026年11月5日</p><h1>'+html.escape(title).replace(' Volume 1 ','<br>Volume 1 ')+'</h1><p class="notice screen-only">iPadではこのWeb版をお使いください。文字は下のボタンで大きくでき、画面幅に合わせて折り返します。</p>']
  if path.name.startswith('01_'):parts.append('<img class="qr" src="アプリ起動QR.svg" width="180" alt="アプリ起動QR"><p><a href="'+URL+'">工事アプリを開く</a></p><p class="eyebrow">QRは起動用URLのみ。認証情報は含みません。</p>')
+ if path.name.startswith('05_'):parts.append('<img class="qr" src="業者用閲覧QR.svg" width="180" alt="業者用閲覧QR"><p><a href="'+CONTRACTOR_URL+'">業者用の提出状況画面を開く</a></p>')
  parts.extend('<p class="eyebrow">'+html.escape(v)+'</p>' for v in preface)
  parts.append('</header><nav class="contents" id="contents" aria-label="目次"><h2>目次</h2><ul>')
  for i,c in enumerate(chapters):parts.append('<li><a href="#chapter-'+str(i)+'">'+html.escape(c['title'])+'</a></li>')
@@ -84,6 +91,11 @@ print(OUT)
 # Public documentation only. Explicit filenames prevent including runtime user data.
 public=SRC/'published';public.mkdir(exist_ok=True)
 names={
+ 'contractor-guide.html':'05_業者向け提出状況閲覧ガイド.html',
+ 'contractor-guide.pdf':'05_業者向け提出状況閲覧ガイド.pdf',
+ 'contractor-guide.docx':'05_業者向け提出状況閲覧ガイド.docx',
+ 'contractor-qr.png':'業者用閲覧QR.png',
+ 'contractor-qr.svg':'業者用閲覧QR.svg',
  'app-manual.html':'01_アプリ操作マニュアル完全版.html',
  'app-manual.pdf':'01_アプリ操作マニュアル完全版.pdf',
  'app-manual.docx':'01_アプリ操作マニュアル完全版.docx',
@@ -100,6 +112,7 @@ for target,source in names.items():
  if target.endswith('.html'):
   markup=content.decode().replace('href="index.html"','href="/volume1.html"')
   markup=markup.replace('src="アプリ起動QR.svg"','src="data:image/svg+xml;base64,'+base64.b64encode((OUT/'アプリ起動QR.svg').read_bytes()).decode()+'"')
+  markup=markup.replace('src="業者用閲覧QR.svg"','src="data:image/svg+xml;base64,'+base64.b64encode((OUT/'業者用閲覧QR.svg').read_bytes()).decode()+'"')
   for public_name,original_name in names.items():
    if public_name.endswith('.pdf'):markup=markup.replace('href="'+original_name+'"','href="'+public_name+'?v=readable-20261105"')
   content=markup.encode()
