@@ -9,6 +9,9 @@ def assets(include_archive=True):
     result.update({'shared/'+name:(APP/'shared'/name).read_bytes() for name in SHARED})
     manual=ROOT/'manuals/Volume1_ダウンロードと初めての操作手順書.pdf'
     if manual.is_file():result['downloads/volume1-start-guide.pdf']=manual.read_bytes()
+    public_docs=ROOT/'manuals/final-2026-11-05/published'
+    for name in ['app-manual.pdf','app-manual.docx','specification.pdf','specification.docx','construction-guide.pdf','construction-guide.docx','construction-checklist.html','manuals-complete.zip']:
+        if (public_docs/name).is_file():result['downloads/final/'+name]=(public_docs/name).read_bytes()
     if include_archive:
         archive=io.BytesIO()
         with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:

@@ -218,3 +218,11 @@ shared/web/reference-library.js は検索/選択/未確認候補への取り込�
 検証：reference-db-test.py（実PostgreSQLの認可/原本Storageポリシー/共有中の保管停止）、private-workspace.cjs（新規0件/アカウント分離/非破壊引継ぎ/不正データ非上書き）、reference-library.cjs（提案/未確認取込/出典履歴/原本バイト照合）、private-release-test.py/shared-config-test.py（配布物の私有データ除去）、private-export.cjs（利用者提供バックアップを環境変数OMUTA_PRIVATE_BACKUPでローカル検証、32採用・7,209,400円保持、設計/予算Excel）、check-print-settings.py（印刷設定）、shared-comparison/resolution/stabilityとrun-shared-integration.py（既存共有回帰）。
 
 本番DBを操作できる接続がないため、SQL適用・所有者設定・実端末での引継ぎは未実施。iPad Safari新画面・実Supabase Storage HTTP疎通も未確認。既存公開版を先に更新すると所有者に引継ぎ前の空一覧が出るため、DB準備とバックアップを確認後に切り替える。
+
+## 2026-11-05 最終確認・マニュアル
+本番25baad9へ2026/11/4公開済み。利用者の画面でSQL002/003・所有者登録、3工事/8参考の引継ぎ読戻し、実工事33候補32採用7209400円、No.5日付と添付閲覧、No.13記録、別editorの0件開始・未許可非表示・個別許可・候補取込と本人履歴・解除後検索不可と候補保持を確認。管理者に戻って実工事33/32を再確認。
+最後の依頼は全端末Excel、写真/電子黒板、表示、セキュリティ、オフライン、QR付操作/仕様完全版、独立した工事手順/チェック表。全端末対応や漏洩ゼロを保証せず、実装/未対応/実機未確認を分ける。
+追加検査でtemplate-exportのpageSetupがrowBreaks/colBreaksより後に出るOOXML順序違反を検出し、出力時のシート直下要素の安定ソートで修正。数式・印刷属性は保持。設計/予算生成と構造/印刷検査通過、オフライン読込済みChromiumでも生成成功。iPad Safari正式Excelの実機再確認は必須。
+manuals/final-2026-11-05のMarkdownからscripts/build_final_manuals.pyでPDF/Word/HTML/QRと独立46項目チェック表を生成。明示allowlistのpublicドキュメントをruntime_assetsへ追加。Volume1ガイドにリンク。チェック表はlocalStorageとJSON/印刷、工事アプリ/DBとは非連携、同ブラウザ共通領域と明示。
+再検証：reference-db-test.py、attachment-storage.cjs、private-export.cjs（OMUTA_TEST_OFFLINE=1も）、check-excel-compatibility.py、check-print-settings.py、private-release-test.py、shared-config-test.py、editor-cache.mjs、final-layout.cjs（390/768/1024/1366の主画面横幅と設定欄範囲）、final-manuals.cjs（46項目保存/再表示/JSON/オフライン編集）。全画面の文字重なりや第三者侵入試験の完了を意味しない。
+写真は任意ファイル添付可能、非PDFダウンロード。写真専用名称UI/写真台帳/電子黒板作成合成/OCR未実装。原本Storage本番実ファイル保存取得、SafariパスワードOSシート位置、全端末正式Excel、全バックアップ復元、オフライン再起動は残課題。工事アプリService Workerなし、HTML no-store。別の予定表PWAと混同しない。

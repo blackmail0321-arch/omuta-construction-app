@@ -11,7 +11,8 @@ with tempfile.TemporaryDirectory() as d:
  assert not(out/'editor/integrated').exists()
  assert not list((out/'editor').rglob('*sources.json'))
  assert not list((out/'editor').rglob('*.b64'))
- archives=list((out/'editor').rglob('*.zip'));assert len(archives)==1
+ archives=[out/'editor/downloads/volume1-with-guide.zip'];assert archives[0].is_file()
+ assert {p.name for p in (out/'editor').rglob('*.zip')} <= {'volume1-with-guide.zip','manuals-complete.zip'}
  with zipfile.ZipFile(archives[0]) as archive:
   assert not any('/integrated/' in n or n.endswith(('.b64','sources.json')) for n in archive.namelist())
   assert b"url:''" in archive.read('Volume1/shared/shared-config.js')
