@@ -47,3 +47,7 @@
 ## 検証
 
 `node apps/momo-day/tests/core.cjs`、`node apps/momo-day/tests/choice-addition.cjs`、`node apps/momo-day/tests/browser.cjs`、`node apps/momo-day/tests/recognition.cjs`、`node apps/momo-day/tests/security-offline.cjs`。Playwright/Chromiumを使用。音声は端末内音声のAPI呼び出しをスタブで検証しており、実際のiPadの声・Apple Pencil・本人の手書きは実機で確認する必要があります。参照67字形の一致は確認していますが、一般の手書きの認識精度を示すものではありません。
+
+## 桃ちゃんのホーム画面アイコン
+
+ホーム画面・Safari用に、ピンク背景の桃ちゃんアイコンを同梱しています。iPad/iPhone用180・167・152pxと、PWA用192・512pxを用意し、旧アイコンのURLから切り替えています。公開後はアプリを更新してください。iPadの既存ホーム画面アイコンはOS側に保持されることがあり、自動で変わらない場合は保護者が先に暗号化バックアップを保存し、Safariで同じ公開URLを開いて「共有→ホーム画面に追加」で新しいアイコンを作ります。アプリやWebサイトの保存データを消す操作は不要です。追加したアイコン側で記録が空の場合は、バックアップから復元できます。
