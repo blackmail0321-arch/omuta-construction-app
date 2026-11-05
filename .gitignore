@@ -4,3 +4,5 @@ __pycache__/
 .env.*
 !.env.example
 /dist/
+# Generated copy for the nested construction entry point.
+/apps/integrated-v0.13/integrated/vendor/ocr/

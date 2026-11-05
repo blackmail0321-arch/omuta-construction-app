@@ -242,3 +242,8 @@ Web版を公開allowlistへ追加（app-manual.html/specification.html/construct
 shared/db/005_status_material_alignment.sql：既存の関数定義から想定した2箇所だけを検証付きで置換。材料集合と旧snapshot双方から費用を除外。既存内容が違えば無変更で停止、再実行可。工事JSON/状態/日付/履歴/版番号/ACLを変更しない。本番適用はまだ。
 shared-db-test.pyに実PostgreSQLで修正前の不一致再現→修正後9/20/21確認済み、旧費用stamp無視、名称NFKC、実際の数量/仕様/品名/採用状態/削除/追加の再確認維持、migration再実行、project行/SECURITY DEFINER/search_path/ACL不変、viewer秘匿/第三者拒否の確認を追加。通過。
 本番での005適用後、閲覧画面の最新更新でNo9表示を再確認する。改善しなければ本番保存内容・対象工事/対象月・更新時刻を読み取り照合し、無理な確認済み書換えや共有上書きはしない。
+
+## 2026-11-05 iPad向け配色・写真文字読取・資料選択削除
+利用者が深緑/生成りの試作を了承し、写真保存+自動文字読取、Excel/PDF/写真資料のチェック削除を依頼。comfort-theme.cssで文字18pxと余白、SVG電球/建物等のナビを適用。source-imports.jsで同一配信元のTesseract日本語/英語OCR（savings-ledgerで既存のvendorをコピー）、写真JPEG/PNG/WebP・30MB、文字なしPDFは10ページまでOCR。HEICは変換。原本は既存IndexedDBに保存しdocuments.attachmentIdで関連付け、写真ダイアログ表示。Excel一括読取も原本と資料登録を保存。候補は未確認のまま、誤読修正後に追加する。
+資料画面のチェック削除は登録と関連付いた端末原本を対象。候補/採用/提出記録は保持。古いattachmentIdなしの資料は原本を同名推測で削除しない。読取中の削除を拒否し、削除した資料の未追加プレビューもクリア。原本は従来通り端末間共有対象外。OCRの資材初回読込は通信が必要、完全オフライン起動は未対応。業者サイトへOCR資材/編集画面を混入しない。
+検証：photo-import.cjsで実日本語OCR、画像PDF、Excel、写真原本表示、キャンセル/複数選択削除、バイト削除、候補保持、再読込、非対応形式拒否、外部通信なし。final-layoutの4画面幅/設定欄も確認。iPad Safari実機での撮影・OCR速度・メモリは未確認。マニュアル・仕様書更新。本番配信は別途確認が必要。
