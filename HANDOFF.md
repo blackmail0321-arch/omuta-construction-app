@@ -226,3 +226,8 @@ shared/web/reference-library.js は検索/選択/未確認候補への取り込�
 manuals/final-2026-11-05のMarkdownからscripts/build_final_manuals.pyでPDF/Word/HTML/QRと独立46項目チェック表を生成。明示allowlistのpublicドキュメントをruntime_assetsへ追加。Volume1ガイドにリンク。チェック表はlocalStorageとJSON/印刷、工事アプリ/DBとは非連携、同ブラウザ共通領域と明示。
 再検証：reference-db-test.py、attachment-storage.cjs、private-export.cjs（OMUTA_TEST_OFFLINE=1も）、check-excel-compatibility.py、check-print-settings.py、private-release-test.py、shared-config-test.py、editor-cache.mjs、final-layout.cjs（390/768/1024/1366の主画面横幅と設定欄範囲）、final-manuals.cjs（46項目保存/再表示/JSON/オフライン編集）。全画面の文字重なりや第三者侵入試験の完了を意味しない。
 写真は任意ファイル添付可能、非PDFダウンロード。写真専用名称UI/写真台帳/電子黒板作成合成/OCR未実装。原本Storage本番実ファイル保存取得、SafariパスワードOSシート位置、全端末正式Excel、全バックアップ復元、オフライン再起動は残課題。工事アプリService Workerなし、HTML no-store。別の予定表PWAと混同しない。
+
+## 2026-11-05 マニュアルの読みやすさ改訂
+利用者のiPad PDF画面で小さく密な本文が読みにくいと報告。旧本文10pt/行送り17ptから印刷用14pt/行高1.85へ変更し、長段落を句点で分離、章ごと改ページ・目次・日本語フォントの字形埋込へ変更。操作冊子18ページ。Wordも本文13pt/行間1.65。
+Web版を公開allowlistへ追加（app-manual.html/specification.html/construction-guide.html）。iPadでは20px、狭幅18pxから文字±で16〜30pxに変更可能、目次・章内アンカー・画面幅折り返し。QRはHTMLへdata URLとして内包。使い方の先頭導線をWeb版とし、PDFとZIPにはキャッシュ更新用クエリを付与。アプリデータ・認証・計算処理は変更しない。
+検証：manual-readability.cjsで390/768/1024pxの折返し・拡大・13章リンク・QR・PDFリンク、final-manuals.cjsで46項目保存を回帰確認。PDFは日本語表示を画像で確認し、元文全文の保持と空ページなしをテキスト照合。private-release-test/shared-config-test通過。
