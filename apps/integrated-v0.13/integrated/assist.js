@@ -53,6 +53,7 @@ function renderDraft(){
 }
 async function readPdf(file){
  if(file.size>30e6)throw Error('PDFは30MB以内で追加してください。');
+ const header=new TextDecoder('ascii').decode(await file.slice(0,1024).arrayBuffer());if(!header.includes('%PDF-'))throw Error('選択した資料はPDFとして確認できません。ファイルの情報で種類を確認してください。写真は「写真を選ぶ・撮影する」、Excelは「Excelを選ぶ」から取り込めます。');
  class EmbeddedCMapReader {async fetch({name}){const data=WB_CMAPS[name];if(!data)throw Error('対応していない文字マップ：'+name);return {cMapData:Uint8Array.from(atob(data),c=>c.charCodeAt(0)),compressionType:1};}}
  const pdf=await pdfjsLib.getDocument({data:new Uint8Array(await file.arrayBuffer()),isEvalSupported:false,disableFontFace:true,useSystemFonts:true,CMapReaderFactory:EmbeddedCMapReader,useWorkerFetch:false}).promise;
  try{
