@@ -7,4 +7,4 @@ Source: https://github.com/KanjiVG/kanjivg/tree/610091ce618cf757ed1357a8954cd652
 License: https://creativecommons.org/licenses/by-sa/3.0/
 Legal code: https://creativecommons.org/licenses/by-sa/3.0/legalcode
 
-56 kana/digit SVG path sets extracted without geometric modification; paths embedded locally for offline tracing and shape comparison. No recognition model or external recognition service is used.
+91 kana/digit SVG path sets extracted without geometric modification; paths embedded locally for offline tracing and shape comparison. Composed numeric and yoon reference layouts made from these paths are also provided under CC BY-SA 3.0. No recognition model or external recognition service is used.
