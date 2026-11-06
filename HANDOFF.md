@@ -262,3 +262,8 @@ shared-db-test.pyに実PostgreSQLで修正前の不一致再現→修正後9/20/
 分析は新設/撤去/更新/既設/存置を分け、同一対象の数量を加算しない。矛盾数量はnull、仕様矛盾と不足を表示。旧版/参考とカタログ数量は今回数量から除外。場所+器具記号が一致する旧/撤去と更新後を未確定の対応候補とする。カタログ原文の実記載型番と公共型番/仕様の部分一致を照合し、明らかな仕様矛盾品は除外。公共基準は完全型番一致の出典/版/条件を表示し価格は自動採用しない。
 根拠確認チェックと数量/区分入力でWB.addCandidateへ追加。unitPrice=null、candidate、数量/単価確認false。存置/既設は自動追加しない。類似登録済みの二重追加を停止し既存採用を保持。分析5シートExcelは未確定の別レポート、正式Excelの計算/テンプレート/採用条件は変更なし。操作/仕様マニュアル更新。
 検証：material-analysis-core.cjs（重複加算防止、数量矛盾、区分、旧版除外、不適合カタログ候補除外、更新対応根拠）、material-analysis-ui.cjs（原文/根拠/チェック/候補追加/採用保持、XLSX読戻し、原文編集と削除後再分析、再読込、利用者分離、外部通信なし）、material-analysis-files.cjs（複数原本→順次読取、原文/ハッシュ/セル保存、共有用projectから全文除外、原文JSONバックアップ復元、390/768/1024幅）。tiff-import/photo-import/pdf-picker、private-workspace、final-layout、manual-readability、private-release-test、shared-config-testも通過。実ユーザー図面の抽出精度/取りこぼしとiPad Safari実資料での速度・メモリ・選定妥当性は未確認。外部AIは接続せず、APIキーや料金設定も追加しない。
+
+## 2026-11-06 資料直下の機器分類・選択・確認候補への一括追加
+利用者は「取り込んだ資料」の中から機器を分類し、必要なものを選択して予算/積算/設計の確認候補へ進めたいと依頼。分析結果をsource-list直下の「取り込んだ資料から抽出した機器」へ移動。各原本の「この資料の機器を確認」で出典を絞り込み、資料/機器種別/工事区分フィルターと分類数を表示。機器は数量/状態/チェックを先に表示し、仕様・根拠は折りたたみ。編集/チェック/詳細開閉を絞り込み・ページ追加間で保持し、表示外を含む選択件数を明示する。
+「表示中の入力済み機器を選択」「選択を解除」、全件確認後の一括追加と確認候補タブへの遷移（検索解除）を追加。単体追加と候補を開くボタンも保持。存置/既設/登録済みは選択除外、入力不備は追加前に全件で拒否。Workbench.addAnalysisCandidatesは全件を検証してデータを複製、保存成功時だけ一括確定、保存失敗は前のdataを維持。candidate・quantityChecked=false・priceChecked=false、UIではunitPrice=null。原本、既存採用、選択しない機器は保持。外部AI送信や解析原文の共有方式は変更しない。
+検証：material-analysis-selection.cjsで原本から絞込/機器種別/区分、表示外選択、未入力で全件非追加、確認取消、QuotaExceededErrorで非追加・既存保持、候補追加とタブ/検索解除、登録済み/存置/既設除外、35機器のページ/編集/選択保持、全選択/解除、390/768/1024幅、利用者切替。material-analysis-ui/files、private-workspace、final-layout、private-release-test、shared-config-test通過。iPad Safari実機での見やすさと実際の図面の分類精度は再確認を残す。操作/仕様マニュアル更新。
