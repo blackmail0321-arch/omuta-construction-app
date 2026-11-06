@@ -250,3 +250,7 @@ shared-db-test.pyに実PostgreSQLで修正前の不一致再現→修正後9/20/
 
 ## 2026-11-06 iPad PDF選択不可への対策
 利用者のiPadのPDF選択でもファイルがグレー表示され選べない報告。drawing-pdfのacceptを削除し、readPdf冒頭で最初1024bytes内の%PDF-署名を検査。拡張子/MIME未判定のPDFも選択後に読取可能にし、非PDFは案内して既存資料を保持する。pdf-picker.cjsで拡張子なしapplication/octet-streamの実PDF読取、偽PDF拒否・既存資料保持を確認。private-release-test通過。iPadのOSファイル選択動作そのものは実機再確認待ち。
+
+## 2026-11-06 TIFF図面の読取対応
+利用者スクリーンショットで原資料末尾が.tif。PDFではなくTIFFをPDF欄から選んでいた可能性が高い。端末内のUTIF3.1.0+pako1.0.11（npm取得、同梱ライセンス）を追加しJPEG/PNG/WebPに加えTIFFを読取・PNGプレビュー化。PDF欄から選んだ画像も同じ画像読取へルーティング。TIFFは30MB/3600万画素、通常TIFFのraw/CCITT G3,G4/LZW/JPEG/Deflate/PackBits、別形式やBigTIFFは変換案内。複数ページはdrawing-pageを指定。原本を保存したが0候補の場合は添付完了と明記。原本の画像プレビューと選択削除は維持。非公開原本を外部OCRへ送信しない。iPad実機と今回の利用者原本そのものは未検証。
+検証：tiff-import.cjsでraw/G4/LZW/Deflate/PackBitsの実ピクセル展開、複数ページ指定/範囲外拒否、PDF欄からTIFF→実OCR→原本表示→選択削除、外部通信なし。photo-import.cjs、pdf-picker.cjs、private-release-test.py、shared-config-test.py通過。使い方/仕様書更新。

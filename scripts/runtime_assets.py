@@ -14,6 +14,8 @@ def assets(include_archive=True):
         if (public_docs/name).is_file():result['downloads/final/'+name]=(public_docs/name).read_bytes()
     for name in ['tesseract.min.js','worker.min.js','tesseract-core-lstm.wasm.js','tesseract-core-lstm.wasm','LICENSE.md','LICENSE-core','lang/jpn.traineddata.gz','lang/eng.traineddata.gz','lang/LICENSE','lang/SOURCE.json']:
         result['vendor/ocr/'+name]=(APP/'vendor/ocr'/name).read_bytes()
+    for name in ['UTIF.js','pako_inflate.min.js','LICENSE-UTIF','LICENSE-pako']:
+        result['vendor/tiff/'+name]=(APP/'vendor/tiff'/name).read_bytes()
     if include_archive:
         archive=io.BytesIO()
         with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:

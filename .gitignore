@@ -6,3 +6,4 @@ __pycache__/
 /dist/
 # Generated copy for the nested construction entry point.
 /apps/integrated-v0.13/integrated/vendor/ocr/
+/apps/integrated-v0.13/integrated/vendor/tiff/
