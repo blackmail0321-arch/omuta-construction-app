@@ -254,3 +254,11 @@ shared-db-test.pyに実PostgreSQLで修正前の不一致再現→修正後9/20/
 ## 2026-11-06 TIFF図面の読取対応
 利用者スクリーンショットで原資料末尾が.tif。PDFではなくTIFFをPDF欄から選んでいた可能性が高い。端末内のUTIF3.1.0+pako1.0.11（npm取得、同梱ライセンス）を追加しJPEG/PNG/WebPに加えTIFFを読取・PNGプレビュー化。PDF欄から選んだ画像も同じ画像読取へルーティング。TIFFは30MB/3600万画素、通常TIFFのraw/CCITT G3,G4/LZW/JPEG/Deflate/PackBits、別形式やBigTIFFは変換案内。複数ページはdrawing-pageを指定。原本を保存したが0候補の場合は添付完了と明記。原本の画像プレビューと選択削除は維持。非公開原本を外部OCRへ送信しない。iPad実機と今回の利用者原本そのものは未検証。
 検証：tiff-import.cjsでraw/G4/LZW/Deflate/PackBitsの実ピクセル展開、複数ページ指定/範囲外拒否、PDF欄からTIFF→実OCR→原本表示→選択削除、外部通信なし。photo-import.cjs、pdf-picker.cjs、private-release-test.py、shared-config-test.py通過。使い方/仕様書更新。
+
+## 2026-11-06 複数資料の端末内分析・積算準備
+利用者は資料を蓄積し材料/撤去/更新対象/メーカー品/公共型番を分析して内訳準備を進めたいと依頼。外部AIサービスへの送信を明示的に希望せず「端末内の解析だけ」を選択。material-analysis-core.jsの規則・原文照合とmaterial-analysis.jsのUIを追加。図形認識/自動数量カウント/寸法計測/学習/全メーカー自動調査ではないことを明示。
+複数原本を先に保管→未読資料を順次PDF/OCR/XLSXで読取→資料の役割・原文・版を訂正→横断分析。通常の個別読取でも原文を保存。Excelは内訳様式でなくても原文を分析用に保管できる。旧取込の原本は添付関連があれば再読取可。TIFFは指定ページのみ、複数ページの不足を表示。同一ファイルはSHA256で参照元の重複を区別。
+原文全文とExcel読取行は利用者workspace+project別localStorage（omuta-local-analysis-v1）に分離し、project.documents.analysisには役割・版等のメタデータだけを保持。従来の共有/保存機構を変えず全文の自動外部送信を避ける。原文専用JSONの保存・同じ利用者/工事/原本識別情報に限定した復元あり。原本ZIP・工事JSONと原文JSONを別途バックアップ。明示確認して追加した候補と根拠は従来の工事共有対象。原文上限は1資料20万文字/工事100万文字。候補/根拠は端末内ストレージ暗号化とは別（従来同様）。
+分析は新設/撤去/更新/既設/存置を分け、同一対象の数量を加算しない。矛盾数量はnull、仕様矛盾と不足を表示。旧版/参考とカタログ数量は今回数量から除外。場所+器具記号が一致する旧/撤去と更新後を未確定の対応候補とする。カタログ原文の実記載型番と公共型番/仕様の部分一致を照合し、明らかな仕様矛盾品は除外。公共基準は完全型番一致の出典/版/条件を表示し価格は自動採用しない。
+根拠確認チェックと数量/区分入力でWB.addCandidateへ追加。unitPrice=null、candidate、数量/単価確認false。存置/既設は自動追加しない。類似登録済みの二重追加を停止し既存採用を保持。分析5シートExcelは未確定の別レポート、正式Excelの計算/テンプレート/採用条件は変更なし。操作/仕様マニュアル更新。
+検証：material-analysis-core.cjs（重複加算防止、数量矛盾、区分、旧版除外、不適合カタログ候補除外、更新対応根拠）、material-analysis-ui.cjs（原文/根拠/チェック/候補追加/採用保持、XLSX読戻し、原文編集と削除後再分析、再読込、利用者分離、外部通信なし）、material-analysis-files.cjs（複数原本→順次読取、原文/ハッシュ/セル保存、共有用projectから全文除外、原文JSONバックアップ復元、390/768/1024幅）。tiff-import/photo-import/pdf-picker、private-workspace、final-layout、manual-readability、private-release-test、shared-config-testも通過。実ユーザー図面の抽出精度/取りこぼしとiPad Safari実資料での速度・メモリ・選定妥当性は未確認。外部AIは接続せず、APIキーや料金設定も追加しない。

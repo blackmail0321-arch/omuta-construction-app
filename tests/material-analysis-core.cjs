@@ -1,0 +1,15 @@
+const A=require('../apps/integrated-v0.13/integrated/material-analysis-core.js'),assert=require('node:assert/strict');
+const doc=(id,t,role='design',extra={})=>({id,name:id+'.pdf',...extra,analysis:{role,text:t}}),analyze=docs=>A.analyze({documents:docs});
+let r=analyze([doc('plan','新設 照明器具 LSS1-4-48 数量18台 場所:1階廊下 天井直付 5000lm'),doc('schedule','新設 照明器具 LSS1-4-48 数量18台 場所:1階廊下 天井直付 5000lm')]);assert.equal(r.groups.length,1);assert.equal(r.groups[0].quantity,18);assert.equal(r.groups[0].support,2);assert.equal(r.groups[0].evidence.length,2);
+r=analyze([doc('a','新設 照明器具 A402 数量18台'),doc('b','新設 照明器具 A402 数量20台')]);assert.equal(r.groups[0].quantity,null);assert.match(r.groups[0].conflicts.join(),/数量/);
+r=analyze([doc('a','撤去 照明器具 A402 数量8台\n存置 照明器具 A402 数量2台\n既設 照明器具 A402 数量10台\n更新 照明器具 A402 数量6台')]);assert.deepEqual(r.groups.map(g=>g.operation),['撤去','存置','既設','更新']);assert(r.groups.at(-1).missing.some(x=>x.includes('撤去')));
+r=analyze([doc('a','新設 照明器具 A402 数量18台'),doc('old','新設 照明器具 A402 数量999台','reference'),doc('catalog','照明器具 公共型番:A402 メーカー:試験社 型番:TEST-88 天井直付 5000lm','catalog')]);assert.equal(r.groups.length,1);assert.equal(r.groups[0].quantity,18);assert.equal(r.groups[0].products.length,1);assert.equal(r.groups[0].products[0].model,'TEST-88');assert.equal(r.groups[0].references.length,1);
+r=analyze([doc('a','新設 照明器具 A402 数量18台 天井直付 5000lm'),doc('b','照明器具 公共型番:A402 メーカー:試験社 型番:WRONG 天井埋込 5000lm','catalog'),doc('c','照明器具 公共型番:A403 メーカー:試験社 型番:OTHER','catalog')]);assert.equal(r.groups[0].products.length,0);
+r=analyze([doc('a','新設 照明器具 A402 数量18台 場所:1階\n新設 照明器具 A402 数量2台 場所:2階')]);assert.equal(r.groups.length,2);
+r=analyze([doc('a','新設 照明器具 A402 数量18台','design',{sha256:'same'}),doc('b','新設 照明器具 A402 数量18台','design',{sha256:'same'})]);assert.equal(r.groups[0].support,1);assert.equal(r.groups[0].quantity,18);
+r=analyze([doc('a','撤去不要 照明器具 A402 数量18台\n照明器具 LSS1-4-48 5000lm')]);assert.equal(r.groups[0].operation,'存置');assert.equal(r.groups[1].quantity,null);assert.equal(r.groups[1].operation,'区分未確認');
+r=analyze([doc('a','新設 照明器具 A402 数量18台 2本')]);assert.equal(r.groups[0].quantity,null);assert(r.groups[0].missing.some(x=>x.includes('複数')));
+r=analyze([{id:'xlsx',name:'sheet.xlsx',analysis:{role:'new',rows:[{name:'コンセント',spec:'接地形',quantity:12,unit:'個',source:{sheet:'内訳書',row:9,quantityCell:'D9'}}]}}]);assert.equal(r.groups[0].quantity,12);assert.equal(r.groups[0].operation,'新設');assert.equal(r.groups[0].evidence[0].cell,'D9');
+console.log('PASS source-backed quantities without summing, conflicts, demolition/retention/existing/renewal, catalog provenance and incompatible products excluded, old quantities ignored, scope separation, duplicate file origins, no invented quantity, Excel citations');
+
+r=analyze([doc('old','撤去 照明器具 A402 数量18台 場所:1階 器具記号:A'),doc('new','新設 照明器具 LSS1-4-48 数量18台 場所:1階 器具記号:A')]);assert.equal(r.replacements.length,1);assert.equal(r.replacements[0].oldType,'A402');assert.equal(r.replacements[0].newType,'LSS1-4-48');assert.equal(r.replacements[0].evidence.length,2);
