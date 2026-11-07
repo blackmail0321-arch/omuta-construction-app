@@ -1,0 +1,9 @@
+/* Small, untimed number games. Play state stays in memory only. */
+(function(root){'use strict';
+function shuffle(values,random=Math.random){const out=[...values];for(let i=out.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
+function matching(count=2,max=5,random=Math.random){if(![2,3].includes(count)||![5,10].includes(max)||count>max)throw Error('ゲームの数を確認してください。');const values=shuffle(Array.from({length:max},(_,i)=>i+1),random).slice(0,count);return{values,left:shuffle(values,random),right:shuffle(values,random),paired:[],selected:null};}
+function selectMatch(s,side,value){if(!['left','right'].includes(side)||!s.values.includes(value)||s.paired.includes(value))return{state:s,status:'ignored'};if(!s.selected)return{state:{...s,selected:{side,value}},status:'selected'};if(s.selected.side===side)return{state:{...s,selected:s.selected.value===value?null:{side,value}},status:s.selected.value===value?'cleared':'selected'};if(s.selected.value!==value)return{state:s,status:'retry'};const next={...s,paired:[...s.paired,value],selected:null};return{state:next,status:next.paired.length===s.values.length?'complete':'matched'};}
+function ordering(count=3,random=Math.random){if(![3,5,10].includes(count))throw Error('ゲームの数を確認してください。');return{count,cards:shuffle(Array.from({length:count},(_,i)=>i+1),random),placed:[]};}
+function selectOrder(s,value){if(!s.cards.includes(value)||s.placed.includes(value))return{state:s,status:'ignored'};if(value!==s.placed.length+1)return{state:s,status:'retry'};const next={...s,placed:[...s.placed,value]};return{state:next,status:next.placed.length===next.count?'complete':'placed'};}
+root.MomoGames={matching,selectMatch,ordering,selectOrder};if(typeof module!=='undefined')module.exports=root.MomoGames;
+})(typeof window!=='undefined'?window:globalThis);

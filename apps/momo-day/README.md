@@ -26,6 +26,15 @@
 
 「すうじ」→「たしざん」で、色の違う丸を数えながら答えを選べます。最初は1＋1、次の問題は答えが5までのやさしい範囲。「すうじをえらぶ」で足す2つの数をそれぞれ0〜10から選べます（答えは0〜20）。「いっしょにかぞえる」でゆっくり数えます。初回回答だけを暗号化して直近10問まで保存し、再挑戦で履歴を水増ししません。足し算は文字の自動追加条件には使いません。
 
+## 数字のミニゲーム
+
+「すうじ」→「ミニゲーム」から、桃ちゃんと2種類の遊びができます。
+
+- 「すうじあわせ」：数字のカードと同じ数の丸のカードを1枚ずつタップ。数字から・丸からのどちらでも遊べます。2組は1〜5、3組は1〜10から重複しない数字を出します。合ったカードには「✓できた」を表示し、間違えた場合はその場で試し直せます。
+- 「じゅんばん」：1から小さい順にカードを押して並べます。1〜3、1〜5、1〜10から選べ、「つぎは」の数字を常に表示します。
+
+時間制限・減点・ランキング・自動的な難易度上昇はありません。「もういちど」で同じ難しさから新しい並びにできます。「おしまい」でいつでもホームへ戻れます。ゲームの途中状態はメモリだけで、ゲーム切り替え・再起動・ロック等でリセットします。既存の文字・数字の習熟度や予定は変更せず、ゲームの結果を発達評価や進級に使いません。初回準備後はオフラインでも遊べます（音声の可否は端末の日本語音声によります）。
+
 ## 声をかわいく・聞き取りやすくする
 
 保護者の「練習と音声」で声を試聴し、保存できます。「かわいく・やさしく」はピッチ1.15の少し高い声、「はっきり」はピッチ1.0。速さは3段階、「ひとつずつ」の文字間は350/650/1000ms。初期はゆっくり・650msです。「かわいく・ゆっくりにする」でおすすめ設定を試せます。
@@ -72,7 +81,7 @@
 
 ## 検証
 
-`node apps/momo-day/tests/core.cjs`、`node apps/momo-day/tests/calendar-activities.cjs`、`node apps/momo-day/tests/voice-sequence.cjs`、`node apps/momo-day/tests/hundred.cjs`、`node apps/momo-day/tests/choice-addition.cjs`、`node apps/momo-day/tests/browser.cjs`、`node apps/momo-day/tests/recognition.cjs`、`node apps/momo-day/tests/security-offline.cjs`。Playwright/Chromiumを使用。音声は端末内音声のAPI呼び出しをスタブで検証しており、実際のiPadの声・Apple Pencil・本人の手書きは実機で確認する必要があります。参照215字形が上位候補に入ることを確認していますが、一般の手書きの認識精度を示すものではありません。
+`node apps/momo-day/tests/core.cjs`、`node apps/momo-day/tests/games-core.cjs`、`node apps/momo-day/tests/games-browser.cjs`、`node apps/momo-day/tests/calendar-activities.cjs`、`node apps/momo-day/tests/voice-sequence.cjs`、`node apps/momo-day/tests/hundred.cjs`、`node apps/momo-day/tests/choice-addition.cjs`、`node apps/momo-day/tests/browser.cjs`、`node apps/momo-day/tests/recognition.cjs`、`node apps/momo-day/tests/security-offline.cjs`。Playwright/Chromiumを使用。音声は端末内音声のAPI呼び出しをスタブで検証しており、実際のiPadの声・Apple Pencil・本人の手書きは実機で確認する必要があります。参照215字形が上位候補に入ることを確認していますが、一般の手書きの認識精度を示すものではありません。
 
 ## 桃ちゃんのホーム画面アイコン
 
