@@ -60,20 +60,21 @@ async function readPdf(file){
  const pdf=await pdfjsLib.getDocument({data:new Uint8Array(await file.arrayBuffer()),isEvalSupported:false,disableFontFace:true,useSystemFonts:true,CMapReaderFactory:EmbeddedCMapReader,useWorkerFetch:false}).promise;
  try{
   if(pdf.numPages>200)throw Error('200ページ以内の図面を選んでください。');
-  const result=[],texts=[];
+  const result=[],texts=[],drawingQuantities=[];
   for(let p=1;p<=pdf.numPages;p++){
    $('drawing-status').textContent='PDFの文字を読取中：'+p+' / '+pdf.numPages+'ページ';
    const page=await pdf.getPage(p),content=await page.getTextContent(),lines=[];
    for(const t of content.items){if(!t.str)continue;let l=lines.find(l=>Math.abs(l.y-t.transform[5])<2);if(!l){l={y:t.transform[5],parts:[]};lines.push(l);}l.parts.push({x:t.transform[4],str:t.str});}
    let text=lines.sort((a,b)=>b.y-a.y).map(l=>l.parts.sort((a,b)=>a.x-b.x).map(t=>t.str).join(' ')).join('\n');
    if(!text.trim()){if(pdf.numPages>10)throw Error('画像PDFの文字読取は10ページ以内で選んでください。');const viewport=page.getViewport({scale:Math.min(2,2400/Math.max(page.view[2]-page.view[0],page.view[3]-page.view[1]))}),canvas=document.createElement('canvas');canvas.width=Math.ceil(viewport.width);canvas.height=Math.ceil(viewport.height);await page.render({canvasContext:canvas.getContext('2d'),viewport}).promise;text=await SOURCE_IMPORTS.recognize(canvas,m=>$('drawing-status').textContent='PDF '+p+'ページ：'+m);canvas.width=canvas.height=1;}
+   drawingQuantities.push(...MaterialAnalysis.extractDrawingQuantities(content.items,p,page.view[3]));
    texts.push('【p'+p+'】\n'+text);result.push(...parseLines(text,file.name,p));page.cleanup();
   }
-  return {result,text:texts.join('\n\n'),pages:pdf.numPages};
+  return {result,text:texts.join('\n\n'),pages:pdf.numPages,drawingQuantities};
  }finally{await pdf.destroy();}
 }
 $('drawing-pdf').onchange=async e=>{if(busy||window.DOC_ANALYSIS?.isReading()){alert('他の読取の完了をお待ちください。');e.target.value='';return;}const f=e.target.files[0];if(!f)return;if(SOURCE_IMPORTS.isImage(f)){try{await importPhotoFile(f);}finally{e.target.value='';}return;}busy=true;loadedTarget=WB.project().id;loadedDocument=f.name;const target=WB.project();loadedAnalysisDoc=null;draft=[];$('drawing-result').replaceChildren();$('drawing-text').value='';clearPhoto();$('drawing-file-label').value=f.name;
- try{if(target.role!=='current')throw Error('今回の工事を選んでください。');const r=await readPdf(f);if(WB.project()!==target)throw Error('工事が切り替わりました。資料を読み直してください。');draft=r.result;$('drawing-text').value=r.text;const doc=await SOURCE_IMPORTS.save(f,target,'PDF文字読取',r.pages+'ページ／'+draft.length+'候補（未確認）');DOC_ANALYSIS.capture(doc,target,{text:r.text,page:1});loadedAnalysisDoc=doc.id;renderDraft();$('drawing-status').textContent=draft.length+'件を抽出しました。図形の個数は数えていません。原文と数量を確認してください。';}
+ try{if(target.role!=='current')throw Error('今回の工事を選んでください。');const r=await readPdf(f);if(WB.project()!==target)throw Error('工事が切り替わりました。資料を読み直してください。');draft=r.result;$('drawing-text').value=r.text;const doc=await SOURCE_IMPORTS.save(f,target,'PDF文字読取',r.pages+'ページ／'+draft.length+'候補（未確認）');DOC_ANALYSIS.capture(doc,target,{text:r.text,page:1,drawingQuantities:r.drawingQuantities});loadedAnalysisDoc=doc.id;renderDraft();$('drawing-status').textContent=draft.length+'件を抽出しました。図形の個数は数えていません。原文と数量を確認してください。';}
  catch(err){draft=[];$('drawing-result').replaceChildren();$('drawing-status').textContent='読取できませんでした：'+err.message+'。既存の積算データは保持しています。';}
  finally{busy=false;e.target.value='';}};
 let photoUrl=null;
