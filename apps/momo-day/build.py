@@ -3,7 +3,7 @@ import hashlib,json,zipfile,base64,re
 R=Path(__file__).resolve().parent
 for name,expected in json.loads((R/'vendor/SHA256SUMS.json').read_text()).items():
  if hashlib.sha256((R/name).read_bytes()).hexdigest()!=expected:raise ValueError('Vendor checksum mismatch: '+name)
-parts=[('CSS','style.css'),('STROKES','strokes.js'),('CORE','core.js'),('RECOGNITION','recognition.js'),('SPEECH','speech.js'),('VAULT','vault.js'),('GAMES','games.js'),('APP','app.js'),('OFFLINE','offline.js')]
+parts=[('CSS','style.css'),('STROKES','strokes.js'),('CORE','core.js'),('RECOGNITION','recognition.js'),('SPEECH','speech.js'),('VAULT','vault.js'),('GAMES','games.js'),('REVERSI','reversi.js'),('APP','app.js'),('OFFLINE','offline.js')]
 html=(R/'index.template.html').read_text()
 for marker,name in parts:
  text=(R/name).read_text()

@@ -1,0 +1,11 @@
+/* Local beginner Reversi: legal moves, eight-direction flips and automatic passes. */
+(function(root){'use strict';
+const directions=[[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]];
+function create(size=4){if(![4,8].includes(size))throw Error('盤の大きさを確認してください。');const board=Array(size*size).fill(0),m=size/2;board[(m-1)*size+m-1]=board[m*size+m]=2;board[(m-1)*size+m]=board[m*size+m-1]=1;return{size,board,turn:1,finished:false,winner:null,last:null};}
+function flips(s,index,side=s.turn){if(!Number.isInteger(index)||index<0||index>=s.board.length||s.board[index]!==0||![1,2].includes(side))return[];const row=Math.floor(index/s.size),col=index%s.size,out=[];for(const [dy,dx]of directions){let y=row+dy,x=col+dx,line=[];while(y>=0&&y<s.size&&x>=0&&x<s.size){const i=y*s.size+x,v=s.board[i];if(v===3-side)line.push(i);else{if(v===side&&line.length)out.push(...line);break;}y+=dy;x+=dx;}}return out;}
+function legal(s,side=s.turn){return s.board.map((_,i)=>i).filter(i=>flips(s,i,side).length);}
+function score(s){return{child:s.board.filter(v=>v===1).length,momo:s.board.filter(v=>v===2).length};}
+function move(s,index,side=s.turn){if(s.finished||side!==s.turn)return{state:s,status:'ignored'};const changed=flips(s,index,side);if(!changed.length)return{state:s,status:'ignored'};const board=[...s.board];board[index]=side;for(const i of changed)board[i]=side;let next={...s,board,turn:3-side,last:{index,flipped:changed,actor:side,passed:null}};if(!legal(next,next.turn).length){if(legal(next,side).length)next={...next,turn:side,last:{...next.last,passed:3-side}};else{const counts=score(next);next={...next,turn:0,finished:true,winner:counts.child===counts.momo?'draw':counts.child>counts.momo?'child':'momo'};}}return{state:next,status:next.finished?'complete':next.last.passed?'pass':'moved'};}
+function momo(s,random=Math.random){if(s.finished||s.turn!==2)return{state:s,status:'ignored'};const choices=legal(s,2);return choices.length?move(s,choices[Math.floor(random()*choices.length)],2):{state:s,status:'ignored'};}
+root.MomoReversi={create,flips,legal,score,move,momo};if(typeof module!=='undefined')module.exports=root.MomoReversi;
+})(typeof window!=='undefined'?window:globalThis);
