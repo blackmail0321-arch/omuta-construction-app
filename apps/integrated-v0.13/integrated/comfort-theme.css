@@ -66,3 +66,5 @@ button,input,select,textarea{font:inherit}button{font-weight:650;line-height:1.5
 .work-field-combo>input{padding-right:34px}.work-install-panel .work-field-combo::after{right:10px}#analysis-results .work-field-combo>.analysis-unit-choice{width:32px;min-height:48px}.work-install-panel input::-webkit-calendar-picker-indicator{display:none}
 
 .wb-removal-group{margin-top:24px;padding:24px;border:1px solid #cbd7ca;border-radius:16px;background:#f0f4ed}.wb-removal-group>details{margin-top:20px}.wb-removal-group>details>summary{padding:16px;background:white;border-radius:10px;cursor:pointer;font-weight:700}.wb-removal-group .wb-items{margin-top:20px}.wb-removal-group .wb-item{min-width:0}
+
+.analysis-state-chip.adopted{background:#dceede;color:#20563b;font-weight:700}.analysis-adopted{border-left:5px solid #63866a!important}
