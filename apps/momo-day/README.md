@@ -32,7 +32,7 @@
 
 - 「すうじあわせ」：数字のカードと同じ数の丸のカードを1枚ずつタップ。数字から・丸からのどちらでも遊べます。初期は1〜10の10組（数字10枚と丸10枚）です。2組・3組にも減らせます。10組のときは、選んだ数がスクロール中も見える帯と「えらびなおす」を用意しています。合ったカードには「✓できた」を表示し、間違えた場合はその場で試し直せます。
 - 「ババぬき」：桃ちゃんと2人で遊ぶ数字カード版です。初期は1〜10のペア20枚＋ジョーカー1枚（計21枚）で、最初に本人11枚・桃ちゃん10枚の手札を省略せず表示します。「ペアをそろえてはじめる」を押してから初めのペアを出し、本人が桃ちゃんの裏向きカードを1枚選びます。配った時の枚数と、ペアを除いた後の手札枚数を画面で区別します。通常の1ジョーカールールでは総数が奇数になります。少なくする場合は1〜3（計7枚）・1〜5（計11枚）にもできます。本人の手札に同じ数字がそろうと自動でペアになります。次は「もものばんへ」を押すと、桃ちゃんが本人のカードを無作為に1枚引きます。どちらかの手札がなくなると終わり、残った1枚はジョーカーです。ジョーカーは星の絵で、怖い演出・罰・勝敗履歴はありません。相手の手札は終了まで裏向きに表示します。
-- 「しんけいすいじゃく」：裏向きのカードを2枚めくり、同じ数字のペアを探します。初期は5組10枚で、2組4枚・10組20枚も選べます。違うカードは自動で伏せず、本人が覚えてから「もういちどふせる」で進めます。めくった数字を音声でも確認でき、時間制限・減点はありません。
+- 「しんけいすいじゃく」：「すうじあわせ」「もじあわせ」を切り替えられます。裏向きのカードを2枚めくり、同じ数字・文字のペアを探します。文字版は基本ひらがな46文字からゲームごとに重複なくランダムに選び、各文字を必ず2枚ずつ入れます。「もういちど」や枚数の変更でも文字を選び直します。初期は5組10枚で、2組4枚・10組20枚も選べます。違うカードは自動で伏せず、本人が覚えてから「もういちどふせる」で進めます。めくった数字・文字を音声でも確認でき、時間制限・減点はありません。
 - 「じゅんばん」：1から小さい順にカードを押して並べます。1〜3、1〜5、1〜10から選べ、「つぎは」の数字を常に表示します。
 
 時間制限・減点・ランキング・自動的な難易度上昇はありません。「もういちど」で同じ難しさから新しい並びにできます。「おしまい」でいつでもホームへ戻れます。ゲームの途中状態はメモリだけで、ゲーム切り替え・再起動・ロック等でリセットします。既存の文字・数字の習熟度や予定は変更せず、ゲームの結果を発達評価や進級に使いません。初回準備後はオフラインでも遊べます（音声の可否は端末の日本語音声によります）。
@@ -86,7 +86,7 @@
 
 ## 検証
 
-`node apps/momo-day/tests/core.cjs`、`node apps/momo-day/tests/memory-reading.cjs`、`node apps/momo-day/tests/baba-core.cjs`、`node apps/momo-day/tests/baba-browser.cjs`、`node apps/momo-day/tests/games-core.cjs`、`node apps/momo-day/tests/games-browser.cjs`、`node apps/momo-day/tests/calendar-activities.cjs`、`node apps/momo-day/tests/voice-sequence.cjs`、`node apps/momo-day/tests/hundred.cjs`、`node apps/momo-day/tests/choice-addition.cjs`、`node apps/momo-day/tests/browser.cjs`、`node apps/momo-day/tests/recognition.cjs`、`node apps/momo-day/tests/security-offline.cjs`。Playwright/Chromiumを使用。音声は端末内音声のAPI呼び出しをスタブで検証しており、実際のiPadの声・Apple Pencil・本人の手書きは実機で確認する必要があります。参照215字形が上位候補に入ることを確認していますが、一般の手書きの認識精度を示すものではありません。
+`node apps/momo-day/tests/core.cjs`、`node apps/momo-day/tests/kana-memory.cjs`、`node apps/momo-day/tests/memory-reading.cjs`、`node apps/momo-day/tests/baba-core.cjs`、`node apps/momo-day/tests/baba-browser.cjs`、`node apps/momo-day/tests/games-core.cjs`、`node apps/momo-day/tests/games-browser.cjs`、`node apps/momo-day/tests/calendar-activities.cjs`、`node apps/momo-day/tests/voice-sequence.cjs`、`node apps/momo-day/tests/hundred.cjs`、`node apps/momo-day/tests/choice-addition.cjs`、`node apps/momo-day/tests/browser.cjs`、`node apps/momo-day/tests/recognition.cjs`、`node apps/momo-day/tests/security-offline.cjs`。Playwright/Chromiumを使用。音声は端末内音声のAPI呼び出しをスタブで検証しており、実際のiPadの声・Apple Pencil・本人の手書きは実機で確認する必要があります。参照215字形が上位候補に入ることを確認していますが、一般の手書きの認識精度を示すものではありません。
 
 ## 桃ちゃんのホーム画面アイコン
 
