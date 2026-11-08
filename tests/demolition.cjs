@@ -8,6 +8,10 @@ assert.equal(await p.evaluate(()=>WB.calc({...WB.project().items[3],quote:999999
 await p.evaluate(()=>{WB.addCandidate({name:'既存撤去単価',spec:'OLD',quantity:1,unit:'式',unitPrice:100,category:'撤去・処分',source:{file:'過去撤去内訳'}});WB.addAnalysisCandidates([{...DEMOLITION.fields({name:'未設定',unit:'台'},WB.project()),spec:'C999',quantity:1,unit:'台',category:'撤去・処分',source:{file:'図面'}}]);});await p.locator('[data-view="assist"]:visible').first().click();const dl=p.waitForEvent('download');await p.click('#analysis-export-demolition');await (await dl).saveAs('/tmp/demolition-test.xlsx');execFileSync('python3',['-c',`import openpyxl
 p='/tmp/demolition-test.xlsx';w=openpyxl.load_workbook(p);v=openpyxl.load_workbook(p,data_only=True)
 assert w.sheetnames==['撤去明細','撤去代価表'];s=w['撤去代価表'];x=v['撤去代価表'];assert s.max_row==8
+assert w['撤去明細']['G10'].value=='=SUM(G5:G8)'
+assert v['撤去明細']['G10'].value==851
+assert v['撤去明細']['G11'].value is None
+assert '総額未確定' in v['撤去明細']['H10'].value
 assert s['F5'].value==.2 and s['F6'].value==.117
 assert x['O5'].value==200 and x['P5'].value==400
 assert x['O6'].value==117 and x['P6'].value==351
