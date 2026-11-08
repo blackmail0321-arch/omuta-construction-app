@@ -1,7 +1,7 @@
 /* Local beginner Reversi: legal moves, eight-direction flips and automatic passes. */
 (function(root){'use strict';
 const directions=[[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]];
-function create(size=4){if(![4,8].includes(size))throw Error('盤の大きさを確認してください。');const board=Array(size*size).fill(0),m=size/2;board[(m-1)*size+m-1]=board[m*size+m]=2;board[(m-1)*size+m]=board[m*size+m-1]=1;return{size,board,turn:1,finished:false,winner:null,last:null};}
+function create(size=8){if(![4,8].includes(size))throw Error('盤の大きさを確認してください。');const board=Array(size*size).fill(0),m=size/2;board[(m-1)*size+m-1]=board[m*size+m]=2;board[(m-1)*size+m]=board[m*size+m-1]=1;return{size,board,turn:1,finished:false,winner:null,last:null};}
 function flips(s,index,side=s.turn){if(!Number.isInteger(index)||index<0||index>=s.board.length||s.board[index]!==0||![1,2].includes(side))return[];const row=Math.floor(index/s.size),col=index%s.size,out=[];for(const [dy,dx]of directions){let y=row+dy,x=col+dx,line=[];while(y>=0&&y<s.size&&x>=0&&x<s.size){const i=y*s.size+x,v=s.board[i];if(v===3-side)line.push(i);else{if(v===side&&line.length)out.push(...line);break;}y+=dy;x+=dx;}}return out;}
 function legal(s,side=s.turn){return s.board.map((_,i)=>i).filter(i=>flips(s,i,side).length);}
 function score(s){return{child:s.board.filter(v=>v===1).length,momo:s.board.filter(v=>v===2).length};}
