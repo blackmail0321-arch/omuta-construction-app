@@ -68,3 +68,5 @@ button,input,select,textarea{font:inherit}button{font-weight:650;line-height:1.5
 .wb-removal-group{margin-top:24px;padding:24px;border:1px solid #cbd7ca;border-radius:16px;background:#f0f4ed}.wb-removal-group>details{margin-top:20px}.wb-removal-group>details>summary{padding:16px;background:white;border-radius:10px;cursor:pointer;font-weight:700}.wb-removal-group .wb-items{margin-top:20px}.wb-removal-group .wb-item{min-width:0}
 
 .analysis-state-chip.adopted{background:#dceede;color:#20563b;font-weight:700}.analysis-adopted{border-left:5px solid #63866a!important}
+
+.photo-survey{margin-top:24px}.photo-survey .wb-form{gap:20px}.photo-survey input,.photo-survey select{min-height:48px;max-width:100%}.photo-survey textarea{width:100%;box-sizing:border-box}.photo-survey p{overflow-wrap:anywhere}.photo-survey #ps-form>label{display:block;margin:20px 0}.photo-survey #ps-confirm{min-height:24px}

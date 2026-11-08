@@ -56,6 +56,7 @@ scripts+='<script>'+Path('integrated/source-imports.js').read_text().replace('</
 scripts+='<script>'+Path('integrated/demolition.js').read_text().replace('</script','<\\/script')+'</script>';
 scripts+='<script>'+Path('integrated/material-analysis.js').read_text().replace('</script','<\\/script')+'</script>';
 scripts+='<script>const DRAWING_MATCHER_WORKER='+json.dumps(Path('integrated/drawing-matcher-worker.js').read_text())+';'+Path('integrated/drawing-takeoff.js').read_text().replace('</script','<\\/script')+'</script>';
+scripts+='<script>'+Path('integrated/photo-survey.js').read_text().replace('</script','<\\/script')+'</script>';
 scripts+='<script>'+Path('integrated/catalog.js').read_text().replace('</script','<\\/script')+'</script>';
 scripts+='<script>'+Path('integrated/edit09.js').read_text().replace('</script','<\\/script')+'</script>';
 scripts+='<script>'+Path('integrated/simple-export.js').read_text().replace('</script','<\\/script')+'</script>'
