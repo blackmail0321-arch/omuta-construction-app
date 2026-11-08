@@ -21,13 +21,21 @@ assert x['O7'].value==100 and x['F7'].value is None
 assert x['O8'].value is None and x['P8'].value is None
 assert all('保全する採用' not in str(c.value) for row in s for c in row)
 assert w['撤去明細']['F5'].value=="='撤去代価表'!O5"
-`]);await p.evaluate(()=>{const s=WB.project().settings;s.durationMonths=3;s.directRounding=1;s.rounding=1;s.purpose='設計用';s.budget=0;s.workType='改修';WB.persist();});assert.equal(await p.evaluate(()=>WB.totals().formulaError),'');const formalDownload=p.waitForEvent('download');await p.evaluate(()=>WB.exportExcel());await (await formalDownload).saveAs('/tmp/demolition-formal.xlsx');execFileSync('python3',['-c',`import openpyxl
+`]);await p.evaluate(()=>{const s=WB.project().settings;s.durationMonths=3;s.directRounding=1;s.rounding=1;s.purpose='設計用';s.budget=0;s.workType='改修';WB.persist();});assert.equal(await p.evaluate(()=>WB.totals().formulaError),'');assert.equal(await p.evaluate(()=>WB.totals().count),2);const simpleDownload=p.waitForEvent('download');await p.evaluate(()=>exportSimpleWorkbook());await (await simpleDownload).saveAs('/tmp/demolition-one-simple.xlsx');execFileSync('python3',['-c',`import openpyxl
+w=openpyxl.load_workbook('/tmp/demolition-one-simple.xlsx',data_only=True)
+rows=list(w['採用明細']);assert len(rows)==3
+r=[r for r in rows[1:] if r[1].value=='撤去工事費'];assert len(r)==1
+assert r[0][3].value==1 and r[0][4].value=='式' and r[0][6].value==751
+assert len(list(w['撤去内訳']))==4
+`]);const formalDownload=p.waitForEvent('download');await p.evaluate(()=>WB.exportExcel());await (await formalDownload).saveAs('/tmp/demolition-formal.xlsx');execFileSync('python3',['-c',`import openpyxl
 w=openpyxl.load_workbook('/tmp/demolition-formal.xlsx',data_only=True)
-s=w['代価表'];found={}
-for row in s:
- if str(row[2].value or '') in ['A402','B402'] and '撤去' in str(row[1].value or ''):
-  n=row[0].row;found[row[2].value]=(s['N'+str(n-1)].value,s['M'+str(n)].value,s['S'+str(n)].value)
-assert found['A402']==(.2,0,200),found
-assert found['B402']==(.117,0,117),found
+s=w['内訳書'];grouped=[row for row in s if row[1].value=='撤去工事費']
+assert len(grouped)==1
+r=grouped[0];assert r[3].value==1 and r[4].value=='式' and r[5].value==751 and r[6].value==751
+assert not any(row[2].value in ['A402','B402'] and '撤去' in str(row[1].value or '') for row in s)
+assert '撤去内訳' in w.sheetnames
+z=w['撤去内訳'];found={row[1].value:row for row in list(z)[2:]}
+assert found['A402'][2].value==2 and found['A402'][5].value==400 and found['A402'][7].value==.2
+assert found['B402'][2].value==3 and found['B402'][5].value==351 and found['B402'][7].value==.117
 assert any('E2-1-14' in str(c.value) for sn in w.sheetnames for row in w[sn] for c in row)
 `]);assert.equal(await p.evaluate(()=>JSON.stringify(WB.project().items[0])),original);await p.reload();assert.equal(await p.evaluate(()=>WB.project().items[1].demolitionCost.otherRateConfirmed),true);for(const width of [390,768,1024]){await p.setViewportSize({width,height:1024});await p.locator('[data-view="assist"]:visible').first().click();assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2),false);}assert.deepEqual(errors,[]);console.log('PASS demolition target toggle, independent installation/removal keys, missing-rate/other-cost adoption guards, manual and verified table labor costs, no equipment material/publication price leakage, removal-only workbook with formulas/caches and unknown blanks, adoption preservation and reload');}finally{await b.close()}})().catch(e=>{console.error(e);process.exitCode=1});
