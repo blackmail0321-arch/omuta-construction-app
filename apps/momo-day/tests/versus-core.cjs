@@ -10,3 +10,6 @@ console.log('PASS alternating memory turns, pair ownership, tie, 100 full rounds
 const hiddenA={...G.memoryVersus(5),phase:'handoff',turn:'momo',cards:[1,2,3,4,5,1,2,3,4,5]},hiddenB={...hiddenA,cards:[5,4,3,2,1,5,4,3,2,1]};A.deepEqual(Object.keys(G.momoMemoryTurn(hiddenA,()=>0).state.seen),Object.keys(G.momoMemoryTurn(hiddenB,()=>0).state.seen));
 let passes=0;for(let n=0;n<100;n++){let s=R.create(4);while(!s.finished){s=R.move(s,R.legal(s)[Math.floor(Math.random()*R.legal(s).length)]).state;if(s.last.passed){passes++;A.equal(R.legal(s,s.last.passed).length,0);A(R.legal(s).length>0);}}}A(passes>0);
 console.log('PASS concealed-card independence and automatic pass rules');
+// Both people choose a position themselves; no random opponent turn is required.
+for(let round=0;round<100;round++){let s=G.beginBaba(G.oldMaid()).state,steps=0;while(!s.winner){A(steps++<1000);const actor=s.turn,other=actor==='child'?'momo':'child';A.equal(G.drawBabaFor(s,0,other).status,'ignored');const prior=JSON.stringify(s);const r=G.drawBabaFor(s,Math.floor(Math.random()*s[other].length),actor);A.equal(JSON.stringify(s),prior);s=r.state;A.equal(s.child.length+s.momo.length+s.pairs.length*2,21);if(!s.winner)A.equal(s.turn,other);}A.equal(s.pairs.length,10);}
+console.log('PASS 100 complete human-selected old-maid games, turn guards, immutable moves and deck conservation');
