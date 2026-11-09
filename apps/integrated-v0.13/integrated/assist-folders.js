@@ -13,5 +13,7 @@ for(const title of ['資料を蓄積して、まとめて分析する','Excelの
  panel.before(details);details.append(panel);panel.classList.add('assist-folder-body');
  panel.querySelector(':scope > h3').hidden=true;
 }
+let number=0;
+for(const section of root.children){const title=section.querySelector(':scope > summary')||section.querySelector(':scope > h3');if(title)title.textContent=(++number)+'. '+title.textContent.replace(/^\d+\.\s*/,'');}
 window.ASSIST_FOLDERS={open(target){for(let e=target;e&&e!==root;e=e.parentElement)if(e.tagName==='DETAILS')e.open=true;}};
 })();
