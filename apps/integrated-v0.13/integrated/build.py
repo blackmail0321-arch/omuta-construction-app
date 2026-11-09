@@ -61,6 +61,7 @@ scripts+='<script>'+Path('integrated/catalog.js').read_text().replace('</script'
 scripts+='<script>'+Path('integrated/edit09.js').read_text().replace('</script','<\\/script')+'</script>';
 scripts+='<script>'+Path('integrated/simple-export.js').read_text().replace('</script','<\\/script')+'</script>'
 scripts+='<script>'+Path('integrated/form-feedback.js').read_text()+'</script>'
+scripts+='<script>'+Path('integrated/assist-folders.js').read_text()+'</script>'
 # Static shared assets are authored once at repository root and copied to both entry points.
 import shutil
 shutil.copytree(Path("vendor/ocr"),Path("integrated/vendor/ocr"),dirs_exist_ok=True)
