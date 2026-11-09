@@ -28,10 +28,13 @@ jobs:
           python3 apps/savings-ledger/build.py
           python3 apps/weight-buddy/build.py
           python3 apps/momo-day/build.py
+          python3 apps/denken-study/scripts/build_app.py
+          python3 apps/denken-study/scripts/build_ipad_site.py
           python3 -m zipfile -e apps/april-planner/offline-site.zip "$RUNNER_TEMP/april-planner-site"
           python3 -m zipfile -e apps/savings-ledger/offline-site.zip "$RUNNER_TEMP/april-planner-site/savings"
           python3 -m zipfile -e apps/weight-buddy/offline-site.zip "$RUNNER_TEMP/april-planner-site/weight"
           python3 -m zipfile -e apps/momo-day/offline-site.zip "$RUNNER_TEMP/april-planner-site/momo"
+          python3 -m zipfile -e apps/denken-study/ipad-site.zip "$RUNNER_TEMP/april-planner-site/denken"
           python3 - <<'PY'
           from pathlib import Path
           import json

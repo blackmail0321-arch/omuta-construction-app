@@ -89,6 +89,7 @@ def package(output):
   for f in ROOT.rglob('*'):
    if not f.is_file() or any(p in ['.runtime','__pycache__','.git'] for p in f.parts):continue
    rel=f.relative_to(ROOT)
+   if rel.parts[0]=='web' or f.name=='ipad-site.zip':continue
    if rel.name in mapping:rel=rel.with_name(mapping[rel.name])
    if not str(rel).isascii():continue
    if f.suffix=='.png' or f.name=='bank.before-update.json':continue
