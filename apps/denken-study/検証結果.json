@@ -5,10 +5,12 @@
     "browser": "PASS: score, persistence, backup/restore, invalid-file rejection, optional selection, reload, timeout, mobile width",
     "forecast": "PASS: 24 groups, 120 subquestions, 4 sets of 80 points; selected numerical fixtures and full 30-item mock",
     "standalone": "PASS: embedded images and scoring with external requests blocked",
-    "ai_gateway": "PASS: 5 tests including simulated models authentication request; live key not configured",
+    "ai_gateway": "PASS: 8 tests including ephemeral key setup, invalid-key preservation, disconnect, origin restrictions; provider response mocked",
     "official_fetch": "BLOCKED: proxy tunnel 403; 0 other-year PDFs acquired",
     "materials": "PASS: 5 tests; 150 source answers agree, existing-bank retention, synthetic new-year import, short citation extraction",
-    "updates_ui": "PASS: source availability, failure-state retention, year filtering, missing-key feedback; update status simulated"
+    "updates_ui": "PASS: source availability, failure-state retention, year filtering, missing-key feedback; update status simulated",
+    "ai_setup_ui": "PASS: key input cleared and not saved in localStorage; request handled by mocked provider endpoint; no real API key used",
+    "desktop_setup": "PASS: created isolated Linux virtual environment and installed pinned PyMuPDF with standard TLS verification; Windows cmd not executed on Windows"
   },
   "limitations": [
     "0 verified external quotations",

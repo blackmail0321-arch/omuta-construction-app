@@ -39,6 +39,26 @@ class TestGateway(unittest.TestCase):
    return real(req,*a,**kw)
   with patch.dict(os.environ,{'DENKEN_AI_KEY':'test-only-not-a-real-key'}),patch('urllib.request.urlopen',remote):
    code,d=self.req('/api/ai/check',{},self.base);self.assertEqual(code,200);self.assertTrue(d['ok'])
+ def test_06_key_configuration_is_ephemeral(self):
+  real=urllib.request.urlopen;key='sk-test-not-a-real-key-1234567890'
+  def remote(req,*a,**kw):
+   if isinstance(req,urllib.request.Request) and req.full_url.startswith('https://api.openai.com/v1/models/'):
+    return FakeResponse(b'{"id":"gpt-5-mini"}')
+   return real(req,*a,**kw)
+  with patch.dict(os.environ,{},clear=True),patch('urllib.request.urlopen',remote):
+   code,d=self.req('/api/ai/configure',{'apiKey':key,'model':'gpt-5-mini'},self.base);self.assertEqual(code,200);self.assertTrue(self.req('/api/status')[1]['aiConfigured']);self.assertNotIn(key,json.dumps(d))
+   code,_=self.req('/api/ai/configure',{'apiKey':'bad','model':'x'},self.base);self.assertEqual(code,400);self.assertEqual(os.environ.get('DENKEN_AI_KEY'),key)
+   code,_=self.req('/api/ai/disconnect',{},self.base);self.assertEqual(code,200);self.assertNotIn('DENKEN_AI_KEY',os.environ)
+ def test_07_rejected_key_keeps_previous(self):
+  real=urllib.request.urlopen
+  def remote(req,*a,**kw):
+   if isinstance(req,urllib.request.Request) and req.full_url.startswith('https://api.openai.com/'):
+    raise urllib.error.HTTPError(req.full_url,401,'Unauthorized',{},None)
+   return real(req,*a,**kw)
+  with patch.dict(os.environ,{'DENKEN_AI_KEY':'previous-test-only'}),patch('urllib.request.urlopen',remote):
+   code,d=self.req('/api/ai/configure',{'apiKey':'sk-test-not-a-real-key-1234567890','model':'gpt-5-mini'},self.base);self.assertEqual(code,502);self.assertEqual(os.environ['DENKEN_AI_KEY'],'previous-test-only')
+ def test_08_key_configuration_rejects_other_origins(self):
+  self.assertEqual(self.req('/api/ai/configure',{'apiKey':'sk-test-not-a-real-key-1234567890'},'https://example.com')[0],403)
  def test_04_private_files(self):
   for path in ['/server.py','/assets/../server.py','/data/bank.json']:
    try:urllib.request.urlopen(self.base+path);self.fail(path)
