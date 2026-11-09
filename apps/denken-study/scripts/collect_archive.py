@@ -14,7 +14,7 @@ class Links(HTMLParser):
   if self.row:self.row[1]+=d
  def handle_endtag(self,t):
   if t=='a' and self.row:self.rows.append(self.row);self.row=None
-queue=['https://www.shiken.or.jp/answer/'];seen=set();pages=[];pdfs={};errors=[]
+queue=['https://www.shiken.or.jp/','https://www.shiken.or.jp/answer/','https://www.shiken.or.jp/answer/index_list.php?exam_type=10'];seen=set();pages=[];pdfs={};errors=[]
 while queue and len(seen)<60:
  u=queue.pop(0)
  if u in seen:continue
@@ -33,7 +33,7 @@ while queue and len(seen)<60:
    if urlparse(v).hostname not in ['www.shiken.or.jp','shiken.or.jp']:continue
    rows.append({'url':v,'label':label.strip()})
    if urlparse(v).path.lower().endswith('.pdf'):pdfs[v]={'url':v,'label':label.strip(),'foundOn':u}
-   elif any(w in label+v for w in ['第一種','第1種','一種','denken1','index_list','answer/']):
+   elif any(w in label+v for w in ['第一種','第1種','一種','denken1','index_list','answer','問題','解答','電気主任']):
     if v not in seen and v not in queue:queue.append(v)
   pages.append({'url':u,'file':name,'links':rows})
   time.sleep(.3)
