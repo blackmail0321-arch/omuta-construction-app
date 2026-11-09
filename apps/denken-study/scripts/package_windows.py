@@ -26,13 +26,13 @@ python -c "import sys; assert sys.version_info >= (3,10)" >nul 2>nul
 if not errorlevel 1 goto run_python
 goto not_found
 :run_installed
-"%STUDY_PY%" desktop_setup.py
+"%STUDY_PY%" launch.py
 goto finished
 :run_launcher
-py -3 desktop_setup.py
+py -3 launch.py
 goto finished
 :run_python
-python desktop_setup.py
+python launch.py
 goto finished
 :not_found
 echo Python was not found in the standard installation folders.
@@ -55,7 +55,8 @@ GUIDE='''電験一種 学習アプリ — 起動方法
 2. 展開したフォルダで START.cmd を開きます。
    マウスをファイル名に合わせ、左ボタンをすばやく2回押す操作です。
    または START.cmd を1回押して選び、キーボードのEnterキーを押しても開けます。
-3. 黒いウィンドウが出たら待ちます。ブラウザが開いた後も、黒いウィンドウは開いたままにします。
+3. START.cmdは追加部品をダウンロードせず起動します。黒いウィンドウが出たら待ちます。ブラウザが開いた後も、黒いウィンドウは開いたままにします。
+PDFの追加取得に必要な部品は別途準備します。407 Proxy Authentication Requiredは職場ネットワークの認証エラーです。管理担当者に正規の接続方法を確認してください。
 4. 新しい画面で「設定・記録」→「AIへの接続設定」を開きます。
 5. APIキーを入力し「認証を確認して接続する」を押します。キーはチャットへ貼らないでください。
 
