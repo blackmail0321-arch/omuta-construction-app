@@ -2,6 +2,10 @@ name: Publish April planner (manual)
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/denken-study/**'
 
 permissions:
   contents: read
