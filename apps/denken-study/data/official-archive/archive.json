@@ -1,0 +1,2270 @@
+{
+  "checkedAt": "2026-11-09T07:52:07Z",
+  "officialIndex": "https://www.shiken.or.jp/chief/first/qa/",
+  "pages": [
+    {
+      "url": "https://www.shiken.or.jp/chief/first/qa/",
+      "pdfs": [
+        "https://www.shiken.or.jp/chief/upload/20260830_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20260830_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20260830_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20260830_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20260830_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20251116_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20251116_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20251116_ch_first_a01_ks.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20241110_as_02_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20241110_as_02_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20241110_ch_first_a01_ks.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20231112_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20231112_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20231112_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20230819_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20221113_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20221113_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20221113_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20220820_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20220820_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20220820_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20220820_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20220820_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20211114_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20211114_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20211114_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20210821_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20201122_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20201122_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20201122_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20200912_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20191117_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20191117_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20191117_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf"
+      ]
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "pdfs": [
+        "https://www.shiken.or.jp/chief/upload/20181118_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20181118_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20181118_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20171119_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20171119_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20171119_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20170902_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20170902_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20170902_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20170902_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20170902_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20161120_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20161120_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20161120_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20160903_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20160903_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20160903_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20160903_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20160903_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20151122_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20151122_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20151122_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20150905_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20150905_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20150905_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20150905_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20150905_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20141123_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20141123_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20141123_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20140906_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20140906_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20140906_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20140906_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20140906_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20131124_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20131124_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20131124_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20130831_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20130831_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20130831_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20130831_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20130831_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20121202_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20121202_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20121202_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20120908_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20120908_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20120908_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20120908_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20120908_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20111127_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20111127_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20111127_ch_first_a01.pdf"
+      ]
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "pdfs": [
+        "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20101128_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20101128_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20101128_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20091129_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20091129_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20091129_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20090905_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20090905_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20090905_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20090905_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20090905_ch_first_a01.pdf"
+      ]
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "pdfs": [
+        "https://www.shiken.or.jp/chief/upload/20260830_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20260830_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20260830_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20260830_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20260830_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20251116_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20251116_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20251116_ch_first_a01_ks.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20241110_as_02_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20241110_as_02_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20241110_ch_first_a01_ks.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20231112_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20231112_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20231112_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20230819_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20221113_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20221113_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20221113_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20220820_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20220820_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20220820_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20220820_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20220820_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20211114_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20211114_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20211114_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20210821_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20201122_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20201122_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20201122_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20200912_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20191117_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20191117_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20191117_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260830_ch_first_q01.pdf",
+      "label": "令和8年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2026,
+      "stage": "primary",
+      "subject": "theory",
+      "kind": "question",
+      "sha256": "6a6a509a9cd2e9a36c79e90561345e0fc093389796ffd482833109057b0aa7f5",
+      "bytes": 1860950,
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260830_ch_first_q02.pdf",
+      "label": "令和8年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2026,
+      "stage": "primary",
+      "subject": "power",
+      "kind": "question",
+      "sha256": "f22bf43ddbd893d529f259a4532c8dfca47c169af9a58617db43c39cdb54f3e7",
+      "bytes": 1287640,
+      "pages": 13,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260830_ch_first_q03.pdf",
+      "label": "令和8年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2026,
+      "stage": "primary",
+      "subject": "machine",
+      "kind": "question",
+      "sha256": "07ad332e7b0758ec46b3f011a32b7e2b970196002b61a3f82b889ea31421bd4f",
+      "bytes": 1430198,
+      "pages": 15,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260830_ch_first_q04.pdf",
+      "label": "令和8年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2026,
+      "stage": "primary",
+      "subject": "law",
+      "kind": "question",
+      "sha256": "d08d955c32dc0f3a66dd6c89f3b0d75d9c2c380a1e6b8ac117682e1a0de098ad",
+      "bytes": 1402069,
+      "pages": 15,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260830_ch_first_a01.pdf",
+      "label": "令和8年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2026,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "3bc785220c48393abb9f0612d5966634a17e1fc57c11a892378cf0c7a325a77e",
+      "bytes": 55747,
+      "pages": 1,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20251116_ch_first_q01.pdf",
+      "label": "令和7年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20251116_ch_first_q02.pdf",
+      "label": "令和7年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20251116_ch_first_a01_ks.pdf",
+      "label": "令和7年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "fe0032e3645c4880342c1c1c58771f9b223ea9fded36d3e3bab2ceae24aa7bc2",
+      "bytes": 340703,
+      "pages": 16,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q01.pdf",
+      "label": "令和7年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "primary",
+      "subject": "theory",
+      "kind": "question",
+      "sha256": "82c8a374d6a70b1ee68dc57f16fb0ac373da0395c04aed077eaac325cb4353e1",
+      "bytes": 1868523,
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q02.pdf",
+      "label": "令和7年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "primary",
+      "subject": "power",
+      "kind": "question",
+      "sha256": "becee6547384fe6ed659d14168349fb3a1f2460fce53af89097b465aeac9fbdd",
+      "bytes": 1176165,
+      "pages": 11,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q03.pdf",
+      "label": "令和7年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "primary",
+      "subject": "machine",
+      "kind": "question",
+      "sha256": "e1bb81c75fe860bd0121ca39b274302f0a6e045a987bfac2d9f76bf6be27c314",
+      "bytes": 1531486,
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q04.pdf",
+      "label": "令和7年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "primary",
+      "subject": "law",
+      "kind": "question",
+      "sha256": "dba4e1c3c52231d29e42d660fc6b4a16bb74bfd4ff3439e7cad2cfdb2be4ef68",
+      "bytes": 1381072,
+      "pages": 15,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "label": "令和7年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "bb9d2cf32d89e0bbc4902fda506433ebddd800eaff3b897e2f3cc769badbe547",
+      "bytes": 56056,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "解答表の小問番号が連続していません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20241110_as_02_ch_first_q01.pdf",
+      "label": "令和6年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20241110_as_02_ch_first_q02.pdf",
+      "label": "令和6年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20241110_ch_first_a01_ks.pdf",
+      "label": "令和6年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "57b460f4874840f2cf42f91683860de3a34155f53f07c6722d8d9ed02d6838c1",
+      "bytes": 417426,
+      "pages": 18,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q01.pdf",
+      "label": "令和6年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "primary",
+      "subject": "theory",
+      "kind": "question",
+      "sha256": "ca585523ec8928ec49db469e4437b1b100db03059c6307845d18baa828063a82",
+      "bytes": 1646336,
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q02.pdf",
+      "label": "令和6年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "primary",
+      "subject": "power",
+      "kind": "question",
+      "sha256": "a380ba0ac9e68bd75be88e7ff2aa88941ac86a6d8467768ebe2c91c9448a8dfe",
+      "bytes": 1222770,
+      "pages": 11,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q03.pdf",
+      "label": "令和6年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "primary",
+      "subject": "machine",
+      "kind": "question",
+      "sha256": "195bc9ab0e66db8ac697b6db78415e86e406247248baaf7b1c5e3d76ec4f823f",
+      "bytes": 1550847,
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q04.pdf",
+      "label": "令和6年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "primary",
+      "subject": "law",
+      "kind": "question",
+      "sha256": "a9b17de19704f4318af4e5e5b857d1567e542cb7cefd58f5512f41efe0845916",
+      "bytes": 1137038,
+      "pages": 11,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "label": "令和6年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "a58324db8364811b7aa7d048800228c1d4d45bd16b99c55d2e94f5c52fbf9a03",
+      "bytes": 42713,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "law: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20231112_ch_first_q01.pdf",
+      "label": "令和5年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20231112_ch_first_q02.pdf",
+      "label": "令和5年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20231112_ch_first_a01.pdf",
+      "label": "令和5年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2023,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "8f93de63f3a2858885a0b4922f3fb9b00dc7c9630b1253e1c8696c1fbd42cc46",
+      "bytes": 408478,
+      "pages": 19,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q01.pdf",
+      "label": "令和5年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2023,
+      "stage": "primary",
+      "subject": "theory",
+      "kind": "question",
+      "sha256": "058324ab73f9f3fafa18518f0a5ecb75da0860397d07fa020c102c0af18ba223",
+      "bytes": 1549646,
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q02.pdf",
+      "label": "令和5年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "multiple question starts on one page"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q03.pdf",
+      "label": "令和5年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2023,
+      "stage": "primary",
+      "subject": "machine",
+      "kind": "question",
+      "sha256": "1744ab5be39a1382792901166e20779e2717aa0bb616629a2c531dbd0fbc317c",
+      "bytes": 1466703,
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q04.pdf",
+      "label": "令和5年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2023,
+      "stage": "primary",
+      "subject": "law",
+      "kind": "question",
+      "sha256": "ed0caf35b1dfc2a50910830dd7e9179cbf8b57c1f1df06ee2963e6f8a2e36d1d",
+      "bytes": 1272470,
+      "pages": 11,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20230819_ch_first_a01.pdf",
+      "label": "令和5年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2023,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "f24a4bcb545bc0ec93e92572290146ce784d313c01b8a32667ae859713afe499",
+      "bytes": 78648,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "theory: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20221113_ch_first_q01.pdf",
+      "label": "令和4年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20221113_ch_first_q02.pdf",
+      "label": "令和4年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20221113_ch_first_a01.pdf",
+      "label": "令和4年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2022,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "ed74575a7661eb5732ecf23fe70ad3e344b648cde54f678b4e5f945e89eb1456",
+      "bytes": 494742,
+      "pages": 19,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20220820_ch_first_q01.pdf",
+      "label": "令和4年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2022,
+      "stage": "primary",
+      "subject": "theory",
+      "kind": "question",
+      "sha256": "636c21c8a88c98ee294e7d3551c031c14c6ac647756f943ab9ce4fbaacad3d62",
+      "bytes": 1749613,
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20220820_ch_first_q02.pdf",
+      "label": "令和4年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2022,
+      "stage": "primary",
+      "subject": "power",
+      "kind": "question",
+      "sha256": "0fa41604c28ca1dfaae39ce7c6eba44112b1f2523bfeffcefd459d6ed03d9873",
+      "bytes": 1264617,
+      "pages": 11,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20220820_ch_first_q03.pdf",
+      "label": "令和4年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2022,
+      "stage": "primary",
+      "subject": "machine",
+      "kind": "question",
+      "sha256": "fbf27183f4d1c50cf6113dc1cb53d335c64e56e2b028b462c1daecc20f036c59",
+      "bytes": 1634433,
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20220820_ch_first_q04.pdf",
+      "label": "令和4年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2022,
+      "stage": "primary",
+      "subject": "law",
+      "kind": "question",
+      "sha256": "dbf250a250af91534d9c37ea08f99c90f86e7e7f0617c1bdfd9feb839085b186",
+      "bytes": 1378095,
+      "pages": 13,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20220820_ch_first_a01.pdf",
+      "label": "令和4年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2022,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "e1611a56aa02de9927c6bb925b0568c610264971f889e96a8d89e11ce6675800",
+      "bytes": 25855,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "law: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20211114_ch_first_q01.pdf",
+      "label": "令和3年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20211114_ch_first_q02.pdf",
+      "label": "令和3年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20211114_ch_first_a01.pdf",
+      "label": "令和3年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2021,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "3990b40842160c30a406714560f4ce577407aded2b3f15ce3b178a28f4b215dd",
+      "bytes": 364553,
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q01.pdf",
+      "label": "令和3年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q02.pdf",
+      "label": "令和3年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q03.pdf",
+      "label": "令和3年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q04.pdf",
+      "label": "令和3年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20210821_ch_first_a01.pdf",
+      "label": "令和3年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2021,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "d75fa69e7d57bf539239e1c10810071f4cc8397c208d88e1d1fbc8bdeed30f43",
+      "bytes": 22712,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "law: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20201122_ch_first_q01.pdf",
+      "label": "令和2年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20201122_ch_first_q02.pdf",
+      "label": "令和2年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20201122_ch_first_a01.pdf",
+      "label": "令和2年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2020,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "bef90193d9435ec30dd99d71437f1d57fb9c4750a6a62d951c620aee3907ade2",
+      "bytes": 407306,
+      "pages": 20,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q01.pdf",
+      "label": "令和2年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q02.pdf",
+      "label": "令和2年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q03.pdf",
+      "label": "令和2年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q04.pdf",
+      "label": "令和2年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200912_ch_first_a01.pdf",
+      "label": "令和2年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2020,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "cd70e7d9b08cf45e297d7e38d10ac5df65b8425f7706347edbfbce32dd625814",
+      "bytes": 70991,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "law: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20191117_ch_first_q01.pdf",
+      "label": "令和元年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20191117_ch_first_q02.pdf",
+      "label": "令和元年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20191117_ch_first_a01.pdf",
+      "label": "令和元年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2019,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "3fe8fc068f26301ce0eb1c3955309a448204bbeca56700ee1ea18e0e90ae0843",
+      "bytes": 317358,
+      "pages": 15,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q01.pdf",
+      "label": "令和元年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q02.pdf",
+      "label": "令和元年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q03.pdf",
+      "label": "令和元年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q04.pdf",
+      "label": "令和元年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "label": "令和元年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2019,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "1a8259c1b782e227e2628a30a4732c7bea3fdafee366e0421d26f95d35820cf4",
+      "bytes": 54545,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "machine: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20181118_ch_first_q01.pdf",
+      "label": "平成30年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20181118_ch_first_q02.pdf",
+      "label": "平成30年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20181118_ch_first_a01.pdf",
+      "label": "平成30年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2018,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "328e48cb2bfb082f123d5a0633c61d47f87b794b08281e19382ef58e2e28138c",
+      "bytes": 615259,
+      "pages": 21,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q01.pdf",
+      "label": "平成30年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q02.pdf",
+      "label": "平成30年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q03.pdf",
+      "label": "平成30年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q04.pdf",
+      "label": "平成30年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "label": "平成30年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2018,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "072ebddd0951388e61bc7406dd091005603827a10a57870bd06f8ee2661b9954",
+      "bytes": 128342,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "power: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20171119_ch_first_q01.pdf",
+      "label": "平成29年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20171119_ch_first_q02.pdf",
+      "label": "平成29年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20171119_ch_first_a01.pdf",
+      "label": "平成29年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2017,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "cecad01b17276cece3b81a2f07edfffe0bb242283149ddbb71082a0144511400",
+      "bytes": 397875,
+      "pages": 21,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20170902_ch_first_q01.pdf",
+      "label": "平成29年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20170902_ch_first_q02.pdf",
+      "label": "平成29年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20170902_ch_first_q03.pdf",
+      "label": "平成29年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20170902_ch_first_q04.pdf",
+      "label": "平成29年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20170902_ch_first_a01.pdf",
+      "label": "平成29年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2017,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "6807df1e1c3c58531995b1a448694762ca6731cbab31bfad96cc9a191f78f818",
+      "bytes": 73493,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "theory: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20161120_ch_first_q01.pdf",
+      "label": "平成28年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20161120_ch_first_q02.pdf",
+      "label": "平成28年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20161120_ch_first_a01.pdf",
+      "label": "平成28年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2016,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "528ef0e5dc74ddf9f36d3b27322fa91008fe02ffdc755e033da2f9c8be83ad9d",
+      "bytes": 531083,
+      "pages": 18,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20160903_ch_first_q01.pdf",
+      "label": "平成28年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20160903_ch_first_q02.pdf",
+      "label": "平成28年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20160903_ch_first_q03.pdf",
+      "label": "平成28年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20160903_ch_first_q04.pdf",
+      "label": "平成28年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20160903_ch_first_a01.pdf",
+      "label": "平成28年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2016,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "0bd3a6a29fc0ab1f2c178296d4b279385dec8a2cf7dd6590bd3f8e4caa44cd34",
+      "bytes": 21197,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "law: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20151122_ch_first_q01.pdf",
+      "label": "平成27年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20151122_ch_first_q02.pdf",
+      "label": "平成27年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20151122_ch_first_a01.pdf",
+      "label": "平成27年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2015,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "21d47b13fd6da9a17163ca6682ff4e84b752018082f2793ff533fdaed31283ba",
+      "bytes": 435984,
+      "pages": 23,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150905_ch_first_q01.pdf",
+      "label": "平成27年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150905_ch_first_q02.pdf",
+      "label": "平成27年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150905_ch_first_q03.pdf",
+      "label": "平成27年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150905_ch_first_q04.pdf",
+      "label": "平成27年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150905_ch_first_a01.pdf",
+      "label": "平成27年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2015,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "5ea2c01a40938b3266e3a929ce3d0cbf1d3b45a7af15e778d9f6c70c30ebc6f4",
+      "bytes": 71277,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "law: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20141123_ch_first_q01.pdf",
+      "label": "平成26年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20141123_ch_first_q02.pdf",
+      "label": "平成26年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20141123_ch_first_a01.pdf",
+      "label": "平成26年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2014,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "e8483885b94bfb1bfb917db4ce84abb0f65026bbc555bcb4dc046da013659058",
+      "bytes": 670888,
+      "pages": 18,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20140906_ch_first_q01.pdf",
+      "label": "平成26年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20140906_ch_first_q02.pdf",
+      "label": "平成26年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20140906_ch_first_q03.pdf",
+      "label": "平成26年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20140906_ch_first_q04.pdf",
+      "label": "平成26年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20140906_ch_first_a01.pdf",
+      "label": "平成26年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2014,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "2bd1205f33738936acc1583ee0acbf6c8796a0996950f5717e72c9ee30a28eca",
+      "bytes": 20874,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "law: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20131124_ch_first_q01.pdf",
+      "label": "平成25年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20131124_ch_first_q02.pdf",
+      "label": "平成25年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20131124_ch_first_a01.pdf",
+      "label": "平成25年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2013,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "6dfce3f1bb5bf3f6fcf26506f31695b268533753f1d787b72ec7b74a895a4017",
+      "bytes": 601249,
+      "pages": 25,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20130831_ch_first_q01.pdf",
+      "label": "平成25年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20130831_ch_first_q02.pdf",
+      "label": "平成25年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20130831_ch_first_q03.pdf",
+      "label": "平成25年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20130831_ch_first_q04.pdf",
+      "label": "平成25年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20130831_ch_first_a01.pdf",
+      "label": "平成25年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2013,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "4d766222daccdb5ddd70ddb943d5b30794aaa89c95edbda633ca1c82021179bb",
+      "bytes": 72416,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "machine: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20121202_ch_first_q01.pdf",
+      "label": "平成24年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20121202_ch_first_q02.pdf",
+      "label": "平成24年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20121202_ch_first_a01.pdf",
+      "label": "平成24年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2012,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "c14d0483643751e998a1a5721b1434d109ff37d556939b40dd3d09044af1760a",
+      "bytes": 865744,
+      "pages": 25,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20120908_ch_first_q01.pdf",
+      "label": "平成24年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20120908_ch_first_q02.pdf",
+      "label": "平成24年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20120908_ch_first_q03.pdf",
+      "label": "平成24年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20120908_ch_first_q04.pdf",
+      "label": "平成24年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20120908_ch_first_a01.pdf",
+      "label": "平成24年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2012,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "29b26a57060822c0627ae56f1c159ce721f95179e5e663310c6897b159f17519",
+      "bytes": 21351,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "law: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20111127_ch_first_q01.pdf",
+      "label": "平成23年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20111127_ch_first_q02.pdf",
+      "label": "平成23年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20111127_ch_first_a01.pdf",
+      "label": "平成23年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "year": 2011,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "dce7a6886b6f52e579fbfa000e8b7b7b3573afffec0e74ac966d142cfef8a338",
+      "bytes": 581049,
+      "pages": 22,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q01.pdf",
+      "label": "平成23年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q02.pdf",
+      "label": "平成23年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q03.pdf",
+      "label": "平成23年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q04.pdf",
+      "label": "平成23年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "label": "平成23年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "year": 2011,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "01c142661a5aede0a49cdee44fb8edfd1982ebd9ba7a0990a13d013cf07a70d7",
+      "bytes": 20666,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "law: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20101128_ch_first_q01.pdf",
+      "label": "平成22年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20101128_ch_first_q02.pdf",
+      "label": "平成22年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20101128_ch_first_a01.pdf",
+      "label": "平成22年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "year": 2010,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "16879bd9626a6b328416e375165d2d1081419d294af6222d280fb90c20ce05c4",
+      "bytes": 351144,
+      "pages": 19,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q01.pdf",
+      "label": "平成22年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q02.pdf",
+      "label": "平成22年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q03.pdf",
+      "label": "平成22年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q04.pdf",
+      "label": "平成22年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "label": "平成22年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "year": 2010,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "a89ad0107ec70e03bcea21703f352faf68d82789117246ba1abad0afe82a9879",
+      "bytes": 35325,
+      "pages": 1,
+      "verified": true,
+      "gradingError": "power: 大問数が所定の数と一致しません"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20091129_ch_first_q01.pdf",
+      "label": "平成21年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20091129_ch_first_q02.pdf",
+      "label": "平成21年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20091129_ch_first_a01.pdf",
+      "label": "平成21年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "year": 2009,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "904e51df429559708006690b50c95b105f0f004489ce58a35cdf6e3f45ab30ab",
+      "bytes": 391485,
+      "pages": 21,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20090905_ch_first_q01.pdf",
+      "label": "平成21年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20090905_ch_first_q02.pdf",
+      "label": "平成21年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20090905_ch_first_q03.pdf",
+      "label": "平成21年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20090905_ch_first_q04.pdf",
+      "label": "平成21年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "verified": false,
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20090905_ch_first_a01.pdf",
+      "label": "平成21年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "year": 2009,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "8e37f40e0ce19ab7873ff03087c1f8d277415fb07127506919cb1eaa983302bb",
+      "bytes": 53838,
+      "pages": 4,
+      "verified": true,
+      "gradingError": "複数ページの解答表は未対応です。手動確認が必要です"
+    }
+  ],
+  "errors": [
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20251116_ch_first_q01.pdf",
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20251116_ch_first_q02.pdf",
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20241110_as_02_ch_first_q01.pdf",
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20241110_as_02_ch_first_q02.pdf",
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20231112_ch_first_q01.pdf",
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20231112_ch_first_q02.pdf",
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20230819_ch_first_q02.pdf",
+      "error": "multiple question starts on one page"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20221113_ch_first_q01.pdf",
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20221113_ch_first_q02.pdf",
+      "error": "PDF stage differs from official label"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20211114_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20211114_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20210821_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20201122_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20201122_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200912_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20191117_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20191117_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20181118_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20181118_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20171119_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20171119_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20170902_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20170902_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20170902_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20170902_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20161120_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20161120_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20160903_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20160903_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20160903_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20160903_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20151122_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20151122_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150905_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150905_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150905_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150905_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20141123_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20141123_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20140906_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20140906_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20140906_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20140906_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20131124_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20131124_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20130831_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20130831_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20130831_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20130831_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20121202_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20121202_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20120908_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20120908_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20120908_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20120908_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20111127_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20111127_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20101128_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20101128_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20091129_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20091129_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20090905_ch_first_q01.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20090905_ch_first_q02.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20090905_ch_first_q03.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20090905_ch_first_q04.pdf",
+      "error": "PDF identity not first class"
+    },
+    {
+      "year": 2026,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2026,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2026,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2026,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2025,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2025,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2025,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2025,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2024,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2024,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2024,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2024,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2023,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2023,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2023,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2023,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2022,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2022,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2022,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2022,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2021,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2021,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2021,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2021,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2020,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2020,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2020,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2020,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2019,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2019,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2019,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2019,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2018,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2018,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2018,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2018,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2017,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2017,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2017,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2017,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2016,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2016,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2016,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2016,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2015,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2015,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2015,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2015,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2014,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2014,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2014,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2014,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2013,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2013,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2013,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2013,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2012,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2012,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2012,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2012,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2011,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2011,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2011,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2011,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2010,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2010,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2010,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2010,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2009,
+      "subject": "theory",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2009,
+      "subject": "power",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2009,
+      "subject": "machine",
+      "gradingError": "question/answer count not verified"
+    },
+    {
+      "year": 2009,
+      "subject": "law",
+      "gradingError": "question/answer count not verified"
+    }
+  ],
+  "questions": [],
+  "note": "公式一覧に掲載された資料を全件取得してPDFの年度・試験区分を検証。原本は公式URLから閲覧。採点は問題と正答の対応を照合できた一次問題のみ。"
+}
