@@ -1,0 +1,22 @@
+{
+  "official": {
+    "fetched": 0,
+    "errors": [
+      {
+        "url": "https://www.shiken.or.jp/answer/",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+      }
+    ],
+    "import": {
+      "added": [],
+      "errors": []
+    }
+  },
+  "references": {
+    "added": 0,
+    "errors": [
+      "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    ]
+  },
+  "rebuilt": true
+}

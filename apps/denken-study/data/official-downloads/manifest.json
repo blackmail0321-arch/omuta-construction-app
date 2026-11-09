@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-07T08:14:37Z",
+  "pages": [
+    "https://www.shiken.or.jp/answer/"
+  ],
+  "pdfs": [],
+  "errors": [
+    {
+      "url": "https://www.shiken.or.jp/answer/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ],
+  "note": "一覧には他試験が含まれる場合があります。一種・年度・科目・問題と解答の対応を照合してから登録します。"
+}

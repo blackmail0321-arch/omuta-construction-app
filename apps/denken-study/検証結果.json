@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "bank": "PASS: 26 groups, 150 subquestions; all source answer symbols and point totals checked",
+    "core": "PASS: scoring and SRS intervals; latest-per-item statistics; readiness guard",
+    "browser": "PASS: score, persistence, backup/restore, invalid-file rejection, optional selection, reload, timeout, mobile width",
+    "forecast": "PASS: 24 groups, 120 subquestions, 4 sets of 80 points; selected numerical fixtures and full 30-item mock",
+    "standalone": "PASS: embedded images and scoring with external requests blocked",
+    "ai_gateway": "PASS: 5 tests including simulated models authentication request; live key not configured",
+    "official_fetch": "BLOCKED: proxy tunnel 403; 0 other-year PDFs acquired",
+    "materials": "PASS: 5 tests; 150 source answers agree, existing-bank retention, synthetic new-year import, short citation extraction",
+    "updates_ui": "PASS: source availability, failure-state retention, year filtering, missing-key feedback; update status simulated"
+  },
+  "limitations": [
+    "0 verified external quotations",
+    "Other past years not acquired",
+    "Live AI connection not configured",
+    "Topic notes do not provide complete solutions for all original exam subquestions",
+    "Original forecasts have not been calibrated to exam difficulty",
+    "Smartphone physical devices not tested",
+    "Other-year PDF parser implemented but validated with 2026 and synthetic metadata, not retrieved other-year papers"
+  ],
+  "files": {
+    "2026-answers.pdf": "3bc785220c48393abb9f0612d5966634a17e1fc57c11a892378cf0c7a325a77e",
+    "2026-power.pdf": "f22bf43ddbd893d529f259a4532c8dfca47c169af9a58617db43c39cdb54f3e7",
+    "2026-theory.pdf": "6a6a509a9cd2e9a36c79e90561345e0fc093389796ffd482833109057b0aa7f5",
+    "2026-law.pdf": "d08d955c32dc0f3a66dd6c89f3b0d75d9c2c380a1e6b8ac117682e1a0de098ad",
+    "2026-machine.pdf": "07ad332e7b0758ec46b3f011a32b7e2b970196002b61a3f82b889ea31421bd4f"
+  }
+}
