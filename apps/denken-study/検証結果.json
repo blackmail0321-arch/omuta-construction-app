@@ -11,7 +11,8 @@
     "updates_ui": "PASS: source availability, failure-state retention, year filtering, missing-key feedback; update status simulated",
     "ai_setup_ui": "PASS: key input cleared and not saved in localStorage; request handled by mocked provider endpoint; no real API key used",
     "desktop_setup": "PASS: created isolated Linux virtual environment and installed pinned PyMuPDF with standard TLS verification; Windows cmd not executed on Windows",
-    "windows_encoding": "PASS: 3 tests using cp932 as default for unqualified text reads/writes; server loads 150 source items; app rebuild preserves bytes; existing bank unchanged"
+    "windows_encoding": "PASS: 3 tests using cp932 as default for unqualified text reads/writes; server loads 150 source items; app rebuild preserves bytes; existing bank unchanged",
+    "comic_explanations": "PASS: all 74 groups render conversations; 6 mathematical/source tests; grading-gated step navigation and mini quizzes preserve official grades and notes; iPad portrait/landscape/mobile and offline checks pass"
   },
   "limitations": [
     "0 verified external quotations",
@@ -20,7 +21,8 @@
     "Topic notes do not provide complete solutions for all original exam subquestions",
     "Original forecasts have not been calibrated to exam difficulty",
     "Smartphone physical devices not tested",
-    "Other-year PDF parser implemented but validated with 2026 and synthetic metadata, not retrieved other-year papers"
+    "Other-year PDF parser implemented but validated with 2026 and synthetic metadata, not retrieved other-year papers",
+    "Detailed subquestion conversations cover 4 official groups; remaining official groups use conversational topic foundations, not complete worked solutions"
   ],
   "files": {
     "2026-answers.pdf": "3bc785220c48393abb9f0612d5966634a17e1fc57c11a892378cf0c7a325a77e",

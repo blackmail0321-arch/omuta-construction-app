@@ -21,3 +21,5 @@ python3 tests/encoding_test.py
 
 
 [iPad Web版の準備・公開範囲・使い方](IPAD_SETUP.md)（公開操作は未実施）
+
+[会話と図による解説の使い方・今回詳しくした問題](COMIC_GUIDE.md)
