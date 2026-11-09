@@ -61,7 +61,6 @@ scripts+='<script>'+Path('integrated/catalog.js').read_text().replace('</script'
 scripts+='<script>'+Path('integrated/edit09.js').read_text().replace('</script','<\\/script')+'</script>';
 scripts+='<script>'+Path('integrated/simple-export.js').read_text().replace('</script','<\\/script')+'</script>'
 scripts+='<script>'+Path('integrated/form-feedback.js').read_text()+'</script>'
-scripts+='<script>'+Path('integrated/assist-folders.js').read_text()+'</script>'
 # Static shared assets are authored once at repository root and copied to both entry points.
 import shutil
 shutil.copytree(Path("vendor/ocr"),Path("integrated/vendor/ocr"),dirs_exist_ok=True)
@@ -75,6 +74,7 @@ elif not all((Path('integrated/shared')/name).is_file() for name in ['shared-con
 base=base.replace('</head>','<script src="shared/shared-config.js"></script><script>if(window.OMUTA_SHARED_CONFIG?.url)document.documentElement.classList.add("shared-login-required");</script><style>.shared-login-required .app,.shared-login-required #wb-dialog{visibility:hidden}</style></head>')
 scripts+='<script>'+Path('integrated/standards-update.js').read_text().replace('</script','<\\/script')+'</script>'
 scripts+='<script src="shared/shared-client.js"></script><script src="shared/reference-library.js"></script><script src="shared/shared-editor.js"></script>'
+scripts+='<script>'+Path('integrated/assist-folders.js').read_text()+'</script>'
 base=base.replace('</body>',dialog+scripts+'</body>')
 Path('integrated/index.html').write_text(base)
 print('built',len(base.encode()))

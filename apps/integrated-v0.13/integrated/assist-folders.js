@@ -6,7 +6,7 @@ const find=text=>headings.find(h=>h.textContent.replace(/^1\.\s*/,'').trim()===t
 const reading=find('PDF・写真の文字を読み取る'),takeoff=document.getElementById('drawing-takeoff');
 // The takeoff tool was inserted into the OCR panel; expose it as its own top-level title.
 if(reading&&takeoff&&reading.contains(takeoff))reading.after(takeoff);
-for(const title of ['資料を蓄積して、まとめて分析する','Excelの明細をまとめて取り込む','PDF・写真の文字を読み取る','図面の器具を数える（確認付き）','取り込んだ資料','追加する機器を選ぶ']){
+for(const title of ['資料を蓄積して、まとめて分析する','Excelの明細をまとめて取り込む','PDF・写真の文字を読み取る','図面の器具を数える（確認付き）','取り込んだ資料','追加する機器を選ぶ','参考資料を探す']){
  const panel=find(title);if(!panel)continue;
  const details=document.createElement('details');details.className='assist-folder';
  const summary=document.createElement('summary');summary.textContent=title;details.append(summary);
