@@ -34,6 +34,7 @@ jobs:
           python3 apps/momo-day/build.py
           node --check apps/denken-study/core.js
           node --check apps/denken-study/comic.js
+          node --check apps/denken-study/pwa-update.js
           node --check apps/denken-study/app.js
           node apps/denken-study/tests/core.cjs
           python3 apps/denken-study/tests/lessons_test.py
