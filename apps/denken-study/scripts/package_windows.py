@@ -26,13 +26,13 @@ python -c "import sys; assert sys.version_info >= (3,10)" >nul 2>nul
 if not errorlevel 1 goto run_python
 goto not_found
 :run_installed
-"%STUDY_PY%" launch.py
+"%STUDY_PY%" -X utf8 launch.py
 goto finished
 :run_launcher
-py -3 launch.py
+py -3 -X utf8 launch.py
 goto finished
 :run_python
-python launch.py
+python -X utf8 launch.py
 goto finished
 :not_found
 echo Python was not found in the standard installation folders.
@@ -93,7 +93,7 @@ def package(output):
    if not str(rel).isascii():continue
    if f.suffix=='.png' or f.name=='bank.before-update.json':continue
    body=f.read_bytes()
-   if f.name=='README.md':body=f.read_text().replace('はじめに.md','GUIDE_JA.md').encode('utf-8')
+   if f.name=='README.md':body=f.read_text(encoding="utf-8").replace('はじめに.md','GUIDE_JA.md').encode('utf-8')
    z.writestr('denken-study/'+rel.as_posix(),body)
  with zipfile.ZipFile(output) as z:
   assert z.testzip() is None
@@ -101,7 +101,7 @@ def package(output):
   b=z.read('START.cmd');assert b.isascii() and b.count(b'\r\n')>=20 and b'\\r\\n' not in b
   assert z.read('denken-study/index.html')==(ROOT/'index.html').read_bytes()
   assert 'denken-study/desktop_setup.py' in z.namelist()
- output.with_suffix('.sha256').write_text(hashlib.sha256(output.read_bytes()).hexdigest()+'  '+output.name+'\n')
+ output.with_suffix('.sha256').write_text(hashlib.sha256(output.read_bytes()).hexdigest()+'  '+output.name+'\n', encoding="utf-8")
  return output
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--output',required=True);a=p.parse_args();f=package(a.output);print('Verified ASCII-name ZIP:',f.stat().st_size,'bytes')

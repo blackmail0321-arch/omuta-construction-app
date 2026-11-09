@@ -10,7 +10,8 @@
     "materials": "PASS: 5 tests; 150 source answers agree, existing-bank retention, synthetic new-year import, short citation extraction",
     "updates_ui": "PASS: source availability, failure-state retention, year filtering, missing-key feedback; update status simulated",
     "ai_setup_ui": "PASS: key input cleared and not saved in localStorage; request handled by mocked provider endpoint; no real API key used",
-    "desktop_setup": "PASS: created isolated Linux virtual environment and installed pinned PyMuPDF with standard TLS verification; Windows cmd not executed on Windows"
+    "desktop_setup": "PASS: created isolated Linux virtual environment and installed pinned PyMuPDF with standard TLS verification; Windows cmd not executed on Windows",
+    "windows_encoding": "PASS: 3 tests using cp932 as default for unqualified text reads/writes; server loads 150 source items; app rebuild preserves bytes; existing bank unchanged"
   },
   "limitations": [
     "0 verified external quotations",

@@ -4,8 +4,8 @@ from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 import argparse,json,os,urllib.request,urllib.error,urllib.parse,time,threading,re,sys,importlib.util
 ROOT=Path(__file__).resolve().parent
-BANK=json.loads((ROOT/'data/bank.json').read_text())
-QUESTIONS={q['id']:q for q in BANK['questions']+json.loads((ROOT/'data/originals.json').read_text())+json.loads((ROOT/'data/forecasts.json').read_text())}
+BANK=json.loads((ROOT/'data/bank.json').read_text(encoding="utf-8"))
+QUESTIONS={q['id']:q for q in BANK['questions']+json.loads((ROOT/'data/originals.json').read_text(encoding="utf-8"))+json.loads((ROOT/'data/forecasts.json').read_text(encoding="utf-8"))}
 AI_LOCK=threading.BoundedSemaphore(2)
 UPDATE_LOCK=threading.Lock()
 UPDATE_STATUS={'state':'idle','message':'まだ更新していません'}
@@ -15,7 +15,7 @@ def update_worker():
  global UPDATE_STATUS
  try:
   spec=importlib.util.spec_from_file_location('study_update',ROOT/'scripts/update_materials.py');mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
-  result=mod.update();bank=json.loads((ROOT/'data/bank.json').read_text());QUESTIONS.update({q['id']:q for q in bank['questions']})
+  result=mod.update();bank=json.loads((ROOT/'data/bank.json').read_text(encoding="utf-8"));QUESTIONS.update({q['id']:q for q in bank['questions']})
   added=len(result.get('official',{}).get('import',{}).get('added',[]));refs=result.get('references',{}).get('added',0)
   blocked=not added and not refs and bool(result.get('official',{}).get('errors') or result.get('references',{}).get('errors'))
   UPDATE_STATUS={'state':'blocked' if blocked else 'done','message':'通信または資料の確認が必要です' if blocked else '教材の確認処理が完了しました','result':result,'finished':time.time()}
@@ -82,7 +82,7 @@ class Handler(SimpleHTTPRequestHandler):
   if not AI_LOCK.acquire(blocking=False):return self.reply(429,{'error':'説明の作成中です。少し待ってから再試行してください'})
   try:
    context={'year':q['year'],'subject':q['subject'],'topic':q['topic'],'questionText':q['text'],'correctAnswers':q['items'],'learnerQuestion':user}
-   citations=json.loads((ROOT/'data/citations.json').read_text()) if (ROOT/'data/citations.json').exists() else []
+   citations=json.loads((ROOT/'data/citations.json').read_text(encoding="utf-8")) if (ROOT/'data/citations.json').exists() else []
    context['referenceMaterials']=[c for c in citations if c.get('verifiedRetrieval') and any(k in q['topic']+q['text'] for k in c.get('keywords',[]))][:5]
    content=[{'type':'input_text','text':json.dumps(context,ensure_ascii=False)}]+[{'type':'input_image','image_url':p['src']} for p in q['pages']]
    payload={'model':os.environ.get('DENKEN_AI_MODEL','gpt-5-mini'),'instructions':SYSTEM,'input':[{'role':'user','content':content}],'max_output_tokens':5000,'store':False}

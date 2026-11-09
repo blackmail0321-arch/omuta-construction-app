@@ -50,7 +50,7 @@ def main():
    if len(content)>30_000_000 or not content.startswith(b'%PDF-'):raise ValueError('有効な30MB以下のPDFではありません')
    name=f'{n:03d}-'+hashlib.sha256(entry['url'].encode()).hexdigest()[:12]+'.pdf';(dest/name).write_bytes(content);entry.update(downloaded=True,file=name,sha256=hashlib.sha256(content).hexdigest())
   except (urllib.error.URLError,ValueError) as e:entry['error']=str(e)
- result={'checked_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'pages':list(seen),'pdfs':list(pdfs.values()),'errors':errors,'note':'一覧には他試験が含まれる場合があります。一種・年度・科目・問題と解答の対応を照合してから登録します。'};(dest/'manifest.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
+ result={'checked_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'pages':list(seen),'pdfs':list(pdfs.values()),'errors':errors,'note':'一覧には他試験が含まれる場合があります。一種・年度・科目・問題と解答の対応を照合してから登録します。'};(dest/'manifest.json').write_text(json.dumps(result,ensure_ascii=False,indent=2), encoding="utf-8")
  print(f'Checked {len(seen)} page(s); discovered {len(pdfs)} PDF link(s); errors: {len(errors)}')
  if errors and not pdfs:raise SystemExit(2)
 if __name__=='__main__':main()

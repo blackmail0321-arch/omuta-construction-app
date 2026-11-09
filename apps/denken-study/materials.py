@@ -68,7 +68,7 @@ def parse_questions(path,answer_groups,year,sid,source_url=''):
   return out
 
 def import_pairs(root,entries):
- root=Path(root);bank=json.loads((root/'data/bank.json').read_text());grouped={};report={'added':[],'skipped':[],'errors':[]}
+ root=Path(root);bank=json.loads((root/'data/bank.json').read_text(encoding="utf-8"));grouped={};report={'added':[],'skipped':[],'errors':[]}
  for entry in entries:
   try:
    ident=identity(entry['path'])
@@ -93,5 +93,5 @@ def import_pairs(root,entries):
    except Exception as e:report['errors'].append({'year':year,'subject':sid,'error':str(e)})
  if report['added']:
   # Preserve the last bank; replace only after all records can be serialized.
-  content=json.dumps(bank,ensure_ascii=False,separators=(',',':'));shutil.copy2(root/'data/bank.json',root/'data/bank.before-update.json');tmp=root/'data/bank.next.json';tmp.write_text(content);tmp.replace(root/'data/bank.json')
+  content=json.dumps(bank,ensure_ascii=False,separators=(',',':'));shutil.copy2(root/'data/bank.json',root/'data/bank.before-update.json');tmp=root/'data/bank.next.json';tmp.write_text(content, encoding="utf-8");tmp.replace(root/'data/bank.json')
  return report

@@ -42,7 +42,7 @@ def get_article(url):
 def fetch_references():
  dest=ROOT/'data/references';dest.mkdir(exist_ok=True);index='https://www.jeea.or.jp/course/contents.html';a,_=get_article(index)
  terms={'変圧器':['変圧器','並行運転'],'同期':['同期','短絡比'],'半導体':['半導体','パワー'],'計測':['計測','ディジタル','実効値'],'保護':['地絡','遮断','保護'],'発電':['揚水','水力','火力'],'法規':['電気事業法','保安','技術基準']}
- refs=json.loads((ROOT/'data/citations.json').read_text()) if (ROOT/'data/citations.json').exists() else [];seen={x['url'] for x in refs};added=0;errors=[]
+ refs=json.loads((ROOT/'data/citations.json').read_text(encoding="utf-8")) if (ROOT/'data/citations.json').exists() else [];seen={x['url'] for x in refs};added=0;errors=[]
  for href,label in a.links:
   topic_terms=[t for tags in terms.values() for t in tags if t in label]
   if not topic_terms:continue
@@ -56,16 +56,16 @@ def fetch_references():
    if added>=8:break
    time.sleep(.3)
   except Exception as e:errors.append({'url':url,'error':str(e)})
- (ROOT/'data/citations.json').write_text(json.dumps(refs,ensure_ascii=False,indent=2));return {'added':added,'total':len(refs),'errors':errors}
+ (ROOT/'data/citations.json').write_text(json.dumps(refs,ensure_ascii=False,indent=2), encoding="utf-8");return {'added':added,'total':len(refs),'errors':errors}
 
 def update():
  result={'official':{},'references':{},'rebuilt':False}
  proc=subprocess.run([sys.executable,str(ROOT/'scripts/fetch_official.py'),'--download'],capture_output=True,text=True,timeout=600)
- manifest_path=ROOT/'data/official-downloads/manifest.json';manifest=json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
+ manifest_path=ROOT/'data/official-downloads/manifest.json';manifest=json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else {}
  entries=[{'path':str(manifest_path.parent/e['file']),'url':e['url']} for e in manifest.get('pdfs',[]) if e.get('downloaded')]
  result['official']={'fetched':len(entries),'errors':manifest.get('errors',[]),'import':import_pairs(ROOT,entries) if entries else {'added':[],'errors':[]}}
  try:result['references']=fetch_references()
  except Exception as e:result['references']={'added':0,'errors':[str(e)]}
  subprocess.run([sys.executable,str(ROOT/'scripts/build_app.py')],check=True,capture_output=True,text=True);result['rebuilt']=True
- (ROOT/'data/update-result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2));return result
+ (ROOT/'data/update-result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2), encoding="utf-8");return result
 if __name__=='__main__':print(json.dumps(update(),ensure_ascii=False,indent=2))

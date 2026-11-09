@@ -105,5 +105,5 @@ for variant in [1,2]:
  ('過去問の設備基準を実設備や次年度へ適用するときに必要なことはどれか。',['数値だけ暗記して無条件に適用','対象設備・出力条件・基準日と現行条文の確認','メーカー名だけ確認','周波数だけ確認'],1,'適用条件と基準日が違えば要求も変わり得る。')])
 for s in ['theory','power','machine','law']:
  qs=[q for q in out if q['subject']==s];assert len(qs)==6;assert sum(i['points'] for q in qs for i in q['items'])==80
-(R/'data/forecasts.json').write_text(json.dumps(out,ensure_ascii=False))
+(R/'data/forecasts.json').write_text(json.dumps(out,ensure_ascii=False), encoding="utf-8")
 print(len(out),'original applied groups;',sum(len(q['items']) for q in out),'items; 4 subjects x 80 points')

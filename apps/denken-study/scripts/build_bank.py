@@ -48,5 +48,5 @@ for sid,label,x0,x1,minutes in subjects:
  assert all(sum(a['points'] for a in g)==20 for g in groups[4:])
 copy_pdf(answer_path,ROOT/'assets/2026-answers.pdf')
 bank={'schema':1,'created':'2026-11-07','subjects':[{'id':s,'label':l,'minutes':m} for s,l,a,b,m in subjects],'sources':sources,'questions':questions}
-(ROOT/'data/bank.json').write_text(json.dumps(bank,ensure_ascii=False,separators=(',',':')))
+(ROOT/'data/bank.json').write_text(json.dumps(bank,ensure_ascii=False,separators=(',',':')), encoding="utf-8")
 print('Bank:',len(questions),'groups,',sum(len(q['items']) for q in questions),'subquestions; all answer symbols found; point totals verified')

@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));import mat
 spec=importlib.util.spec_from_file_location('updater',ROOT/'scripts/update_materials.py');updater=importlib.util.module_from_spec(spec);spec.loader.exec_module(updater)
 class TestMaterials(unittest.TestCase):
  @classmethod
- def setUpClass(cls):cls.bank=json.loads((ROOT/'data/bank.json').read_text());cls.answers=materials.parse_answers(ROOT/'assets/2026-answers.pdf')
+ def setUpClass(cls):cls.bank=json.loads((ROOT/'data/bank.json').read_text(encoding="utf-8"));cls.answers=materials.parse_answers(ROOT/'assets/2026-answers.pdf')
  def test_01_all_150_answers(self):
   for sid in materials.SUBJECTS:
    expected=[q['items'] for q in self.bank['questions'] if q['year']==2026 and q['subject']==sid]
@@ -24,7 +24,7 @@ class TestMaterials(unittest.TestCase):
    r=Path(d);(r/'data').mkdir();(r/'assets').mkdir();shutil.copy2(ROOT/'data/bank.json',r/'data/bank.json')
    def synthetic(path):return (2025,'answers' if str(path).endswith('answers.pdf') else 'law')
    with patch.object(materials,'identity',synthetic):report=materials.import_pairs(r,entries)
-   self.assertEqual(len(report['added']),1);b=json.loads((r/'data/bank.json').read_text());self.assertEqual(len([q for q in b['questions'] if q['year']==2025]),6);self.assertEqual(sum(i['points'] for q in b['questions'] if q['year']==2025 for i in q['items']),80);self.assertTrue((r/'data/bank.before-update.json').exists())
+   self.assertEqual(len(report['added']),1);b=json.loads((r/'data/bank.json').read_text(encoding="utf-8"));self.assertEqual(len([q for q in b['questions'] if q['year']==2025]),6);self.assertEqual(sum(i['points'] for q in b['questions'] if q['year']==2025 for i in q['items']),80);self.assertTrue((r/'data/bank.before-update.json').exists())
  def test_05_short_citation_extraction(self):
   p=updater.Article();p.feed('<html><title>変圧器の解説</title><nav>ナビゲーション</nav><p>変圧器は交流電圧を変換する機器です。巻数と電圧の比を整理し、並行運転では変圧比とインピーダンスなどの条件を照合します。<script>untrusted()</script></p></html>')
   self.assertEqual(p.title,'変圧器の解説');self.assertEqual(len(p.paragraphs),1);self.assertNotIn('untrusted',p.paragraphs[0]);self.assertNotIn('ナビ',p.paragraphs[0])
