@@ -2,7 +2,7 @@
 from pathlib import Path
 import argparse,zipfile,hashlib
 ROOT=Path(__file__).resolve().parents[1]
-START='''@echo off
+START=r'''@echo off
 setlocal
 cd /d "%~dp0denken-study"
 if not exist "desktop_setup.py" (
@@ -11,20 +11,40 @@ if not exist "desktop_setup.py" (
   pause
   exit /b 1
 )
+set "STUDY_PY="
+for %%V in (314 313 312 311 310 315 316) do call :find_python "%LOCALAPPDATA%\Programs\Python\Python%%V\python.exe"
+for %%V in (314 313 312 311 310 315 316) do call :find_python "%ProgramFiles%\Python%%V\python.exe"
+if defined STUDY_PY goto run_installed
 where py >nul 2>nul
-if not errorlevel 1 (
-  py -3 desktop_setup.py
-) else (
-  where python >nul 2>nul
-  if errorlevel 1 (
-    echo Python 3.10 or later is required.
-    echo Install Python from https://www.python.org/downloads/windows/
-    echo Then open START.cmd again.
-    echo See README_JA.txt for Japanese instructions.
-  ) else (
-    python desktop_setup.py
-  )
-)
+if errorlevel 1 goto check_python
+py -3 -c "import sys; assert sys.version_info >= (3,10)" >nul 2>nul
+if not errorlevel 1 goto run_launcher
+:check_python
+where python >nul 2>nul
+if errorlevel 1 goto not_found
+python -c "import sys; assert sys.version_info >= (3,10)" >nul 2>nul
+if not errorlevel 1 goto run_python
+goto not_found
+:run_installed
+"%STUDY_PY%" desktop_setup.py
+goto finished
+:run_launcher
+py -3 desktop_setup.py
+goto finished
+:run_python
+python desktop_setup.py
+goto finished
+:not_found
+echo Python was not found in the standard installation folders.
+echo If you already installed Python, do not reinstall it yet.
+echo Keep this window open and ask for help locating python.exe.
+echo See README_JA.txt for Japanese instructions.
+goto finished
+:find_python
+if defined STUDY_PY exit /b 0
+if exist "%~1" set "STUDY_PY=%~1"
+exit /b 0
+:finished
 echo.
 echo The application process has ended. You may close this window.
 pause
@@ -44,7 +64,7 @@ ZIPの中から直接開かず、全ファイルを展開してください。
 日本語のファイル名が文字化けする解凍ソフトでも識別できるよう、ファイル名を英数字にしています。
 
 「Python 3.10 or later is required」と表示された場合：
-Pythonが見つかっていません。公式サイト https://www.python.org/downloads/windows/ からPython 3.10以上を導入する必要があります。
+Pythonが見つかっていません。この起動ファイルは標準のインストール先も直接探します。インストール済みなら再インストールせず、表示された画面とインストール先を確認してください。未導入なら公式サイト https://www.python.org/downloads/windows/ からPython 3.10以上を導入してください。
 職場PCでインストールの権限がない場合は、管理担当者に確認してください。
 
 起動用ウィンドウを閉じるとサーバーとAIの接続設定が終了します。再利用時はSTART.cmdを開いてください。
