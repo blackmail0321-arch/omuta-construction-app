@@ -32,7 +32,7 @@ const hcache=new Map();function holiday(s){const y=Number(s.slice(0,4));if(!hcac
 const weekday=s=>new Date(s+'T00:00:00Z').getUTCDay();
 const human=s=>{const [y,m,d]=s.split('-').map(Number);return `${y}年${m}月${d}日（${'日月火水木金土'[weekday(s)]}）`;};
 const caption=r=>[r.contentTop?'予定：'+r.contentTop:'',r.actualContent?'実施：'+r.actualContent:'',r.contentBottom?'旧下段：'+r.contentBottom:''].filter(Boolean).join(' / ');
-function badges(r){return (r.upper?`<span class="chip upper">${esc(C.UPPER[r.upper])}</span>`:'')+(r.lower?`<span class="chip">${esc(C.LOWER[r.lower])}</span>`:'');}
+function badges(r){return (r.upper?`<span class="chip upper ${['振','A振','P振'].includes(r.upper)?'leave':''}">${esc(C.UPPER[r.upper])}</span>`:'')+(r.lower?`<span class="chip ${r.lower!=='出'?'leave':''}">${esc(C.LOWER[r.lower])}</span>`:'');}
 function range(){return `${year}.04.01 — ${year+1}.03.31`;}
 function setSelects(){
  $('fiscal-year').innerHTML=Array.from({length:99},(_,i)=>`<option value="${2000+i}">${2000+i}年度</option>`).join('');
@@ -50,7 +50,7 @@ function render(){
  $('page-description').textContent=view==='search'?'年・月・日とキーワードで、必要な記録へ。':view==='summary'?'取得日数・残日数・時間休の利用可能時間を、年度ごとに確認。':'仕事の予定も、休暇の記録も。4月からの一年をまとめて。';
  document.querySelectorAll('[data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===view);b.setAttribute('aria-current',b.dataset.view===view?'page':'false');});
  for(const v of ['calendar','annual','summary','search'])$(v+'-view').hidden=v!==view;
- const t=C.totals(records,year);$('stat-paid').innerHTML=`${t.paid}<small>日</small>`;$('stat-hours').innerHTML=`${t.hours}<small>時間</small>`;$('stat-child').innerHTML=`${t.childHours}<small>時間</small>`;$('stat-days').innerHTML=`${t.registered}<small>日</small>`;$('stat-hour-count').textContent=`${t.hourCount}回の記録`;$('stat-child-count').textContent=`${t.childHourCount}回の記録`;renderLeaveStatus(t);
+ const t=C.totals(records,year);$('stat-paid').innerHTML=`${t.paid}<small>日</small>`;$('stat-hours').innerHTML=`${t.hours}<small>時間</small>`;$('stat-child').innerHTML=`${t.childHours}<small>時間</small>`;$('stat-days').innerHTML=`${t.registered}<small>日</small>`;$('stat-hour-count').textContent=`${t.hourCount}回の記録`;$('stat-child-count').textContent=`${t.childHourCount}回の記録`;renderLeaveStatus(t);renderCarryover();
  if(view==='calendar')renderCalendar();if(view==='annual')renderAnnual();if(view==='summary')renderSummary();if(view==='search'&&searchDates.length)renderSearch();
 }
 function renderCalendar(){
@@ -64,7 +64,7 @@ function renderCalendar(){
   const day=i-offset+1;
   if(day<1||day>n){const other=C.date(cy,month,day);html+=`<div class="day outside" aria-hidden="true"><span class="day-number">${other.getUTCDate()}</span></div>`;continue;}
   const s=C.iso(C.date(cy,month,day)),h=holiday(s),w=weekday(s),r=records[s]||C.empty();
-  const classes=['day',w===6?'saturday':w===0?'sunday':'',h?'is-holiday':'',s===now?'is-today':''];
+  const classes=['day',w===6?'saturday':w===0?'sunday':'',h?'is-holiday':'',s===now?'is-today':'',C.isLeave(r)?'has-leave':''];
   html+=`<button class="${classes.join(' ')}" data-date="${s}" aria-label="${esc(human(s)+' '+h+' '+(C.UPPER[r.upper]||'')+' '+(C.LOWER[r.lower]||'')+' '+caption(r))}"><span class="day-header"><span class="day-number ${h||w===0?'sun':w===6?'sat':''}">${day}</span>${h?`<span class="holiday-name" title="${esc(h)}">${esc(h)}</span>`:''}</span>${badges(r)}${comparisonBlocks(r)}${r.memoTop||r.memoBottom||r.actualMemo?'<span class="memo-dot">・メモあり</span>':''}</button>`;
  }
  $('calendar').innerHTML=html;
@@ -100,9 +100,19 @@ function renderLeaveStatus(t){
  }).join('')+`<article><h3>出張・遅参・振替など</h3><p>出張 ${t.trip}日 / 遅参 ${t.late}回 / 早退 ${t.early}回</p><p>子遅 ${t.childLate}回 / 子早 ${t.childEarly}回</p><p>振替 ${t.substitute}回 / AM ${t.am}回 / PM ${t.pm}回</p></article>`;
  $('allowance-note').textContent=`${year}年度の登録済み記録（未来日の予定も含む）を集計。時間休は1日${d}時間換算。通常の時間休は${p.hoursDeductPaid?'有給からも差し引き':'有給とは別枠'}、子の時間休は${p.childHoursDeductChild?'子の看護休暇からも差し引き':'子の看護休暇とは別枠'}です。`;
 }
+function renderCarryover(){
+ const p=allowances[year]||C.defaultAllowance(),c=C.carryover(records,year,p,today()),el=$('carryover-status');
+ el.classList.toggle('carry-warning',c.configured&&c.atRisk>0);
+ let body;
+ if(!c.configured)body='<strong>繰越有給の失効を確認しましょう</strong><p>繰越日数を設定すると、翌年3月31日までに使う必要がある日数を表示します。</p>';
+ else if(c.expired)body=`<strong>${esc(c.expiry)}時点の失効対象：${remainingDays(c.remaining,p.hoursPerDay,p.hoursDeductPaid)}</strong><p>期限内の休暇入力に基づく計算です。過去の入力を訂正すると再計算します。</p>`;
+ else body=`<strong>${c.remaining===0?'繰越分はすべて消化する入力になっています':c.atRisk>0?'3月31日までに、あと '+remainingDays(c.atRisk,p.hoursPerDay,p.hoursDeductPaid)+'分の有給を予定に入れましょう':'予定どおり取得すれば、失効見込みは0日です'}</strong><p>期限：${esc(c.expiry)}${c.daysLeft===0?'（本日まで）':'（あと'+c.daysLeft+'日）'} ／ 繰越 ${amount(c.carry)}日 ／ 今日までの入力で消化 ${remainingDays(c.consumed,p.hoursPerDay,p.hoursDeductPaid)}</p><p>繰越残り ${remainingDays(c.remaining,p.hoursPerDay,p.hoursDeductPaid)}のうち、期限までの取得予定 ${remainingDays(c.planned,p.hoursPerDay,p.hoursDeductPaid)}。予定はまだ消化済みに含めません。</p>`;
+ el.innerHTML=body+'<p class="footnote">繰越分から先に使い、3月31日までに取得しない残りは失効する計算です。休暇区分の入力に基づく目安で、実際に取得したかはご自身で確認してください。</p><button type="button" id="carryover-config" class="outline">繰越日数を設定・変更</button>';
+ $('carryover-config').onclick=openAllowance;
+}
 function openAllowance(){
  const p=allowances[year]||C.defaultAllowance();$('allowance-year').textContent=`${year}年度（${year}年4月〜${year+1}年3月）`;
- const fields=[...leaveTypes.map(([k,n])=>[k,n+'の付与・繰越（日）']),['hours','通常の時間休の年間上限（時間）'],['childHours','子の時間休の年間上限（時間）'],['hoursPerDay','1日を何時間として換算するか']];
+ const fields=[...leaveTypes.map(([k,n])=>[k,n+'の付与・繰越合計（日）']),['paidCarry','うち有給の繰越分（日・合計の内数）'],['hours','通常の時間休の年間上限（時間）'],['childHours','子の時間休の年間上限（時間）'],['hoursPerDay','1日を何時間として換算するか']];
  $('allowance-fields').innerHTML=fields.map(([k,label])=>`<label>${label}<input id="allowance-${k}" type="number" min="${k==='hoursPerDay'?1:0}" max="${k==='hoursPerDay'?24:10000}" step="${k==='hoursPerDay'?1:'0.01'}" ${k==='hoursPerDay'?'required':''} value="${p[k]??''}" placeholder="未設定"></label>`).join('');
  $('allowance-hoursDeductPaid').checked=p.hoursDeductPaid;$('allowance-childHoursDeductChild').checked=p.childHoursDeductChild;$('allowance-error').textContent='';$('allowance-dialog').showModal();
 }
@@ -150,7 +160,7 @@ function doSearch(){
  }searchPage=0;if(searchDates.length)renderSearch();else $('search-results').innerHTML='<div class="empty-state">該当する予定はありません。条件を変えて検索してください。</div>';
 }
 $('allowance-open').onclick=openAllowance;
-$('allowance-form').onsubmit=e=>{e.preventDefault();try{const p=C.defaultAllowance();for(const k of ['paid','sick','child','summer','mourning','hours','childHours','hoursPerDay']){const v=$('allowance-'+k).value;p[k]=v===''?null:Number(v);}p.hoursDeductPaid=$('allowance-hoursDeductPaid').checked;p.childHoursDeductChild=$('allowance-childHoursDeductChild').checked;const next=C.validateAllowances({...allowances,[year]:p});commit(records,next);$('allowance-dialog').close();render();show(year+'年度の休暇設定を保存しました。');}catch(err){$('allowance-error').textContent='設定を保存できませんでした。'+err.message;}};
+$('allowance-form').onsubmit=e=>{e.preventDefault();try{const p=C.defaultAllowance();for(const k of ['paid','paidCarry','sick','child','summer','mourning','hours','childHours','hoursPerDay']){const v=$('allowance-'+k).value;p[k]=v===''?null:Number(v);}p.hoursDeductPaid=$('allowance-hoursDeductPaid').checked;p.childHoursDeductChild=$('allowance-childHoursDeductChild').checked;const next=C.validateAllowances({...allowances,[year]:p});commit(records,next);$('allowance-dialog').close();render();show(year+'年度の休暇設定を保存しました。');}catch(err){$('allowance-error').textContent='設定を保存できませんでした。'+err.message;}};
 setSelects();render();
 $('prev-year').onclick=()=>{if(year>2000){year--;render();}};$('next-year').onclick=()=>{if(year<2098){year++;render();}};
 $('fiscal-year').onchange=e=>{year=Number(e.target.value);render();};$('prev-month').onclick=()=>monthStep(-1);$('next-month').onclick=()=>monthStep(1);

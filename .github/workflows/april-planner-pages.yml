@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'apps/denken-study/**'
+      - 'apps/april-planner/**'
 
 permissions:
   contents: read
@@ -28,6 +29,10 @@ jobs:
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Build empty-data planner, savings, weight and learning apps
         run: |
+          node --check apps/april-planner/core.js
+          node --check apps/april-planner/app.js
+          node apps/april-planner/tests/core.cjs
+          node apps/april-planner/tests/carryover.cjs
           python3 apps/april-planner/build.py
           python3 apps/savings-ledger/build.py
           python3 apps/weight-buddy/build.py
