@@ -1,0 +1,3890 @@
+{
+  "checkedAt": "2026-11-09T07:55:13Z",
+  "officialIndex": "https://www.shiken.or.jp/chief/first/qa/",
+  "pages": [
+    {
+      "url": "https://www.shiken.or.jp/chief/first/qa/",
+      "pdfs": [
+        "https://www.shiken.or.jp/chief/upload/20251116_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20251116_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20251116_ch_first_a01_ks.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20241110_as_02_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20241110_as_02_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20241110_ch_first_a01_ks.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q01.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q02.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q03.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q04.pdf",
+        "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20251116_ch_first_q01.pdf",
+      "label": "令和7年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "secondary",
+      "subject": "power-management",
+      "kind": "question",
+      "sha256": "aa4b35b1fb8dc45bb19bc1dbec337770e5adf59e205eef39c5c524068611036f",
+      "bytes": 948817,
+      "pages": 8,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2025-secondary-power-management.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20251116_ch_first_q02.pdf",
+      "label": "令和7年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "secondary",
+      "subject": "machine-control",
+      "kind": "question",
+      "sha256": "0b030b4563e7551c14d45eb6529b0c01cd652e8511a68091456d72215916bb9b",
+      "bytes": 1103561,
+      "pages": 8,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2025-secondary-machine-control.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20251116_ch_first_a01_ks.pdf",
+      "label": "令和7年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "fe0032e3645c4880342c1c1c58771f9b223ea9fded36d3e3bab2ceae24aa7bc2",
+      "bytes": 340703,
+      "pages": 16,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2025-secondary-answers.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q01.pdf",
+      "label": "令和7年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "primary",
+      "subject": "theory",
+      "kind": "question",
+      "sha256": "82c8a374d6a70b1ee68dc57f16fb0ac373da0395c04aed077eaac325cb4353e1",
+      "bytes": 1868523,
+      "pages": 17,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2025-primary-theory.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q02.pdf",
+      "label": "令和7年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "primary",
+      "subject": "power",
+      "kind": "question",
+      "sha256": "becee6547384fe6ed659d14168349fb3a1f2460fce53af89097b465aeac9fbdd",
+      "bytes": 1176165,
+      "pages": 11,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2025-primary-power.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q03.pdf",
+      "label": "令和7年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "primary",
+      "subject": "machine",
+      "kind": "question",
+      "sha256": "e1bb81c75fe860bd0121ca39b274302f0a6e045a987bfac2d9f76bf6be27c314",
+      "bytes": 1531486,
+      "pages": 17,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2025-primary-machine.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q04.pdf",
+      "label": "令和7年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "primary",
+      "subject": "law",
+      "kind": "question",
+      "sha256": "dba4e1c3c52231d29e42d660fc6b4a16bb74bfd4ff3439e7cad2cfdb2be4ef68",
+      "bytes": 1381072,
+      "pages": 15,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2025-primary-law.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "label": "令和7年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2025,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "bb9d2cf32d89e0bbc4902fda506433ebddd800eaff3b897e2f3cc769badbe547",
+      "bytes": 56056,
+      "pages": 1,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2025-primary-answers.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20241110_as_02_ch_first_q01.pdf",
+      "label": "令和6年度第一種電気主任技術者二次試験 電力・管理科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "secondary",
+      "subject": "power-management",
+      "kind": "question",
+      "sha256": "0594ec8d71791786a969a3937e71a66acb837cbdcce1e491463b1f53e7143e21",
+      "bytes": 1754830,
+      "pages": 10,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2024-secondary-power-management.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20241110_as_02_ch_first_q02.pdf",
+      "label": "令和6年度第一種電気主任技術者二次試験 機械・制御科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "secondary",
+      "subject": "machine-control",
+      "kind": "question",
+      "sha256": "bde995575f5c55f06ee777b22f5a002c5a74bb8a536eb46225fea7b94be429e1",
+      "bytes": 2218178,
+      "pages": 8,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2024-secondary-machine-control.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20241110_ch_first_a01_ks.pdf",
+      "label": "令和6年度第一種電気主任技術者二次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "secondary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "57b460f4874840f2cf42f91683860de3a34155f53f07c6722d8d9ed02d6838c1",
+      "bytes": 417426,
+      "pages": 18,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2024-secondary-answers.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q01.pdf",
+      "label": "令和6年度第一種電気主任技術者一次試験 理論科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "primary",
+      "subject": "theory",
+      "kind": "question",
+      "sha256": "ca585523ec8928ec49db469e4437b1b100db03059c6307845d18baa828063a82",
+      "bytes": 1646336,
+      "pages": 17,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2024-primary-theory.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q02.pdf",
+      "label": "令和6年度第一種電気主任技術者一次試験 電力科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "primary",
+      "subject": "power",
+      "kind": "question",
+      "sha256": "a380ba0ac9e68bd75be88e7ff2aa88941ac86a6d8467768ebe2c91c9448a8dfe",
+      "bytes": 1222770,
+      "pages": 11,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2024-primary-power.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q03.pdf",
+      "label": "令和6年度第一種電気主任技術者一次試験 機械科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "primary",
+      "subject": "machine",
+      "kind": "question",
+      "sha256": "195bc9ab0e66db8ac697b6db78415e86e406247248baaf7b1c5e3d76ec4f823f",
+      "bytes": 1550847,
+      "pages": 17,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2024-primary-machine.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q04.pdf",
+      "label": "令和6年度第一種電気主任技術者一次試験 法規科目",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "primary",
+      "subject": "law",
+      "kind": "question",
+      "sha256": "a9b17de19704f4318af4e5e5b857d1567e542cb7cefd58f5512f41efe0845916",
+      "bytes": 1137038,
+      "pages": 11,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2024-primary-law.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "label": "令和6年度第一種電気主任技術者一次試験",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "year": 2024,
+      "stage": "primary",
+      "subject": null,
+      "kind": "answer",
+      "sha256": "a58324db8364811b7aa7d048800228c1d4d45bd16b99c55d2e94f5c52fbf9a03",
+      "bytes": 42713,
+      "pages": 1,
+      "verified": true,
+      "identityVerified": true,
+      "localFile": "assets/official/2024-primary-answers.pdf",
+      "verification": "公式一覧の年度・試験区分・科目を記録し、PDF形式・ページ数・SHA256を検証"
+    }
+  ],
+  "errors": [],
+  "questions": [
+    {
+      "id": "2025-theory-1",
+      "year": 2025,
+      "subject": "theory",
+      "number": 1,
+      "topic": "理論・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問1を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 2
+        }
+      ],
+      "source": "2025-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q01.pdf",
+      "localFile": "assets/official/2025-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 4,
+      "officialPageEnd": 5,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-theory-2",
+      "year": 2025,
+      "subject": "theory",
+      "number": 2,
+      "topic": "理論・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問2を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 2
+        }
+      ],
+      "source": "2025-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q01.pdf",
+      "localFile": "assets/official/2025-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 6,
+      "officialPageEnd": 7,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-theory-3",
+      "year": 2025,
+      "subject": "theory",
+      "number": 3,
+      "topic": "理論・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問3を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ロ",
+          "points": 2
+        }
+      ],
+      "source": "2025-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q01.pdf",
+      "localFile": "assets/official/2025-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 8,
+      "officialPageEnd": 9,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-theory-4",
+      "year": 2025,
+      "subject": "theory",
+      "number": 4,
+      "topic": "理論・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問4を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ニ",
+          "points": 2
+        }
+      ],
+      "source": "2025-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q01.pdf",
+      "localFile": "assets/official/2025-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 10,
+      "officialPageEnd": 11,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-theory-5",
+      "year": 2025,
+      "subject": "theory",
+      "number": 5,
+      "topic": "理論・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問5を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ニ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 4
+        }
+      ],
+      "source": "2025-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q01.pdf",
+      "localFile": "assets/official/2025-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 12,
+      "officialPageEnd": 13,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-theory-6",
+      "year": 2025,
+      "subject": "theory",
+      "number": 6,
+      "topic": "理論・問6",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問6を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ハ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ニ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "イ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 4
+        }
+      ],
+      "source": "2025-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q01.pdf",
+      "localFile": "assets/official/2025-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 14,
+      "officialPageEnd": 15,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-theory-7",
+      "year": 2025,
+      "subject": "theory",
+      "number": 7,
+      "topic": "理論・問7",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問7を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ワ",
+          "points": 3
+        },
+        {
+          "number": 2,
+          "answer": "レ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ヌ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "タ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ホ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ロ",
+          "points": 3
+        }
+      ],
+      "source": "2025-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q01.pdf",
+      "localFile": "assets/official/2025-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 16,
+      "officialPageEnd": 17,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-power-1",
+      "year": 2025,
+      "subject": "power",
+      "number": 1,
+      "topic": "電力・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問1を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 2
+        }
+      ],
+      "source": "2025-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q02.pdf",
+      "localFile": "assets/official/2025-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 4,
+      "officialPageEnd": 4,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-power-2",
+      "year": 2025,
+      "subject": "power",
+      "number": 2,
+      "topic": "電力・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問2を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヲ",
+          "points": 2
+        }
+      ],
+      "source": "2025-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q02.pdf",
+      "localFile": "assets/official/2025-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 5,
+      "officialPageEnd": 5,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-power-3",
+      "year": 2025,
+      "subject": "power",
+      "number": 3,
+      "topic": "電力・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問3を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ル",
+          "points": 2
+        }
+      ],
+      "source": "2025-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q02.pdf",
+      "localFile": "assets/official/2025-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 6,
+      "officialPageEnd": 6,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-power-4",
+      "year": 2025,
+      "subject": "power",
+      "number": 4,
+      "topic": "電力・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問4を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ニ",
+          "points": 2
+        }
+      ],
+      "source": "2025-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q02.pdf",
+      "localFile": "assets/official/2025-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 7,
+      "officialPageEnd": 7,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-power-5",
+      "year": 2025,
+      "subject": "power",
+      "number": 5,
+      "topic": "電力・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問5を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヘ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 6,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 7,
+          "answer": "タ",
+          "points": 3
+        },
+        {
+          "number": 8,
+          "answer": "レ",
+          "points": 3
+        }
+      ],
+      "source": "2025-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q02.pdf",
+      "localFile": "assets/official/2025-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 8,
+      "officialPageEnd": 9,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-power-6",
+      "year": 2025,
+      "subject": "power",
+      "number": 6,
+      "topic": "電力・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問6を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "タ",
+          "points": 3
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ロ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ニ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "リ",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "ル",
+          "points": 3
+        }
+      ],
+      "source": "2025-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q02.pdf",
+      "localFile": "assets/official/2025-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 10,
+      "officialPageEnd": 11,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-machine-1",
+      "year": 2025,
+      "subject": "machine",
+      "number": 1,
+      "topic": "機械・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問1を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヘ",
+          "points": 2
+        }
+      ],
+      "source": "2025-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q03.pdf",
+      "localFile": "assets/official/2025-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 4,
+      "officialPageEnd": 5,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-machine-2",
+      "year": 2025,
+      "subject": "machine",
+      "number": 2,
+      "topic": "機械・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問2を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ロ",
+          "points": 2
+        }
+      ],
+      "source": "2025-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q03.pdf",
+      "localFile": "assets/official/2025-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 6,
+      "officialPageEnd": 7,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-machine-3",
+      "year": 2025,
+      "subject": "machine",
+      "number": 3,
+      "topic": "機械・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問3を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヨ",
+          "points": 2
+        }
+      ],
+      "source": "2025-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q03.pdf",
+      "localFile": "assets/official/2025-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 8,
+      "officialPageEnd": 9,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-machine-4",
+      "year": 2025,
+      "subject": "machine",
+      "number": 4,
+      "topic": "機械・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問4を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "リ",
+          "points": 2
+        }
+      ],
+      "source": "2025-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q03.pdf",
+      "localFile": "assets/official/2025-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 10,
+      "officialPageEnd": 11,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-machine-5",
+      "year": 2025,
+      "subject": "machine",
+      "number": 5,
+      "topic": "機械・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問5を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "イ",
+          "points": 3
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ヨ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ル",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ニ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ヘ",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "ワ",
+          "points": 2
+        }
+      ],
+      "source": "2025-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q03.pdf",
+      "localFile": "assets/official/2025-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 12,
+      "officialPageEnd": 13,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-machine-6",
+      "year": 2025,
+      "subject": "machine",
+      "number": 6,
+      "topic": "機械・問6",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問6を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ロ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ト",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "レ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ホ",
+          "points": 4
+        }
+      ],
+      "source": "2025-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q03.pdf",
+      "localFile": "assets/official/2025-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 14,
+      "officialPageEnd": 15,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-machine-7",
+      "year": 2025,
+      "subject": "machine",
+      "number": 7,
+      "topic": "機械・問7",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問7を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ロ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "タ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 6,
+          "answer": "イ",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "ト",
+          "points": 3
+        },
+        {
+          "number": 8,
+          "answer": "ヘ",
+          "points": 2
+        }
+      ],
+      "source": "2025-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q03.pdf",
+      "localFile": "assets/official/2025-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 16,
+      "officialPageEnd": 17,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-law-1",
+      "year": 2025,
+      "subject": "law",
+      "number": 1,
+      "topic": "法規・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問1を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2025-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q04.pdf",
+      "localFile": "assets/official/2025-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 4,
+      "officialPageEnd": 5,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-law-2",
+      "year": 2025,
+      "subject": "law",
+      "number": 2,
+      "topic": "法規・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問2を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ニ",
+          "points": 2
+        }
+      ],
+      "source": "2025-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q04.pdf",
+      "localFile": "assets/official/2025-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 6,
+      "officialPageEnd": 7,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-law-3",
+      "year": 2025,
+      "subject": "law",
+      "number": 3,
+      "topic": "法規・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問3を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "イ",
+          "points": 2
+        }
+      ],
+      "source": "2025-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q04.pdf",
+      "localFile": "assets/official/2025-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 8,
+      "officialPageEnd": 9,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-law-4",
+      "year": 2025,
+      "subject": "law",
+      "number": 4,
+      "topic": "法規・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問4を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヌ",
+          "points": 2
+        }
+      ],
+      "source": "2025-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q04.pdf",
+      "localFile": "assets/official/2025-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 10,
+      "officialPageEnd": 11,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-law-5",
+      "year": 2025,
+      "subject": "law",
+      "number": 5,
+      "topic": "法規・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問5を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "タ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ソ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 6,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 7,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 8,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 9,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 10,
+          "answer": "ヌ",
+          "points": 2
+        }
+      ],
+      "source": "2025-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q04.pdf",
+      "localFile": "assets/official/2025-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 12,
+      "officialPageEnd": 13,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2025-law-6",
+      "year": 2025,
+      "subject": "law",
+      "number": 6,
+      "topic": "法規・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問6を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "イ",
+          "points": 3
+        },
+        {
+          "number": 2,
+          "answer": "ネ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ツ",
+          "points": 2
+        },
+        {
+          "number": 7,
+          "answer": "レ",
+          "points": 3
+        },
+        {
+          "number": 8,
+          "answer": "ヘ",
+          "points": 2
+        }
+      ],
+      "source": "2025-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_q04.pdf",
+      "localFile": "assets/official/2025-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2025-primary-answers.pdf",
+      "officialPage": 14,
+      "officialPageEnd": 15,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-theory-1",
+      "year": 2024,
+      "subject": "theory",
+      "number": 1,
+      "topic": "理論・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問1を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヘ",
+          "points": 2
+        }
+      ],
+      "source": "2024-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q01.pdf",
+      "localFile": "assets/official/2024-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 4,
+      "officialPageEnd": 5,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-theory-2",
+      "year": 2024,
+      "subject": "theory",
+      "number": 2,
+      "topic": "理論・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問2を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ハ",
+          "points": 2
+        }
+      ],
+      "source": "2024-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q01.pdf",
+      "localFile": "assets/official/2024-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 6,
+      "officialPageEnd": 7,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-theory-3",
+      "year": 2024,
+      "subject": "theory",
+      "number": 3,
+      "topic": "理論・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問3を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 2
+        }
+      ],
+      "source": "2024-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q01.pdf",
+      "localFile": "assets/official/2024-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 8,
+      "officialPageEnd": 9,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-theory-4",
+      "year": 2024,
+      "subject": "theory",
+      "number": 4,
+      "topic": "理論・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問4を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヲ",
+          "points": 2
+        }
+      ],
+      "source": "2024-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q01.pdf",
+      "localFile": "assets/official/2024-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 10,
+      "officialPageEnd": 11,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-theory-5",
+      "year": 2024,
+      "subject": "theory",
+      "number": 5,
+      "topic": "理論・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問5を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 6,
+          "answer": "ツ",
+          "points": 2
+        },
+        {
+          "number": 7,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 8,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 9,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 10,
+          "answer": "ワ",
+          "points": 2
+        }
+      ],
+      "source": "2024-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q01.pdf",
+      "localFile": "assets/official/2024-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 12,
+      "officialPageEnd": 13,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-theory-6",
+      "year": 2024,
+      "subject": "theory",
+      "number": 6,
+      "topic": "理論・問6",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問6を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ロ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "リ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ト",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 4
+        }
+      ],
+      "source": "2024-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q01.pdf",
+      "localFile": "assets/official/2024-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 14,
+      "officialPageEnd": 15,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-theory-7",
+      "year": 2024,
+      "subject": "theory",
+      "number": 7,
+      "topic": "理論・問7",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問7を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ソ",
+          "points": 3
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ホ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ヲ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "イ",
+          "points": 4
+        }
+      ],
+      "source": "2024-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q01.pdf",
+      "localFile": "assets/official/2024-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 16,
+      "officialPageEnd": 17,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-power-1",
+      "year": 2024,
+      "subject": "power",
+      "number": 1,
+      "topic": "電力・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問1を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ニ",
+          "points": 2
+        }
+      ],
+      "source": "2024-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q02.pdf",
+      "localFile": "assets/official/2024-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 4,
+      "officialPageEnd": 5,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-power-2",
+      "year": 2024,
+      "subject": "power",
+      "number": 2,
+      "topic": "電力・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問2を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヘ",
+          "points": 2
+        }
+      ],
+      "source": "2024-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q02.pdf",
+      "localFile": "assets/official/2024-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 6,
+      "officialPageEnd": 6,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-power-3",
+      "year": 2024,
+      "subject": "power",
+      "number": 3,
+      "topic": "電力・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問3を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "イ",
+          "points": 2
+        }
+      ],
+      "source": "2024-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q02.pdf",
+      "localFile": "assets/official/2024-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 7,
+      "officialPageEnd": 7,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-power-4",
+      "year": 2024,
+      "subject": "power",
+      "number": 4,
+      "topic": "電力・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問4を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヌ",
+          "points": 2
+        }
+      ],
+      "source": "2024-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q02.pdf",
+      "localFile": "assets/official/2024-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 8,
+      "officialPageEnd": 8,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-power-5",
+      "year": 2024,
+      "subject": "power",
+      "number": 5,
+      "topic": "電力・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問5を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ソ",
+          "points": 3
+        },
+        {
+          "number": 2,
+          "answer": "ヌ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ワ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "タ",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "レ",
+          "points": 3
+        }
+      ],
+      "source": "2024-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q02.pdf",
+      "localFile": "assets/official/2024-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 9,
+      "officialPageEnd": 9,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-power-6",
+      "year": 2024,
+      "subject": "power",
+      "number": 6,
+      "topic": "電力・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問6を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "イ",
+          "points": 3
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ソ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ツ",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "タ",
+          "points": 3
+        }
+      ],
+      "source": "2024-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q02.pdf",
+      "localFile": "assets/official/2024-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 10,
+      "officialPageEnd": 11,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-machine-1",
+      "year": 2024,
+      "subject": "machine",
+      "number": 1,
+      "topic": "機械・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問1を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ホ",
+          "points": 2
+        }
+      ],
+      "source": "2024-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q03.pdf",
+      "localFile": "assets/official/2024-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 4,
+      "officialPageEnd": 5,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-machine-2",
+      "year": 2024,
+      "subject": "machine",
+      "number": 2,
+      "topic": "機械・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問2を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヨ",
+          "points": 2
+        }
+      ],
+      "source": "2024-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q03.pdf",
+      "localFile": "assets/official/2024-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 6,
+      "officialPageEnd": 7,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-machine-3",
+      "year": 2024,
+      "subject": "machine",
+      "number": 3,
+      "topic": "機械・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問3を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ル",
+          "points": 2
+        }
+      ],
+      "source": "2024-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q03.pdf",
+      "localFile": "assets/official/2024-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 8,
+      "officialPageEnd": 9,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-machine-4",
+      "year": 2024,
+      "subject": "machine",
+      "number": 4,
+      "topic": "機械・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問4を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ホ",
+          "points": 2
+        }
+      ],
+      "source": "2024-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q03.pdf",
+      "localFile": "assets/official/2024-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 10,
+      "officialPageEnd": 11,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-machine-5",
+      "year": 2024,
+      "subject": "machine",
+      "number": 5,
+      "topic": "機械・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問5を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ト",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ヲ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "レ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ヌ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ル",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "ニ",
+          "points": 3
+        }
+      ],
+      "source": "2024-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q03.pdf",
+      "localFile": "assets/official/2024-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 12,
+      "officialPageEnd": 13,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-machine-6",
+      "year": 2024,
+      "subject": "machine",
+      "number": 6,
+      "topic": "機械・問6",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問6を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ハ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ヌ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "タ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ヘ",
+          "points": 3
+        }
+      ],
+      "source": "2024-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q03.pdf",
+      "localFile": "assets/official/2024-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 14,
+      "officialPageEnd": 15,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-machine-7",
+      "year": 2024,
+      "subject": "machine",
+      "number": 7,
+      "topic": "機械・問7",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問7を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ヲ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ル",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "カ",
+          "points": 3
+        }
+      ],
+      "source": "2024-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q03.pdf",
+      "localFile": "assets/official/2024-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 16,
+      "officialPageEnd": 17,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-law-1",
+      "year": 2024,
+      "subject": "law",
+      "number": 1,
+      "topic": "法規・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問1を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヨ",
+          "points": 2
+        }
+      ],
+      "source": "2024-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q04.pdf",
+      "localFile": "assets/official/2024-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 4,
+      "officialPageEnd": 5,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-law-2",
+      "year": 2024,
+      "subject": "law",
+      "number": 2,
+      "topic": "法規・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問2を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヨ",
+          "points": 2
+        }
+      ],
+      "source": "2024-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q04.pdf",
+      "localFile": "assets/official/2024-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 6,
+      "officialPageEnd": 6,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-law-3",
+      "year": 2024,
+      "subject": "law",
+      "number": 3,
+      "topic": "法規・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問3を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヘ",
+          "points": 2
+        }
+      ],
+      "source": "2024-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q04.pdf",
+      "localFile": "assets/official/2024-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 7,
+      "officialPageEnd": 7,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-law-4",
+      "year": 2024,
+      "subject": "law",
+      "number": 4,
+      "topic": "法規・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問4を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 2
+        }
+      ],
+      "source": "2024-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q04.pdf",
+      "localFile": "assets/official/2024-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 8,
+      "officialPageEnd": 8,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-law-5",
+      "year": 2024,
+      "subject": "law",
+      "number": 5,
+      "topic": "法規・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問5を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ソ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "リ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "レ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "カ",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "チ",
+          "points": 3
+        },
+        {
+          "number": 8,
+          "answer": "ヘ",
+          "points": 2
+        }
+      ],
+      "source": "2024-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q04.pdf",
+      "localFile": "assets/official/2024-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 9,
+      "officialPageEnd": 9,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    },
+    {
+      "id": "2024-law-6",
+      "year": 2024,
+      "subject": "law",
+      "number": 6,
+      "topic": "法規・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "取り込んだ公式問題PDFで問6を開き、この画面で解答します。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ"
+      ],
+      "optionsVerified": true,
+      "items": [
+        {
+          "number": 1,
+          "answer": "ネ",
+          "points": 3
+        },
+        {
+          "number": 2,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヨ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ル",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 7,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 8,
+          "answer": "カ",
+          "points": 3
+        }
+      ],
+      "source": "2024-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_q04.pdf",
+      "localFile": "assets/official/2024-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20240818_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2024-primary-answers.pdf",
+      "officialPage": 10,
+      "officialPageEnd": 11,
+      "explanationStatus": "公式の正答・配点を読み取り、問題冊子の科目と対応を照合。個別解説は未整備"
+    }
+  ],
+  "note": "今回の追加対象は令和6・7年度（2024・2025年度）の2年間。その他の年度の原本は配信対象外。既存の2026年度教材と学習記録は維持。",
+  "reusePolicy": {
+    "url": "https://www.shiken.or.jp/chief/first/qa/",
+    "purpose": "教育目的の過去問使用は許諾・使用料不要。年度・試験区分の出典明記が必要。"
+  },
+  "gradingReport": [
+    {
+      "year": 2025,
+      "status": "演習・採点対応",
+      "groups": 26,
+      "items": 149
+    },
+    {
+      "year": 2024,
+      "status": "演習・採点対応",
+      "groups": 26,
+      "items": 150
+    }
+  ],
+  "releaseYears": [
+    2024,
+    2025
+  ]
+}
