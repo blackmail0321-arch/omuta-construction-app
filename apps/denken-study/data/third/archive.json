@@ -74,6 +74,156 @@
       "sha256": "c6681b942a9a1c57f9563cc33c67a93882c7430ee91237fbf75f836db9663181",
       "pages": 1,
       "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "label": "令和7年度第三種電気主任技術者下期試験 理論科目",
+      "year": 2025,
+      "stage": "primary",
+      "term": "lower",
+      "subject": "theory",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "bytes": 1930753,
+      "sha256": "c83e7c7350d98b65f5d8da0b93e4a2581a19dd250be320fb7fc492c9b34a29c1",
+      "pages": 25,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "label": "令和7年度第三種電気主任技術者下期試験 電力科目",
+      "year": 2025,
+      "stage": "primary",
+      "term": "lower",
+      "subject": "power",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "bytes": 1541418,
+      "sha256": "9733341a0f293f068c9a665d5a9a90f1aabf3a2db5d79cd530643cdea241f7b7",
+      "pages": 20,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "label": "令和7年度第三種電気主任技術者下期試験 機械科目",
+      "year": 2025,
+      "stage": "primary",
+      "term": "lower",
+      "subject": "machine",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "bytes": 1891228,
+      "sha256": "a89c7dc2b9a305f9db83f2f78195f0df8a0da5aeec6b8e66cfd40fb028d146fb",
+      "pages": 25,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "label": "令和7年度第三種電気主任技術者下期試験 法規科目",
+      "year": 2025,
+      "stage": "primary",
+      "term": "lower",
+      "subject": "law",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "bytes": 1872182,
+      "sha256": "945e325f0fe221645f898efebe0dbcac32e1605a962a6850493895a67df0885e",
+      "pages": 21,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "label": "令和7年度第三種電気主任技術者下期試験",
+      "year": 2025,
+      "stage": "primary",
+      "term": "lower",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2025-lower-answers.pdf",
+      "bytes": 65279,
+      "sha256": "cc2890296d06a4823df5697a78a1c01ddfd39f041c51f48c87984daa3a5707c6",
+      "pages": 1,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "label": "令和7年度第三種電気主任技術者上期試験 理論科目",
+      "year": 2025,
+      "stage": "primary",
+      "term": "upper",
+      "subject": "theory",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "bytes": 2027235,
+      "sha256": "11a75ffd5dd2b5309ad75370bb963c4fda9e12a812174cfa2c2237383c3a964d",
+      "pages": 23,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "label": "令和7年度第三種電気主任技術者上期試験 電力科目",
+      "year": 2025,
+      "stage": "primary",
+      "term": "upper",
+      "subject": "power",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "bytes": 2529520,
+      "sha256": "567aac1df6dc0c0950d04e90a1ad03231427c518eede92559effe01e2b97a2c9",
+      "pages": 21,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "label": "令和7年度第三種電気主任技術者上期試験 機械科目",
+      "year": 2025,
+      "stage": "primary",
+      "term": "upper",
+      "subject": "machine",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "bytes": 1824671,
+      "sha256": "2a73a24594cc2b8bb7504b9a0ff15e001b2bb56b830572ce2be853f7116f26d8",
+      "pages": 23,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "label": "令和7年度第三種電気主任技術者上期試験 法規科目",
+      "year": 2025,
+      "stage": "primary",
+      "term": "upper",
+      "subject": "law",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "bytes": 1534971,
+      "sha256": "51aeb8f1cbfe8e6d3667c2848a3d9fccff40a967f48aafc292fa13a13a6efbb0",
+      "pages": 18,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "label": "令和7年度第三種電気主任技術者上期試験",
+      "year": 2025,
+      "stage": "primary",
+      "term": "upper",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2025-upper-answers.pdf",
+      "bytes": 52173,
+      "sha256": "76fd3715ed487d19a56b387fb402de20ee09474e9fa55b0413f9037b96af06c9",
+      "pages": 1,
+      "verified": true
     }
   ],
   "questions": [
@@ -2536,6 +2686,4926 @@
       "officialPage": null,
       "officialPageEnd": null,
       "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-1",
+      "year": 2025,
+      "subject": "theory",
+      "number": 1,
+      "topic": "2025年度 下期 理論・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-2",
+      "year": 2025,
+      "subject": "theory",
+      "number": 2,
+      "topic": "2025年度 下期 理論・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-3",
+      "year": 2025,
+      "subject": "theory",
+      "number": 3,
+      "topic": "2025年度 下期 理論・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-4",
+      "year": 2025,
+      "subject": "theory",
+      "number": 4,
+      "topic": "2025年度 下期 理論・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-5",
+      "year": 2025,
+      "subject": "theory",
+      "number": 5,
+      "topic": "2025年度 下期 理論・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-6",
+      "year": 2025,
+      "subject": "theory",
+      "number": 6,
+      "topic": "2025年度 下期 理論・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-7",
+      "year": 2025,
+      "subject": "theory",
+      "number": 7,
+      "topic": "2025年度 下期 理論・問7",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-8",
+      "year": 2025,
+      "subject": "theory",
+      "number": 8,
+      "topic": "2025年度 下期 理論・問8",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-9",
+      "year": 2025,
+      "subject": "theory",
+      "number": 9,
+      "topic": "2025年度 下期 理論・問9",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-10",
+      "year": 2025,
+      "subject": "theory",
+      "number": 10,
+      "topic": "2025年度 下期 理論・問10",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-11",
+      "year": 2025,
+      "subject": "theory",
+      "number": 11,
+      "topic": "2025年度 下期 理論・問11",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-12",
+      "year": 2025,
+      "subject": "theory",
+      "number": 12,
+      "topic": "2025年度 下期 理論・問12",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-13",
+      "year": 2025,
+      "subject": "theory",
+      "number": 13,
+      "topic": "2025年度 下期 理論・問13",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-14",
+      "year": 2025,
+      "subject": "theory",
+      "number": 14,
+      "topic": "2025年度 下期 理論・問14",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-15",
+      "year": 2025,
+      "subject": "theory",
+      "number": 15,
+      "topic": "2025年度 下期 理論・問15",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "3",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-16",
+      "year": 2025,
+      "subject": "theory",
+      "number": 16,
+      "topic": "2025年度 下期 理論・問16",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "3",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-17",
+      "year": 2025,
+      "subject": "theory",
+      "number": 17,
+      "topic": "2025年度 下期 理論・問17",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "5",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-theory-18",
+      "year": 2025,
+      "subject": "theory",
+      "number": 18,
+      "topic": "2025年度 下期 理論・問18",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "5",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-lower-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-1",
+      "year": 2025,
+      "subject": "power",
+      "number": 1,
+      "topic": "2025年度 下期 電力・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-2",
+      "year": 2025,
+      "subject": "power",
+      "number": 2,
+      "topic": "2025年度 下期 電力・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-3",
+      "year": 2025,
+      "subject": "power",
+      "number": 3,
+      "topic": "2025年度 下期 電力・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-4",
+      "year": 2025,
+      "subject": "power",
+      "number": 4,
+      "topic": "2025年度 下期 電力・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-5",
+      "year": 2025,
+      "subject": "power",
+      "number": 5,
+      "topic": "2025年度 下期 電力・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-6",
+      "year": 2025,
+      "subject": "power",
+      "number": 6,
+      "topic": "2025年度 下期 電力・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-7",
+      "year": 2025,
+      "subject": "power",
+      "number": 7,
+      "topic": "2025年度 下期 電力・問7",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-8",
+      "year": 2025,
+      "subject": "power",
+      "number": 8,
+      "topic": "2025年度 下期 電力・問8",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-9",
+      "year": 2025,
+      "subject": "power",
+      "number": 9,
+      "topic": "2025年度 下期 電力・問9",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-10",
+      "year": 2025,
+      "subject": "power",
+      "number": 10,
+      "topic": "2025年度 下期 電力・問10",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-11",
+      "year": 2025,
+      "subject": "power",
+      "number": 11,
+      "topic": "2025年度 下期 電力・問11",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-12",
+      "year": 2025,
+      "subject": "power",
+      "number": 12,
+      "topic": "2025年度 下期 電力・問12",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-13",
+      "year": 2025,
+      "subject": "power",
+      "number": 13,
+      "topic": "2025年度 下期 電力・問13",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-14",
+      "year": 2025,
+      "subject": "power",
+      "number": 14,
+      "topic": "2025年度 下期 電力・問14",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-15",
+      "year": 2025,
+      "subject": "power",
+      "number": 15,
+      "topic": "2025年度 下期 電力・問15",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "4",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-16",
+      "year": 2025,
+      "subject": "power",
+      "number": 16,
+      "topic": "2025年度 下期 電力・問16",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "4",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-power-17",
+      "year": 2025,
+      "subject": "power",
+      "number": 17,
+      "topic": "2025年度 下期 電力・問17",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "3",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-lower-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-1",
+      "year": 2025,
+      "subject": "machine",
+      "number": 1,
+      "topic": "2025年度 下期 機械・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-2",
+      "year": 2025,
+      "subject": "machine",
+      "number": 2,
+      "topic": "2025年度 下期 機械・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-3",
+      "year": 2025,
+      "subject": "machine",
+      "number": 3,
+      "topic": "2025年度 下期 機械・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-4",
+      "year": 2025,
+      "subject": "machine",
+      "number": 4,
+      "topic": "2025年度 下期 機械・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-5",
+      "year": 2025,
+      "subject": "machine",
+      "number": 5,
+      "topic": "2025年度 下期 機械・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-6",
+      "year": 2025,
+      "subject": "machine",
+      "number": 6,
+      "topic": "2025年度 下期 機械・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-7",
+      "year": 2025,
+      "subject": "machine",
+      "number": 7,
+      "topic": "2025年度 下期 機械・問7",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-8",
+      "year": 2025,
+      "subject": "machine",
+      "number": 8,
+      "topic": "2025年度 下期 機械・問8",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-9",
+      "year": 2025,
+      "subject": "machine",
+      "number": 9,
+      "topic": "2025年度 下期 機械・問9",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-10",
+      "year": 2025,
+      "subject": "machine",
+      "number": 10,
+      "topic": "2025年度 下期 機械・問10",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-11",
+      "year": 2025,
+      "subject": "machine",
+      "number": 11,
+      "topic": "2025年度 下期 機械・問11",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-12",
+      "year": 2025,
+      "subject": "machine",
+      "number": 12,
+      "topic": "2025年度 下期 機械・問12",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-13",
+      "year": 2025,
+      "subject": "machine",
+      "number": 13,
+      "topic": "2025年度 下期 機械・問13",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-14",
+      "year": 2025,
+      "subject": "machine",
+      "number": 14,
+      "topic": "2025年度 下期 機械・問14",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-15",
+      "year": 2025,
+      "subject": "machine",
+      "number": 15,
+      "topic": "2025年度 下期 機械・問15",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "5",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-16",
+      "year": 2025,
+      "subject": "machine",
+      "number": 16,
+      "topic": "2025年度 下期 機械・問16",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "5",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-17",
+      "year": 2025,
+      "subject": "machine",
+      "number": 17,
+      "topic": "2025年度 下期 機械・問17",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "4",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-machine-18",
+      "year": 2025,
+      "subject": "machine",
+      "number": 18,
+      "topic": "2025年度 下期 機械・問18",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "2",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-lower-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-lower-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-1",
+      "year": 2025,
+      "subject": "law",
+      "number": 1,
+      "topic": "2025年度 下期 法規・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 6
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-2",
+      "year": 2025,
+      "subject": "law",
+      "number": 2,
+      "topic": "2025年度 下期 法規・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 6
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-3",
+      "year": 2025,
+      "subject": "law",
+      "number": 3,
+      "topic": "2025年度 下期 法規・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 6
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-4",
+      "year": 2025,
+      "subject": "law",
+      "number": 4,
+      "topic": "2025年度 下期 法規・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 6
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-5",
+      "year": 2025,
+      "subject": "law",
+      "number": 5,
+      "topic": "2025年度 下期 法規・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 6
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-6",
+      "year": 2025,
+      "subject": "law",
+      "number": 6,
+      "topic": "2025年度 下期 法規・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 6
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-7",
+      "year": 2025,
+      "subject": "law",
+      "number": 7,
+      "topic": "2025年度 下期 法規・問7",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 6
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-8",
+      "year": 2025,
+      "subject": "law",
+      "number": 8,
+      "topic": "2025年度 下期 法規・問8",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 6
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-9",
+      "year": 2025,
+      "subject": "law",
+      "number": 9,
+      "topic": "2025年度 下期 法規・問9",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 6
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-10",
+      "year": 2025,
+      "subject": "law",
+      "number": 10,
+      "topic": "2025年度 下期 法規・問10",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 6
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-11",
+      "year": 2025,
+      "subject": "law",
+      "number": 11,
+      "topic": "2025年度 下期 法規・問11",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "4",
+          "points": 6
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "4",
+          "points": 7
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-12",
+      "year": 2025,
+      "subject": "law",
+      "number": 12,
+      "topic": "2025年度 下期 法規・問12",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "2",
+          "points": 6
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "3",
+          "points": 7
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-lower-law-13",
+      "year": 2025,
+      "subject": "law",
+      "number": 13,
+      "topic": "2025年度 下期 法規・問13",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "4",
+          "points": 7
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "3",
+          "points": 7
+        }
+      ],
+      "source": "2025-lower-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-lower-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260322_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-lower-answers.pdf",
+      "paper": "2025-lower",
+      "term": "lower",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-1",
+      "year": 2025,
+      "subject": "theory",
+      "number": 1,
+      "topic": "2025年度 上期 理論・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-2",
+      "year": 2025,
+      "subject": "theory",
+      "number": 2,
+      "topic": "2025年度 上期 理論・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-3",
+      "year": 2025,
+      "subject": "theory",
+      "number": 3,
+      "topic": "2025年度 上期 理論・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-4",
+      "year": 2025,
+      "subject": "theory",
+      "number": 4,
+      "topic": "2025年度 上期 理論・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-5",
+      "year": 2025,
+      "subject": "theory",
+      "number": 5,
+      "topic": "2025年度 上期 理論・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-6",
+      "year": 2025,
+      "subject": "theory",
+      "number": 6,
+      "topic": "2025年度 上期 理論・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-7",
+      "year": 2025,
+      "subject": "theory",
+      "number": 7,
+      "topic": "2025年度 上期 理論・問7",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-8",
+      "year": 2025,
+      "subject": "theory",
+      "number": 8,
+      "topic": "2025年度 上期 理論・問8",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-9",
+      "year": 2025,
+      "subject": "theory",
+      "number": 9,
+      "topic": "2025年度 上期 理論・問9",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-10",
+      "year": 2025,
+      "subject": "theory",
+      "number": 10,
+      "topic": "2025年度 上期 理論・問10",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-11",
+      "year": 2025,
+      "subject": "theory",
+      "number": 11,
+      "topic": "2025年度 上期 理論・問11",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-12",
+      "year": 2025,
+      "subject": "theory",
+      "number": 12,
+      "topic": "2025年度 上期 理論・問12",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-13",
+      "year": 2025,
+      "subject": "theory",
+      "number": 13,
+      "topic": "2025年度 上期 理論・問13",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-14",
+      "year": 2025,
+      "subject": "theory",
+      "number": 14,
+      "topic": "2025年度 上期 理論・問14",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-15",
+      "year": 2025,
+      "subject": "theory",
+      "number": 15,
+      "topic": "2025年度 上期 理論・問15",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "2",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-16",
+      "year": 2025,
+      "subject": "theory",
+      "number": 16,
+      "topic": "2025年度 上期 理論・問16",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "1",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-17",
+      "year": 2025,
+      "subject": "theory",
+      "number": 17,
+      "topic": "2025年度 上期 理論・問17",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "3",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-theory-18",
+      "year": 2025,
+      "subject": "theory",
+      "number": 18,
+      "topic": "2025年度 上期 理論・問18",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "3",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q01.pdf",
+      "localFile": "assets/third/2025-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-1",
+      "year": 2025,
+      "subject": "power",
+      "number": 1,
+      "topic": "2025年度 上期 電力・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-2",
+      "year": 2025,
+      "subject": "power",
+      "number": 2,
+      "topic": "2025年度 上期 電力・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-3",
+      "year": 2025,
+      "subject": "power",
+      "number": 3,
+      "topic": "2025年度 上期 電力・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-4",
+      "year": 2025,
+      "subject": "power",
+      "number": 4,
+      "topic": "2025年度 上期 電力・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-5",
+      "year": 2025,
+      "subject": "power",
+      "number": 5,
+      "topic": "2025年度 上期 電力・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-6",
+      "year": 2025,
+      "subject": "power",
+      "number": 6,
+      "topic": "2025年度 上期 電力・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-7",
+      "year": 2025,
+      "subject": "power",
+      "number": 7,
+      "topic": "2025年度 上期 電力・問7",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-8",
+      "year": 2025,
+      "subject": "power",
+      "number": 8,
+      "topic": "2025年度 上期 電力・問8",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-9",
+      "year": 2025,
+      "subject": "power",
+      "number": 9,
+      "topic": "2025年度 上期 電力・問9",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-10",
+      "year": 2025,
+      "subject": "power",
+      "number": 10,
+      "topic": "2025年度 上期 電力・問10",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-11",
+      "year": 2025,
+      "subject": "power",
+      "number": 11,
+      "topic": "2025年度 上期 電力・問11",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-12",
+      "year": 2025,
+      "subject": "power",
+      "number": 12,
+      "topic": "2025年度 上期 電力・問12",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-13",
+      "year": 2025,
+      "subject": "power",
+      "number": 13,
+      "topic": "2025年度 上期 電力・問13",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-14",
+      "year": 2025,
+      "subject": "power",
+      "number": 14,
+      "topic": "2025年度 上期 電力・問14",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-15",
+      "year": 2025,
+      "subject": "power",
+      "number": 15,
+      "topic": "2025年度 上期 電力・問15",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "5",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-16",
+      "year": 2025,
+      "subject": "power",
+      "number": 16,
+      "topic": "2025年度 上期 電力・問16",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "3",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-power-17",
+      "year": 2025,
+      "subject": "power",
+      "number": 17,
+      "topic": "2025年度 上期 電力・問17",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "4",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q02.pdf",
+      "localFile": "assets/third/2025-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-1",
+      "year": 2025,
+      "subject": "machine",
+      "number": 1,
+      "topic": "2025年度 上期 機械・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-2",
+      "year": 2025,
+      "subject": "machine",
+      "number": 2,
+      "topic": "2025年度 上期 機械・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-3",
+      "year": 2025,
+      "subject": "machine",
+      "number": 3,
+      "topic": "2025年度 上期 機械・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-4",
+      "year": 2025,
+      "subject": "machine",
+      "number": 4,
+      "topic": "2025年度 上期 機械・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-5",
+      "year": 2025,
+      "subject": "machine",
+      "number": 5,
+      "topic": "2025年度 上期 機械・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-6",
+      "year": 2025,
+      "subject": "machine",
+      "number": 6,
+      "topic": "2025年度 上期 機械・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-7",
+      "year": 2025,
+      "subject": "machine",
+      "number": 7,
+      "topic": "2025年度 上期 機械・問7",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-8",
+      "year": 2025,
+      "subject": "machine",
+      "number": 8,
+      "topic": "2025年度 上期 機械・問8",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-9",
+      "year": 2025,
+      "subject": "machine",
+      "number": 9,
+      "topic": "2025年度 上期 機械・問9",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-10",
+      "year": 2025,
+      "subject": "machine",
+      "number": 10,
+      "topic": "2025年度 上期 機械・問10",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-11",
+      "year": 2025,
+      "subject": "machine",
+      "number": 11,
+      "topic": "2025年度 上期 機械・問11",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-12",
+      "year": 2025,
+      "subject": "machine",
+      "number": 12,
+      "topic": "2025年度 上期 機械・問12",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-13",
+      "year": 2025,
+      "subject": "machine",
+      "number": 13,
+      "topic": "2025年度 上期 機械・問13",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-14",
+      "year": 2025,
+      "subject": "machine",
+      "number": 14,
+      "topic": "2025年度 上期 機械・問14",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-15",
+      "year": 2025,
+      "subject": "machine",
+      "number": 15,
+      "topic": "2025年度 上期 機械・問15",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "4",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-16",
+      "year": 2025,
+      "subject": "machine",
+      "number": 16,
+      "topic": "2025年度 上期 機械・問16",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "2",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-17",
+      "year": 2025,
+      "subject": "machine",
+      "number": 17,
+      "topic": "2025年度 上期 機械・問17",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "2",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-machine-18",
+      "year": 2025,
+      "subject": "machine",
+      "number": 18,
+      "topic": "2025年度 上期 機械・問18",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "2",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2025-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q03.pdf",
+      "localFile": "assets/third/2025-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-1",
+      "year": 2025,
+      "subject": "law",
+      "number": 1,
+      "topic": "2025年度 上期 法規・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 6
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-2",
+      "year": 2025,
+      "subject": "law",
+      "number": 2,
+      "topic": "2025年度 上期 法規・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 6
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-3",
+      "year": 2025,
+      "subject": "law",
+      "number": 3,
+      "topic": "2025年度 上期 法規・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 6
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-4",
+      "year": 2025,
+      "subject": "law",
+      "number": 4,
+      "topic": "2025年度 上期 法規・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 6
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-5",
+      "year": 2025,
+      "subject": "law",
+      "number": 5,
+      "topic": "2025年度 上期 法規・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 6
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-6",
+      "year": 2025,
+      "subject": "law",
+      "number": 6,
+      "topic": "2025年度 上期 法規・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 6
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-7",
+      "year": 2025,
+      "subject": "law",
+      "number": 7,
+      "topic": "2025年度 上期 法規・問7",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 6
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-8",
+      "year": 2025,
+      "subject": "law",
+      "number": 8,
+      "topic": "2025年度 上期 法規・問8",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 6
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-9",
+      "year": 2025,
+      "subject": "law",
+      "number": 9,
+      "topic": "2025年度 上期 法規・問9",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 6
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-10",
+      "year": 2025,
+      "subject": "law",
+      "number": 10,
+      "topic": "2025年度 上期 法規・問10",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 6
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-11",
+      "year": 2025,
+      "subject": "law",
+      "number": 11,
+      "topic": "2025年度 上期 法規・問11",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "3",
+          "points": 6
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "5",
+          "points": 7
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-12",
+      "year": 2025,
+      "subject": "law",
+      "number": 12,
+      "topic": "2025年度 上期 法規・問12",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "2",
+          "points": 6
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 7
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2025-upper-law-13",
+      "year": 2025,
+      "subject": "law",
+      "number": 13,
+      "topic": "2025年度 上期 法規・問13",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "2",
+          "points": 7
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "3",
+          "points": 7
+        }
+      ],
+      "source": "2025-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_q04.pdf",
+      "localFile": "assets/third/2025-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20250831_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2025-upper-answers.pdf",
+      "paper": "2025-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
     }
   ],
   "gradingReport": [
@@ -2544,15 +7614,22 @@
       "status": "演習・採点対応",
       "groups": 66,
       "items": 80
+    },
+    {
+      "year": 2025,
+      "status": "演習・採点対応",
+      "groups": 132,
+      "items": 160
     }
   ],
   "officialIndex": "https://www.shiken.or.jp/chief/third/qa/",
-  "checkedAt": "2026-11-12T09:36:12.204514+09:00",
+  "checkedAt": "2026-11-13T06:45:44.725235+09:00",
   "reusePolicy": {
     "url": "https://www.shiken.or.jp/chief/third/qa/",
     "purpose": "教育目的の利用・出典明記。原本を改変せず保管。"
   },
   "releaseYears": [
+    2025,
     2026
   ],
   "note": "原本PDFは必要なときだけ開きます。詳しい個別解説は未整備です。"
