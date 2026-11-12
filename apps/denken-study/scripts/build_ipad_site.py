@@ -46,6 +46,8 @@ def build(level=1):
     package.writestr('README_JA.txt',(f'{year}年度 第{level}種電気主任技術者試験 公式問題・解答\n出典：'+archive['officialIndex']+'\n対象年度の公開済み問題・正答。原本は改変していません。\n教育目的の利用条件・出典・SHA256はmanifest.jsonを参照してください。\n二次の自動採点と全小問の詳しい解説は未対応です。\n').encode('utf-8-sig'))
     package.writestr('manifest.json',json.dumps({'officialIndex':archive['officialIndex'],'checkedAt':archive['checkedAt'],'records':subset,'reusePolicy':archive['reusePolicy']},ensure_ascii=False,indent=2))
    print(year,'PDF package:',(out/f'past-papers-{year}.zip').stat().st_size,'bytes')
+ if level==1 and (ROOT/'secondary').exists():shutil.copytree(ROOT/'secondary',out/'secondary',dirs_exist_ok=True)
+ if level==1 and (ROOT/'secondary-setup.html').exists():shutil.copy2(ROOT/'secondary-setup.html',out/'secondary-setup.html')
  (out/'version.json').write_text(json.dumps({'version':version}),encoding='utf-8')
  manifest={'id':'./','name':'電験一種 学習ノート','short_name':'電験一種','lang':'ja','start_url':'./index.html','scope':'./','display':'standalone','background_color':'#f5f5f0','theme_color':'#152d3c','icons':[{'src':f'./icon-{n}.png','sizes':f'{n}x{n}','type':'image/png','purpose':'any maskable'} for n in [192,512]]}
  if level==3:manifest['name']='電験三種 学習ノート';manifest['short_name']='電験三種'

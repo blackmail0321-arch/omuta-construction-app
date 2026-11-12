@@ -1,0 +1,8 @@
+name = "denken-secondary-grading"
+main = "worker.mjs"
+compatibility_date = "2026-11-13"
+[vars]
+ALLOWED_ORIGIN = "https://blackmail0321-arch.github.io"
+SOURCE_BASE = "https://blackmail0321-arch.github.io/omuta-construction-app/denken/secondary/"
+OPENAI_MODEL = "gpt-5-mini"
+# Set OPENAI_API_KEY and GRADING_ACCESS_TOKEN as Cloudflare secrets, never here.
