@@ -9,6 +9,7 @@ on:
     paths:
       - 'apps/denken-study/**'
       - 'apps/april-planner/**'
+      - '.github/workflows/april-planner-pages.yml'
 
 permissions:
   contents: read
