@@ -1,0 +1,2559 @@
+{
+  "records": [
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "label": "令和8年度第三種電気主任技術者上期試験 理論科目",
+      "year": 2026,
+      "stage": "primary",
+      "term": "upper",
+      "subject": "theory",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "bytes": 1806830,
+      "sha256": "41a80077e524f47b70625d6a51c2203e2075863d4667d96fbb60fdb937d90cec",
+      "pages": 23,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "label": "令和8年度第三種電気主任技術者上期試験 電力科目",
+      "year": 2026,
+      "stage": "primary",
+      "term": "upper",
+      "subject": "power",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "bytes": 1644382,
+      "sha256": "bc587eb3b837fd4cadccf54b2d35caf9056a0b3084848efc95a6679c2b25a9cb",
+      "pages": 21,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "label": "令和8年度第三種電気主任技術者上期試験 機械科目",
+      "year": 2026,
+      "stage": "primary",
+      "term": "upper",
+      "subject": "machine",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "bytes": 1780906,
+      "sha256": "77904e2d2d16ef85dc311f4fbabf1d55c919b9e526f095f31e35a1722c25bb15",
+      "pages": 23,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "label": "令和8年度第三種電気主任技術者上期試験 法規科目",
+      "year": 2026,
+      "stage": "primary",
+      "term": "upper",
+      "subject": "law",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "bytes": 1667798,
+      "sha256": "bf719af6d3663ede7df107b86c8a68c63fdffdde7d7381c1ab3a76479cbb3776",
+      "pages": 21,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "label": "令和8年度第三種電気主任技術者上期試験",
+      "year": 2026,
+      "stage": "primary",
+      "term": "upper",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2026-upper-answers.pdf",
+      "bytes": 52169,
+      "sha256": "c6681b942a9a1c57f9563cc33c67a93882c7430ee91237fbf75f836db9663181",
+      "pages": 1,
+      "verified": true
+    }
+  ],
+  "questions": [
+    {
+      "id": "third-2026-upper-theory-1",
+      "year": 2026,
+      "subject": "theory",
+      "number": 1,
+      "topic": "理論・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-2",
+      "year": 2026,
+      "subject": "theory",
+      "number": 2,
+      "topic": "理論・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-3",
+      "year": 2026,
+      "subject": "theory",
+      "number": 3,
+      "topic": "理論・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-4",
+      "year": 2026,
+      "subject": "theory",
+      "number": 4,
+      "topic": "理論・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-5",
+      "year": 2026,
+      "subject": "theory",
+      "number": 5,
+      "topic": "理論・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-6",
+      "year": 2026,
+      "subject": "theory",
+      "number": 6,
+      "topic": "理論・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-7",
+      "year": 2026,
+      "subject": "theory",
+      "number": 7,
+      "topic": "理論・問7",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-8",
+      "year": 2026,
+      "subject": "theory",
+      "number": 8,
+      "topic": "理論・問8",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-9",
+      "year": 2026,
+      "subject": "theory",
+      "number": 9,
+      "topic": "理論・問9",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-10",
+      "year": 2026,
+      "subject": "theory",
+      "number": 10,
+      "topic": "理論・問10",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-11",
+      "year": 2026,
+      "subject": "theory",
+      "number": 11,
+      "topic": "理論・問11",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-12",
+      "year": 2026,
+      "subject": "theory",
+      "number": 12,
+      "topic": "理論・問12",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-13",
+      "year": 2026,
+      "subject": "theory",
+      "number": 13,
+      "topic": "理論・問13",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-14",
+      "year": 2026,
+      "subject": "theory",
+      "number": 14,
+      "topic": "理論・問14",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-15",
+      "year": 2026,
+      "subject": "theory",
+      "number": 15,
+      "topic": "理論・問15",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "5",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-16",
+      "year": 2026,
+      "subject": "theory",
+      "number": 16,
+      "topic": "理論・問16",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "2",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-17",
+      "year": 2026,
+      "subject": "theory",
+      "number": 17,
+      "topic": "理論・問17",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "4",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-theory-18",
+      "year": 2026,
+      "subject": "theory",
+      "number": 18,
+      "topic": "理論・問18",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "2",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q01.pdf",
+      "localFile": "assets/third/2026-upper-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-1",
+      "year": 2026,
+      "subject": "power",
+      "number": 1,
+      "topic": "電力・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-2",
+      "year": 2026,
+      "subject": "power",
+      "number": 2,
+      "topic": "電力・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-3",
+      "year": 2026,
+      "subject": "power",
+      "number": 3,
+      "topic": "電力・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-4",
+      "year": 2026,
+      "subject": "power",
+      "number": 4,
+      "topic": "電力・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-5",
+      "year": 2026,
+      "subject": "power",
+      "number": 5,
+      "topic": "電力・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-6",
+      "year": 2026,
+      "subject": "power",
+      "number": 6,
+      "topic": "電力・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-7",
+      "year": 2026,
+      "subject": "power",
+      "number": 7,
+      "topic": "電力・問7",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-8",
+      "year": 2026,
+      "subject": "power",
+      "number": 8,
+      "topic": "電力・問8",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-9",
+      "year": 2026,
+      "subject": "power",
+      "number": 9,
+      "topic": "電力・問9",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-10",
+      "year": 2026,
+      "subject": "power",
+      "number": 10,
+      "topic": "電力・問10",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-11",
+      "year": 2026,
+      "subject": "power",
+      "number": 11,
+      "topic": "電力・問11",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-12",
+      "year": 2026,
+      "subject": "power",
+      "number": 12,
+      "topic": "電力・問12",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-13",
+      "year": 2026,
+      "subject": "power",
+      "number": 13,
+      "topic": "電力・問13",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-14",
+      "year": 2026,
+      "subject": "power",
+      "number": 14,
+      "topic": "電力・問14",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-15",
+      "year": 2026,
+      "subject": "power",
+      "number": 15,
+      "topic": "電力・問15",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "5",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-16",
+      "year": 2026,
+      "subject": "power",
+      "number": 16,
+      "topic": "電力・問16",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "1",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-power-17",
+      "year": 2026,
+      "subject": "power",
+      "number": 17,
+      "topic": "電力・問17",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "3",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q02.pdf",
+      "localFile": "assets/third/2026-upper-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-1",
+      "year": 2026,
+      "subject": "machine",
+      "number": 1,
+      "topic": "機械・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-2",
+      "year": 2026,
+      "subject": "machine",
+      "number": 2,
+      "topic": "機械・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-3",
+      "year": 2026,
+      "subject": "machine",
+      "number": 3,
+      "topic": "機械・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "1",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-4",
+      "year": 2026,
+      "subject": "machine",
+      "number": 4,
+      "topic": "機械・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-5",
+      "year": 2026,
+      "subject": "machine",
+      "number": 5,
+      "topic": "機械・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-6",
+      "year": 2026,
+      "subject": "machine",
+      "number": 6,
+      "topic": "機械・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-7",
+      "year": 2026,
+      "subject": "machine",
+      "number": 7,
+      "topic": "機械・問7",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-8",
+      "year": 2026,
+      "subject": "machine",
+      "number": 8,
+      "topic": "機械・問8",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-9",
+      "year": 2026,
+      "subject": "machine",
+      "number": 9,
+      "topic": "機械・問9",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-10",
+      "year": 2026,
+      "subject": "machine",
+      "number": 10,
+      "topic": "機械・問10",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-11",
+      "year": 2026,
+      "subject": "machine",
+      "number": 11,
+      "topic": "機械・問11",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-12",
+      "year": 2026,
+      "subject": "machine",
+      "number": 12,
+      "topic": "機械・問12",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-13",
+      "year": 2026,
+      "subject": "machine",
+      "number": 13,
+      "topic": "機械・問13",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-14",
+      "year": 2026,
+      "subject": "machine",
+      "number": 14,
+      "topic": "機械・問14",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "5",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-15",
+      "year": 2026,
+      "subject": "machine",
+      "number": 15,
+      "topic": "機械・問15",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "3",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "3",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-16",
+      "year": 2026,
+      "subject": "machine",
+      "number": 16,
+      "topic": "機械・問16",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "2",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-17",
+      "year": 2026,
+      "subject": "machine",
+      "number": 17,
+      "topic": "機械・問17",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "5",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-machine-18",
+      "year": 2026,
+      "subject": "machine",
+      "number": 18,
+      "topic": "機械・問18",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "5",
+          "points": 5
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "4",
+          "points": 5
+        }
+      ],
+      "source": "2026-upper-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q03.pdf",
+      "localFile": "assets/third/2026-upper-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-1",
+      "year": 2026,
+      "subject": "law",
+      "number": 1,
+      "topic": "法規・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 6
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-2",
+      "year": 2026,
+      "subject": "law",
+      "number": 2,
+      "topic": "法規・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 6
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-3",
+      "year": 2026,
+      "subject": "law",
+      "number": 3,
+      "topic": "法規・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 6
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-4",
+      "year": 2026,
+      "subject": "law",
+      "number": 4,
+      "topic": "法規・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "3",
+          "points": 6
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-5",
+      "year": 2026,
+      "subject": "law",
+      "number": 5,
+      "topic": "法規・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 6
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-6",
+      "year": 2026,
+      "subject": "law",
+      "number": 6,
+      "topic": "法規・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 6
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-7",
+      "year": 2026,
+      "subject": "law",
+      "number": 7,
+      "topic": "法規・問7",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "4",
+          "points": 6
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-8",
+      "year": 2026,
+      "subject": "law",
+      "number": 8,
+      "topic": "法規・問8",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 6
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-9",
+      "year": 2026,
+      "subject": "law",
+      "number": 9,
+      "topic": "法規・問9",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 6
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-10",
+      "year": 2026,
+      "subject": "law",
+      "number": 10,
+      "topic": "法規・問10",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "解答",
+          "answer": "2",
+          "points": 6
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-11",
+      "year": 2026,
+      "subject": "law",
+      "number": 11,
+      "topic": "法規・問11",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "4",
+          "points": 6
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 7
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-12",
+      "year": 2026,
+      "subject": "law",
+      "number": 12,
+      "topic": "法規・問12",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "5",
+          "points": 6
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "1",
+          "points": 7
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "third-2026-upper-law-13",
+      "year": 2026,
+      "subject": "law",
+      "number": 13,
+      "topic": "法規・問13",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "label": "(a)",
+          "answer": "1",
+          "points": 7
+        },
+        {
+          "number": 2,
+          "label": "(b)",
+          "answer": "2",
+          "points": 7
+        }
+      ],
+      "source": "2026-upper-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_q04.pdf",
+      "localFile": "assets/third/2026-upper-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20260830_ch_third_a01.pdf",
+      "answerLocalFile": "assets/third/2026-upper-answers.pdf",
+      "paper": "2026-upper",
+      "term": "upper",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    }
+  ],
+  "gradingReport": [
+    {
+      "year": 2026,
+      "status": "演習・採点対応",
+      "groups": 66,
+      "items": 80
+    }
+  ],
+  "officialIndex": "https://www.shiken.or.jp/chief/third/qa/",
+  "checkedAt": "2026-11-12T09:36:12.204514+09:00",
+  "reusePolicy": {
+    "url": "https://www.shiken.or.jp/chief/third/qa/",
+    "purpose": "教育目的の利用・出典明記。原本を改変せず保管。"
+  },
+  "releaseYears": [
+    2026
+  ],
+  "note": "原本PDFは必要なときだけ開きます。詳しい個別解説は未整備です。"
+}
