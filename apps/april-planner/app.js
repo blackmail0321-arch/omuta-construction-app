@@ -89,30 +89,30 @@ function remainingDays(n,d,withHours=false){if(n===null)return '未設定';if(n<
 function available(n){return n===null?'上限未設定':n<0?`超過 ${amount(-n)}時間`:`あと ${amount(n)}時間 利用可`;}
 function renderLeaveStatus(t){
  const p=allowances[year]||C.defaultAllowance(),u=C.usage(t,p),d=p.hoursPerDay;
- $('paid-balance').textContent=`取得 ${t.paid}日 / 残り ${remainingDays(u.paidRemaining,d,p.hoursDeductPaid)}${p.paid===null?'（付与日数を設定）':''}`;
+ $('paid-balance').textContent=`取得 ${t.paid}日 / 残り ${remainingDays(u.paidRemaining,d,true)}${p.paid===null?'（付与日数を設定）':''}`;
  $('stat-hours').innerHTML=`${Math.floor(t.hours/d)}<small>日</small> ${amount(t.hours%d)}<small>時間 使用</small>`;
  $('stat-child').innerHTML=`${Math.floor(t.childHours/d)}<small>日</small> ${amount(t.childHours%d)}<small>時間 使用</small>`;
  $('stat-hour-count').textContent=`計${t.hours}時間・${t.hourCount}回 / ${available(u.hoursRemaining)}`;
  $('stat-child-count').textContent=`計${t.childHours}時間・${t.childHourCount}回 / ${available(u.childHoursRemaining)}`;
  $('leave-status').innerHTML=leaveTypes.map(([k,label])=>{
   const remain=k==='paid'?u.paidRemaining:k==='child'?u.childRemaining:p[k]===null?null:p[k]-t[k];
-  return `<article><h3>${label}</h3><p class="leave-used">取得 <b>${t[k]}</b> 日</p><p>付与・繰越 ${p[k]===null?'未設定':amount(p[k])+'日'}</p><p class="${remain!==null&&remain<0?'over-limit':''}">残り <b>${remainingDays(remain,d,k==='paid'?p.hoursDeductPaid:k==='child'?p.childHoursDeductChild:false)}</b></p></article>`;
+  return `<article><h3>${label}</h3><p class="leave-used">取得 <b>${t[k]}</b> 日</p><p>付与・繰越 ${p[k]===null?'未設定':amount(p[k])+'日'}</p><p class="${remain!==null&&remain<0?'over-limit':''}">残り <b>${remainingDays(remain,d,k==='paid'||k==='child')}</b></p></article>`;
  }).join('')+`<article><h3>出張・遅参・振替など</h3><p>出張 ${t.trip}日 / 遅参 ${t.late}回 / 早退 ${t.early}回</p><p>子遅 ${t.childLate}回 / 子早 ${t.childEarly}回</p><p>振替 ${t.substitute}回 / AM ${t.am}回 / PM ${t.pm}回</p></article>`;
  $('allowance-note').textContent=`${year}年度の登録済み記録（未来日の予定も含む）を集計。時間休は1日${d}時間換算。通常の時間休は${p.hoursDeductPaid?'有給からも差し引き':'有給とは別枠'}、子の時間休は${p.childHoursDeductChild?'子の看護休暇からも差し引き':'子の看護休暇とは別枠'}です。`;
 }
 function renderCarryover(){
- const p=allowances[year]||C.defaultAllowance(),c=C.carryover(records,year,p,today()),el=$('carryover-status');
- el.classList.toggle('carry-warning',c.configured&&c.atRisk>0);
+ const p=allowances[year]||C.defaultAllowance(),c=C.carryover(records,year,p,today()),f=C.expiryForecast(records,year,p,today()),el=$('carryover-status');
+ el.classList.toggle('carry-warning',f.loss!==null&&f.loss>0);
  let body;
- if(!c.configured)body='<strong>繰越有給の失効を確認しましょう</strong><p>繰越日数を設定すると、翌年3月31日までに使う必要がある日数を表示します。</p>';
- else if(c.expired)body=`<strong>${esc(c.expiry)}時点の失効対象：${remainingDays(c.remaining,p.hoursPerDay,p.hoursDeductPaid)}</strong><p>期限内の休暇入力に基づく計算です。過去の入力を訂正すると再計算します。</p>`;
- else body=`<strong>${c.remaining===0?'繰越分はすべて消化する入力になっています':c.atRisk>0?'3月31日までに、あと '+remainingDays(c.atRisk,p.hoursPerDay,p.hoursDeductPaid)+'分の有給を予定に入れましょう':'予定どおり取得すれば、失効見込みは0日です'}</strong><p>期限：${esc(c.expiry)}${c.daysLeft===0?'（本日まで）':'（あと'+c.daysLeft+'日）'} ／ 繰越 ${amount(c.carry)}日 ／ 今日までの入力で消化 ${remainingDays(c.consumed,p.hoursPerDay,p.hoursDeductPaid)}</p><p>繰越残り ${remainingDays(c.remaining,p.hoursPerDay,p.hoursDeductPaid)}のうち、期限までの取得予定 ${remainingDays(c.planned,p.hoursPerDay,p.hoursDeductPaid)}。予定はまだ消化済みに含めません。</p>`;
- el.innerHTML=body+'<p class="footnote">繰越分から先に使い、3月31日までに取得しない残りは失効する計算です。休暇区分の入力に基づく目安で、実際に取得したかはご自身で確認してください。</p><button type="button" id="carryover-config" class="outline">繰越日数を設定・変更</button>';
+ if(!c.configured)body='<strong>今年の繰越分の消化状況は未設定です</strong><p>今年の繰越分を入力すると、繰越分から先に使った場合の消化状況を確認できます。</p>';
+ else body=`<strong>${c.carry===0?'今年の繰越分は0日です':c.remaining===0?'繰越分はすべて消化する入力になっています':'今年の繰越分は、あと '+remainingDays(c.remaining,p.hoursPerDay,true)+'残る入力です'}</strong><p>今年の繰越 ${remainingDays(c.carry,p.hoursPerDay,true)} ／ 今日までの入力で消化 ${remainingDays(c.consumed,p.hoursPerDay,true)}</p><p>繰越残り ${remainingDays(c.remaining,p.hoursPerDay,true)}のうち、期限までの取得予定 ${remainingDays(c.planned,p.hoursPerDay,true)}。予定はまだ消化済みに含めません。</p>`;
+ const forecast=f.loss===null?'<strong>翌年度の繰越上限と有給の合計を設定すると、失効見込みを表示します。</strong>':`<strong>${f.loss>0?'このままでは '+remainingDays(f.loss,p.hoursPerDay,true)+'分が消滅する見込みです':'入力済みの予定どおり取得した場合、失効見込みは0日です'}</strong><p>翌年度に繰り越せる上限：${remainingDays(f.limit,p.hoursPerDay,true)} ／ 年度末の残り見込み：${remainingDays(f.projected,p.hoursPerDay,true)}</p><p>今日までの入力による残り：${remainingDays(f.current,p.hoursPerDay,true)}。年度末見込みには登録済みの未来の取得予定を含みます。</p>`;
+ el.innerHTML=forecast+'<hr><h3>今年の繰越分の消化状況</h3>'+body+'<p class="footnote">繰越分から先に使い、今年の繰越分の消化状況と、上の「年度末残り－翌年度の上限」による失効見込みは別に表示しています。休暇区分の入力に基づく目安で、実際に取得したかはご自身で確認してください。</p><button type="button" id="carryover-config" class="outline">繰越日数を設定・変更</button>';
  $('carryover-config').onclick=openAllowance;
 }
 function openAllowance(){
  const p=allowances[year]||C.defaultAllowance();$('allowance-year').textContent=`${year}年度（${year}年4月〜${year+1}年3月）`;
- const fields=[...leaveTypes.map(([k,n])=>[k,n+'の付与・繰越合計（日）']),['paidCarry','うち有給の繰越分（日・合計の内数）'],['hours','通常の時間休の年間上限（時間）'],['childHours','子の時間休の年間上限（時間）'],['hoursPerDay','1日を何時間として換算するか']];
+ const fields=[...leaveTypes.flatMap(([k,n])=>k==='paid'?[[k,n+'の付与・繰越合計（日）'],['paidCarryLimit','翌年度に繰り越せる有給の上限（日）'],['paidCarry','今年の繰越分（日・合計の内数）']]:[[k,n+'の付与・繰越合計（日）']]),['hours','通常の時間休の年間上限（時間）'],['childHours','子の時間休の年間上限（時間）'],['hoursPerDay','1日を何時間として換算するか']];
  $('allowance-fields').innerHTML=fields.map(([k,label])=>`<label>${label}<input id="allowance-${k}" type="number" min="${k==='hoursPerDay'?1:0}" max="${k==='hoursPerDay'?24:10000}" step="${k==='hoursPerDay'?1:'0.01'}" ${k==='hoursPerDay'?'required':''} value="${p[k]??''}" placeholder="未設定"></label>`).join('');
  $('allowance-hoursDeductPaid').checked=p.hoursDeductPaid;$('allowance-childHoursDeductChild').checked=p.childHoursDeductChild;$('allowance-error').textContent='';$('allowance-dialog').showModal();
 }
@@ -160,7 +160,7 @@ function doSearch(){
  }searchPage=0;if(searchDates.length)renderSearch();else $('search-results').innerHTML='<div class="empty-state">該当する予定はありません。条件を変えて検索してください。</div>';
 }
 $('allowance-open').onclick=openAllowance;
-$('allowance-form').onsubmit=e=>{e.preventDefault();try{const p=C.defaultAllowance();for(const k of ['paid','paidCarry','sick','child','summer','mourning','hours','childHours','hoursPerDay']){const v=$('allowance-'+k).value;p[k]=v===''?null:Number(v);}p.hoursDeductPaid=$('allowance-hoursDeductPaid').checked;p.childHoursDeductChild=$('allowance-childHoursDeductChild').checked;const next=C.validateAllowances({...allowances,[year]:p});commit(records,next);$('allowance-dialog').close();render();show(year+'年度の休暇設定を保存しました。');}catch(err){$('allowance-error').textContent='設定を保存できませんでした。'+err.message;}};
+$('allowance-form').onsubmit=e=>{e.preventDefault();try{const p=C.defaultAllowance();for(const k of ['paid','paidCarry','paidCarryLimit','sick','child','summer','mourning','hours','childHours','hoursPerDay']){const v=$('allowance-'+k).value;p[k]=v===''?null:Number(v);}p.hoursDeductPaid=$('allowance-hoursDeductPaid').checked;p.childHoursDeductChild=$('allowance-childHoursDeductChild').checked;const next=C.validateAllowances({...allowances,[year]:p});commit(records,next);$('allowance-dialog').close();render();show(year+'年度の休暇設定を保存しました。');}catch(err){$('allowance-error').textContent='設定を保存できませんでした。'+err.message;}};
 setSelects();render();
 $('prev-year').onclick=()=>{if(year>2000){year--;render();}};$('next-year').onclick=()=>{if(year<2098){year++;render();}};
 $('fiscal-year').onchange=e=>{year=Number(e.target.value);render();};$('prev-month').onclick=()=>monthStep(-1);$('next-month').onclick=()=>monthStep(1);

@@ -54,12 +54,12 @@ function comparison(r){
  if(planned&&actual)return (r.contentTop||'').trim()===(r.actualContent||'').trim()&&(r.memoTop||'').trim()===(r.actualMemo||'').trim()?'予定と同じ内容':'予定・実施に差分あり';
  return planned?'実施未記録':actual?'実施のみ記録':'予定・実施未記録';
 }
-const defaultAllowance=()=>({paid:null,paidCarry:null,sick:null,child:null,summer:null,mourning:null,hours:null,childHours:null,hoursPerDay:8,hoursDeductPaid:false,childHoursDeductChild:false});
+const defaultAllowance=()=>({paid:null,paidCarry:null,paidCarryLimit:null,sick:null,child:null,summer:null,mourning:null,hours:null,childHours:null,hoursPerDay:8,hoursDeductPaid:false,childHoursDeductChild:false});
 function validateAllowances(value){
  if(value===undefined)return {};if(!value||typeof value!=='object'||Array.isArray(value))throw Error('休暇設定の形式が正しくありません。');const out={};
  for(const [year,p] of Object.entries(value)){
   if(!/^\d{4}$/.test(year)||+year<1999||+year>2099||!p||typeof p!=='object'||Array.isArray(p))throw Error('休暇設定の年度を確認してください。');
-  const a=defaultAllowance();for(const key of ['paid','paidCarry','sick','child','summer','mourning','hours','childHours'])if(p[key]!==undefined&&p[key]!==null){if(typeof p[key]!=='number'||!Number.isFinite(p[key])||p[key]<0||p[key]>10000)throw Error('付与日数・上限は0〜10000で設定してください。');a[key]=p[key];}
+  const a=defaultAllowance();for(const key of ['paid','paidCarry','paidCarryLimit','sick','child','summer','mourning','hours','childHours'])if(p[key]!==undefined&&p[key]!==null){if(typeof p[key]!=='number'||!Number.isFinite(p[key])||p[key]<0||p[key]>10000)throw Error('付与日数・上限は0〜10000で設定してください。');a[key]=p[key];}
   if(a.paid!==null&&a.paidCarry!==null&&a.paidCarry>a.paid)throw Error('有給の繰越分は、付与・繰越の合計日数以下にしてください。');
   if(p.hoursPerDay!==undefined){if(!Number.isInteger(p.hoursPerDay)||p.hoursPerDay<1||p.hoursPerDay>24)throw Error('1日の時間数は1〜24の整数にしてください。');a.hoursPerDay=p.hoursPerDay;}
   for(const key of ['hoursDeductPaid','childHoursDeductChild']){if(p[key]!==undefined&&typeof p[key]!=='boolean')throw Error('差し引き設定が正しくありません。');a[key]=p[key]??false;}out[year]=a;
@@ -90,5 +90,12 @@ function carryover(records,year,p=defaultAllowance(),asOf){
  return {configured:true,expiry,carry,consumed,remaining,planned:reserved,atRisk:Math.max(0,remaining-reserved),expired,daysLeft:Math.max(0,Math.round((Date.parse(expiry+'T00:00:00Z')-Date.parse(asOf+'T00:00:00Z'))/86400000))};
 }
 
-const api={isLeave,carryover,comparison,defaultAllowance,validateAllowances,usage,UPPER,LOWER,FIELDS,empty,iso,date,valid,fy,months,days,fiscalDates,holidays,validateRecord,validateRecords,meaningful,totals};root.PlannerCore=api;if(typeof module!=='undefined')module.exports=api;
+function expiryForecast(records,year,p=defaultAllowance(),asOf){
+ const filtered=Object.fromEntries(Object.entries(records).filter(([day])=>day<=asOf));
+ const current=usage(totals(filtered,year),p).paidRemaining;
+ const projected=usage(totals(records,year),p).paidRemaining;
+ const limit=p.paidCarryLimit??null;
+ return {expiry:(year+1)+'-03-31',current,projected,limit,loss:projected===null||limit===null?null:Math.max(0,projected-limit),carry:projected===null||limit===null?null:Math.min(limit,Math.max(0,projected))};
+}
+const api={expiryForecast,isLeave,carryover,comparison,defaultAllowance,validateAllowances,usage,UPPER,LOWER,FIELDS,empty,iso,date,valid,fy,months,days,fiscalDates,holidays,validateRecord,validateRecords,meaningful,totals};root.PlannerCore=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

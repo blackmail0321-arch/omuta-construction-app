@@ -22,3 +22,5 @@
 .chip.leave,.chip.upper.leave{background:#fde3e1;color:#a12323;border:1px solid #eab4af}.legend-leave{background:#df7770}.carryover-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;margin:18px 0}.carryover-card strong{font-size:16px;overflow-wrap:anywhere}.carryover-card p{font-size:13px;line-height:1.7;margin:8px 0;overflow-wrap:anywhere}.carryover-card.carry-warning{background:#fff4f1;border-color:#e2afa5}.carry-warning>strong{color:#a12626}.legend{flex-wrap:wrap}@media(max-width:760px){.carryover-card{padding:14px}.carryover-card strong{font-size:14px}}
 
 
+
+.carryover-details{margin:16px 0;border:1px solid var(--line);border-radius:10px;background:white;padding:14px}.carryover-details>summary{cursor:pointer;font-weight:600;font-size:14px}.carryover-details .carryover-card{margin-bottom:0}.carryover-card h3{font-size:14px}

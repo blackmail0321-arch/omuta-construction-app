@@ -16,3 +16,5 @@ const restored=C.validateAllowances(JSON.parse(JSON.stringify({2026:p})));assert
 for(const lower of ['有','夏','子','病','喪','1','7'])assert(C.isLeave(r(lower)));
 assert(C.isLeave(r('','P振')));assert(!C.isLeave(r('出')));assert(!C.isLeave(r('','遅')));
 console.log('PASS carryover March-31 expiry, FIFO, past versus future, fractional time, child exclusion, fiscal boundary, validation and backup compatibility; red leave classification');
+
+const forecast=C.expiryForecast({},2026,{...C.defaultAllowance(),paid:12,paidCarryLimit:8},'2026-11-12');assert.equal(forecast.loss,4);assert.equal(forecast.carry,8);assert.equal(forecast.projected,12);assert.equal(C.expiryForecast({},2026,C.defaultAllowance(),'2026-11-12').loss,null);assert.equal(C.expiryForecast({},2026,{...p,paid:5,paidCarryLimit:8},'2026-11-12').loss,0);assert.equal(C.validateAllowances({2026:{paid:12,paidCarryLimit:8}})[2026].paidCarryLimit,8);console.log('PASS next-year carry limit: remaining 12 minus limit 8 gives loss 4; unknown and under-limit balances preserved');

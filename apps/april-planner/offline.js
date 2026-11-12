@@ -16,8 +16,8 @@ function askWorker(worker, type = 'CACHE_STATUS') {
   });
 }
 function updateAvailable() {
-  if (!registration?.waiting) return;
   $('offline-update').hidden = false;
+  $('offline-update').textContent=registration?.waiting?'アプリを更新':'更新を確認';
 }
 async function setup() {
   $('offline-retry').hidden = true;
@@ -56,12 +56,31 @@ async function setup() {
 }
 $('offline-help').onclick = () => $('offline-dialog').showModal();
 $('offline-retry').onclick = setup;
-$('offline-update').onclick = () => {
-  if (!registration?.waiting) return;
+$('offline-update').onclick = async () => {
   if (window.Planner?.hasUnsavedChanges()) {alert('入力画面を保存して閉じてから更新してください。');return;}
-  if (!confirm('保存済みの記録は保持したままアプリを更新します。念のためバックアップの保存をおすすめします。更新しますか？')) return;
-  reloadForUpdate = true;
-  registration.waiting.postMessage({type: 'ACTIVATE_UPDATE'});
+  const button=$('offline-update');button.disabled=true;
+  try {
+    if(!registration)await setup();
+    if(!registration){status('公開アプリをSafariのHTTPSで開いて更新してください。','error');return;}
+    if(!registration.waiting){
+      if(!navigator.onLine)throw Error('通信できません。インターネット接続後にもう一度お試しください。');
+      status('更新を確認しています。','loading');
+      await registration.update();
+      const worker=registration.installing;
+      if(worker)await new Promise((resolve,reject)=>{
+        const timer=setTimeout(()=>done(Error('更新の準備が完了しませんでした。')),20000);
+        function done(error){clearTimeout(timer);worker.removeEventListener('statechange',check);error?reject(error):resolve();}
+        function check(){if(['installed','activating','activated'].includes(worker.state))done();else if(worker.state==='redundant')done(Error('新しい版を保存できませんでした。'));}
+        worker.addEventListener('statechange',check);check();
+      });
+      if(!registration.waiting){status('現在のアプリは最新版です。保存済みの記録はそのままです。','ready');return;}
+    }
+    updateAvailable();
+    if (!confirm('保存済みの記録は保持したままアプリを更新します。念のためバックアップの保存をおすすめします。更新しますか？')) return;
+    reloadForUpdate = true;
+    registration.waiting.postMessage({type: 'ACTIVATE_UPDATE'});
+  }catch(error){status('更新を確認できませんでした。'+error.message,'error');}
+  finally{button.disabled=false;updateAvailable();}
 };
 navigator.serviceWorker?.addEventListener('controllerchange', () => {if (reloadForUpdate) location.reload();});
 for (const type of ['online', 'offline']) addEventListener(type, () => {
