@@ -93,6 +93,7 @@ jobs:
         with:
           path: ${{ runner.temp }}/april-planner-site
   deploy:
+    if: always() && needs.build.result == 'success'
     needs: build
     runs-on: ubuntu-24.04
     permissions:
