@@ -30,8 +30,9 @@ class Handler(SimpleHTTPRequestHandler):
   if self.path.startswith('/api/'):return self.reply(404,{'error':'このAPIはありません'})
   # Serve only distributable study materials, not scripts or local credential/config files.
   clean=self.path.split('?',1)[0]
+  if re.fullmatch(r'/assets/third/(?:19|20)[0-9]{2}-(?:upper|lower|annual)-(?:theory|power|machine|law|answers)\.pdf',clean):return super().do_GET()
   if re.fullmatch(r'/assets/official/(?:19|20)[0-9]{2}-(?:primary|secondary)-(?:theory|power|machine|law|power-management|machine-control|answers)\.pdf',clean):return super().do_GET()
-  if clean not in ['/','/index.html'] and not re.fullmatch(r'/assets/(?:19|20)[0-9]{2}-(?:theory|power|machine|law|answers)\.pdf',clean):return self.send_error(404)
+  if clean not in ['/','/index.html','/third.html'] and not re.fullmatch(r'/assets/(?:19|20)[0-9]{2}-(?:theory|power|machine|law|answers)\.pdf',clean):return self.send_error(404)
   return super().do_GET()
  def reply(self,status,obj):
   body=json.dumps(obj,ensure_ascii=False).encode();self.send_response(status);self.send_header('Content-Type','application/json; charset=utf-8');self.send_header('Cache-Control','no-store');self.send_header('X-Content-Type-Options','nosniff');self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body)

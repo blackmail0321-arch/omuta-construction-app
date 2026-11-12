@@ -1,7 +1,9 @@
-name: Publish April planner (manual)
+name: Publish apps and daily Denken update
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 21 * * *'
   push:
     branches: [main]
     paths:
@@ -16,8 +18,34 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  collect:
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+      - run: python3 -m pip install PyMuPDF==1.26.6
+      - run: python3 apps/denken-study/scripts/daily_collect.py
+      - run: python3 apps/denken-study/tests/archive_test.py
+      - run: python3 apps/denken-study/tests/dual_test.py
+      - run: python3 apps/denken-study/scripts/build_app.py
+      - name: Save only verified public study materials
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add apps/denken-study/assets/official apps/denken-study/assets/third apps/denken-study/data/official-archive/archive.json apps/denken-study/data/third/archive.json apps/denken-study/data/daily-status.json apps/denken-study/index.html apps/denken-study/third.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add the daily bounded official study batch'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
   build:
-    if: github.ref == 'refs/heads/main'
+    needs: collect
+    if: always() && github.ref == 'refs/heads/main' && (needs.collect.result == 'success' || needs.collect.result == 'skipped')
     runs-on: ubuntu-24.04
     permissions:
       contents: read
@@ -25,6 +53,7 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
+          ref: main
           persist-credentials: false
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - name: Build empty-data planner, savings, weight and learning apps
@@ -45,6 +74,7 @@ jobs:
           python3 apps/denken-study/tests/lessons_test.py
           python3 -m pip install PyMuPDF==1.26.6
           python3 apps/denken-study/tests/archive_test.py
+          python3 apps/denken-study/tests/dual_test.py
           python3 apps/denken-study/scripts/build_app.py
           python3 apps/denken-study/scripts/build_ipad_site.py
           python3 -m zipfile -e apps/april-planner/offline-site.zip "$RUNNER_TEMP/april-planner-site"

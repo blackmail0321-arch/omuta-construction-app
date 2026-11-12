@@ -103,7 +103,7 @@ def questions_for(archive,level,year):
    groups=answers[sid];groups=groups.items() if level==3 else enumerate(groups,1)
    for n,items in groups:
     paper=f'{year}-{term}';name=f'{year}-{sid}-{n}' if level==1 else f'third-{paper}-{sid}-{n}'
-    out.append({'id':name,'year':year,'subject':sid,'number':n,'topic':label+'・問'+str(n),'kind':'past','optional':sid in ['theory','machine'] and n in ([6,7] if level==1 else [17,18]),'pages':[],'text':'原本PDFで問題を読み、解答を選んでください。','options':list(KANA) if level==1 else ['1','2','3','4','5'],'items':items,'source':f'{paper}-{sid}','sourceUrl':src['url'],'localFile':src['localFile'],'answerUrl':answer['url'],'answerLocalFile':answer['localFile'],'paper':paper,'term':term,'officialPage':None,'officialPageEnd':None,'explanationStatus':'公式正答と配点を機械照合。詳しい解説は未整備'})
+    out.append({'id':name,'year':year,'subject':sid,'number':n,'topic':str(year)+'年度 '+(('上期' if term=='upper' else '下期' if term=='lower' else '')+' ' if level==3 else '')+label+'・問'+str(n),'kind':'past','optional':sid in ['theory','machine'] and n in ([6,7] if level==1 else [17,18]),'pages':[],'text':'原本PDFで問題を読み、解答を選んでください。','options':list(KANA) if level==1 else ['1','2','3','4','5'],'items':items,'source':f'{paper}-{sid}','sourceUrl':src['url'],'localFile':src['localFile'],'answerUrl':answer['url'],'answerLocalFile':answer['localFile'],'paper':paper,'term':term,'officialPage':None,'officialPageEnd':None,'explanationStatus':'公式正答と配点を機械照合。詳しい解説は未整備'})
  return out
 
 def collect_grade(archive,level,quota):
@@ -128,6 +128,7 @@ def collect_grade(archive,level,quota):
    qs=questions_for(result,level,year);result['questions']=[q for q in result['questions'] if q['year']!=year]+qs
    report={'year':year,'status':'演習・採点対応','groups':len(qs),'items':sum(len(q['items']) for q in qs)}
   except ValueError as e:
+   if any(q['year']==year for q in archive.get('questions',[])):raise ValueError('Updated paper could not be verified; keep previous publication') from e
    report={'year':year,'status':'原本閲覧のみ・採点の形式は要確認','reason':str(e)}
   result['gradingReport']=[r for r in result['gradingReport'] if r['year']!=year]+[report]
  result.update(officialIndex=base,checkedAt=datetime.now(ZoneInfo('Asia/Tokyo')).isoformat(),reusePolicy={'url':base,'purpose':'教育目的の利用・出典明記。原本を改変せず保管。'},releaseYears=sorted({r['year'] for r in result['records']}),note='原本PDFは必要なときだけ開きます。詳しい個別解説は未整備です。')
