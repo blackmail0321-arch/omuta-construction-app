@@ -251,7 +251,7 @@ function renderCarryover(){
  let body;
  if(!c.configured)body='<strong>今年の繰越分の消化状況は未設定です</strong><p>今年の繰越分を入力すると、繰越分から先に使った場合の消化状況を確認できます。</p>';
  else body=`<strong>${c.carry===0?'今年の繰越分は0日です':c.remaining===0?'繰越分はすべて消化する入力になっています':'今年の繰越分は、あと '+remainingDays(c.remaining,p.hoursPerDay,true)+'残る入力です'}</strong><p>今年の繰越 ${remainingDays(c.carry,p.hoursPerDay,true)} ／ 今日までの入力で消化 ${remainingDays(c.consumed,p.hoursPerDay,true)}</p><p>繰越残り ${remainingDays(c.remaining,p.hoursPerDay,true)}のうち、期限までの取得予定 ${remainingDays(c.planned,p.hoursPerDay,true)}。予定はまだ消化済みに含めません。</p>`;
- const forecast=f.loss===null?'<strong>翌年度の繰越上限と有給の合計を設定すると、失効見込みを表示します。</strong>':`<strong>${f.loss>0?'このままでは '+remainingDays(f.loss,p.hoursPerDay,true)+'分が消滅する見込みです':'入力済みの予定どおり取得した場合、失効見込みは0日です'}</strong><p>翌年度に繰り越せる上限：${remainingDays(f.limit,p.hoursPerDay,true)} ／ 年度末の残り見込み：${remainingDays(f.projected,p.hoursPerDay,true)}</p><p>今日までの入力による残り：${remainingDays(f.current,p.hoursPerDay,true)}。年度末見込みには登録済みの未来の取得予定を含みます。</p>`;
+ const forecast=f.loss===null?'<strong>翌年度の繰越上限と有給の合計を設定すると、失効見込みを表示します。</strong>':`<strong>${f.loss>0?'このままでは '+remainingDays(f.loss,p.hoursPerDay,true)+'分が消滅する見込みです':'入力済みの予定どおり取得した場合、失効見込みは0日です'}</strong><p>失効判定日：${esc(f.expiry)}（年度末）</p><p>翌年度に繰り越せる上限：${remainingDays(f.limit,p.hoursPerDay,true)} ／ 年度末の残り見込み：${remainingDays(f.projected,p.hoursPerDay,true)}</p><p>今日までの入力による残り：${remainingDays(f.current,p.hoursPerDay,true)}。年度末見込みには登録済みの未来の取得予定を含みます。</p>`;
  el.innerHTML=forecast+'<hr><h3>今年の繰越分の消化状況</h3>'+body+'<p class="footnote">繰越分から先に使い、今年の繰越分の消化状況と、上の「年度末残り－翌年度の上限」による失効見込みは別に表示しています。休暇区分の入力に基づく目安で、実際に取得したかはご自身で確認してください。</p><button type="button" id="carryover-config" class="outline">繰越日数を設定・変更</button>';
  $('carryover-config').onclick=openAllowance;
 }
