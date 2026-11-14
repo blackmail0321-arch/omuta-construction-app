@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-13T06:45:27.780442+09:00",
+  "checkedAt": "2026-11-14T10:24:24.342059+09:00",
   "officialIndex": "https://www.shiken.or.jp/chief/first/qa/",
   "pages": [
     {
@@ -758,6 +758,246 @@
       "localFile": "assets/official/2020-primary-answers.pdf",
       "bytes": 70991,
       "sha256": "cd70e7d9b08cf45e297d7e38d10ac5df65b8425f7706347edbfbce32dd625814",
+      "pages": 1,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20191117_ch_first_q01.pdf",
+      "label": "令和元年度第一種電気主任技術者二次試験 電力・管理科目",
+      "year": 2019,
+      "stage": "secondary",
+      "term": "annual",
+      "subject": "power-management",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "localFile": "assets/official/2019-secondary-power-management.pdf",
+      "bytes": 577940,
+      "sha256": "8a8e6760fac783028e1fd3aac8fef0038155782c5c0e7740e26af48cdc1f6634",
+      "pages": 9,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20191117_ch_first_q02.pdf",
+      "label": "令和元年度第一種電気主任技術者二次試験 機械・制御科目",
+      "year": 2019,
+      "stage": "secondary",
+      "term": "annual",
+      "subject": "machine-control",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "localFile": "assets/official/2019-secondary-machine-control.pdf",
+      "bytes": 468823,
+      "sha256": "4c9dd0ec6e7bad0c2184db68b0cecbb7bbc1499f3bc512a951e1f73f87c60fe7",
+      "pages": 7,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20191117_ch_first_a01.pdf",
+      "label": "令和元年度第一種電気主任技術者二次試験",
+      "year": 2019,
+      "stage": "secondary",
+      "term": "annual",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "localFile": "assets/official/2019-secondary-answers.pdf",
+      "bytes": 317358,
+      "sha256": "3fe8fc068f26301ce0eb1c3955309a448204bbeca56700ee1ea18e0e90ae0843",
+      "pages": 15,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q01.pdf",
+      "label": "令和元年度第一種電気主任技術者一次試験 理論科目",
+      "year": 2019,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "theory",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "localFile": "assets/official/2019-primary-theory.pdf",
+      "bytes": 957355,
+      "sha256": "21c68dd107ebcf2928acbb721634c5392c0ae0e130a9e8e3aa04ffba38344073",
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q02.pdf",
+      "label": "令和元年度第一種電気主任技術者一次試験 電力科目",
+      "year": 2019,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "power",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "localFile": "assets/official/2019-primary-power.pdf",
+      "bytes": 674240,
+      "sha256": "b35692db33d319162bb451e17e4f6b0a7859b3b034050600b759b7512f36c2f9",
+      "pages": 9,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q03.pdf",
+      "label": "令和元年度第一種電気主任技術者一次試験 機械科目",
+      "year": 2019,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "machine",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "localFile": "assets/official/2019-primary-machine.pdf",
+      "bytes": 957025,
+      "sha256": "83c6429dbb50d784e3272a66726332a979991cf45074ca3a439e9b0daff4f670",
+      "pages": 13,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q04.pdf",
+      "label": "令和元年度第一種電気主任技術者一次試験 法規科目",
+      "year": 2019,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "law",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "localFile": "assets/official/2019-primary-law.pdf",
+      "bytes": 827219,
+      "sha256": "559dfff80e0b14984a568f0bd507875736a4197dbd8e55cdf5bb1c3834377ef9",
+      "pages": 11,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "label": "令和元年度第一種電気主任技術者一次試験",
+      "year": 2019,
+      "stage": "primary",
+      "term": "annual",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index.html",
+      "localFile": "assets/official/2019-primary-answers.pdf",
+      "bytes": 54545,
+      "sha256": "1a8259c1b782e227e2628a30a4732c7bea3fdafee366e0421d26f95d35820cf4",
+      "pages": 1,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20181118_ch_first_q01.pdf",
+      "label": "平成30年度第一種電気主任技術者二次試験 電力・管理科目",
+      "year": 2018,
+      "stage": "secondary",
+      "term": "annual",
+      "subject": "power-management",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "localFile": "assets/official/2018-secondary-power-management.pdf",
+      "bytes": 730380,
+      "sha256": "b8e4cecc9ffbf9dedeac7d56357dbb4cb447fc6be3f8609b33be541050bda99c",
+      "pages": 12,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20181118_ch_first_q02.pdf",
+      "label": "平成30年度第一種電気主任技術者二次試験 機械・制御科目",
+      "year": 2018,
+      "stage": "secondary",
+      "term": "annual",
+      "subject": "machine-control",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "localFile": "assets/official/2018-secondary-machine-control.pdf",
+      "bytes": 390370,
+      "sha256": "be2e0826e7ba12d31bafd9395d4bd61297ca7d773e864bfecdcadda7b299e1ec",
+      "pages": 8,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20181118_ch_first_a01.pdf",
+      "label": "平成30年度第一種電気主任技術者二次試験",
+      "year": 2018,
+      "stage": "secondary",
+      "term": "annual",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "localFile": "assets/official/2018-secondary-answers.pdf",
+      "bytes": 615259,
+      "sha256": "328e48cb2bfb082f123d5a0633c61d47f87b794b08281e19382ef58e2e28138c",
+      "pages": 21,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q01.pdf",
+      "label": "平成30年度第一種電気主任技術者一次試験 理論科目",
+      "year": 2018,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "theory",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "localFile": "assets/official/2018-primary-theory.pdf",
+      "bytes": 1025869,
+      "sha256": "88e3a62a5da7d4d2474d03bbf479b15232940b8e4e414441b1461aef1a4b0b2b",
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q02.pdf",
+      "label": "平成30年度第一種電気主任技術者一次試験 電力科目",
+      "year": 2018,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "power",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "localFile": "assets/official/2018-primary-power.pdf",
+      "bytes": 1345064,
+      "sha256": "09ab3e0e20cda527c5daf0489264a48c0753eddb9b7d0cdb716ddaeda9520997",
+      "pages": 10,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q03.pdf",
+      "label": "平成30年度第一種電気主任技術者一次試験 機械科目",
+      "year": 2018,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "machine",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "localFile": "assets/official/2018-primary-machine.pdf",
+      "bytes": 1121578,
+      "sha256": "4f76d4d9f60d78302ec2fbf0ad90dec8b3c02ab59054061ef0702e5544f607c3",
+      "pages": 16,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q04.pdf",
+      "label": "平成30年度第一種電気主任技術者一次試験 法規科目",
+      "year": 2018,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "law",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "localFile": "assets/official/2018-primary-law.pdf",
+      "bytes": 900637,
+      "sha256": "cc25649958b8b5a74d7bbafb97f674bc6d379052e193191bf5d07b24570bacfd",
+      "pages": 13,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "label": "平成30年度第一種電気主任技術者一次試験",
+      "year": 2018,
+      "stage": "primary",
+      "term": "annual",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_2.html",
+      "localFile": "assets/official/2018-primary-answers.pdf",
+      "bytes": 128342,
+      "sha256": "072ebddd0951388e61bc7406dd091005603827a10a57870bd06f8ee2661b9954",
       "pages": 1,
       "verified": true
     }
@@ -12136,6 +12376,3910 @@
       "officialPage": null,
       "officialPageEnd": null,
       "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-theory-1",
+      "year": 2019,
+      "subject": "theory",
+      "number": 1,
+      "topic": "2019年度 理論・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ホ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q01.pdf",
+      "localFile": "assets/official/2019-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-theory-2",
+      "year": 2019,
+      "subject": "theory",
+      "number": 2,
+      "topic": "2019年度 理論・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ワ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q01.pdf",
+      "localFile": "assets/official/2019-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-theory-3",
+      "year": 2019,
+      "subject": "theory",
+      "number": 3,
+      "topic": "2019年度 理論・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヲ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q01.pdf",
+      "localFile": "assets/official/2019-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-theory-4",
+      "year": 2019,
+      "subject": "theory",
+      "number": 4,
+      "topic": "2019年度 理論・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ロ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q01.pdf",
+      "localFile": "assets/official/2019-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-theory-5",
+      "year": 2019,
+      "subject": "theory",
+      "number": 5,
+      "topic": "2019年度 理論・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "リ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ハ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ヲ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ヌ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ヘ",
+          "points": 4
+        }
+      ],
+      "source": "2019-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q01.pdf",
+      "localFile": "assets/official/2019-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-theory-6",
+      "year": 2019,
+      "subject": "theory",
+      "number": 6,
+      "topic": "2019年度 理論・問6",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ネ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "タ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 6,
+          "answer": "レ",
+          "points": 2
+        },
+        {
+          "number": 7,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 8,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 9,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 10,
+          "answer": "ホ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q01.pdf",
+      "localFile": "assets/official/2019-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-theory-7",
+      "year": 2019,
+      "subject": "theory",
+      "number": 7,
+      "topic": "2019年度 理論・問7",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ト",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ニ",
+          "points": 4
+        }
+      ],
+      "source": "2019-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q01.pdf",
+      "localFile": "assets/official/2019-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-power-1",
+      "year": 2019,
+      "subject": "power",
+      "number": 1,
+      "topic": "2019年度 電力・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q02.pdf",
+      "localFile": "assets/official/2019-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-power-2",
+      "year": 2019,
+      "subject": "power",
+      "number": 2,
+      "topic": "2019年度 電力・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q02.pdf",
+      "localFile": "assets/official/2019-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-power-3",
+      "year": 2019,
+      "subject": "power",
+      "number": 3,
+      "topic": "2019年度 電力・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q02.pdf",
+      "localFile": "assets/official/2019-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-power-4",
+      "year": 2019,
+      "subject": "power",
+      "number": 4,
+      "topic": "2019年度 電力・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q02.pdf",
+      "localFile": "assets/official/2019-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-power-5",
+      "year": 2019,
+      "subject": "power",
+      "number": 5,
+      "topic": "2019年度 電力・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "レ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ネ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "リ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ヲ",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "ヘ",
+          "points": 3
+        }
+      ],
+      "source": "2019-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q02.pdf",
+      "localFile": "assets/official/2019-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-power-6",
+      "year": 2019,
+      "subject": "power",
+      "number": 6,
+      "topic": "2019年度 電力・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ツ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "レ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "チ",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "リ",
+          "points": 3
+        },
+        {
+          "number": 8,
+          "answer": "ヌ",
+          "points": 3
+        }
+      ],
+      "source": "2019-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q02.pdf",
+      "localFile": "assets/official/2019-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-machine-1",
+      "year": 2019,
+      "subject": "machine",
+      "number": 1,
+      "topic": "2019年度 機械・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヘ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q03.pdf",
+      "localFile": "assets/official/2019-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-machine-2",
+      "year": 2019,
+      "subject": "machine",
+      "number": 2,
+      "topic": "2019年度 機械・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q03.pdf",
+      "localFile": "assets/official/2019-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-machine-3",
+      "year": 2019,
+      "subject": "machine",
+      "number": 3,
+      "topic": "2019年度 機械・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q03.pdf",
+      "localFile": "assets/official/2019-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-machine-4",
+      "year": 2019,
+      "subject": "machine",
+      "number": 4,
+      "topic": "2019年度 機械・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヌ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q03.pdf",
+      "localFile": "assets/official/2019-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-machine-5",
+      "year": 2019,
+      "subject": "machine",
+      "number": 5,
+      "topic": "2019年度 機械・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 3
+        },
+        {
+          "number": 2,
+          "answer": "ヘ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ワ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ヲ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ル",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ネ",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "カ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q03.pdf",
+      "localFile": "assets/official/2019-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-machine-6",
+      "year": 2019,
+      "subject": "machine",
+      "number": 6,
+      "topic": "2019年度 機械・問6",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ル",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "イ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ヘ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ホ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 4
+        }
+      ],
+      "source": "2019-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q03.pdf",
+      "localFile": "assets/official/2019-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-machine-7",
+      "year": 2019,
+      "subject": "machine",
+      "number": 7,
+      "topic": "2019年度 機械・問7",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "タ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ソ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ル",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 6,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 7,
+          "answer": "イ",
+          "points": 3
+        },
+        {
+          "number": 8,
+          "answer": "ネ",
+          "points": 3
+        }
+      ],
+      "source": "2019-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q03.pdf",
+      "localFile": "assets/official/2019-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-law-1",
+      "year": 2019,
+      "subject": "law",
+      "number": 1,
+      "topic": "2019年度 法規・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヨ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q04.pdf",
+      "localFile": "assets/official/2019-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-law-2",
+      "year": 2019,
+      "subject": "law",
+      "number": 2,
+      "topic": "2019年度 法規・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ル",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q04.pdf",
+      "localFile": "assets/official/2019-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-law-3",
+      "year": 2019,
+      "subject": "law",
+      "number": 3,
+      "topic": "2019年度 法規・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヲ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q04.pdf",
+      "localFile": "assets/official/2019-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-law-4",
+      "year": 2019,
+      "subject": "law",
+      "number": 4,
+      "topic": "2019年度 法規・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヲ",
+          "points": 2
+        }
+      ],
+      "source": "2019-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q04.pdf",
+      "localFile": "assets/official/2019-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-law-5",
+      "year": 2019,
+      "subject": "law",
+      "number": 5,
+      "topic": "2019年度 法規・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "レ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ソ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "タ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 7,
+          "answer": "ヨ",
+          "points": 3
+        },
+        {
+          "number": 8,
+          "answer": "ハ",
+          "points": 3
+        }
+      ],
+      "source": "2019-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q04.pdf",
+      "localFile": "assets/official/2019-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2019-law-6",
+      "year": 2019,
+      "subject": "law",
+      "number": 6,
+      "topic": "2019年度 法規・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ヨ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "チ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 6,
+          "answer": "ソ",
+          "points": 2
+        },
+        {
+          "number": 7,
+          "answer": "レ",
+          "points": 2
+        },
+        {
+          "number": 8,
+          "answer": "カ",
+          "points": 3
+        }
+      ],
+      "source": "2019-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_q04.pdf",
+      "localFile": "assets/official/2019-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20190831_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2019-primary-answers.pdf",
+      "paper": "2019-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-theory-1",
+      "year": 2018,
+      "subject": "theory",
+      "number": 1,
+      "topic": "2018年度 理論・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ホ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q01.pdf",
+      "localFile": "assets/official/2018-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-theory-2",
+      "year": 2018,
+      "subject": "theory",
+      "number": 2,
+      "topic": "2018年度 理論・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヲ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q01.pdf",
+      "localFile": "assets/official/2018-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-theory-3",
+      "year": 2018,
+      "subject": "theory",
+      "number": 3,
+      "topic": "2018年度 理論・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q01.pdf",
+      "localFile": "assets/official/2018-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-theory-4",
+      "year": 2018,
+      "subject": "theory",
+      "number": 4,
+      "topic": "2018年度 理論・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q01.pdf",
+      "localFile": "assets/official/2018-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-theory-5",
+      "year": 2018,
+      "subject": "theory",
+      "number": 5,
+      "topic": "2018年度 理論・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヘ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ル",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "リ",
+          "points": 4
+        }
+      ],
+      "source": "2018-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q01.pdf",
+      "localFile": "assets/official/2018-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-theory-6",
+      "year": 2018,
+      "subject": "theory",
+      "number": 6,
+      "topic": "2018年度 理論・問6",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヌ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ホ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ト",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "タ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ニ",
+          "points": 3
+        }
+      ],
+      "source": "2018-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q01.pdf",
+      "localFile": "assets/official/2018-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-theory-7",
+      "year": 2018,
+      "subject": "theory",
+      "number": 7,
+      "topic": "2018年度 理論・問7",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ロ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ル",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ワ",
+          "points": 4
+        }
+      ],
+      "source": "2018-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q01.pdf",
+      "localFile": "assets/official/2018-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-power-1",
+      "year": 2018,
+      "subject": "power",
+      "number": 1,
+      "topic": "2018年度 電力・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "イ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q02.pdf",
+      "localFile": "assets/official/2018-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-power-2",
+      "year": 2018,
+      "subject": "power",
+      "number": 2,
+      "topic": "2018年度 電力・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヨ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q02.pdf",
+      "localFile": "assets/official/2018-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-power-3",
+      "year": 2018,
+      "subject": "power",
+      "number": 3,
+      "topic": "2018年度 電力・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヲ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q02.pdf",
+      "localFile": "assets/official/2018-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-power-4",
+      "year": 2018,
+      "subject": "power",
+      "number": 4,
+      "topic": "2018年度 電力・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q02.pdf",
+      "localFile": "assets/official/2018-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-power-5",
+      "year": 2018,
+      "subject": "power",
+      "number": 5,
+      "topic": "2018年度 電力・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヘ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ネ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ヲ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ソ",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "レ",
+          "points": 3
+        }
+      ],
+      "source": "2018-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q02.pdf",
+      "localFile": "assets/official/2018-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-power-6",
+      "year": 2018,
+      "subject": "power",
+      "number": 6,
+      "topic": "2018年度 電力・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ニ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ツ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 6,
+          "answer": "タ",
+          "points": 2
+        },
+        {
+          "number": 7,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 8,
+          "answer": "ネ",
+          "points": 2
+        },
+        {
+          "number": 9,
+          "answer": "カ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q02.pdf",
+      "localFile": "assets/official/2018-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-machine-1",
+      "year": 2018,
+      "subject": "machine",
+      "number": 1,
+      "topic": "2018年度 機械・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q03.pdf",
+      "localFile": "assets/official/2018-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-machine-2",
+      "year": 2018,
+      "subject": "machine",
+      "number": 2,
+      "topic": "2018年度 機械・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q03.pdf",
+      "localFile": "assets/official/2018-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-machine-3",
+      "year": 2018,
+      "subject": "machine",
+      "number": 3,
+      "topic": "2018年度 機械・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ハ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q03.pdf",
+      "localFile": "assets/official/2018-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-machine-4",
+      "year": 2018,
+      "subject": "machine",
+      "number": 4,
+      "topic": "2018年度 機械・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ロ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q03.pdf",
+      "localFile": "assets/official/2018-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-machine-5",
+      "year": 2018,
+      "subject": "machine",
+      "number": 5,
+      "topic": "2018年度 機械・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "カ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ヲ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "イ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "レ",
+          "points": 3
+        }
+      ],
+      "source": "2018-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q03.pdf",
+      "localFile": "assets/official/2018-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-machine-6",
+      "year": 2018,
+      "subject": "machine",
+      "number": 6,
+      "topic": "2018年度 機械・問6",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ロ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "カ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ニ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ワ",
+          "points": 4
+        }
+      ],
+      "source": "2018-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q03.pdf",
+      "localFile": "assets/official/2018-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-machine-7",
+      "year": 2018,
+      "subject": "machine",
+      "number": 7,
+      "topic": "2018年度 機械・問7",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ト",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ヨ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ヘ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 4
+        }
+      ],
+      "source": "2018-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q03.pdf",
+      "localFile": "assets/official/2018-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-law-1",
+      "year": 2018,
+      "subject": "law",
+      "number": 1,
+      "topic": "2018年度 法規・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q04.pdf",
+      "localFile": "assets/official/2018-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-law-2",
+      "year": 2018,
+      "subject": "law",
+      "number": 2,
+      "topic": "2018年度 法規・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "リ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q04.pdf",
+      "localFile": "assets/official/2018-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-law-3",
+      "year": 2018,
+      "subject": "law",
+      "number": 3,
+      "topic": "2018年度 法規・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヨ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q04.pdf",
+      "localFile": "assets/official/2018-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-law-4",
+      "year": 2018,
+      "subject": "law",
+      "number": 4,
+      "topic": "2018年度 法規・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q04.pdf",
+      "localFile": "assets/official/2018-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-law-5",
+      "year": 2018,
+      "subject": "law",
+      "number": 5,
+      "topic": "2018年度 法規・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ネ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ニ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ヲ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ロ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "チ",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 8,
+          "answer": "ソ",
+          "points": 2
+        }
+      ],
+      "source": "2018-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q04.pdf",
+      "localFile": "assets/official/2018-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2018-law-6",
+      "year": 2018,
+      "subject": "law",
+      "number": 6,
+      "topic": "2018年度 法規・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ヘ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ヨ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ル",
+          "points": 4
+        }
+      ],
+      "source": "2018-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_q04.pdf",
+      "localFile": "assets/official/2018-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20180901_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2018-primary-answers.pdf",
+      "paper": "2018-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
     }
   ],
   "note": "原本PDFは必要なときだけ開きます。詳しい個別解説は未整備です。",
@@ -12179,9 +16323,23 @@
       "status": "演習・採点対応",
       "groups": 26,
       "items": 144
+    },
+    {
+      "year": 2019,
+      "status": "演習・採点対応",
+      "groups": 26,
+      "items": 151
+    },
+    {
+      "year": 2018,
+      "status": "演習・採点対応",
+      "groups": 26,
+      "items": 141
     }
   ],
   "releaseYears": [
+    2018,
+    2019,
     2020,
     2021,
     2022,
