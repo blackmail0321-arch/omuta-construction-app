@@ -389,3 +389,6 @@ scripts/manual_assets.pyがconstruction-manual/offline-site.zipから明示14フ
 
 ## 2026-11-16 提出書類フィルターの入力欄サイズ
 提出段階・確認状況・対象月・表示をsubmission-filtersで限定し、共通border-box/height52px/width100%/min-width0/余白/文字位置へ統一。Safariのmonth固有の見かけ・内在幅を抑え、日付値を左寄せ。月のネイティブ入力とselectを維持、保存構造・判定は無変更。390/768/1024/1280幅の矩形一致・ラベル内収容・行揃え・月入力・表示切替をtests/submission-filter-sizing.cjsで確認。iOS実機は未確認。分割CSS/build.pyと両生成入口を更新。
+
+## 2026-11-16 提出書類・契約条件ダイアログの入力欄
+submissions.jsの2フォームにsubmission-editor-fieldsを付け、状態・日付・フォルダ・備考等を高さ52px、border-box幅100%、min-width0、左寄せへ統一。既存の背景色・入力判定・保存処理は保持。日付消去ボタンは独立行の余白と44px以上の操作領域。Safari date内部表示を左寄せにし、同じ列からのはみ出しを抑制。390/768/1024/1280幅で6欄の同寸・行揃え・横スクロールなし、日付消去対象のみ変更、取消時の工事データ保持、契約条件側のサイズと消去もtests/submission-editor-sizing.cjsで検証。iOS実機は未確認。
