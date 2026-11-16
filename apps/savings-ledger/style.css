@@ -8,7 +8,10 @@
 .form-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px}
 .form-grid>label{min-width:0;margin:0;font-size:13px;line-height:1.5}
 .form-grid input,.form-grid select{width:100%;min-width:0;max-width:100%;height:48px;min-height:48px;margin-top:8px;padding:10px 12px;font-size:16px;font-weight:400;line-height:normal}
-.form-grid input[type="month"]{appearance:none;-webkit-appearance:none;text-align:left}
-.form-grid input[type="month"]::-webkit-date-and-time-value{text-align:left;min-width:0}
+.form-grid input:is([type="month"],[type="date"]){appearance:none;-webkit-appearance:none;text-align:left}
+.form-grid input:is([type="month"],[type="date"])::-webkit-date-and-time-value{text-align:left;min-width:0}
 .dialog-header .close{display:grid;place-items:center;width:44px;height:44px;min-height:44px;flex:0 0 44px;padding:0}
 @media(max-width:480px){.form-grid{grid-template-columns:minmax(0,1fr);gap:16px}.form-grid>label{font-size:13px}}
+
+#movement-form .form-grid+label{margin-top:18px;font-size:13px;line-height:1.5}
+#movement-form textarea{min-width:0;max-width:100%;font-size:16px;font-weight:400;margin-top:8px}
