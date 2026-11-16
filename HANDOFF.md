@@ -386,3 +386,6 @@ PDFを別画面へ直接開く導線から、#pdf/{固定ID}のアプリ内ifram
 Volume1の工事マニュアルを未実装の案内から、独立マニュアルと同一の全文を読む画面へ変更。携帯は「手引き」から起動し、全画面の読取枠で外側のモバイルメニューとの重なりを避ける。「積算に戻る」で同じ積算状態へ復帰。操作ガイドは末尾の折りたたみに維持。
 scripts/manual_assets.pyがconstruction-manual/offline-site.zipから明示14ファイルだけ取得し、runtime_assets.pyがeditor/manual/と保管ZIPへ同一バイトで収録。分割build.pyもローカル用manual/を生成（生成フォルダはgitignore）。原本PDF・工事記録・接続設定はマニュアルへコピーしない。手引きのチェック記録は積算データと非連携、画面でも明記。閲覧専用viewer配布物は変更しない。既存Cloudflare配信はpackage_shared.pyの通常ビルドから取り込む。
 検証：tests/manual-bundle-test.py（正本・配布・ZIPの一致）、tests/integrated-manual.cjs（配布物HTTP上の68用語、関連画面、PDFの戻る、390/768/1024幅、積算への復帰、既存localStorage保持）、shared-config-test.py、private-release-test.py通過。本番Cloudflareの配信完了およびiOS実機は未確認。
+
+## 2026-11-16 提出書類フィルターの入力欄サイズ
+提出段階・確認状況・対象月・表示をsubmission-filtersで限定し、共通border-box/height52px/width100%/min-width0/余白/文字位置へ統一。Safariのmonth固有の見かけ・内在幅を抑え、日付値を左寄せ。月のネイティブ入力とselectを維持、保存構造・判定は無変更。390/768/1024/1280幅の矩形一致・ラベル内収容・行揃え・月入力・表示切替をtests/submission-filter-sizing.cjsで確認。iOS実機は未確認。分割CSS/build.pyと両生成入口を更新。
