@@ -7,6 +7,20 @@ for size in [192,512]:
 glossary=root/'data/glossary.json'
 if glossary.exists():
  manual=root/'data/manual.json';data=json.loads(manual.read_text());data['terms']=json.loads(glossary.read_text());manual.write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')))
+inspection=root/'data/inspection-guide.json'
+if inspection.exists():
+ manual=root/'data/manual.json';data=json.loads(manual.read_text());guide=json.loads(inspection.read_text())
+ for collection,key in [('sources','source'),('chapters','chapter'),('stages','stage')]:
+  rows=data[collection];item=guide[key];position=next((i for i,x in enumerate(rows) if x['id']==item['id']),len(rows))
+  if position<len(rows):rows[position]=item
+  else:rows.append(item)
+ for c in data['chapters']:
+  if c['id'] not in guide['related']:continue
+  pages=guide['related'][c['id']];c['references']=[r for r in c.get('references',[]) if r['sourceId']!='inspection-r7']
+  c['references'].append(dict(sourceId='inspection-r7',pages=pages,where='PDF内ページ（紙面の印刷番号は20を加える）',why='この工程で起こりやすい過去の検査指摘と予防確認'))
+  marker='<aside class="inspection-crosslink">'
+  if marker not in c['body']:c['body']+=marker+'<p><a href="#chapter/c25">令和7年度の検査指摘例から、この工程の確認漏れを防ぐ →</a></p></aside>'
+ data['version']='1.5';data['date']='2026-11-17';manual.write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')))
 assets=['index.html','style.css','app.js','sources.js','glossary.js','manifest.webmanifest','data/manual.json','icons/icon.svg','icons/icon-192.png','icons/icon-512.png','downloads/manual.pdf','downloads/check-sheets.pdf','downloads/procurement-guide.pdf']
 version=hashlib.sha256(Path(__file__).read_bytes()+b''.join((root/f).read_bytes() for f in assets)).hexdigest()[:12]
 sw='''/* Offline app shell only. Local project records are not sent or cached here. */
