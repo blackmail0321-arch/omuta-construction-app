@@ -393,3 +393,6 @@ scripts/manual_assets.pyがconstruction-manual/offline-site.zipから明示14フ
 ## 図面の下書き（2026-11-16）
 
 `apps/pdf-cad-draft` はアップロード図面なしのPDF→DXF下書きアプリ。公開先は同じPagesの `/pdf-cad/`。手動レイヤー分類・削除・線/円の追記・25操作undo・2点実寸校正・DXFと作業JSON保存/再開に対応。抽出は水平垂直のみで壁/器具の自動意味判別はしない。実寸未校正では出力停止。公開物には元図面や利用者データなし。ブラウザで実PDF10ページ読込、DXF形式検査、外部通信なしを確認し、Jw_cad/iPad実機検証は残る。
+
+## 2026-11-16 提出書類・契約条件ダイアログの入力欄
+submissions.jsの2フォームにsubmission-editor-fieldsを付け、状態・日付・フォルダ・備考等を高さ52px、border-box幅100%、min-width0、左寄せへ統一。既存の背景色・入力判定・保存処理は保持。日付消去ボタンは独立行の余白と44px以上の操作領域。Safari date内部表示を左寄せにし、同じ列からのはみ出しを抑制。390/768/1024/1280幅で6欄の同寸・行揃え・横スクロールなし、日付消去対象のみ変更、取消時の工事データ保持、契約条件側のサイズと消去もtests/submission-editor-sizing.cjsで検証。iOS実機は未確認。
