@@ -66,6 +66,7 @@ jobs:
           node apps/april-planner/tests/carryover.cjs
           node --check apps/construction-manual/app.js
           node --check apps/construction-manual/sources.js
+          node --check apps/construction-manual/glossary.js
           python3 apps/construction-manual/tests/content_test.py
           python3 apps/construction-manual/build.py
           python3 apps/april-planner/build.py
