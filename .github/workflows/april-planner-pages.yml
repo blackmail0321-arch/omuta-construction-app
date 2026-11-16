@@ -75,6 +75,7 @@ jobs:
           python3 apps/april-planner/build.py
           python3 apps/savings-ledger/build.py
           node --check apps/pdf-cad-draft/core.js
+          node --check apps/pdf-cad-draft/local-store.js
           node --input-type=module --check < apps/pdf-cad-draft/app.js
           node apps/pdf-cad-draft/tests/core.cjs
           python3 apps/pdf-cad-draft/build.py
