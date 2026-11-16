@@ -389,3 +389,7 @@ scripts/manual_assets.pyがconstruction-manual/offline-site.zipから明示14フ
 
 ## 2026-11-16 提出書類フィルターの入力欄サイズ
 提出段階・確認状況・対象月・表示をsubmission-filtersで限定し、共通border-box/height52px/width100%/min-width0/余白/文字位置へ統一。Safariのmonth固有の見かけ・内在幅を抑え、日付値を左寄せ。月のネイティブ入力とselectを維持、保存構造・判定は無変更。390/768/1024/1280幅の矩形一致・ラベル内収容・行揃え・月入力・表示切替をtests/submission-filter-sizing.cjsで確認。iOS実機は未確認。分割CSS/build.pyと両生成入口を更新。
+
+## 図面の下書き（2026-11-16）
+
+`apps/pdf-cad-draft` はアップロード図面なしのPDF→DXF下書きアプリ。公開先は同じPagesの `/pdf-cad/`。手動レイヤー分類・削除・線/円の追記・25操作undo・2点実寸校正・DXFと作業JSON保存/再開に対応。抽出は水平垂直のみで壁/器具の自動意味判別はしない。実寸未校正では出力停止。公開物には元図面や利用者データなし。ブラウザで実PDF10ページ読込、DXF形式検査、外部通信なしを確認し、Jw_cad/iPad実機検証は残る。

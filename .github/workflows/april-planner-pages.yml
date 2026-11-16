@@ -10,6 +10,7 @@ on:
       - 'apps/denken-study/**'
       - 'apps/april-planner/**'
       - 'apps/savings-ledger/**'
+      - 'apps/pdf-cad-draft/**'
       - '.github/workflows/april-planner-pages.yml'
       - 'apps/construction-manual/**'
 
@@ -73,6 +74,10 @@ jobs:
           python3 tests/manual-bundle-test.py
           python3 apps/april-planner/build.py
           python3 apps/savings-ledger/build.py
+          node --check apps/pdf-cad-draft/core.js
+          node --check apps/pdf-cad-draft/app.js
+          node apps/pdf-cad-draft/tests/core.cjs
+          python3 apps/pdf-cad-draft/build.py
           python3 apps/weight-buddy/build.py
           python3 apps/momo-day/build.py
           node --check apps/denken-study/core.js
@@ -91,6 +96,7 @@ jobs:
           python3 apps/denken-study/scripts/build_ipad_site.py
           python3 -m zipfile -e apps/april-planner/offline-site.zip "$RUNNER_TEMP/april-planner-site"
           python3 -m zipfile -e apps/savings-ledger/offline-site.zip "$RUNNER_TEMP/april-planner-site/savings"
+          python3 -m zipfile -e apps/pdf-cad-draft/pdf-cad-draft.zip "$RUNNER_TEMP/april-planner-site/pdf-cad"
           python3 -m zipfile -e apps/weight-buddy/offline-site.zip "$RUNNER_TEMP/april-planner-site/weight"
           python3 -m zipfile -e apps/momo-day/offline-site.zip "$RUNNER_TEMP/april-planner-site/momo"
           python3 -m zipfile -e apps/denken-study/ipad-site.zip "$RUNNER_TEMP/april-planner-site/denken"
