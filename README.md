@@ -92,3 +92,5 @@ S上段はR下段を有効3桁へ切捨て。刊行物加算後のS下段は `RO
 ## 共有機能の開発検証
 
 Docker・Python3・Node・Playwright/Chromiumがある環境で、`python3 tests/shared-db-test.py` は実PostgreSQLのRLS/権限/競合/期限を検証します。`python3 tests/run-shared-integration.py` は一時PostgreSQL/PostgRESTを起動してブラウザからPC→iPad/スマホの流れを検証し、テストサービスを削除します。Supabase Authだけはテスト代替で、本物のSupabase接続・実端末確認は別途必要です。`python3 tests/shared-config-test.py` は公開用設定と閲覧専用配信物の分離を検証します。テスト用認証サーバーや固定テストパスワードを本番へ配信しないでください。
+
+積算アプリの「工事マニュアル」（携帯は「手引き」）には、[独立マニュアル](apps/construction-manual/README.md)と同一の全文・用語・資料案内・PDFを収録します。公開配布物は `scripts/package_shared.py` が正本のランタイムを `manual/` に組み込みます。手引きのチェック記録は積算の工事データとは別保存です。検証：`python3 tests/manual-bundle-test.py`、`node tests/integrated-manual.cjs`。

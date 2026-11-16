@@ -381,3 +381,8 @@ editions.cjsで旧原本移行、2版共存、アプリ更新でも固定、別�
 
 ## 2026-11-16 PDFを見ているときの戻る操作
 PDFを別画面へ直接開く導線から、#pdf/{固定ID}のアプリ内iframeへ変更。画面外に常設の戻る／ホームを保持し、保存用の別画面リンクも残す。任意URLは受け付けない。公開PDF3点の各頁上端の余白に目次／アプリへのリンクを追加（manualは目次p.2、他2点はp.1）。原本・資料DBは無変更。再生成時はscripts/add_pdf_navigation.pyを実行後build.py。既存のしおり・ページ数・本文を保持。PDFそのものの「目次」は直前のページではなく固定目次への移動。iOSネイティブPDF表示は実機未確認。
+
+## 2026-11-16 積算アプリへのマニュアル統合
+Volume1の工事マニュアルを未実装の案内から、独立マニュアルと同一の全文を読む画面へ変更。携帯は「手引き」から起動し、全画面の読取枠で外側のモバイルメニューとの重なりを避ける。「積算に戻る」で同じ積算状態へ復帰。操作ガイドは末尾の折りたたみに維持。
+scripts/manual_assets.pyがconstruction-manual/offline-site.zipから明示14ファイルだけ取得し、runtime_assets.pyがeditor/manual/と保管ZIPへ同一バイトで収録。分割build.pyもローカル用manual/を生成（生成フォルダはgitignore）。原本PDF・工事記録・接続設定はマニュアルへコピーしない。手引きのチェック記録は積算データと非連携、画面でも明記。閲覧専用viewer配布物は変更しない。既存Cloudflare配信はpackage_shared.pyの通常ビルドから取り込む。
+検証：tests/manual-bundle-test.py（正本・配布・ZIPの一致）、tests/integrated-manual.cjs（配布物HTTP上の68用語、関連画面、PDFの戻る、390/768/1024幅、積算への復帰、既存localStorage保持）、shared-config-test.py、private-release-test.py通過。本番Cloudflareの配信完了およびiOS実機は未確認。

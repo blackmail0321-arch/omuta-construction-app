@@ -70,6 +70,7 @@ jobs:
           node --check apps/construction-manual/glossary.js
           python3 apps/construction-manual/tests/content_test.py
           python3 apps/construction-manual/build.py
+          python3 tests/manual-bundle-test.py
           python3 apps/april-planner/build.py
           python3 apps/savings-ledger/build.py
           python3 apps/weight-buddy/build.py
