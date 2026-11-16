@@ -3,3 +3,5 @@
 
 .source-ref{border-top:1px solid var(--line);padding:18px 0}.source-ref p{font-size:.92em}.source-pages button{min-height:40px;font-size:.86em;margin-top:8px}.source-references h2{margin-top:0}.optional-stage{margin:16px 0}.source-card h2{margin-top:0}.source-pages p{border-bottom:1px solid var(--line);padding-bottom:12px}
 .source-shortcut{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0 20px}.source-shortcut button{font-size:.84em;min-height:44px}.source-shortcut a{font-size:.84em}@media print{.source-shortcut{display:none!important}}
+
+.page-navigation{position:sticky;top:0;z-index:9;display:flex;gap:10px;padding:8px max(14px,calc((100vw - 964px)/2));background:#f5f3ebf5;border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}.page-navigation button,.page-navigation a{min-height:44px;padding:8px 16px;font-size:.88rem}.article h3{scroll-margin-top:85px}@media print{.page-navigation{display:none!important}}
