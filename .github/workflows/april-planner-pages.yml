@@ -9,6 +9,7 @@ on:
     paths:
       - 'apps/denken-study/**'
       - 'apps/april-planner/**'
+      - 'apps/savings-ledger/**'
       - '.github/workflows/april-planner-pages.yml'
       - 'apps/construction-manual/**'
 
