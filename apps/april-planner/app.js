@@ -162,6 +162,12 @@ function doSearch(){
 $('allowance-open').onclick=openAllowance;
 $('allowance-form').onsubmit=e=>{e.preventDefault();try{const p=C.defaultAllowance();for(const k of ['paid','paidCarry','paidCarryLimit','sick','child','summer','mourning','hours','childHours','hoursPerDay']){const v=$('allowance-'+k).value;p[k]=v===''?null:Number(v);}p.hoursDeductPaid=$('allowance-hoursDeductPaid').checked;p.childHoursDeductChild=$('allowance-childHoursDeductChild').checked;const next=C.validateAllowances({...allowances,[year]:p});commit(records,next);$('allowance-dialog').close();render();show(year+'年度の休暇設定を保存しました。');}catch(err){$('allowance-error').textContent='設定を保存できませんでした。'+err.message;}};
 setSelects();render();
+const GUIDE='april-note.welcome-dismissed.v1',PUBLIC_URL='https://blackmail0321-arch.github.io/omuta-construction-app/';
+try{$('personal-start').hidden=Object.keys(records).length>0||localStorage.getItem(GUIDE)==='yes';}catch(e){$('personal-start').hidden=false;}
+$('start-dismiss').onclick=()=>{$('personal-start').hidden=true;try{localStorage.setItem(GUIDE,'yes');}catch(e){}};
+$('start-allowance').onclick=openAllowance;
+$('share-app').onclick=async()=>{try{await navigator.clipboard.writeText(PUBLIC_URL);show('アプリのURLをコピーしました。予定・休暇の記録は含まれません。相手はログインなしで、自分の端末から始められます。');}catch(e){show('紹介するURL：'+PUBLIC_URL+' （URLだけを伝えてください。バックアップには個人の予定が含まれます。）');}};
+
 $('prev-year').onclick=()=>{if(year>2000){year--;render();}};$('next-year').onclick=()=>{if(year<2098){year++;render();}};
 $('fiscal-year').onchange=e=>{year=Number(e.target.value);render();};$('prev-month').onclick=()=>monthStep(-1);$('next-month').onclick=()=>monthStep(1);
 $('today').onclick=()=>{year=Math.max(2000,Math.min(2098,C.fy(today())));month=Number(today().slice(5,7));setView('calendar');openDate(today());};

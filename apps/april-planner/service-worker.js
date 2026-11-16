@@ -1,6 +1,6 @@
 /* Only the application shell is cached. User records stay in browser storage. */
 'use strict';
-const VERSION = '663ef149468db7a2ebc5';
+const VERSION = 'd6fe0509b954ee735d5e';
 const PREFIX = 'april-note-shell:' + self.registration.scope + ':';
 const CACHE = PREFIX + VERSION;
 const FILES = ['index.html', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
