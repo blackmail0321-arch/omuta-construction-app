@@ -4,7 +4,7 @@ import hashlib,json,zipfile
 root=Path(__file__).resolve().parent
 for size in [192,512]:
  if not (root/f'icons/icon-{size}.png').is_file():raise FileNotFoundError('Missing install icon')
-assets=['index.html','style.css','app.js','manifest.webmanifest','data/manual.json','icons/icon.svg','icons/icon-192.png','icons/icon-512.png','downloads/manual.pdf','downloads/check-sheets.pdf']
+assets=['index.html','style.css','app.js','sources.js','manifest.webmanifest','data/manual.json','icons/icon.svg','icons/icon-192.png','icons/icon-512.png','downloads/manual.pdf','downloads/check-sheets.pdf','downloads/procurement-guide.pdf']
 version=hashlib.sha256(Path(__file__).read_bytes()+b''.join((root/f).read_bytes() for f in assets)).hexdigest()[:12]
 sw='''/* Offline app shell only. Local project records are not sent or cached here. */
 const BASE=new URL('./',self.location.href),PREFIX='construction-manual-'+BASE.pathname+'-',CACHE=PREFIX+'VERSION',FILES=ASSETS.map(f=>new URL(f,BASE).href);
