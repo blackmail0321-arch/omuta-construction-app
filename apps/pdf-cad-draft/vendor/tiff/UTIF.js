@@ -450,7 +450,7 @@ UTIF.decode._decodeNewJPEG = function(img, data, off, len, tgt, toff)
 	{
 		var parser = new UTIF.JpegDecoder();  parser.parse(buff);
 		// TIFF PhotometricInterpretation=RGB: avoid the JPEG default YCbCr transform.
-		if(img["t262"] && img["t262"][0]===2) parser.B=0;
+		if(img._cadJpegRGB===true) parser.B=0;
 		var decoded = parser.getData(parser.width, parser.height);
 		for (var i=0; i<decoded.length; i++) tgt[toff + i] = decoded[i];
 	}
@@ -645,7 +645,7 @@ UTIF.decode._decodeOldJPEG = function(img, data, off, len, tgt, toff)
 
 	var parser = new UTIF.JpegDecoder();  parser.parse(buff);
 		// TIFF PhotometricInterpretation=RGB: avoid the JPEG default YCbCr transform.
-		if(img["t262"] && img["t262"][0]===2) parser.B=0;
+		if(img._cadJpegRGB===true) parser.B=0;
 	var decoded = parser.getData(parser.width, parser.height);
 	for (var i=0; i<decoded.length; i++) tgt[toff + i] = decoded[i];
 
