@@ -417,3 +417,8 @@ submissions.jsの2フォームにsubmission-editor-fieldsを付け、状態・�
 - ペンで四角（閉じた直交4LINE）、既定オンの水平垂直補正（ペン／2点直線）、選択した同一レイヤーの輪郭を外接四角に置換する操作とundoを追加。円・未選択図形は保持。
 - 既定で表示とDXFのCAD線色をグレーへ統一。DXFレイヤー色と個別図形ACI8の両方を設定し、レイヤー分類は保持。オフで従来色。既存DXFは再出力が必要。
 - core、penでの直線／四角・選択輪郭補正・JSON・DXF色、PDF操作、crop、autosave、auto-export、cleanupの回帰検証が通過。Jw_cad／実機Pencilは未実施。
+
+## 2026-11-17 CAD消しゴム
+- Pencil／マウスでなぞって触れたCAD線・円を図形ごと削除。画面半径6/12/24px、赤い範囲表示、指移動／pinch維持、隠れたレイヤー・原本画像は保持。
+- 疎な点列でも点間の掃引で判定し、円は円周への接触を判定。一筆undo、pointercancel時無変更、保存と出力に連動。
+- coreの交差・半径・円周・非表示テスト、penのtap/高速なぞり・JSON保存とundo、PDF操作・既存描画・crop・autosave回帰を検証済み。実機Pencilは未実施。
