@@ -82,7 +82,27 @@ def read_third(path):
    left=(headers[order[i-1]][0]+headers[sid][0])/2 if i else 0;right=(headers[order[i+1]][0]+headers[sid][0])/2 if i<3 else page.rect.width
    text=norm(page.get_text(clip=fitz.Rect(left,headers[sid][1]+1,right,page.rect.height),sort=True))
    groups={}
-   for num,letter,answer,points in re.findall(r'問\s*(\d+)(?:\s*\(([ab])\))?\s+([1-5])\s+(\d+)(?:\s|$)',text):
+   # Older official tables omit scores and contain stale hidden labels on (b) rows.
+   # Read the visible answer column by row order, validating every A/(a) label.
+   if not re.search(r'問\s*1\s+[1-5]\s+\d+',text):
+    paper=Path(path).with_name(Path(path).name.replace('-answers.pdf','-'+sid+'.pdf'))
+    evidence=json.loads((ROOT/'data/third/legacy-scoring.json').read_text()).get(str(paper.relative_to(ROOT)))
+    if not evidence or hashlib.sha256(paper.read_bytes()).hexdigest()!=evidence['sha256']:raise ValueError('Legacy paper scoring has not been verified')
+    rows=[re.sub(r'\s+','',line) for line in text.splitlines() if line.strip()]
+    a_count=10 if sid=='law' else 14;last=13 if sid=='law' else 17 if sid=='power' else 18
+    expected_rows=a_count+2*(last-a_count)
+    if len(rows)!=expected_rows:raise ValueError(f'{sid}: legacy row count mismatch')
+    for index,row in enumerate(rows):
+     if index<a_count:n=index+1;letter='';label=f'問{n}'
+     else:n=a_count+1+(index-a_count)//2;letter='a' if (index-a_count)%2==0 else 'b';label=f'問{n}(a)'
+     match=re.fullmatch(r'(.+?)([1-5])',row)
+     if not match:raise ValueError('Legacy answer cell invalid')
+     actual,answer=match.groups()
+     if letter!='b' and actual!=label:raise ValueError('Legacy question label mismatch')
+     if letter=='b' and not re.fullmatch(r'(?:問(?:'+str(n)+r'|16))?\(b\)',actual):raise ValueError('Legacy subquestion label mismatch')
+     points=evidence['aPoints'] if not letter else (evidence['bPoints'][n-11][0 if letter=='a' else 1] if sid=='law' else evidence['bPoints'][0 if letter=='a' else 1])
+     groups.setdefault(n,[]).append({'number':2 if letter=='b' else 1,'label':'('+letter+')' if letter else '解答','answer':answer,'points':points})
+   for num,letter,answer,points in ([] if groups else re.findall(r'問\s*(\d+)(?:\s*\(([ab])\))?\s+([1-5])\s+(\d+)(?:\s|$)',text)):
     number=int(num);group=groups.setdefault(number,[]);item=1 if letter in ['','a'] else 2
     if item!=len(group)+1:raise ValueError('Third-class subquestion order mismatch')
     group.append({'number':item,'label':'('+letter+')' if letter else '解答','answer':answer,'points':int(points)})
@@ -103,7 +123,7 @@ def questions_for(archive,level,year):
    groups=answers[sid];groups=groups.items() if level==3 else enumerate(groups,1)
    for n,items in groups:
     paper=f'{year}-{term}';name=f'{year}-{sid}-{n}' if level==1 else f'third-{paper}-{sid}-{n}'
-    out.append({'id':name,'year':year,'subject':sid,'number':n,'topic':str(year)+'年度 '+(('上期' if term=='upper' else '下期' if term=='lower' else '')+' ' if level==3 else '')+label+'・問'+str(n),'kind':'past','optional':sid in ['theory','machine'] and n in ([6,7] if level==1 else [17,18]),'pages':[],'text':'原本PDFで問題を読み、解答を選んでください。','options':list(KANA) if level==1 else ['1','2','3','4','5'],'items':items,'source':f'{paper}-{sid}','sourceUrl':src['url'],'localFile':src['localFile'],'answerUrl':answer['url'],'answerLocalFile':answer['localFile'],'paper':paper,'term':term,'officialPage':None,'officialPageEnd':None,'explanationStatus':'公式正答と配点を機械照合。詳しい解説は未整備'})
+    out.append({'id':name,'year':year,'subject':sid,'number':n,'topic':str(year)+'年度 '+(('上期' if term=='upper' else '下期' if term=='lower' else '')+' ' if level==3 else '')+label+'・問'+str(n),'kind':'past','optional':sid in ['theory','machine'] and n in ([6,7] if level==1 else [17,18]),'pages':[],'text':'原本PDFで問題を読み、解答を選んでください。','options':list(KANA) if level==1 else ['1','2','3','4','5'],'items':items,'source':f'{paper}-{sid}','sourceUrl':src['url'],'localFile':src['localFile'],'answerUrl':answer['url'],'answerLocalFile':answer['localFile'],'paper':paper,'term':term,'officialPage':None,'officialPageEnd':None,'explanationStatus':'公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備'})
  return out
 
 def collect_grade(archive,level,quota):

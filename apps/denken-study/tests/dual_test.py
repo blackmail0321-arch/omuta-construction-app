@@ -20,6 +20,17 @@ class DualTest(unittest.TestCase):
     if not part:continue
     for q in part:self.assertEqual(q['items'],expected[sid][q['number']]);self.assertEqual(q['options'],['1','2','3','4','5'])
     for option in [17,18]:self.assertEqual(sum(i['points'] for q in part if not q['optional'] or q['number']==option for i in q['items']),100)
+ def test_legacy_answers_and_scoring_evidence(self):
+  a=json.loads((ROOT/'data/third/archive.json').read_text())
+  # Independently transcribed from rendered 2021 official answer table, not the PDF hidden labels.
+  expected={'theory':'1 3 4 4 1 2 4 5 1 4 2 3 1 5 21 45 42 44','power':'5 3 5 4 2 5 5 4 4 1 2 5 2 4 24 42 23','machine':'1 2 2 1 5 4 1 5 3 4 3 4 2 5 23 13 33 25','law':'4 1 4 2 3 2 5 2 1 1 43 44 24'}
+  groups=read_third(ROOT/'assets/third/2021-annual-answers.pdf')
+  for sid,text in expected.items():self.assertEqual(''.join(i['answer'] for g in groups[sid].values() for i in g),text.replace(' ',''))
+  self.assertEqual([i['points'] for n,g in groups['law'].items() if n>=11 for i in g],[6,7,6,7,7,7])
+  evidence=json.loads((ROOT/'data/third/legacy-scoring.json').read_text())
+  self.assertEqual(len(evidence),28)
+  for path,e in evidence.items():self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),e['sha256']);self.assertGreater(e['bPage'],e['aPage'])
+  for year,count in [(2021,66),(2022,132),(2023,132),(2024,132)]:self.assertEqual(sum(q['year']==year for q in a['questions']),count)
  def test_visual_lesson_physics(self):
   a=json.loads((ROOT/'data/third/archive.json').read_text());q={q['id']:q for q in a['questions']};lessons=json.loads((ROOT/'data/third/lessons.json').read_text())
   charge=8e-6*1000;capacity=4e-6;voltage=charge/capacity;energy=0.5*capacity*voltage**2
