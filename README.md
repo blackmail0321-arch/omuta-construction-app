@@ -106,3 +106,8 @@ S上段はR下段を有効3桁へ切捨て。刊行物加算後のS下段は `RO
 Docker・Python3・Node・Playwright/Chromiumがある環境で、`python3 tests/shared-db-test.py` は実PostgreSQLのRLS/権限/競合/期限を検証します。`python3 tests/run-shared-integration.py` は一時PostgreSQL/PostgRESTを起動してブラウザからPC→iPad/スマホの流れを検証し、テストサービスを削除します。Supabase Authだけはテスト代替で、本物のSupabase接続・実端末確認は別途必要です。`python3 tests/shared-config-test.py` は公開用設定と閲覧専用配信物の分離を検証します。テスト用認証サーバーや固定テストパスワードを本番へ配信しないでください。
 
 積算アプリの「工事マニュアル」（携帯は「手引き」）には、[独立マニュアル](apps/construction-manual/README.md)と同一の全文・用語・資料案内・PDFを収録します。公開配布物は `scripts/package_shared.py` が正本のランタイムを `manual/` に組み込みます。手引きのチェック記録は積算の工事データとは別保存です。検証：`python3 tests/manual-bundle-test.py`、`node tests/integrated-manual.cjs`。
+
+## 2026-11-18 積算内マニュアルが外枠だけになる問題
+利用者のiPadホーム画面起動で、マニュアル外枠だけが表示される画像を受領。実機原因は未確定だが、非表示iframeのloading=lazyとflex直下の自動寸法へ依存していた。iframeの遅延属性をやめ、manual-host.jsが画面activeを監視して初回表示時にsrcを明示設定する。専用bodyをflex領域とし、iframeは絶対配置・width/height100%で表示寸法を明示。再表示では再読込せず位置を維持。
+読み込み状態・成功確認・10秒の失敗案内・再読み込み・単体公開マニュアルへの明示リンクを追加。src設定直後の旧documentを読まないようloadイベント待ちを挟む。マニュアル用パスが親アプリHTMLへfallbackした場合も検出。本文ロード失敗、空白、認証等でフレーム内参照ができない場合は作業へ戻れる案内を残す。保存データ削除・認証条件変更・原本変更はなし。
+検証：integrated-manual.cjsで、非表示時はsrcなし→表示時の本文成功、再表示と既存記録保持、配信漏れ時の案内、修正後retry成功、通信遮断時のエラーと積算への退出を検証。失敗テストはキャッシュで隠れないよう別context/serviceWorkers:block。manual-bundle-test.py、shared-config-test.py、private-release-test.pyも通過。公開配信完了とSafari/iPad実機は未確認。

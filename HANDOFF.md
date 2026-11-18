@@ -485,3 +485,8 @@ submissions.jsの2フォームにsubmission-editor-fieldsを付け、状態・�
 章・工種・資料カードの本文にある登録済み68語を濃青・点線下線のボタンにし、同じ正本用語データから端末内のdialogで意味・具体例・注意・確認事項を表示。閉じる/Escapeで元の用語へフォーカスを戻し、スクロールを保持。詳しい用語ページへ進むこともでき、ページ移動時は小窓を閉じる。見出し・リンク・フォーム・工事記録入力には自動挿入しない。登録されていない語をAI等で自動説明する機能ではない。
 文字階層・余白・スマホ2列/タブレット4列のフローを追加。reading-guidesをmanual.jsonへ統合、reader.jsをオフラインと積算配布の明示許可リストへ追加（15ランタイムファイル）。元PDF・本文原稿・工事記録・適用原本DBは変更しない。既存PDFは従来の基本版で、今回の図解はアプリ側の表示改善。
 検証：reader.cjs（35原稿の全文テキスト保持、図/要点、開閉、目次、用語小窓/詳細へ遷移、Escape・フォーカス・位置復元、文字拡大、390/768/1024、オフライン）、content_test.py、browser.cjs、navigation.cjs、procurement.cjs、inspection.cjs、glossary.cjs、integrated-manual.cjs、manual-bundle-test.py通過。随契テストは詳細を開いて確認する操作へ追随。公開配信完了・iOS実機は未確認。
+
+## 2026-11-18 積算内マニュアルが外枠だけになる問題
+利用者のiPadホーム画面起動で、マニュアル外枠だけが表示される画像を受領。実機原因は未確定だが、非表示iframeのloading=lazyとflex直下の自動寸法へ依存していた。iframeの遅延属性をやめ、manual-host.jsが画面activeを監視して初回表示時にsrcを明示設定する。専用bodyをflex領域とし、iframeは絶対配置・width/height100%で表示寸法を明示。再表示では再読込せず位置を維持。
+読み込み状態・成功確認・10秒の失敗案内・再読み込み・単体公開マニュアルへの明示リンクを追加。src設定直後の旧documentを読まないようloadイベント待ちを挟む。マニュアル用パスが親アプリHTMLへfallbackした場合も検出。本文ロード失敗、空白、認証等でフレーム内参照ができない場合は作業へ戻れる案内を残す。保存データ削除・認証条件変更・原本変更はなし。
+検証：integrated-manual.cjsで、非表示時はsrcなし→表示時の本文成功、再表示と既存記録保持、配信漏れ時の案内、修正後retry成功、通信遮断時のエラーと積算への退出を検証。失敗テストはキャッシュで隠れないよう別context/serviceWorkers:block。manual-bundle-test.py、shared-config-test.py、private-release-test.pyも通過。公開配信完了とSafari/iPad実機は未確認。
