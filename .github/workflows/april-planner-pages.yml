@@ -84,6 +84,9 @@ jobs:
           node --check apps/pdf-cad-draft/pdf-vectors.js
           node apps/pdf-cad-draft/tests/core.cjs
           node apps/pdf-cad-draft/tests/vectors.cjs
+          node --check apps/pdf-cad-draft/pdf-text.js
+          node --check apps/pdf-cad-draft/workspace.js
+          node apps/pdf-cad-draft/tests/text.cjs
           python3 apps/pdf-cad-draft/build.py
           node --check apps/voltage-drop/core.js
           node --check apps/voltage-drop/app.js
