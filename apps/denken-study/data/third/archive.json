@@ -749,6 +749,81 @@
       "sha256": "e307be374ff6ed42c76f4ce2ade803b53d03927d06140355acd645f64dac22aa",
       "pages": 1,
       "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200913_ch_third_q01.pdf",
+      "label": "令和2年度第三種電気主任技術者試験 理論科目",
+      "year": 2020,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "theory",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2020-annual-theory.pdf",
+      "bytes": 3034381,
+      "sha256": "ba527802ba778c905d7140fba71c8c08786d107977cb1a30700f2679d217b144",
+      "pages": 25,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200913_ch_third_q02.pdf",
+      "label": "令和2年度第三種電気主任技術者試験 電力科目",
+      "year": 2020,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "power",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2020-annual-power.pdf",
+      "bytes": 1255578,
+      "sha256": "c3d851d0d02deaeee514d1469f62d790af8898c9dba01a9e898ba1dc6a305478",
+      "pages": 20,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200913_ch_third_q03.pdf",
+      "label": "令和2年度第三種電気主任技術者試験 機械科目",
+      "year": 2020,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "machine",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2020-annual-machine.pdf",
+      "bytes": 1458270,
+      "sha256": "7002714b293bd2a7c95063a5597b9017a8900b9becfed66fba1ef013b47702e0",
+      "pages": 27,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200913_ch_third_q04.pdf",
+      "label": "令和2年度第三種電気主任技術者試験 法規科目",
+      "year": 2020,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "law",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2020-annual-law.pdf",
+      "bytes": 1049710,
+      "sha256": "6a7522ee351dc06b0075bb9949e46d26978f6dea9dfbb328aa935c1e103868e9",
+      "pages": 23,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20200913_ch_third_a01.pdf",
+      "label": "令和2年度第三種電気主任技術者試験",
+      "year": 2020,
+      "stage": "primary",
+      "term": "annual",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index.html",
+      "localFile": "assets/third/2020-annual-answers.pdf",
+      "bytes": 15991,
+      "sha256": "7933202abcd0781e9d98537a32a9fe5d8f9def1ec7e5de226844eaf359e5b16e",
+      "pages": 1,
+      "verified": true
     }
   ],
   "questions": [
@@ -25389,15 +25464,21 @@
       "status": "演習・採点対応",
       "groups": 66,
       "items": 80
+    },
+    {
+      "year": 2020,
+      "status": "原本閲覧のみ・採点の形式は要確認",
+      "reason": "Legacy paper scoring has not been verified"
     }
   ],
   "officialIndex": "https://www.shiken.or.jp/chief/third/qa/",
-  "checkedAt": "2026-11-17T12:40:36.197113+09:00",
+  "checkedAt": "2026-11-18T11:50:50.756904+09:00",
   "reusePolicy": {
     "url": "https://www.shiken.or.jp/chief/third/qa/",
     "purpose": "教育目的の利用・出典明記。原本を改変せず保管。"
   },
   "releaseYears": [
+    2020,
     2021,
     2022,
     2023,
