@@ -1,12 +1,15 @@
 from pathlib import Path
 import shutil,zipfile,hashlib,json
+from html import escape
 R=Path(__file__).resolve().parent
 source=R.parent/'savings-ledger/vendor/pdfjs'
 site=R/'site';shutil.rmtree(site,ignore_errors=True);site.mkdir()
 for name in ['index.html','style.css','core.js','pdf-vectors.js','pdf-text.js','workspace.js','local-store.js','app.js','image-source.js','tiff-worker.js','README.md']:shutil.copy(R/name,site/name)
-version=hashlib.sha256(b''.join((R/n).read_bytes() for n in ['index.html','style.css','core.js','pdf-vectors.js','pdf-text.js','workspace.js','local-store.js','app.js','image-source.js','tiff-worker.js','vendor/tiff/UTIF.js','vendor/tiff/pako_inflate.min.js'])).hexdigest()[:12]
+version=hashlib.sha256(b''.join((R/n).read_bytes() for n in ['index.html','style.css','core.js','pdf-vectors.js','pdf-text.js','workspace.js','local-store.js','app.js','image-source.js','tiff-worker.js','release.json','vendor/tiff/UTIF.js','vendor/tiff/pako_inflate.min.js'])).hexdigest()[:12]
 html=(site/'index.html').read_text().replace('<meta name="theme-color"','<meta name="cad-version" content="'+version+'"><meta name="theme-color"')
-(site/'version.json').write_text(json.dumps({'version':version}))
+release=json.loads((R/'release.json').read_text())
+(site/'version.json').write_text(json.dumps({'version':version,**release},ensure_ascii=False))
+html=html.replace('現在の版を確認しています。','現在の版：'+escape(release['label'])).replace('<ul id="release-changes"></ul>','<ul id="release-changes">'+''.join('<li>'+escape(item)+'</li>' for item in release['changes'])+'</ul>')
 for name in ['style.css','core.js','pdf-vectors.js','pdf-text.js','workspace.js','local-store.js','app.js','image-source.js','tiff-worker.js']:html=html.replace(name+'\"',name+'?v='+version+'\"')
 (site/'index.html').write_text(html)
 shutil.copytree(source,site/'vendor/pdfjs')
