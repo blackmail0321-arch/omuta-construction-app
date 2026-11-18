@@ -6,7 +6,7 @@ const point=(m,x,y)=>({x:m[0]*x+m[2]*y+m[4],y:m[1]*x+m[3]*y+m[5]});
 function extract(list,OPS,viewport,{width,height,region=null,core=root.CadDraft}={}){
  let state={m:[1,0,0,1,0,0],dash:[],phase:0,skip:false,alpha:1,clips:[],white:false},stack=[],pendingClip=false,segments=[],skipped=0,curves=0,work=0;
  const strokes=new Set(['stroke','closeStroke','fillStroke','eoFillStroke','closeFillStroke','closeEOFillStroke'].map(k=>OPS[k]));
- const limit=()=>{if(++work>1000000||segments.length>12000)throw Error('元の線が多すぎます。必要な範囲を指定してからお試しください（上限12000本）。');};
+ const limit=()=>{if(++work>1000000||segments.length>24000)throw Error('元の線が多すぎます。必要な範囲を指定してからお試しください（上限24000本）。');};
  const rect=r=>[{x:r[0],y:r[1]},{x:r[2],y:r[1]},{x:r[2],y:r[3]},{x:r[0],y:r[3]}];
  const frame=rect([0,0,width,height]),clip=region?rect([Math.min(region.x1,region.x2),Math.min(region.y1,region.y2),Math.max(region.x1,region.x2),Math.max(region.y1,region.y2)]):frame;
  // Rectangular clipping is supported. Other clips are omitted until restore
@@ -34,7 +34,7 @@ function extract(list,OPS,viewport,{width,height,region=null,core=root.CadDraft}
   }
   if(pendingClip){let polygon=[],valid=!!buf;for(let j=0;buf&&j<buf.length;){const cmd=buf[j++];if(cmd===0&&polygon.length){valid=false;break}if(cmd===0||cmd===1)polygon.push({x:buf[j++],y:buf[j++]});else if(cmd!==4){valid=false;break}}if(polygon.length===5&&polygon[0].x===polygon[4].x&&polygon[0].y===polygon[4].y)polygon.pop();const xs=new Set(polygon.map(p=>p.x)),ys=new Set(polygon.map(p=>p.y));if(valid&&polygon.length===4&&xs.size===2&&ys.size===2&&polygon.every((p,i)=>{const q=polygon[(i+1)%4];return (p.x===q.x)!==(p.y===q.y)}))state.clips.push(polygon.map(p=>point(mul(viewport.transform,state.m),p.x,p.y)));else state.skip=true;pendingClip=false;}
  }
- if(segments.length>12000)throw Error('元の線が12000本を超えます。範囲を絞ってください。');
+ if(segments.length>24000)throw Error('元の線が24000本を超えます。範囲を絞ってください。');
  return {entities:segments.map((e,i)=>({...e,id:i+1})),skipped,curves};
 }
 const api={extract};if(typeof module==='object')module.exports=api;else root.CadPDFVectors=api;

@@ -12,5 +12,5 @@ r=run([[OPS.paintFormXObjectBegin,[[1,0,0,1,10,10],[0,0,20,20]]],path([0,0,10,1,
 r=run([path([0,0,20,1,100,20])],{region:{x1:25,y1:0,x2:75,y2:200}});assert.deepEqual([r.entities[0].x1,r.entities[0].x2].map(v=>Math.round(v*1e6)/1e6),[25,75]);
 assert.equal(run([path([0,0,0,1,100,100],OPS.fill)]).entities.length,0);
 assert.equal(run([[OPS.setStrokeRGBColor,['#ffffff']],path([0,0,0,1,100,100])]).entities.length,0);
-assert.throws(()=>run(Array.from({length:12001},()=>path([0,0,0,1,100,100]))),/12000/);
+assert.throws(()=>run(Array.from({length:24001},()=>path([0,0,0,1,100,100]))),/24000/);
 console.log('PASS vector coordinates, transforms, short/diagonal/curved lines, dashed gaps, page and range clipping, rectangular PDF/Form clipping, unsupported clip omission, fill/white exclusion and atomic size limit');
