@@ -111,3 +111,9 @@ Docker・Python3・Node・Playwright/Chromiumがある環境で、`python3 tests
 利用者のiPadホーム画面起動で、マニュアル外枠だけが表示される画像を受領。実機原因は未確定だが、非表示iframeのloading=lazyとflex直下の自動寸法へ依存していた。iframeの遅延属性をやめ、manual-host.jsが画面activeを監視して初回表示時にsrcを明示設定する。専用bodyをflex領域とし、iframeは絶対配置・width/height100%で表示寸法を明示。再表示では再読込せず位置を維持。
 読み込み状態・成功確認・10秒の失敗案内・再読み込み・単体公開マニュアルへの明示リンクを追加。src設定直後の旧documentを読まないようloadイベント待ちを挟む。マニュアル用パスが親アプリHTMLへfallbackした場合も検出。本文ロード失敗、空白、認証等でフレーム内参照ができない場合は作業へ戻れる案内を残す。保存データ削除・認証条件変更・原本変更はなし。
 検証：integrated-manual.cjsで、非表示時はsrcなし→表示時の本文成功、再表示と既存記録保持、配信漏れ時の案内、修正後retry成功、通信遮断時のエラーと積算への退出を検証。失敗テストはキャッシュで隠れないよう別context/serviceWorkers:block。manual-bundle-test.py、shared-config-test.py、private-release-test.pyも通過。公開配信完了とSafari/iPad実機は未確認。
+
+## 2026-11-18 統合アプリ本体へマニュアル本文を同梱
+利用者は単体マニュアルの閲覧成功を報告、統合アプリの工事マニュアル内での閲覧を希望。外部ファイル/manual/index.htmlの読み込みに依存しないよう、正本ZIPから本文JSON・CSS・4JS・SVGアイコンを統合アプリHTMLへBase64同梱。manual-host.jsは同一originのBlob HTMLとして既存の全画面枠で開く。URLの配信漏れ・非表示iframeの遅延読込を回避し、再表示は保持、明示再試行で旧Blob URLを解放する。
+単体app.jsは同梱JSONがある場合だけそこから読み、従来URL版は従来fetchを継続。埋込時のみ単体PWA更新UI/登録を使わず、統合アプリの更新に従う。PDF3点は明示操作時に既存の単体公開URLから閲覧するため通信が必要、と操作案内へ記載。単体URLは上部の別画面リンクにも維持。
+scripts/manual_assets.pyのattach_manual_bundleを分割ビルドとruntime_assetsの両方へ適用し、公開配布・保管ZIPを作るたび最新の正本から生成。旧HTMLに埋めた版を再利用し続けない。元のmanual/配布も引き続き収録。工事・手引きの記録キー、原本DB、認証・共有・権限は無変更。私有資料は同梱しない。
+検証：manual-bundle-test.pyで正本と同梱JSON一致、CSS/JS/アイコンの自己完結、PDF参照先を確認。integrated-manual.cjsで/manual/**全遮断・本文初回起動時offlineでも表示、図解・用語小窓、68語、ページ内移動とPDF枠からの戻り、390/768/1024、積算への復帰と既存記録保持、不正同梱データの案内とretry、空白documentからの退出を確認。単体browser.cjsの保存・復元・更新保持、shared-config-test.pyとprivate-release-test.pyも通過。配信完了/iPad実機は未確認。
