@@ -9,7 +9,8 @@ shutil.copytree(R/'assets',site/'assets')
 s=(site/'index.html').read_text()
 for portrait in ['seira.png','seira.webp','seira.jpg']:
  if (site/'assets'/portrait).exists():
-  s=s.replace('assets/seira.svg','assets/'+portrait).replace('聖羅の案内アイコン','聖羅ちゃん');break
+  s=s.replace('assets/seira.svg','assets/'+portrait).replace('聖羅の案内アイコン','聖羅ちゃん').replace('class="seira-portrait"','class="seira-portrait has-photo"');break
+for asset in assets:s=s.replace('src="assets/'+asset.name+'"','src="assets/'+asset.name+'?v='+v+'"')
 s=s.replace('<meta name="theme-color"','<meta name="app-version" content="'+v+'"><meta name="theme-color"')
 for n in names[1:]:s=s.replace(n+'"',n+'?v='+v+'"')
 (site/'index.html').write_text(s)
@@ -31,7 +32,7 @@ def png(size):
 for size in [192,512]:(site/f'icon-{size}.png').write_bytes(png(size))
 manifest={'name':'聖羅とぱっと計算','short_name':'聖羅と計算','lang':'ja','start_url':'./','scope':'./','display':'standalone','background_color':'#fcf8fc','theme_color':'#7862a6','icons':[{'src':f'icon-{n}.png','sizes':f'{n}x{n}','type':'image/png','purpose':'any maskable'} for n in [192,512]]}
 (site/'manifest.webmanifest').write_text(json.dumps(manifest,ensure_ascii=False))
-urls=['./','./index.html',*[f'./{n}?v={v}' for n in names[1:]],'./manifest.webmanifest','./icon-192.png','./icon-512.png']+[ './assets/'+p.name for p in assets]
+urls=['./','./index.html',*[f'./{n}?v={v}' for n in names[1:]],'./manifest.webmanifest','./icon-192.png','./icon-512.png']+[ './assets/'+p.name+'?v='+v for p in assets]
 sw='''const CACHE='seira-percent-v1-__VERSION__',FILES=__FILES__;
 self.addEventListener('install',e=>e.waitUntil((async()=>{const c=await caches.open(CACHE);await c.addAll(FILES);await self.skipWaiting()})()));
 self.addEventListener('activate',e=>e.waitUntil((async()=>{for(const k of await caches.keys())if(k.startsWith('seira-percent-v1-')&&k!==CACHE)await caches.delete(k);await self.clients.claim()})()));
