@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-17T12:40:27.262713+09:00",
+  "checkedAt": "2026-11-18T11:50:39.317156+09:00",
   "officialIndex": "https://www.shiken.or.jp/chief/first/qa/",
   "pages": [
     {
@@ -1718,6 +1718,246 @@
       "localFile": "assets/official/2012-primary-answers.pdf",
       "bytes": 21351,
       "sha256": "29b26a57060822c0627ae56f1c159ce721f95179e5e663310c6897b159f17519",
+      "pages": 1,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20111127_ch_first_q01.pdf",
+      "label": "平成23年度第一種電気主任技術者二次試験 電力・管理科目",
+      "year": 2011,
+      "stage": "secondary",
+      "term": "annual",
+      "subject": "power-management",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2011-secondary-power-management.pdf",
+      "bytes": 1952381,
+      "sha256": "5c47e72ba2cdb0b11a3945ef96ed1ffb5c653b0e8d78bf11f4c5b3c4bed1c3e8",
+      "pages": 10,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20111127_ch_first_q02.pdf",
+      "label": "平成23年度第一種電気主任技術者二次試験 機械・制御科目",
+      "year": 2011,
+      "stage": "secondary",
+      "term": "annual",
+      "subject": "machine-control",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2011-secondary-machine-control.pdf",
+      "bytes": 1117732,
+      "sha256": "1fa6ab28920108172a7a2d6d9eac8cd086e227d1a250d960d93e58f2b9a91c4d",
+      "pages": 6,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20111127_ch_first_a01.pdf",
+      "label": "平成23年度第一種電気主任技術者二次試験",
+      "year": 2011,
+      "stage": "secondary",
+      "term": "annual",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2011-secondary-answers.pdf",
+      "bytes": 581049,
+      "sha256": "dce7a6886b6f52e579fbfa000e8b7b7b3573afffec0e74ac966d142cfef8a338",
+      "pages": 22,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q01.pdf",
+      "label": "平成23年度第一種電気主任技術者一次試験 理論科目",
+      "year": 2011,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "theory",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2011-primary-theory.pdf",
+      "bytes": 2485824,
+      "sha256": "e1dbf1f4d38d452667e9eaba9c7a5e13de81ecc5e7d47401497bb4593f1b10e3",
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q02.pdf",
+      "label": "平成23年度第一種電気主任技術者一次試験 電力科目",
+      "year": 2011,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "power",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2011-primary-power.pdf",
+      "bytes": 1681829,
+      "sha256": "74bdb6c0a6a937ba58fb3eab7ab775cbe718843396bbfcefba68fa0536e19b2a",
+      "pages": 10,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q03.pdf",
+      "label": "平成23年度第一種電気主任技術者一次試験 機械科目",
+      "year": 2011,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "machine",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2011-primary-machine.pdf",
+      "bytes": 2086106,
+      "sha256": "f4fdef99af40e245fdc258c95d85c3a3a185a8834b8825a5031146749dc27e24",
+      "pages": 15,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q04.pdf",
+      "label": "平成23年度第一種電気主任技術者一次試験 法規科目",
+      "year": 2011,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "law",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2011-primary-law.pdf",
+      "bytes": 1609471,
+      "sha256": "1987edcd491609d2e7cfd924609647a22a50eeaae0efef4c8f4ec5c01d726e84",
+      "pages": 10,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "label": "平成23年度第一種電気主任技術者一次試験",
+      "year": 2011,
+      "stage": "primary",
+      "term": "annual",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2011-primary-answers.pdf",
+      "bytes": 20666,
+      "sha256": "01c142661a5aede0a49cdee44fb8edfd1982ebd9ba7a0990a13d013cf07a70d7",
+      "pages": 1,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20101128_ch_first_q01.pdf",
+      "label": "平成22年度第一種電気主任技術者二次試験 電力・管理科目",
+      "year": 2010,
+      "stage": "secondary",
+      "term": "annual",
+      "subject": "power-management",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2010-secondary-power-management.pdf",
+      "bytes": 487799,
+      "sha256": "4aa2f3e8bfed16be38fbce4ea0330d82a84d8262dc2cc5cb4ea4145d7fd7a1d9",
+      "pages": 10,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20101128_ch_first_q02.pdf",
+      "label": "平成22年度第一種電気主任技術者二次試験 機械・制御科目",
+      "year": 2010,
+      "stage": "secondary",
+      "term": "annual",
+      "subject": "machine-control",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2010-secondary-machine-control.pdf",
+      "bytes": 450382,
+      "sha256": "4d5cb187a14ef4c9657e62c23f451c64d33a509021fc15747167697c9dadf279",
+      "pages": 8,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20101128_ch_first_a01.pdf",
+      "label": "平成22年度第一種電気主任技術者二次試験",
+      "year": 2010,
+      "stage": "secondary",
+      "term": "annual",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2010-secondary-answers.pdf",
+      "bytes": 351144,
+      "sha256": "16879bd9626a6b328416e375165d2d1081419d294af6222d280fb90c20ce05c4",
+      "pages": 19,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q01.pdf",
+      "label": "平成22年度第一種電気主任技術者一次試験 理論科目",
+      "year": 2010,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "theory",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2010-primary-theory.pdf",
+      "bytes": 1743961,
+      "sha256": "856bddd3a4fa394a076af5b135f498d0dbc7bca86c341852cf51357777183444",
+      "pages": 17,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q02.pdf",
+      "label": "平成22年度第一種電気主任技術者一次試験 電力科目",
+      "year": 2010,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "power",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2010-primary-power.pdf",
+      "bytes": 605684,
+      "sha256": "159b5edb9e94f746d440dccdf82216eb7d54fc28ea07ec3db46fcc2aa6caf95e",
+      "pages": 13,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q03.pdf",
+      "label": "平成22年度第一種電気主任技術者一次試験 機械科目",
+      "year": 2010,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "machine",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2010-primary-machine.pdf",
+      "bytes": 754135,
+      "sha256": "a5dac0abea5ed04b492d52748382ad4a16f78d408ca435e9b58a1a8ec83b879d",
+      "pages": 16,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q04.pdf",
+      "label": "平成22年度第一種電気主任技術者一次試験 法規科目",
+      "year": 2010,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "law",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2010-primary-law.pdf",
+      "bytes": 698544,
+      "sha256": "05b20c59cdc522318b9e2be7c2a9bc5ba55f4d56d8e460ac26299a4678ce0878",
+      "pages": 15,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "label": "平成22年度第一種電気主任技術者一次試験",
+      "year": 2010,
+      "stage": "primary",
+      "term": "annual",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/first/qa/index_3.html",
+      "localFile": "assets/official/2010-primary-answers.pdf",
+      "bytes": 35325,
+      "sha256": "a89ad0107ec70e03bcea21703f352faf68d82789117246ba1abad0afe82a9879",
       "pages": 1,
       "verified": true
     }
@@ -28587,6 +28827,3805 @@
       "officialPage": null,
       "officialPageEnd": null,
       "explanationStatus": "公式正答と配点を機械照合。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-theory-1",
+      "year": 2011,
+      "subject": "theory",
+      "number": 1,
+      "topic": "2011年度 理論・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q01.pdf",
+      "localFile": "assets/official/2011-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-theory-2",
+      "year": 2011,
+      "subject": "theory",
+      "number": 2,
+      "topic": "2011年度 理論・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "イ",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q01.pdf",
+      "localFile": "assets/official/2011-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-theory-3",
+      "year": 2011,
+      "subject": "theory",
+      "number": 3,
+      "topic": "2011年度 理論・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "リ",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q01.pdf",
+      "localFile": "assets/official/2011-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-theory-4",
+      "year": 2011,
+      "subject": "theory",
+      "number": 4,
+      "topic": "2011年度 理論・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q01.pdf",
+      "localFile": "assets/official/2011-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-theory-5",
+      "year": 2011,
+      "subject": "theory",
+      "number": 5,
+      "topic": "2011年度 理論・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ワ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ヨ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ハ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ヘ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ニ",
+          "points": 4
+        }
+      ],
+      "source": "2011-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q01.pdf",
+      "localFile": "assets/official/2011-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-theory-6",
+      "year": 2011,
+      "subject": "theory",
+      "number": 6,
+      "topic": "2011年度 理論・問6",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "イ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ニ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 4
+        }
+      ],
+      "source": "2011-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q01.pdf",
+      "localFile": "assets/official/2011-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-theory-7",
+      "year": 2011,
+      "subject": "theory",
+      "number": 7,
+      "topic": "2011年度 理論・問7",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ロ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ヘ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ヌ",
+          "points": 4
+        }
+      ],
+      "source": "2011-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q01.pdf",
+      "localFile": "assets/official/2011-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-power-1",
+      "year": 2011,
+      "subject": "power",
+      "number": 1,
+      "topic": "2011年度 電力・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "イ",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q02.pdf",
+      "localFile": "assets/official/2011-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-power-2",
+      "year": 2011,
+      "subject": "power",
+      "number": 2,
+      "topic": "2011年度 電力・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "リ",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q02.pdf",
+      "localFile": "assets/official/2011-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-power-3",
+      "year": 2011,
+      "subject": "power",
+      "number": 3,
+      "topic": "2011年度 電力・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ホ",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q02.pdf",
+      "localFile": "assets/official/2011-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-power-4",
+      "year": 2011,
+      "subject": "power",
+      "number": 4,
+      "topic": "2011年度 電力・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q02.pdf",
+      "localFile": "assets/official/2011-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-power-5",
+      "year": 2011,
+      "subject": "power",
+      "number": 5,
+      "topic": "2011年度 電力・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ツ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ネ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ト",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "ハ",
+          "points": 3
+        },
+        {
+          "number": 8,
+          "answer": "ヨ",
+          "points": 3
+        }
+      ],
+      "source": "2011-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q02.pdf",
+      "localFile": "assets/official/2011-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-power-6",
+      "year": 2011,
+      "subject": "power",
+      "number": 6,
+      "topic": "2011年度 電力・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ニ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "ヘ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ル",
+          "points": 3
+        },
+        {
+          "number": 7,
+          "answer": "リ",
+          "points": 3
+        }
+      ],
+      "source": "2011-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q02.pdf",
+      "localFile": "assets/official/2011-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-machine-1",
+      "year": 2011,
+      "subject": "machine",
+      "number": 1,
+      "topic": "2011年度 機械・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q03.pdf",
+      "localFile": "assets/official/2011-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-machine-2",
+      "year": 2011,
+      "subject": "machine",
+      "number": 2,
+      "topic": "2011年度 機械・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ル",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q03.pdf",
+      "localFile": "assets/official/2011-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-machine-3",
+      "year": 2011,
+      "subject": "machine",
+      "number": 3,
+      "topic": "2011年度 機械・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヌ",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q03.pdf",
+      "localFile": "assets/official/2011-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-machine-4",
+      "year": 2011,
+      "subject": "machine",
+      "number": 4,
+      "topic": "2011年度 機械・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q03.pdf",
+      "localFile": "assets/official/2011-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-machine-5",
+      "year": 2011,
+      "subject": "machine",
+      "number": 5,
+      "topic": "2011年度 機械・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ル",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ハ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ロ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ト",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 4
+        }
+      ],
+      "source": "2011-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q03.pdf",
+      "localFile": "assets/official/2011-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-machine-6",
+      "year": 2011,
+      "subject": "machine",
+      "number": 6,
+      "topic": "2011年度 機械・問6",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ロ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ト",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "カ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ホ",
+          "points": 4
+        }
+      ],
+      "source": "2011-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q03.pdf",
+      "localFile": "assets/official/2011-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-machine-7",
+      "year": 2011,
+      "subject": "machine",
+      "number": 7,
+      "topic": "2011年度 機械・問7",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ハ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ホ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ロ",
+          "points": 4
+        }
+      ],
+      "source": "2011-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q03.pdf",
+      "localFile": "assets/official/2011-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-law-1",
+      "year": 2011,
+      "subject": "law",
+      "number": 1,
+      "topic": "2011年度 法規・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q04.pdf",
+      "localFile": "assets/official/2011-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-law-2",
+      "year": 2011,
+      "subject": "law",
+      "number": 2,
+      "topic": "2011年度 法規・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヨ",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q04.pdf",
+      "localFile": "assets/official/2011-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-law-3",
+      "year": 2011,
+      "subject": "law",
+      "number": 3,
+      "topic": "2011年度 法規・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q04.pdf",
+      "localFile": "assets/official/2011-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-law-4",
+      "year": 2011,
+      "subject": "law",
+      "number": 4,
+      "topic": "2011年度 法規・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2011-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q04.pdf",
+      "localFile": "assets/official/2011-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-law-5",
+      "year": 2011,
+      "subject": "law",
+      "number": 5,
+      "topic": "2011年度 法規・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ヘ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ヲ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ト",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ワ",
+          "points": 4
+        }
+      ],
+      "source": "2011-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q04.pdf",
+      "localFile": "assets/official/2011-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2011-law-6",
+      "year": 2011,
+      "subject": "law",
+      "number": 6,
+      "topic": "2011年度 法規・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ル",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ロ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ホ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ニ",
+          "points": 4
+        }
+      ],
+      "source": "2011-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_q04.pdf",
+      "localFile": "assets/official/2011-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20110903_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2011-primary-answers.pdf",
+      "paper": "2011-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-theory-1",
+      "year": 2010,
+      "subject": "theory",
+      "number": 1,
+      "topic": "2010年度 理論・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヨ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q01.pdf",
+      "localFile": "assets/official/2010-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-theory-2",
+      "year": 2010,
+      "subject": "theory",
+      "number": 2,
+      "topic": "2010年度 理論・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ヲ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q01.pdf",
+      "localFile": "assets/official/2010-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-theory-3",
+      "year": 2010,
+      "subject": "theory",
+      "number": 3,
+      "topic": "2010年度 理論・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ワ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q01.pdf",
+      "localFile": "assets/official/2010-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-theory-4",
+      "year": 2010,
+      "subject": "theory",
+      "number": 4,
+      "topic": "2010年度 理論・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q01.pdf",
+      "localFile": "assets/official/2010-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-theory-5",
+      "year": 2010,
+      "subject": "theory",
+      "number": 5,
+      "topic": "2010年度 理論・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ト",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ハ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ヨ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ヲ",
+          "points": 4
+        }
+      ],
+      "source": "2010-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q01.pdf",
+      "localFile": "assets/official/2010-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-theory-6",
+      "year": 2010,
+      "subject": "theory",
+      "number": 6,
+      "topic": "2010年度 理論・問6",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヌ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ワ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ハ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ヘ",
+          "points": 4
+        }
+      ],
+      "source": "2010-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q01.pdf",
+      "localFile": "assets/official/2010-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-theory-7",
+      "year": 2010,
+      "subject": "theory",
+      "number": 7,
+      "topic": "2010年度 理論・問7",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヘ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ヨ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ニ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ホ",
+          "points": 4
+        }
+      ],
+      "source": "2010-annual-theory",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q01.pdf",
+      "localFile": "assets/official/2010-primary-theory.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-power-1",
+      "year": 2010,
+      "subject": "power",
+      "number": 1,
+      "topic": "2010年度 電力・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q02.pdf",
+      "localFile": "assets/official/2010-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-power-2",
+      "year": 2010,
+      "subject": "power",
+      "number": 2,
+      "topic": "2010年度 電力・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ロ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q02.pdf",
+      "localFile": "assets/official/2010-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-power-3",
+      "year": 2010,
+      "subject": "power",
+      "number": 3,
+      "topic": "2010年度 電力・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ニ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q02.pdf",
+      "localFile": "assets/official/2010-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-power-4",
+      "year": 2010,
+      "subject": "power",
+      "number": 4,
+      "topic": "2010年度 電力・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ホ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q02.pdf",
+      "localFile": "assets/official/2010-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-power-5",
+      "year": 2010,
+      "subject": "power",
+      "number": 5,
+      "topic": "2010年度 電力・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ワ",
+          "points": 3
+        },
+        {
+          "number": 6,
+          "answer": "ソ",
+          "points": 2
+        },
+        {
+          "number": 7,
+          "answer": "ニ",
+          "points": 3
+        },
+        {
+          "number": 8,
+          "answer": "ハ",
+          "points": 3
+        }
+      ],
+      "source": "2010-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q02.pdf",
+      "localFile": "assets/official/2010-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-power-6",
+      "year": 2010,
+      "subject": "power",
+      "number": 6,
+      "topic": "2010年度 電力・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ト",
+          "points": 3
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 3
+        },
+        {
+          "number": 3,
+          "answer": "ニ",
+          "points": 3
+        },
+        {
+          "number": 4,
+          "answer": "ハ",
+          "points": 3
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 6,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 7,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 8,
+          "answer": "ヨ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-power",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q02.pdf",
+      "localFile": "assets/official/2010-primary-power.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-machine-1",
+      "year": 2010,
+      "subject": "machine",
+      "number": 1,
+      "topic": "2010年度 機械・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ハ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q03.pdf",
+      "localFile": "assets/official/2010-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-machine-2",
+      "year": 2010,
+      "subject": "machine",
+      "number": 2,
+      "topic": "2010年度 機械・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q03.pdf",
+      "localFile": "assets/official/2010-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-machine-3",
+      "year": 2010,
+      "subject": "machine",
+      "number": 3,
+      "topic": "2010年度 機械・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "イ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヲ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q03.pdf",
+      "localFile": "assets/official/2010-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-machine-4",
+      "year": 2010,
+      "subject": "machine",
+      "number": 4,
+      "topic": "2010年度 機械・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ホ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q03.pdf",
+      "localFile": "assets/official/2010-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-machine-5",
+      "year": 2010,
+      "subject": "machine",
+      "number": 5,
+      "topic": "2010年度 機械・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ハ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ニ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ヨ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "チ",
+          "points": 4
+        }
+      ],
+      "source": "2010-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q03.pdf",
+      "localFile": "assets/official/2010-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-machine-6",
+      "year": 2010,
+      "subject": "machine",
+      "number": 6,
+      "topic": "2010年度 機械・問6",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "イ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ワ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ハ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ヨ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ル",
+          "points": 4
+        }
+      ],
+      "source": "2010-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q03.pdf",
+      "localFile": "assets/official/2010-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-machine-7",
+      "year": 2010,
+      "subject": "machine",
+      "number": 7,
+      "topic": "2010年度 機械・問7",
+      "kind": "past",
+      "optional": true,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ヌ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ト",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ロ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ワ",
+          "points": 4
+        }
+      ],
+      "source": "2010-annual-machine",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q03.pdf",
+      "localFile": "assets/official/2010-primary-machine.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-law-1",
+      "year": 2010,
+      "subject": "law",
+      "number": 1,
+      "topic": "2010年度 法規・問1",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ロ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ニ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヨ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ワ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "カ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q04.pdf",
+      "localFile": "assets/official/2010-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-law-2",
+      "year": 2010,
+      "subject": "law",
+      "number": 2,
+      "topic": "2010年度 法規・問2",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "チ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ヘ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ホ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "ル",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ト",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q04.pdf",
+      "localFile": "assets/official/2010-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-law-3",
+      "year": 2010,
+      "subject": "law",
+      "number": 3,
+      "topic": "2010年度 法規・問3",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "イ",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q04.pdf",
+      "localFile": "assets/official/2010-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-law-4",
+      "year": 2010,
+      "subject": "law",
+      "number": 4,
+      "topic": "2010年度 法規・問4",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ヌ",
+          "points": 2
+        },
+        {
+          "number": 2,
+          "answer": "リ",
+          "points": 2
+        },
+        {
+          "number": 3,
+          "answer": "ハ",
+          "points": 2
+        },
+        {
+          "number": 4,
+          "answer": "カ",
+          "points": 2
+        },
+        {
+          "number": 5,
+          "answer": "ル",
+          "points": 2
+        }
+      ],
+      "source": "2010-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q04.pdf",
+      "localFile": "assets/official/2010-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-law-5",
+      "year": 2010,
+      "subject": "law",
+      "number": 5,
+      "topic": "2010年度 法規・問5",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "ホ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "イ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ヌ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ハ",
+          "points": 4
+        }
+      ],
+      "source": "2010-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q04.pdf",
+      "localFile": "assets/official/2010-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
+    },
+    {
+      "id": "2010-law-6",
+      "year": 2010,
+      "subject": "law",
+      "number": 6,
+      "topic": "2010年度 法規・問6",
+      "kind": "past",
+      "optional": false,
+      "pages": [],
+      "text": "原本PDFで問題を読み、解答を選んでください。",
+      "options": [
+        "イ",
+        "ロ",
+        "ハ",
+        "ニ",
+        "ホ",
+        "ヘ",
+        "ト",
+        "チ",
+        "リ",
+        "ヌ",
+        "ル",
+        "ヲ",
+        "ワ",
+        "カ",
+        "ヨ",
+        "タ",
+        "レ",
+        "ソ",
+        "ツ",
+        "ネ",
+        "ナ",
+        "ラ"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "answer": "ホ",
+          "points": 4
+        },
+        {
+          "number": 2,
+          "answer": "チ",
+          "points": 4
+        },
+        {
+          "number": 3,
+          "answer": "ヨ",
+          "points": 4
+        },
+        {
+          "number": 4,
+          "answer": "ロ",
+          "points": 4
+        },
+        {
+          "number": 5,
+          "answer": "ニ",
+          "points": 4
+        }
+      ],
+      "source": "2010-annual-law",
+      "sourceUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_q04.pdf",
+      "localFile": "assets/official/2010-primary-law.pdf",
+      "answerUrl": "https://www.shiken.or.jp/chief/upload/20100904_ch_first_a01.pdf",
+      "answerLocalFile": "assets/official/2010-primary-answers.pdf",
+      "paper": "2010-annual",
+      "term": "annual",
+      "officialPage": null,
+      "officialPageEnd": null,
+      "explanationStatus": "公式正答を照合。配点は問題冊子の配点見出しまたは公式解答表に基づきます。詳しい解説は未整備"
     }
   ],
   "note": "原本PDFは必要なときだけ開きます。詳しい個別解説は未整備です。",
@@ -28678,9 +32717,23 @@
       "status": "演習・採点対応",
       "groups": 26,
       "items": 142
+    },
+    {
+      "year": 2011,
+      "status": "演習・採点対応",
+      "groups": 26,
+      "items": 135
+    },
+    {
+      "year": 2010,
+      "status": "演習・採点対応",
+      "groups": 26,
+      "items": 136
     }
   ],
   "releaseYears": [
+    2010,
+    2011,
     2012,
     2013,
     2014,
