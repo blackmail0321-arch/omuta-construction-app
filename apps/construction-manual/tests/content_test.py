@@ -36,6 +36,13 @@ class ManualContent(unittest.TestCase):
    c=next(c for c in d['chapters'] if c['id']==cid);self.assertEqual(sum(r['sourceId']=='inspection-r7' for r in c['references']),1);self.assertEqual(c['body'].count('class="inspection-crosslink"'),1)
   import zipfile
   with zipfile.ZipFile(ROOT/'offline-site.zip') as z:self.assertFalse(any('資料編' in name for name in z.namelist()))
+ def test_visual_reading_guides(self):
+  d=json.loads((ROOT/'data/manual.json').read_text());guides=json.loads((ROOT/'data/reading-guides.json').read_text());self.assertEqual(d['readingGuides'],guides);self.assertEqual(set(guides),{c['id'] for c in d['chapters']+d['worktypes']})
+  for guide in guides.values():
+   self.assertTrue(guide['takeaway']);self.assertEqual(len(guide['points']),3);self.assertEqual(len(guide['steps']),4)
+   for step in guide['steps']:self.assertTrue(step['title']);self.assertTrue(step['caption']);self.assertIn(step['icon'],['survey','plan','tools','check'])
+  import zipfile
+  with zipfile.ZipFile(ROOT/'offline-site.zip') as z:self.assertIn('reader.js',z.namelist())
  def test_standard_editions_are_not_invented(self):
   d=json.loads((ROOT/'data/manual.json').read_text());s=[s for s in d['sources'] if s.get('versioned')];self.assertEqual(len(s),5)
   for source in s:self.assertIsNone(source['latestRelease']);self.assertFalse(source.get('expectedHash'));self.assertIn('未確認',source['edition'])
