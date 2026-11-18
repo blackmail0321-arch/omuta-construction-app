@@ -81,7 +81,9 @@ jobs:
           node --check apps/pdf-cad-draft/image-source.js
           node --check apps/pdf-cad-draft/tiff-worker.js
           node --input-type=module --check < apps/pdf-cad-draft/app.js
+          node --check apps/pdf-cad-draft/pdf-vectors.js
           node apps/pdf-cad-draft/tests/core.cjs
+          node apps/pdf-cad-draft/tests/vectors.cjs
           python3 apps/pdf-cad-draft/build.py
           node --check apps/voltage-drop/core.js
           node --check apps/voltage-drop/app.js

@@ -1,0 +1,16 @@
+const assert=require('node:assert/strict'),C=require('../core.js'),V=require('../pdf-vectors.js');
+const OPS=Object.fromEntries(['stroke','closeStroke','fillStroke','eoFillStroke','closeFillStroke','closeEOFillStroke','save','restore','paintFormXObjectBegin','paintFormXObjectEnd','beginGroup','endGroup','transform','setDash','setGState','clip','eoClip','constructPath','endPath','fill','setStrokeRGBColor'].map((k,i)=>[k,i+1]));
+const path=(buf,paint=OPS.stroke)=>[OPS.constructPath,[paint,[new Float32Array(buf)],[0,0,100,100]]];
+const run=(ops,extra={})=>V.extract({fnArray:ops.map(x=>x[0]),argsArray:ops.map(x=>x[1])},OPS,{transform:[2,0,0,-2,0,200]},{width:200,height:200,core:C,...extra});
+let r=run([path([0,10,10,1,12,13])]);assert.deepEqual(r.entities[0],{id:1,type:'line',layer:'review',x1:20,y1:180,x2:24,y2:174});
+r=run([[OPS.save,[]],[OPS.transform,[1,0,0,1,20,30]],path([0,10,10,1,20,10]),[OPS.restore,[]],path([0,10,10,1,20,10])]);assert.equal(r.entities[0].x1,60);assert.equal(r.entities[0].y1,120);assert.equal(r.entities[1].x1,20);
+r=run([[OPS.setDash,[[10,5],0]],path([0,0,20,1,40,20])]);assert.equal(r.entities.length,3);assert.deepEqual(r.entities.map(e=>[e.x1,e.x2]),[[0,20],[30,50],[60,80]]);
+r=run([path([0,10,10,2,10,40,40,40,40,10])]);assert.ok(r.entities.length>4);assert.equal(r.curves,1);assert.equal(r.entities[0].x1,20);assert.equal(r.entities.at(-1).x2,80);
+r=run([[OPS.clip,[]],path([0,10,10,1,30,10,1,30,30,1,10,30,4],OPS.endPath),path([0,0,20,1,100,20])]);assert.equal(r.entities.length,1);assert.deepEqual([r.entities[0].x1,r.entities[0].x2].map(v=>Math.round(v*1e6)/1e6),[20,60]);
+r=run([[OPS.save,[]],[OPS.clip,[]],path([0,10,10,1,30,20,1,10,30,4],OPS.endPath),path([0,0,20,1,100,20]),[OPS.restore,[]],path([0,0,40,1,100,40])]);assert.equal(r.skipped,1);assert.equal(r.entities.length,1);
+r=run([[OPS.paintFormXObjectBegin,[[1,0,0,1,10,10],[0,0,20,20]]],path([0,0,10,1,100,10]),[OPS.paintFormXObjectEnd,[]]]);assert.deepEqual([r.entities[0].x1,r.entities[0].x2].map(v=>Math.round(v*1e6)/1e6),[20,60]);
+r=run([path([0,0,20,1,100,20])],{region:{x1:25,y1:0,x2:75,y2:200}});assert.deepEqual([r.entities[0].x1,r.entities[0].x2].map(v=>Math.round(v*1e6)/1e6),[25,75]);
+assert.equal(run([path([0,0,0,1,100,100],OPS.fill)]).entities.length,0);
+assert.equal(run([[OPS.setStrokeRGBColor,['#ffffff']],path([0,0,0,1,100,100])]).entities.length,0);
+assert.throws(()=>run(Array.from({length:12001},()=>path([0,0,0,1,100,100]))),/12000/);
+console.log('PASS vector coordinates, transforms, short/diagonal/curved lines, dashed gaps, page and range clipping, rectangular PDF/Form clipping, unsupported clip omission, fill/white exclusion and atomic size limit');
