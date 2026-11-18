@@ -21,7 +21,10 @@ if inspection.exists():
   marker='<aside class="inspection-crosslink">'
   if marker not in c['body']:c['body']+=marker+'<p><a href="#chapter/c25">令和7年度の検査指摘例から、この工程の確認漏れを防ぐ →</a></p></aside>'
  data['version']='1.5';data['date']='2026-11-17';manual.write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')))
-assets=['index.html','style.css','app.js','sources.js','glossary.js','manifest.webmanifest','data/manual.json','icons/icon.svg','icons/icon-192.png','icons/icon-512.png','downloads/manual.pdf','downloads/check-sheets.pdf','downloads/procurement-guide.pdf']
+guides=root/'data/reading-guides.json'
+if guides.exists():
+ manual=root/'data/manual.json';data=json.loads(manual.read_text());data['readingGuides']=json.loads(guides.read_text());data['version']='1.6';data['date']='2026-11-18';manual.write_text(json.dumps(data,ensure_ascii=False,separators=(',',':')))
+assets=['index.html','style.css','app.js','sources.js','glossary.js','reader.js','manifest.webmanifest','data/manual.json','icons/icon.svg','icons/icon-192.png','icons/icon-512.png','downloads/manual.pdf','downloads/check-sheets.pdf','downloads/procurement-guide.pdf']
 version=hashlib.sha256(Path(__file__).read_bytes()+b''.join((root/f).read_bytes() for f in assets)).hexdigest()[:12]
 sw='''/* Offline app shell only. Local project records are not sent or cached here. */
 const BASE=new URL('./',self.location.href),PREFIX='construction-manual-'+BASE.pathname+'-',CACHE=PREFIX+'VERSION',FILES=ASSETS.map(f=>new URL(f,BASE).href);
