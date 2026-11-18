@@ -17,3 +17,7 @@
 ## 配布・保存
 
 `node tests/core.cjs` と `node tests/browser.cjs` で検証。`python build.py` で依存なしのsite/とoffline-site.zipを生成。初回オンラインでService Workerに保存後、オフライン計算可能。最後の条件だけを独立localStorageキー`voltage-drop-note.settings.v1`へ保存し、他アプリの記録・キャッシュは削除しません。条件・結果の外部送信なし。コピーできないブラウザは選択可能な文章を表示します。
+
+## アイコン
+
+電験アプリと形で区別できるよう、雷を廃止し「オレンジ地・白いV・紺の下降矢印」に変更。生成原本はicon.png、配信用192/512pxはicons/に保持。ヘッダー・favicon・Apple touch・Web App Manifestを同じ図案へ統一し、配信ファイル名は内容識別子付きにします。既存iPadのホーム画面アイコンは自動で変わらない場合があります。Safariで更新したページを開き、共有→ホーム画面に追加で新しいショートカットを作ってください。計算条件やブラウザデータを消す必要はありません。

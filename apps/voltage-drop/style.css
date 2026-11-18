@@ -4,3 +4,5 @@
 
 #calculation-results{scroll-margin-top:16px}.mobile-live{display:none}@media(max-width:720px){body{padding-bottom:80px}.mobile-live{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:5;gap:12px;justify-content:space-between;align-items:center;padding:10px 18px calc(10px + env(safe-area-inset-bottom));background:#173e43;color:white;box-shadow:0 -3px 18px #173e4322}.mobile-live span{font-size:15px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere;min-width:0}.mobile-live a{color:white;min-height:44px;display:flex;align-items:center;white-space:nowrap;font-size:14px}}
 .two-fields label{min-height:44px}.two-fields label>span{display:block;float:none;margin-top:0;line-height:1.5}
+
+img.mark{display:block;object-fit:cover;background:#ed9200;flex-shrink:0}

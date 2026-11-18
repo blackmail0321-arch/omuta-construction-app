@@ -1,30 +1,21 @@
 from pathlib import Path
-import hashlib,shutil,json,zlib,struct,zipfile
+import hashlib,shutil,json,struct,zipfile
 R=Path(__file__).resolve().parent;site=R/'site';shutil.rmtree(site,ignore_errors=True);site.mkdir()
 names=['index.html','style.css','core.js','app.js']
-v=hashlib.sha256(b''.join((R/n).read_bytes() for n in names)).hexdigest()[:16]
+icons={n:(R/f'icons/voltage-{n}.png').read_bytes() for n in [192,512]}
+for n,data in icons.items():assert struct.unpack('>II',data[16:24])==(n,n)
+v=hashlib.sha256(b''.join((R/n).read_bytes() for n in names)+b''.join(icons.values())+(R/'build.py').read_bytes()).hexdigest()[:16]
+icon_names={n:f'voltage-icon-{n}-{v}.png' for n in icons}
+for n,data in icons.items():(site/icon_names[n]).write_bytes(data)
+icon_name=icon_names[192]
 for n in names:shutil.copy(R/n,site/n)
-s=(site/'index.html').read_text().replace('<meta name="theme-color"','<meta name="app-version" content="'+v+'"><meta name="theme-color"')
+s=(site/'index.html').read_text().replace('app-icon.png',icon_name).replace('<meta name="theme-color"','<meta name="app-version" content="'+v+'"><meta name="theme-color"')
 for n in names[1:]:s=s.replace(n+'"',n+'?v='+v+'"')
 (site/'index.html').write_text(s)
 (site/'version.json').write_text(json.dumps({'version':v}))
-# Self-contained icons; no runtime dependencies or external requests.
-def png(size):
- points=[(.55,.1),(.24,.58),(.47,.58),(.39,.9),(.78,.4),(.54,.4)]
- def inside(x,y):
-  hit=False;j=len(points)-1
-  for i,(a,b) in enumerate(points):
-   c,d=points[j]
-   if (b>y)!=(d>y) and x<(c-a)*(y-b)/(d-b)+a:hit=not hit
-   j=i
-  return hit
- data=b''.join(b'\0'+bytes(sum(([242,250,245,255] if inside((x+.5)/size,(y+.5)/size) else [33,94,89,255] for x in range(size)),[])) for y in range(size))
- def chunk(t,b):return struct.pack('>I',len(b))+t+b+struct.pack('>I',zlib.crc32(t+b)&0xffffffff)
- return b'\x89PNG\r\n\x1a\n'+chunk(b'IHDR',struct.pack('>IIBBBBB',size,size,8,6,0,0,0))+chunk(b'IDAT',zlib.compress(data))+chunk(b'IEND',b'')
-for size in [192,512]:(site/f'icon-{size}.png').write_bytes(png(size))
-manifest={'name':'電圧降下ノート','short_name':'電圧降下','lang':'ja','start_url':'./','scope':'./','display':'standalone','background_color':'#f4f7f5','theme_color':'#173e43','icons':[{'src':f'icon-{n}.png','sizes':f'{n}x{n}','type':'image/png','purpose':'any maskable'} for n in [192,512]]}
+manifest={'name':'電圧降下ノート','short_name':'電圧降下','lang':'ja','start_url':'./','scope':'./','display':'standalone','background_color':'#f4f7f5','theme_color':'#173e43','icons':[{'src':icon_names[n],'sizes':f'{n}x{n}','type':'image/png','purpose':'any'} for n in [192,512]]}
 (site/'manifest.webmanifest').write_text(json.dumps(manifest,ensure_ascii=False))
-urls=['./','./index.html',*[f'./{n}?v={v}' for n in names[1:]],'./manifest.webmanifest','./icon-192.png','./icon-512.png']
+urls=['./','./index.html',*[f'./{n}?v={v}' for n in names[1:]],'./manifest.webmanifest']+['./'+name for name in icon_names.values()]
 sw='''const CACHE='voltage-drop-v1-__VERSION__',FILES=__FILES__;
 self.addEventListener('install',e=>e.waitUntil((async()=>{const c=await caches.open(CACHE);await c.addAll(FILES);await self.skipWaiting()})()));
 self.addEventListener('activate',e=>e.waitUntil((async()=>{for(const k of await caches.keys())if(k.startsWith('voltage-drop-v1-')&&k!==CACHE)await caches.delete(k);await self.clients.claim()})()));
