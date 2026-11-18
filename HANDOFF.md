@@ -504,3 +504,9 @@ submissions.jsの2フォームにsubmission-editor-fieldsを付け、状態・�
 - 上を「原本を選ぶ」、左を「ページ設定」に分離し、原本の二重入口を削除。JSON/端末作業の再開は保存・JWへ。読込後の「ガイド②」参照を廃し、下部からページ設定/線取込へ直接進めるボタンを追加。PDF描線のボタンを取込パネルの冒頭へ移動。
 - release.jsonを追加、版名/変更点をHTMLとversion.jsonへ生成し版hashにも含む。ヘッダー「更新・変更点」は専用パネルで確認のみ。新版がある時だけ「新しい版に更新」を表示し、保存後に再読込する二段階へ。既存の描画中/保存失敗停止、現在ページ復元を維持。
 - guidance検証で四幅の1列表示、役割分離、次操作の直接導線、変更点/最新版表示、確認だけでは遷移しないこと、明示適用でのページ復元を確認。help-updateのガード/保存復帰とworkspace文字・図面回帰も確認。iPad実機は未検証、図面内容・既存記録を再変換や削除する変更はない。
+
+## 2026-11-18 統合アプリ本体へマニュアル本文を同梱
+利用者は単体マニュアルの閲覧成功を報告、統合アプリの工事マニュアル内での閲覧を希望。外部ファイル/manual/index.htmlの読み込みに依存しないよう、正本ZIPから本文JSON・CSS・4JS・SVGアイコンを統合アプリHTMLへBase64同梱。manual-host.jsは同一originのBlob HTMLとして既存の全画面枠で開く。URLの配信漏れ・非表示iframeの遅延読込を回避し、再表示は保持、明示再試行で旧Blob URLを解放する。
+単体app.jsは同梱JSONがある場合だけそこから読み、従来URL版は従来fetchを継続。埋込時のみ単体PWA更新UI/登録を使わず、統合アプリの更新に従う。PDF3点は明示操作時に既存の単体公開URLから閲覧するため通信が必要、と操作案内へ記載。単体URLは上部の別画面リンクにも維持。
+scripts/manual_assets.pyのattach_manual_bundleを分割ビルドとruntime_assetsの両方へ適用し、公開配布・保管ZIPを作るたび最新の正本から生成。旧HTMLに埋めた版を再利用し続けない。元のmanual/配布も引き続き収録。工事・手引きの記録キー、原本DB、認証・共有・権限は無変更。私有資料は同梱しない。
+検証：manual-bundle-test.pyで正本と同梱JSON一致、CSS/JS/アイコンの自己完結、PDF参照先を確認。integrated-manual.cjsで/manual/**全遮断・本文初回起動時offlineでも表示、図解・用語小窓、68語、ページ内移動とPDF枠からの戻り、390/768/1024、積算への復帰と既存記録保持、不正同梱データの案内とretry、空白documentからの退出を確認。単体browser.cjsの保存・復元・更新保持、shared-config-test.pyとprivate-release-test.pyも通過。配信完了/iPad実機は未確認。

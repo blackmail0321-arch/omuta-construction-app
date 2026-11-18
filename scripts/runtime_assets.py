@@ -1,12 +1,13 @@
 """Explicit runtime-only assets. Never deploy sources, private records or old source ZIPs."""
 from pathlib import Path
 import io,zipfile
-from manual_assets import manual_assets
+from manual_assets import manual_assets,attach_manual_bundle
 ROOT=Path(__file__).resolve().parents[1]
 APP=ROOT/'apps/integrated-v0.13'
 SHARED=['shared-config.js','shared-client.js','shared-editor.js','reference-library.js','status.html','status.css','status.js']
 def assets(include_archive=True):
     result={name:(APP/name).read_bytes() for name in ['index.html','volume1.html']}
+    result['index.html']=attach_manual_bundle(result['index.html'].decode()).encode()
     result.update({'manual/'+name:data for name,data in manual_assets().items()})
     result.update({'shared/'+name:(APP/'shared'/name).read_bytes() for name in SHARED})
     manual=ROOT/'manuals/Volume1_ダウンロードと初めての操作手順書.pdf'
