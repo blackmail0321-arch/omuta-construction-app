@@ -1124,6 +1124,81 @@
       "sha256": "212533afcdae311c35f59a0df64f3bf1720c7387ce7f094f5d8c94d3b3f598ab",
       "pages": 1,
       "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150906_ch_third_q01.pdf",
+      "label": "平成27年度第三種電気主任技術者試験 理論科目",
+      "year": 2015,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "theory",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index_2.html",
+      "localFile": "assets/third/2015-annual-theory.pdf",
+      "bytes": 1639521,
+      "sha256": "79827dbd1bde962276da42e855c471d112fbad9bfce878ee6878188e874c5918",
+      "pages": 29,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150906_ch_third_q02.pdf",
+      "label": "平成27年度第三種電気主任技術者試験 電力科目",
+      "year": 2015,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "power",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index_2.html",
+      "localFile": "assets/third/2015-annual-power.pdf",
+      "bytes": 1389107,
+      "sha256": "81bebaf0e36c479cdf022ab18e0fddd89cc24d93ee13e04e7b7377849e3b4df2",
+      "pages": 22,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150906_ch_third_q03.pdf",
+      "label": "平成27年度第三種電気主任技術者試験 機械科目",
+      "year": 2015,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "machine",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index_2.html",
+      "localFile": "assets/third/2015-annual-machine.pdf",
+      "bytes": 1646910,
+      "sha256": "415599c43d26dc73ad580ae03198d0d1412eb3563938c26b7eb411371f2521ab",
+      "pages": 25,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150906_ch_third_q04.pdf",
+      "label": "平成27年度第三種電気主任技術者試験 法規科目",
+      "year": 2015,
+      "stage": "primary",
+      "term": "annual",
+      "subject": "law",
+      "kind": "question",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index_2.html",
+      "localFile": "assets/third/2015-annual-law.pdf",
+      "bytes": 1299487,
+      "sha256": "786d23c1e134f5e1a0a8caa455ce62b6e14f4342976cf8178e1a00df7ae4cd33",
+      "pages": 19,
+      "verified": true
+    },
+    {
+      "url": "https://www.shiken.or.jp/chief/upload/20150906_ch_third_a01.pdf",
+      "label": "平成27年度第三種電気主任技術者試験",
+      "year": 2015,
+      "stage": "primary",
+      "term": "annual",
+      "subject": null,
+      "kind": "answer",
+      "foundOn": "https://www.shiken.or.jp/chief/third/qa/index_2.html",
+      "localFile": "assets/third/2015-annual-answers.pdf",
+      "bytes": 47347,
+      "sha256": "ccfcdd9f3368de30f24611abff1b45156106ccf3397001c2815ea5e854d22779",
+      "pages": 1,
+      "verified": true
     }
   ],
   "questions": [
@@ -25789,15 +25864,21 @@
       "year": 2016,
       "status": "原本閲覧のみ・採点の形式は要確認",
       "reason": "Legacy paper scoring has not been verified"
+    },
+    {
+      "year": 2015,
+      "status": "原本閲覧のみ・採点の形式は要確認",
+      "reason": "Legacy paper scoring has not been verified"
     }
   ],
   "officialIndex": "https://www.shiken.or.jp/chief/third/qa/",
-  "checkedAt": "2026-11-22T10:08:38.936395+09:00",
+  "checkedAt": "2026-11-23T10:31:01.378432+09:00",
   "reusePolicy": {
     "url": "https://www.shiken.or.jp/chief/third/qa/",
     "purpose": "教育目的の利用・出典明記。原本を改変せず保管。"
   },
   "releaseYears": [
+    2015,
     2016,
     2017,
     2018,
