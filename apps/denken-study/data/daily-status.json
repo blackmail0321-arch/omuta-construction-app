@@ -1,10 +1,10 @@
 {
-  "lastDate": "2026-11-24",
+  "lastDate": "2026-11-25",
   "lastRun": {
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "firstYears": [],
     "thirdYears": [
-      2014
+      2013
     ]
   },
   "schedule": "毎日 日本時間6時ごろ。一種2年度・三種1年度ずつ。GitHub実行状況により遅れる場合があります。",
@@ -121,6 +121,13 @@
       "firstYears": [],
       "thirdYears": [
         2014
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "firstYears": [],
+      "thirdYears": [
+        2013
       ]
     }
   ]
